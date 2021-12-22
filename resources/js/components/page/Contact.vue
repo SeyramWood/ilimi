@@ -16,9 +16,8 @@
             data-wow-offset="80"
             data-wow-duration="2s"
           >
-            Sometimes <strong>magic</strong> is just someone
-            <strong>spending</strong> more time on something than anyone else
-            might reasonably expect.
+            For additional questions and/or <strong>inquiry</strong> regarding
+            the status of your application.
           </div>
 
           <div class="row">
@@ -27,27 +26,29 @@
               data-wow-offset="80"
               data-wow-duration="2s"
             >
-              <h2>Do you need a website,<br />have a question or comment?</h2>
+              <!-- <h2>Do you need a website,<br />have a question or comment?</h2> -->
 
               <p>
-                Flair Design Studio,<br />
-                23 Mornington Crescent,<br />
-                Camden High Street,<br />
-                London NW1 7JE
+                ILIMI | A.D.U.,<br />
+                Village de la Francophonie,<br />
+                BP 11160,<br />
+                Niamey, Niger
               </p>
 
               <ul class="fa-ul">
                 <li>
-                  <i class="fa-li fa fa-phone inverse"></i>
-                  <span class="inverse">+44 020 2345 1987</span>
+                  <i class="fa-li fa fa-envelope"></i>
+                  <a href="mailto:infos@ilimi.edu.ne" style="color: white"
+                    >infos@ilimi.edu.ne</a
+                  >
                 </li>
                 <li>
-                  <i class="fa-li fa fa-envelope inverse"></i>
-                  <a href="mailto:#">name@example.com</a>
+                  <i class="fa-li fa fa-phone"></i>
+                  <span class="">+227 923 968 68 (WhatsApp)</span>
                 </li>
                 <li>
-                  <i class="fa-li fa fa-globe inverse"></i>
-                  <a href="#">www.example.com</a>
+                  <i class="fa-li fa fa-phone"></i>
+                  <span class="">+227 9339 68 68 (Mobile)</span>
                 </li>
               </ul>
 
@@ -56,32 +57,41 @@
                   class="wow fadeIn"
                   data-wow-offset="80"
                   data-wow-duration="2s"
+                  data-wow-delay="0.5s"
                 >
-                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a
+                    href="https://web.facebook.com/aduniversalis?_rdc=10&amp;_rdr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
                 </li>
+
                 <li
                   class="wow fadeIn"
                   data-wow-offset="80"
                   data-wow-duration="2s"
-                  data-wow-delay="0.5s"
                 >
-                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a
+                    href="https://twitter.com/aduleads?lang=fr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
                 </li>
+
                 <li
                   class="wow fadeIn"
                   data-wow-offset="80"
                   data-wow-duration="2s"
                   data-wow-delay="1s"
                 >
-                  <a href="#"><i class="fa fa-github"></i></a>
-                </li>
-                <li
-                  class="wow fadeIn"
-                  data-wow-offset="80"
-                  data-wow-duration="2s"
-                  data-wow-delay="1.5s"
-                >
-                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                  <a
+                    href="https://fr.linkedin.com/school/african-development-university/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
                 </li>
                 <li
                   class="wow fadeIn"
@@ -89,15 +99,25 @@
                   data-wow-duration="2s"
                   data-wow-delay="2s"
                 >
-                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a
+                    href="https://instagram.com/africandevelopmentuniversalis"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
                 </li>
                 <li
                   class="wow fadeIn"
                   data-wow-offset="80"
                   data-wow-duration="2s"
-                  data-wow-delay="2.5s"
+                  data-wow-delay="1.5s"
                 >
-                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a
+                    href="https://www.youtube.com/channel/UCitZsNH69Rivpki-WO7W7Iw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa fa-youtube"></i
+                  ></a>
                 </li>
               </ul>
             </div>

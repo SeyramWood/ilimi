@@ -28,16 +28,16 @@
               All<span class="cbp-filter-counter"></span>
             </button>
             <button data-filter=".identity" class="cbp-filter-item">
-              Identity<span class="cbp-filter-counter"></span>
+              Ilimi<span class="cbp-filter-counter"></span>
             </button>
             <button data-filter=".web-design" class="cbp-filter-item">
-              Web Design<span class="cbp-filter-counter"></span>
+              Academics<span class="cbp-filter-counter"></span>
             </button>
             <button data-filter=".graphic" class="cbp-filter-item">
-              Graphic<span class="cbp-filter-counter"></span>
+              Non Academics<span class="cbp-filter-counter"></span>
             </button>
             <button data-filter=".logo" class="cbp-filter-item">
-              Logo<span class="cbp-filter-counter"></span>
+              Alumni<span class="cbp-filter-counter"></span>
             </button>
           </div>
 

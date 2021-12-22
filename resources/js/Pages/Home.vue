@@ -4,13 +4,13 @@
 
     <Banner />
 
-    <Admissions />
-
     <About />
 
-    <IlimiExperience />
+    <Admissions />
 
     <Academics />
+
+    <IlimiExperience />
 
     <Blog />
 

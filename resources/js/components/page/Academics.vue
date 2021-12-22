@@ -9,7 +9,7 @@
               data-wow-offset="80"
               data-wow-duration="2s"
             >
-              Academics
+              Scholarship
             </h1>
 
             <div
@@ -17,10 +17,28 @@
               data-wow-offset="80"
               data-wow-duration="2s"
             >
-              Design is a <strong>plan for arranging</strong> elements in such a
+              <!-- Design is a <strong>plan for arranging</strong> elements in such a
               way as <a href="">best</a> to accomplish a particular
               <strong>purpose.</strong>
-              - Charles Eames
+              - Charles Eames -->
+              The
+              <strong class="colour"
+                >Mastercard Foundation Scholars Program</strong
+              >is a global initiative to
+              <strong class="colour">educate</strong> and train the next
+              generation of <strong class="colour">leaders</strong> who will
+              contribute to the social and economic progress of the African
+              continent. We are pleased to announce that starting
+              <strong class="colour">January 2022</strong>, African Development
+              Universalis (A.D.U.) will join the Mastercard Foundation Scholars
+              Program as a partner university; the very first of its kind in
+              Francophone West Africa.
+              <a
+                href="http://mastercardfdn.org/all/scholars"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Learn more</a
+              >
             </div>
           </div>
         </div>
@@ -32,35 +50,31 @@
               <div id="pricing" class="container text-center">
                 <!--1-->
                 <div
-                  class="col-sm-6 col-lg-3 wow bounceIn"
+                  class="col-sm-6 col-lg-4 wow bounceIn"
                   data-wow-offset="80"
                   data-wow-duration="2s"
                 >
                   <div class="price-plan">
                     <div class="price-plan-top">
                       <a class="price-plan-link">
-                        <h2>Starter</h2>
+                        <!-- <h2>The exchange</h2> -->
                         <div class="price">
-                          <span class="dollar">$</span
-                          ><span class="amt">6</span>
-                          <span class="mo">/mo</span>
-                          <p class="price-breakdown">
+                          <!-- <span class="dollar">$</span> -->
+                          <span class="amt annual">Benefits</span>
+                          <!-- <span class="mo">/mo</span> -->
+                          <!-- <p class="price-breakdown">
                             Pay yearly or $10 per month
-                          </p>
+                          </p> -->
                         </div>
                       </a>
                     </div>
                     <div class="info-wrapper">
                       <ul class="list-group">
-                        <li><strong>1GB</strong> Disk Space</li>
-                        <li><strong>10GB</strong> Monthly Bandwidth</li>
-                        <li><strong>2</strong> Email Accounts</li>
-                        <li>
-                          <i class="fa fa-star-o colour"></i>
-                          <strong>Unlimited</strong> Subdomains
-                        </li>
+                        <li>Tuition fees, Accommodation</li>
+                        <li>School materials, Transport</li>
+                        <li>Monthly allowances</li>
                       </ul>
-                      <a href="#" class="btn">SIGN UP</a>
+                      <a href="#" class="btn">APPLY</a>
                     </div>
                   </div>
                 </div>
@@ -68,32 +82,31 @@
 
                 <!--2-->
                 <div
-                  class="col-sm-6 col-lg-3 wow bounceIn"
+                  class="col-sm-6 col-lg-4 wow bounceIn"
                   data-wow-offset="80"
                   data-wow-duration="2s"
                 >
                   <div class="price-plan">
                     <div class="price-plan-top">
                       <a class="price-plan-link">
-                        <h2>Business</h2>
+                        <!-- <h2>Criteria</h2> -->
                         <div class="price">
-                          <span class="dollar">$</span
-                          ><span class="amt annual">18</span>
-                          <span class="mo">/mo</span>
-                          <p class="price-breakdown">
+                          <!-- <span class="dollar">$</span> -->
+                          <span class="amt annual">Criteria</span>
+                          <!-- <span class="mo">/mo</span> -->
+                          <!-- <p class="price-breakdown">
                             Pay yearly or $10 per month
-                          </p>
+                          </p> -->
                         </div>
                       </a>
                     </div>
                     <div class="info-wrapper">
                       <ul class="list-group">
-                        <li><strong>10GB</strong> Disk Space</li>
-                        <li><strong>100GB</strong> Monthly Bandwidth</li>
-                        <li><strong>20</strong> Email Accounts</li>
-                        <li><strong>Unlimited</strong> Subdomains</li>
+                        <li>BAC or equivalent degree</li>
+                        <li>Excellent academic background</li>
+                        <li>Clear need for financial support</li>
                       </ul>
-                      <a href="#" class="btn">SIGN UP</a>
+                      <a href="#" class="btn">APPLY</a>
                     </div>
                   </div>
                 </div>
@@ -101,42 +114,39 @@
 
                 <!--3-->
                 <div
-                  class="col-sm-6 col-lg-3 wow bounceIn"
+                  class="col-sm-6 col-lg-4 wow bounceIn"
                   data-wow-offset="80"
                   data-wow-duration="2s"
                 >
                   <div class="price-plan">
                     <div class="price-plan-top">
                       <a class="price-plan-link">
-                        <h2>Professional</h2>
+                        <!-- <h2>Programs</h2> -->
                         <div class="price">
-                          <span class="dollar">$</span
-                          ><span class="amt annual">27</span>
-                          <span class="mo">/mo</span>
-                          <p class="price-breakdown">
+                          <!-- <span class="dollar">$</span
+                          > -->
+                          <span class="amt annual">Programs</span>
+                          <!-- <span class="mo">/mo</span> -->
+                          <!-- <p class="price-breakdown">
                             Pay yearly or $10 per month
-                          </p>
+                          </p> -->
                         </div>
                       </a>
                     </div>
                     <div class="info-wrapper">
                       <ul class="list-group">
-                        <li>
-                          <strong>40GB</strong> Disk Space
-                          <span class="label label-danger">New</span>
-                        </li>
-                        <li><strong>100GB</strong> Monthly Bandwidth</li>
-                        <li><strong>40</strong> Email Accounts</li>
-                        <li><strong>Unlimited</strong> Subdomains</li>
+                        <li>Private law</li>
+                        <li>Business Administration</li>
+                        <li>Artificial Intelligence (Computer Science)</li>
                       </ul>
-                      <a href="#" class="btn">SIGN UP</a>
+                      <a href="#" class="btn">APPLY</a>
                     </div>
                   </div>
                 </div>
                 <!--//end-->
 
                 <!--4-->
-                <div
+                <!-- <div
                   class="col-sm-6 col-lg-3 wow bounceIn"
                   data-wow-offset="80"
                   data-wow-duration="2s"
@@ -165,10 +175,10 @@
                         </li>
                         <li><strong>Unlimited</strong> Subdomains</li>
                       </ul>
-                      <a href="#" class="btn">SIGN UP</a>
+                      <a href="#" class="btn">APPLY</a>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <!--//end-->
               </div>
 
@@ -195,12 +205,6 @@
                   </div>
                   <div class="item">
                     <img src="template/img/clients/logo6.png" alt="" />
-                  </div>
-                  <div class="item">
-                    <img src="template/img/clients/logo7.png" alt="" />
-                  </div>
-                  <div class="item">
-                    <img src="template/img/clients/logo8.png" alt="" />
                   </div>
                 </div>
                 <div class="pad45"></div>

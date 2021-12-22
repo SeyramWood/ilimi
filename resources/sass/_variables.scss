@@ -1,0 +1,43 @@
+// Body
+$body-bg: #f8fafc;
+$body-bg-1: #e8f1fafb;
+$body-bg-2: #e8f1fa;
+$dashbord-bg: #d4d4d4;
+
+// Typography
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-size-base: 1.2rem;
+$line-height-base: 1.7;
+$font-weight-base: 400;
+
+// Colors
+$primary: #99001c;
+$primary-dark: #6b0c1db0;
+$secondary: #262626;
+$text: #686767;
+$white: #fff;
+$line: #88868644;
+$info: #2196f3;
+
+$nav-drawer: #e8f1fafb;
+
+// Dashboard
+$main-content: 80%;
+$mini-side-nav-width: 4rem;
+$side-nav-width: 20%; //calc(20% - #{$mini-side-nav-width});
+$max-width: 100%;
+$row-gutter: 1rem;
+$column-gutter: 1rem;
+$column-gutter-1: 0.5rem;
+$top-bar-z-index: 1;
+$drawer-backdrop: 2;
+
+// Website
+$nav-height: 6rem;
+$container-padding: 10rem;
+$container-padding-sm: 5rem;
+$container-padding-xs: 2rem;
+$title: 1.4rem;
+$title-big: 1.6rem;
+$title-xbig: 2rem;
+$title-xxbig: 4rem;

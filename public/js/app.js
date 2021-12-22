@@ -2379,6 +2379,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "About"
 });
@@ -2396,6 +2420,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
 //
 //
 //
@@ -2862,6 +2890,59 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "About"
 });
@@ -2879,20 +2960,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -3069,6 +3136,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -27782,13 +27869,13 @@ var render = function () {
       _vm._v(" "),
       _c("Banner"),
       _vm._v(" "),
-      _c("Admissions"),
-      _vm._v(" "),
       _c("About"),
       _vm._v(" "),
-      _c("IlimiExperience"),
+      _c("Admissions"),
       _vm._v(" "),
       _c("Academics"),
+      _vm._v(" "),
+      _c("IlimiExperience"),
       _vm._v(" "),
       _c("Blog"),
       _vm._v(" "),
@@ -27830,7 +27917,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", [
-      _c("section", { attrs: { id: "team" } }, [
+      _c("section", { attrs: { id: "about" } }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
@@ -27850,18 +27937,28 @@ var staticRenderFns = [
                   attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
                 },
                 [
-                  _vm._v("\n            I In fact choose to use a "),
-                  _c("strong", [_vm._v("coffeemaker")]),
                   _vm._v(
-                    " to boil\n            vegetables. Why? Because if I\n            "
+                    "\n            The mission of A.D.U. is to prepare the most talented\n            "
                   ),
-                  _c("strong", [
-                    _c("span", { staticClass: "colour" }, [
-                      _vm._v("used something else"),
-                    ]),
+                  _c("span", { staticClass: "colour" }, [
+                    _c("strong", [_vm._v("young people")]),
+                  ]),
+                  _vm._v("\n            in "),
+                  _c("span", { staticClass: "colour" }, [
+                    _c("strong", [_vm._v("Niger")]),
                   ]),
                   _vm._v(
-                    '\n            that just makes coffee, my client would ask me "Can it boil\n            vegetables?"\n          '
+                    " and in\n            Francophone Africa to design and drive the\n            "
+                  ),
+                  _c("span", { staticClass: "colour" }, [
+                    _c("strong", [_vm._v("development")]),
+                  ]),
+                  _vm._v(" of their\n            nations as\n            "),
+                  _c("span", { staticClass: "colour" }, [
+                    _c("strong", [_vm._v("ethical")]),
+                  ]),
+                  _vm._v(
+                    " and effective\n            leaders in the public, private and not-for-profit sectors.\n            "
                   ),
                 ]
               ),
@@ -27876,7 +27973,7 @@ var staticRenderFns = [
                 },
                 [
                   _vm._v(
-                    "\n            We're going for a ride on the information super highway. Alrighty\n            Then Your entrance was good, his was better. Here she comes to\n            wreck the day. Good Morning, oh in case I don't see you, good\n            afternoon, good evening and goodnight. We're going for a ride on\n            the information super highway.\n          "
+                    "\n            African Development Universalis (A.D.U.) is a bilingual\n            institution (French and English) and the first not-for-profit\n            university in Niger to offer world-class education to students\n            from the Sahel region. We offer training within the liberal arts\n            framework for today’s most in-demand jobs, taught by committed\n            professors that aims to develop students' critical thinking,\n            problem-solving skills, and ability to serve their communities.\n            From interactive classes to internship and research, you will\n            transform as you pursue your passions! Our unique model – ILIMI;\n            which means “education, intellectual and knowledge” in Hausa,\n            focuses on developing ethical and impact driven young leaders.\n            A.D.U. draws inspiration from the world's leading institutions of\n            higher education such as Ashesi University in Ghana and Harvard\n            University in the United States.\n          "
                   ),
                 ]
               ),
@@ -27891,7 +27988,7 @@ var staticRenderFns = [
                 },
                 [
                   _vm._v(
-                    "\n            We're going for a ride on the information super highway. Alrighty\n            Then Your entrance was good, his was better. Here she comes to\n            wreck the day. Good Morning, oh in case I don't see you, good\n            afternoon, good evening and goodnight. We're going for a ride on\n            the information super highway.\n          "
+                    "\n            From the inception of A.D.U. to date, Ashesi University has played\n            an enormous role in the continuous growth, development, and\n            sustainability of our institution through different platforms, one\n            of which is the Ashesi Education Collaborative Initiative.\n            Director of the Initiative, Rose A. Dodd, while reflecting on the\n            mentorship partnership between both institutions, affirms that the\n            relationship has seen very critical foundational roles in A.D.U.’s\n            executive team filled. With the support of Ashesi University, the\n            Ministry of Higher Education, Research and Innovation in Niger,\n            and other partners in the Sahel, hybrid convening of seasoned\n            educators and key stakeholders in African higher-ed took place at\n            our A.D.U. campus where we engaged in discussions to reimagine the\n            future of higher education, giving the current context of the\n            COVID-I9 pandemic.\n          "
                   ),
                 ]
               ),
@@ -27987,11 +28084,11 @@ var staticRenderFns = [
                           staticClass: "cbp-singlePage cbp-l-grid-team-name",
                           attrs: { href: "ajax/team1.html" },
                         },
-                        [_vm._v("Jean Addison")]
+                        [_vm._v("Michaëlle Jean")]
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "cbp-l-grid-team-position" }, [
-                        _vm._v("Designer"),
+                        _vm._v("Chancellor"),
                       ]),
                     ]),
                     _vm._v(" "),
@@ -28044,11 +28141,13 @@ var staticRenderFns = [
                           staticClass: "cbp-singlePage cbp-l-grid-team-name",
                           attrs: { href: "ajax/team2.html" },
                         },
-                        [_vm._v("Cody Moore")]
+                        [_vm._v("Kader Kaneye")]
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "cbp-l-grid-team-position" }, [
-                        _vm._v("Film Maker"),
+                        _vm._v(
+                          "\n                  Founder & President\n                "
+                        ),
                       ]),
                     ]),
                     _vm._v(" "),
@@ -28101,11 +28200,11 @@ var staticRenderFns = [
                           staticClass: "cbp-singlePage cbp-l-grid-team-name",
                           attrs: { href: "ajax/team3.html" },
                         },
-                        [_vm._v("Ava Gardner")]
+                        [_vm._v("Fati N'zi-Hassane")]
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "cbp-l-grid-team-position" }, [
-                        _vm._v("Illustrator"),
+                        _vm._v("Board Member"),
                       ]),
                     ]),
                     _vm._v(" "),
@@ -28175,7 +28274,7 @@ var staticRenderFns = [
         ]),
       ]),
       _vm._v(" "),
-      _c("section", { attrs: { id: "milestones" } }, [
+      _c("section", { attrs: { id: "charts" } }, [
         _c("div", { staticClass: "well" }, [
           _c("div", { staticClass: "dark_overlay" }, [
             _c("div", { staticClass: "container" }, [
@@ -28185,71 +28284,64 @@ var staticRenderFns = [
                   staticClass: "wow fadeIn",
                   attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
                 },
-                [_vm._v("\n            milestones\n          ")]
+                [_vm._v("\n            Our Impact\n          ")]
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "pad45" }),
+              _c(
+                "div",
+                {
+                  staticClass: "col-sm-4 col-lg-4 text-center pie wow bounceIn",
+                  attrs: { "data-wow-delay": "1s" },
+                },
+                [
+                  _c("span", { staticClass: "chart1" }, [
+                    _c("span", { staticClass: "percent" }, [_vm._v("70%")]),
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "center" }, [
+                    _vm._v("Women & Gender Equality"),
+                  ]),
+                ]
+              ),
               _vm._v(" "),
-              _c("div", { staticClass: "col-sm-4 col-lg-4 text-center" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "counter wow bounceIn",
-                    attrs: {
-                      "data-wow-offset": "80",
-                      "data-wow-duration": "2s",
-                    },
-                  },
-                  [
-                    _c("div", { attrs: { id: "counter-1" } }),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "light" }, [
-                      _vm._v("Pages In War & Peace"),
-                    ]),
-                  ]
-                ),
-              ]),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "col-sm-4 col-lg-4 text-center bouncein pie wow bounceIn",
+                  attrs: { "data-wow-delay": "1.5s" },
+                },
+                [
+                  _c("span", { staticClass: "chart2" }, [
+                    _c("span", { staticClass: "percent" }, [_vm._v("75%")]),
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "center" }, [
+                    _vm._v("Scholarships & Financial Aid"),
+                  ]),
+                ]
+              ),
               _vm._v(" "),
-              _c("div", { staticClass: "col-sm-4 col-lg-4 text-center" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "counter wow bounceIn",
-                    attrs: {
-                      "data-wow-offset": "80",
-                      "data-wow-duration": "2s",
-                    },
-                  },
-                  [
-                    _c("div", { attrs: { id: "counter-2" } }),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "light" }, [
-                      _vm._v("Days Around The World"),
-                    ]),
-                  ]
-                ),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-sm-4 col-lg-4 text-center" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "counter wow bounceIn",
-                    attrs: {
-                      "data-wow-offset": "80",
-                      "data-wow-duration": "2s",
-                    },
-                  },
-                  [
-                    _c("div", { attrs: { id: "counter-3" } }),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "light" }, [
-                      _vm._v("A Space Odyssey"),
-                    ]),
-                  ]
-                ),
-              ]),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "col-sm-4 col-lg-4 text-center bouncein pie wow bounceIn",
+                  attrs: { "data-wow-delay": "1.8s" },
+                },
+                [
+                  _c("span", { staticClass: "chart3" }, [
+                    _c("span", { staticClass: "percent" }, [_vm._v("90%")]),
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "center" }, [
+                    _vm._v("Internships & Placement"),
+                  ]),
+                ]
+              ),
             ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "pad30" }),
           ]),
         ]),
       ]),
@@ -28296,7 +28388,7 @@ var staticRenderFns = [
                   staticClass: "wow fadeInRightBig",
                   attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
                 },
-                [_vm._v("\n              Academics\n            ")]
+                [_vm._v("\n              Scholarship\n            ")]
               ),
               _vm._v(" "),
               _c(
@@ -28306,13 +28398,34 @@ var staticRenderFns = [
                   attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
                 },
                 [
-                  _vm._v("\n              Design is a "),
-                  _c("strong", [_vm._v("plan for arranging")]),
-                  _vm._v(" elements in such a\n              way as "),
-                  _c("a", { attrs: { href: "" } }, [_vm._v("best")]),
-                  _vm._v(" to accomplish a particular\n              "),
-                  _c("strong", [_vm._v("purpose.")]),
-                  _vm._v("\n              - Charles Eames\n            "),
+                  _vm._v("\n              The\n              "),
+                  _c("strong", { staticClass: "colour" }, [
+                    _vm._v("Mastercard Foundation Scholars Program"),
+                  ]),
+                  _vm._v("is a global initiative to\n              "),
+                  _c("strong", { staticClass: "colour" }, [_vm._v("educate")]),
+                  _vm._v(" and train the next\n              generation of "),
+                  _c("strong", { staticClass: "colour" }, [_vm._v("leaders")]),
+                  _vm._v(
+                    " who will\n              contribute to the social and economic progress of the African\n              continent. We are pleased to announce that starting\n              "
+                  ),
+                  _c("strong", { staticClass: "colour" }, [
+                    _vm._v("January 2022"),
+                  ]),
+                  _vm._v(
+                    ", African Development\n              Universalis (A.D.U.) will join the Mastercard Foundation Scholars\n              Program as a partner university; the very first of its kind in\n              Francophone West Africa.\n              "
+                  ),
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://mastercardfdn.org/all/scholars",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                    },
+                    [_vm._v("Learn more")]
+                  ),
                 ]
               ),
             ]),
@@ -28333,7 +28446,7 @@ var staticRenderFns = [
                     _c(
                       "div",
                       {
-                        staticClass: "col-sm-6 col-lg-3 wow bounceIn",
+                        staticClass: "col-sm-6 col-lg-4 wow bounceIn",
                         attrs: {
                           "data-wow-offset": "80",
                           "data-wow-duration": "2s",
@@ -28343,24 +28456,9 @@ var staticRenderFns = [
                         _c("div", { staticClass: "price-plan" }, [
                           _c("div", { staticClass: "price-plan-top" }, [
                             _c("a", { staticClass: "price-plan-link" }, [
-                              _c("h2", [_vm._v("Starter")]),
-                              _vm._v(" "),
                               _c("div", { staticClass: "price" }, [
-                                _c("span", { staticClass: "dollar" }, [
-                                  _vm._v("$"),
-                                ]),
-                                _c("span", { staticClass: "amt" }, [
-                                  _vm._v("6"),
-                                ]),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "mo" }, [
-                                  _vm._v("/mo"),
-                                ]),
-                                _vm._v(" "),
-                                _c("p", { staticClass: "price-breakdown" }, [
-                                  _vm._v(
-                                    "\n                            Pay yearly or $10 per month\n                          "
-                                  ),
+                                _c("span", { staticClass: "amt annual" }, [
+                                  _vm._v("Benefits"),
                                 ]),
                               ]),
                             ]),
@@ -28368,33 +28466,17 @@ var staticRenderFns = [
                           _vm._v(" "),
                           _c("div", { staticClass: "info-wrapper" }, [
                             _c("ul", { staticClass: "list-group" }, [
-                              _c("li", [
-                                _c("strong", [_vm._v("1GB")]),
-                                _vm._v(" Disk Space"),
-                              ]),
+                              _c("li", [_vm._v("Tuition fees, Accommodation")]),
                               _vm._v(" "),
-                              _c("li", [
-                                _c("strong", [_vm._v("10GB")]),
-                                _vm._v(" Monthly Bandwidth"),
-                              ]),
+                              _c("li", [_vm._v("School materials, Transport")]),
                               _vm._v(" "),
-                              _c("li", [
-                                _c("strong", [_vm._v("2")]),
-                                _vm._v(" Email Accounts"),
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("i", { staticClass: "fa fa-star-o colour" }),
-                                _vm._v(" "),
-                                _c("strong", [_vm._v("Unlimited")]),
-                                _vm._v(" Subdomains\n                        "),
-                              ]),
+                              _c("li", [_vm._v("Monthly allowances")]),
                             ]),
                             _vm._v(" "),
                             _c(
                               "a",
                               { staticClass: "btn", attrs: { href: "#" } },
-                              [_vm._v("SIGN UP")]
+                              [_vm._v("APPLY")]
                             ),
                           ]),
                         ]),
@@ -28404,7 +28486,7 @@ var staticRenderFns = [
                     _c(
                       "div",
                       {
-                        staticClass: "col-sm-6 col-lg-3 wow bounceIn",
+                        staticClass: "col-sm-6 col-lg-4 wow bounceIn",
                         attrs: {
                           "data-wow-offset": "80",
                           "data-wow-duration": "2s",
@@ -28414,24 +28496,9 @@ var staticRenderFns = [
                         _c("div", { staticClass: "price-plan" }, [
                           _c("div", { staticClass: "price-plan-top" }, [
                             _c("a", { staticClass: "price-plan-link" }, [
-                              _c("h2", [_vm._v("Business")]),
-                              _vm._v(" "),
                               _c("div", { staticClass: "price" }, [
-                                _c("span", { staticClass: "dollar" }, [
-                                  _vm._v("$"),
-                                ]),
                                 _c("span", { staticClass: "amt annual" }, [
-                                  _vm._v("18"),
-                                ]),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "mo" }, [
-                                  _vm._v("/mo"),
-                                ]),
-                                _vm._v(" "),
-                                _c("p", { staticClass: "price-breakdown" }, [
-                                  _vm._v(
-                                    "\n                            Pay yearly or $10 per month\n                          "
-                                  ),
+                                  _vm._v("Criteria"),
                                 ]),
                               ]),
                             ]),
@@ -28439,31 +28506,21 @@ var staticRenderFns = [
                           _vm._v(" "),
                           _c("div", { staticClass: "info-wrapper" }, [
                             _c("ul", { staticClass: "list-group" }, [
+                              _c("li", [_vm._v("BAC or equivalent degree")]),
+                              _vm._v(" "),
                               _c("li", [
-                                _c("strong", [_vm._v("10GB")]),
-                                _vm._v(" Disk Space"),
+                                _vm._v("Excellent academic background"),
                               ]),
                               _vm._v(" "),
                               _c("li", [
-                                _c("strong", [_vm._v("100GB")]),
-                                _vm._v(" Monthly Bandwidth"),
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("strong", [_vm._v("20")]),
-                                _vm._v(" Email Accounts"),
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("strong", [_vm._v("Unlimited")]),
-                                _vm._v(" Subdomains"),
+                                _vm._v("Clear need for financial support"),
                               ]),
                             ]),
                             _vm._v(" "),
                             _c(
                               "a",
                               { staticClass: "btn", attrs: { href: "#" } },
-                              [_vm._v("SIGN UP")]
+                              [_vm._v("APPLY")]
                             ),
                           ]),
                         ]),
@@ -28473,7 +28530,7 @@ var staticRenderFns = [
                     _c(
                       "div",
                       {
-                        staticClass: "col-sm-6 col-lg-3 wow bounceIn",
+                        staticClass: "col-sm-6 col-lg-4 wow bounceIn",
                         attrs: {
                           "data-wow-offset": "80",
                           "data-wow-duration": "2s",
@@ -28483,24 +28540,9 @@ var staticRenderFns = [
                         _c("div", { staticClass: "price-plan" }, [
                           _c("div", { staticClass: "price-plan-top" }, [
                             _c("a", { staticClass: "price-plan-link" }, [
-                              _c("h2", [_vm._v("Professional")]),
-                              _vm._v(" "),
                               _c("div", { staticClass: "price" }, [
-                                _c("span", { staticClass: "dollar" }, [
-                                  _vm._v("$"),
-                                ]),
                                 _c("span", { staticClass: "amt annual" }, [
-                                  _vm._v("27"),
-                                ]),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "mo" }, [
-                                  _vm._v("/mo"),
-                                ]),
-                                _vm._v(" "),
-                                _c("p", { staticClass: "price-breakdown" }, [
-                                  _vm._v(
-                                    "\n                            Pay yearly or $10 per month\n                          "
-                                  ),
+                                  _vm._v("Programs"),
                                 ]),
                               ]),
                             ]),
@@ -28508,111 +28550,21 @@ var staticRenderFns = [
                           _vm._v(" "),
                           _c("div", { staticClass: "info-wrapper" }, [
                             _c("ul", { staticClass: "list-group" }, [
+                              _c("li", [_vm._v("Private law")]),
+                              _vm._v(" "),
+                              _c("li", [_vm._v("Business Administration")]),
+                              _vm._v(" "),
                               _c("li", [
-                                _c("strong", [_vm._v("40GB")]),
                                 _vm._v(
-                                  " Disk Space\n                          "
+                                  "Artificial Intelligence (Computer Science)"
                                 ),
-                                _c(
-                                  "span",
-                                  { staticClass: "label label-danger" },
-                                  [_vm._v("New")]
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("strong", [_vm._v("100GB")]),
-                                _vm._v(" Monthly Bandwidth"),
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("strong", [_vm._v("40")]),
-                                _vm._v(" Email Accounts"),
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("strong", [_vm._v("Unlimited")]),
-                                _vm._v(" Subdomains"),
                               ]),
                             ]),
                             _vm._v(" "),
                             _c(
                               "a",
                               { staticClass: "btn", attrs: { href: "#" } },
-                              [_vm._v("SIGN UP")]
-                            ),
-                          ]),
-                        ]),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "col-sm-6 col-lg-3 wow bounceIn",
-                        attrs: {
-                          "data-wow-offset": "80",
-                          "data-wow-duration": "2s",
-                        },
-                      },
-                      [
-                        _c("div", { staticClass: "price-plan" }, [
-                          _c("div", { staticClass: "price-plan-top" }, [
-                            _c("a", { staticClass: "price-plan-link" }, [
-                              _c("h2", [_vm._v("Premium")]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "price" }, [
-                                _c("span", { staticClass: "dollar" }, [
-                                  _vm._v("$"),
-                                ]),
-                                _c("span", { staticClass: "amt annual" }, [
-                                  _vm._v("50"),
-                                ]),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "mo" }, [
-                                  _vm._v("/mo"),
-                                ]),
-                                _vm._v(" "),
-                                _c("p", { staticClass: "price-breakdown" }, [
-                                  _vm._v(
-                                    "\n                            Pay yearly or $10 per month\n                          "
-                                  ),
-                                ]),
-                              ]),
-                            ]),
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "info-wrapper" }, [
-                            _c("ul", { staticClass: "list-group" }, [
-                              _c("li", [
-                                _c("strong", [_vm._v("80GB")]),
-                                _vm._v(" Disk Space"),
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("strong", [_vm._v("1000GB")]),
-                                _vm._v(" Monthly Bandwidth"),
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("i", { staticClass: "fa fa-star-o" }),
-                                _vm._v(" "),
-                                _c("strong", [_vm._v("Unlimited")]),
-                                _vm._v(
-                                  " Email Accounts\n                        "
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("strong", [_vm._v("Unlimited")]),
-                                _vm._v(" Subdomains"),
-                              ]),
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "a",
-                              { staticClass: "btn", attrs: { href: "#" } },
-                              [_vm._v("SIGN UP")]
+                              [_vm._v("APPLY")]
                             ),
                           ]),
                         ]),
@@ -28678,24 +28630,6 @@ var staticRenderFns = [
                         _c("img", {
                           attrs: {
                             src: "template/img/clients/logo6.png",
-                            alt: "",
-                          },
-                        }),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "item" }, [
-                        _c("img", {
-                          attrs: {
-                            src: "template/img/clients/logo7.png",
-                            alt: "",
-                          },
-                        }),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "item" }, [
-                        _c("img", {
-                          attrs: {
-                            src: "template/img/clients/logo8.png",
                             alt: "",
                           },
                         }),
@@ -28777,7 +28711,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", [
-      _c("section", { attrs: { id: "about" } }, [
+      _c("section", { attrs: { id: "team" } }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
@@ -28798,25 +28732,46 @@ var staticRenderFns = [
                 },
                 [
                   _vm._v(
-                    "\n            Success is no accident. It is hard work,\n            "
-                  ),
-                  _c("strong", [_vm._v("perseverance")]),
-                  _vm._v(
-                    ", learning, sacrifice and most of\n            all, "
+                    "\n            Our 3-year bachelor programs are both\n            "
                   ),
                   _c("span", { staticClass: "colour" }, [
-                    _c("strong", [_vm._v("love")]),
+                    _c("strong", [_vm._v("nationally")]),
                   ]),
-                  _vm._v(" of what you\n            are doing or "),
-                  _c("span", { staticClass: "colour" }, [_vm._v("learning")]),
-                  _vm._v(" to do.\n          "),
+                  _vm._v(" and\n            "),
+                  _c("span", { staticClass: "colour" }, [
+                    _c("strong", [_vm._v("internationally")]),
+                  ]),
+                  _vm._v(
+                    "\n            recognized. Our degree programs are all\n            "
+                  ),
+                  _c("span", { staticClass: "colour" }, [
+                    _c("strong", [_vm._v("accredited")]),
+                  ]),
+                  _vm._v(
+                    " by\n            Ministry of Higher Education, Research and Innovation, Niger.\n            "
+                  ),
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                    },
+                    [
+                      _c("span", { staticClass: "colour" }, [
+                        _c("strong", [_vm._v("Apply to Study with us.")]),
+                      ]),
+                    ]
+                  ),
                 ]
               ),
               _vm._v(" "),
               _c(
                 "div",
                 {
-                  staticClass: "col-sm-4 col-lg-4 text-center wow fadeIn",
+                  staticClass: "col-sm-3 col-lg-3 text-center wow fadeIn",
                   attrs: {
                     "data-wow-offset": "80",
                     "data-wow-duration": "2s",
@@ -28828,11 +28783,11 @@ var staticRenderFns = [
                     _c("i", { staticClass: "fa fa-laptop" }),
                   ]),
                   _vm._v(" "),
-                  _c("h6", [_vm._v("Web Design")]),
+                  _c("h6", [_vm._v("Requirements")]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n              There are many variations of passages of Lorem Ipsum available,\n              but the majority have suffered alteration in some form, by\n              injected humour. Few can name an umpteen ferryboat.\n            "
+                      "\n              You must have a Baccalaureate certificate; High School Final\n              Exam Grades, Birth Certificate, Certificate of Citizenship,\n              Language test scores and Letters of Recommendation.\n            "
                     ),
                   ]),
                 ]
@@ -28841,7 +28796,7 @@ var staticRenderFns = [
               _c(
                 "div",
                 {
-                  staticClass: "col-sm-4 col-lg-4 text-center wow fadeIn",
+                  staticClass: "col-sm-3 col-lg-3 text-center wow fadeIn",
                   attrs: {
                     "data-wow-offset": "80",
                     "data-wow-duration": "2s",
@@ -28853,11 +28808,11 @@ var staticRenderFns = [
                     _c("i", { staticClass: "fa fa-magic" }),
                   ]),
                   _vm._v(" "),
-                  _c("h6", [_vm._v("Graphic Design")]),
+                  _c("h6", [_vm._v("Tuition & Scholarship")]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n              There are many variations of passages of Lorem Ipsum available,\n              but the majority have suffered alteration in some form, by\n              injected humour. Few can name an umpteen ferryboat.\n            "
+                      "\n              A.D.U. offers Scholarship for talented student who are\n              experiencing economic and social hardship so that they will be\n              able to achieve their goals and impact their community.\n            "
                     ),
                   ]),
                 ]
@@ -28866,7 +28821,7 @@ var staticRenderFns = [
               _c(
                 "div",
                 {
-                  staticClass: "col-sm-4 col-lg-4 text-center wow fadeIn",
+                  staticClass: "col-sm-3 col-lg-3 text-center wow fadeIn",
                   attrs: {
                     "data-wow-offset": "80",
                     "data-wow-duration": "2s",
@@ -28878,11 +28833,11 @@ var staticRenderFns = [
                     _c("i", { staticClass: "fa fa-tasks" }),
                   ]),
                   _vm._v(" "),
-                  _c("h6", [_vm._v("SEO & Hosting")]),
+                  _c("h6", [_vm._v("Apply Online")]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n              There are many variations of passages of Lorem Ipsum available,\n              but the majority have suffered alteration in some form, by\n              injected humour. Few can name an umpteen ferryboat.\n            "
+                      "\n              To apply, visit our online application portal to create an\n              account, fill out the application form, upload all required\n              documents, pay the registration fee, and submit your\n              application.\n            "
                     ),
                   ]),
                 ]
@@ -28891,7 +28846,7 @@ var staticRenderFns = [
               _c(
                 "div",
                 {
-                  staticClass: "col-sm-4 col-lg-4 text-center wow fadeIn",
+                  staticClass: "col-sm-3 col-lg-3 text-center wow fadeIn",
                   attrs: {
                     "data-wow-offset": "80",
                     "data-wow-duration": "2s",
@@ -28903,62 +28858,16 @@ var staticRenderFns = [
                     _c("i", { staticClass: "fa fa-users" }),
                   ]),
                   _vm._v(" "),
-                  _c("h6", [_vm._v("Web Design")]),
+                  _c("h6", [_vm._v("Contact Admissions")]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n              There are many variations of passages of Lorem Ipsum available,\n              but the majority have suffered alteration in some form, by\n              injected humour. Few can name an umpteen ferryboat that isn't an\n              ansate plain. A bait is a distance's helium.\n            "
+                      "\n              For additional questions and/or inquiry regarding the status of\n              your application, you can reach us\n              through:admissions@ilimi.edu.ne,"
                     ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-sm-4 col-lg-4 text-center wow fadeIn",
-                  attrs: {
-                    "data-wow-offset": "80",
-                    "data-wow-duration": "2s",
-                    "data-wow-delay": "1.5s",
-                  },
-                },
-                [
-                  _c("div", { staticClass: "service" }, [
-                    _c("i", { staticClass: "fa fa-lightbulb-o" }),
-                  ]),
-                  _vm._v(" "),
-                  _c("h6", [_vm._v("Great Ideas")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n              There are many variations of passages of Lorem Ipsum available,\n              but the majority have suffered alteration in some form, by\n              injected humour. Few can name an umpteen ferryboat that isn't an\n              ansate plain. A bait is a distance's helium.\n            "
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-sm-4 col-lg-4 text-center wow fadeIn",
-                  attrs: {
-                    "data-wow-offset": "80",
-                    "data-wow-duration": "2s",
-                    "data-wow-delay": "2s",
-                  },
-                },
-                [
-                  _c("div", { staticClass: "service" }, [
-                    _c("i", { staticClass: "fa fa-camera-retro" }),
-                  ]),
-                  _vm._v(" "),
-                  _c("h6", [_vm._v("Photography")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n              There are many variations of passages of Lorem Ipsum available,\n              but the majority have suffered alteration in some form, by\n              injected humour. Few can name an umpteen ferryboat that isn't an\n              ansate plain. A bait is a distance's helium.\n            "
-                    ),
+                    _c("br"),
+                    _vm._v("+227 923 968 68\n              (WhatsApp)"),
+                    _c("br"),
+                    _vm._v("+227 9339 68 68 (Mobile)\n            "),
                   ]),
                 ]
               ),
@@ -28975,10 +28884,11 @@ var staticRenderFns = [
                 "h1",
                 {
                   staticClass: "like wow fadeInRightBig",
+                  staticStyle: { "text-transform": "capitalize" },
                   attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
                 },
                 [
-                  _vm._v("\n            We like"),
+                  _vm._v("\n            Why A.D.U?"),
                   _c("br"),
                   _vm._v(" "),
                   _c("span", { staticClass: "ticker" }),
@@ -28989,7 +28899,7 @@ var staticRenderFns = [
         ]),
       ]),
       _vm._v(" "),
-      _c("section", { attrs: { id: "charts" } }, [
+      _c("section", { attrs: { id: "milestones" } }, [
         _c("div", { staticClass: "well" }, [
           _c("div", { staticClass: "dark_overlay" }, [
             _c("div", { staticClass: "container" }, [
@@ -28999,58 +28909,71 @@ var staticRenderFns = [
                   staticClass: "wow fadeIn",
                   attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
                 },
-                [_vm._v("\n            Our Skills\n          ")]
+                [_vm._v("\n            Statistics\n          ")]
               ),
               _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-sm-4 col-lg-4 text-center pie wow bounceIn",
-                  attrs: { "data-wow-delay": "1s" },
-                },
-                [
-                  _c("span", { staticClass: "chart1" }, [
-                    _c("span", { staticClass: "percent" }, [_vm._v("75%")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "center" }, [_vm._v("Skill")]),
-                ]
-              ),
+              _c("div", { staticClass: "pad45" }),
               _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-sm-4 col-lg-4 text-center bouncein pie wow bounceIn",
-                  attrs: { "data-wow-delay": "1.5s" },
-                },
-                [
-                  _c("span", { staticClass: "chart2" }, [
-                    _c("span", { staticClass: "percent" }, [_vm._v("80%")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "center" }, [_vm._v("Skill")]),
-                ]
-              ),
+              _c("div", { staticClass: "col-sm-4 col-lg-4 text-center" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "counter wow bounceIn",
+                    attrs: {
+                      "data-wow-offset": "80",
+                      "data-wow-duration": "2s",
+                    },
+                  },
+                  [
+                    _c("div", { attrs: { id: "counter-1" } }),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "light" }, [
+                      _vm._v("Enrolled Students"),
+                    ]),
+                  ]
+                ),
+              ]),
               _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-sm-4 col-lg-4 text-center bouncein pie wow bounceIn",
-                  attrs: { "data-wow-delay": "1.8s" },
-                },
-                [
-                  _c("span", { staticClass: "chart3" }, [
-                    _c("span", { staticClass: "percent" }, [_vm._v("95%")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "center" }, [_vm._v("Skill")]),
-                ]
-              ),
+              _c("div", { staticClass: "col-sm-4 col-lg-4 text-center" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "counter wow bounceIn",
+                    attrs: {
+                      "data-wow-offset": "80",
+                      "data-wow-duration": "2s",
+                    },
+                  },
+                  [
+                    _c("div", { attrs: { id: "counter-2" } }),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "light" }, [
+                      _vm._v("Countries Represented"),
+                    ]),
+                  ]
+                ),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm-4 col-lg-4 text-center" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "counter wow bounceIn",
+                    attrs: {
+                      "data-wow-offset": "80",
+                      "data-wow-duration": "2s",
+                    },
+                  },
+                  [
+                    _c("div", { attrs: { id: "counter-3" } }),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "light" }, [
+                      _vm._v("Programs of Study"),
+                    ]),
+                  ]
+                ),
+              ]),
             ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "pad30" }),
           ]),
         ]),
       ]),
@@ -29086,69 +29009,55 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", [
-      _c(
-        "div",
-        {
-          staticClass: "wallpapered top-video",
-          attrs: {
-            "data-wallpaper-options":
-              '{"source":{\n\t\t"webm":"template/video/NycTrafficH264.webm",\n\t\t"mp4":"template/video/NycTrafficH264.mp4",\n\t\t"ogg":"template/video/NycTrafficH264.ogv",\n\t\t"poster":"template/video/ny.jpg"}}',
-          },
-        },
-        [
-          _c("div", { staticClass: "video_overlay" }, [
-            _c("div", { attrs: { id: "content" } }, [
-              _c("div", {
-                staticClass: "heart wow bounceInDown",
-                attrs: { "data-wow-duration": "3s", "data-wow-delay": "7s" },
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "byline wow slideInLeft pad30",
-                  attrs: { "data-wow-delay": "7s" },
-                },
-                [_vm._v("\n            creative inspiration\n          ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "h1",
-                {
-                  staticClass: "wow bounceInDown",
-                  attrs: { "data-wow-duration": "3s", "data-wow-delay": "4s" },
-                },
-                [_vm._v("\n            WE'RE DESIGNERS!\n          ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "name wow bounceInDown",
-                  attrs: { "data-wow-duration": "3s", "data-wow-delay": "2s" },
-                },
-                [_vm._v("\n            FLAIR DESIGN STUDIO\n          ")]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "text-center" }, [
-                _c("a", { staticClass: "scroll", attrs: { href: "#about" } }, [
-                  _c("i", {
-                    staticClass:
-                      "fa fa-caret-down fa-inverse fa-3x ilink wow rotateIn",
-                    attrs: {
-                      "data-wow-duration": "1s",
-                      "data-wow-delay": "8s",
-                    },
-                  }),
-                ]),
+    return _c("section", { staticClass: "banner" }, [
+      _c("div", { staticClass: "banner__top" }, [
+        _c("div", { staticClass: "banner_overlay" }, [
+          _c("div", { attrs: { id: "content" } }, [
+            _c(
+              "div",
+              {
+                staticClass: "byline wow slideInLeft pad30",
+                attrs: { "data-wow-delay": "7s" },
+              },
+              [_vm._v("\n          African Development Universalis\n        ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "h1",
+              {
+                staticClass: "wow bounceInDown",
+                attrs: { "data-wow-duration": "3s", "data-wow-delay": "4s" },
+              },
+              [_vm._v("\n          YOUNG LEADERS!\n        ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "name wow bounceInDown",
+                attrs: { "data-wow-duration": "3s", "data-wow-delay": "2s" },
+              },
+              [
+                _vm._v(
+                  "\n          LEADERSHIP, EXCELLENCE & INNOVATION\n        "
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "text-center" }, [
+              _c("a", { staticClass: "scroll", attrs: { href: "#about" } }, [
+                _c("i", {
+                  staticClass:
+                    "fa fa-caret-down fa-inverse fa-3x ilink wow rotateIn",
+                  attrs: { "data-wow-duration": "1s", "data-wow-delay": "8s" },
+                }),
               ]),
             ]),
           ]),
-        ]
-      ),
+        ]),
+      ]),
       _vm._v(" "),
-      _c("section", { attrs: { id: "big_image" } }),
+      _c("section", { staticClass: "banner__below" }),
     ])
   },
 ]
@@ -29531,12 +29440,10 @@ var staticRenderFns = [
                 attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
               },
               [
-                _vm._v("\n          Sometimes "),
-                _c("strong", [_vm._v("magic")]),
-                _vm._v(" is just someone\n          "),
-                _c("strong", [_vm._v("spending")]),
+                _vm._v("\n          For additional questions and/or "),
+                _c("strong", [_vm._v("inquiry")]),
                 _vm._v(
-                  " more time on something than anyone else\n          might reasonably expect.\n        "
+                  " regarding\n          the status of your application.\n        "
                 ),
               ]
             ),
@@ -29549,45 +29456,40 @@ var staticRenderFns = [
                   attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
                 },
                 [
-                  _c("h2", [
-                    _vm._v("Do you need a website,"),
-                    _c("br"),
-                    _vm._v("have a question or comment?"),
-                  ]),
-                  _vm._v(" "),
                   _c("p", [
-                    _vm._v("\n              Flair Design Studio,"),
+                    _vm._v("\n              ILIMI | A.D.U.,"),
                     _c("br"),
-                    _vm._v("\n              23 Mornington Crescent,"),
+                    _vm._v("\n              Village de la Francophonie,"),
                     _c("br"),
-                    _vm._v("\n              Camden High Street,"),
+                    _vm._v("\n              BP 11160,"),
                     _c("br"),
-                    _vm._v("\n              London NW1 7JE\n            "),
+                    _vm._v("\n              Niamey, Niger\n            "),
                   ]),
                   _vm._v(" "),
                   _c("ul", { staticClass: "fa-ul" }, [
                     _c("li", [
-                      _c("i", { staticClass: "fa-li fa fa-phone inverse" }),
+                      _c("i", { staticClass: "fa-li fa fa-envelope" }),
                       _vm._v(" "),
-                      _c("span", { staticClass: "inverse" }, [
-                        _vm._v("+44 020 2345 1987"),
-                      ]),
+                      _c(
+                        "a",
+                        {
+                          staticStyle: { color: "white" },
+                          attrs: { href: "mailto:infos@ilimi.edu.ne" },
+                        },
+                        [_vm._v("infos@ilimi.edu.ne")]
+                      ),
                     ]),
                     _vm._v(" "),
                     _c("li", [
-                      _c("i", { staticClass: "fa-li fa fa-envelope inverse" }),
+                      _c("i", { staticClass: "fa-li fa fa-phone" }),
                       _vm._v(" "),
-                      _c("a", { attrs: { href: "mailto:#" } }, [
-                        _vm._v("name@example.com"),
-                      ]),
+                      _c("span", {}, [_vm._v("+227 923 968 68 (WhatsApp)")]),
                     ]),
                     _vm._v(" "),
                     _c("li", [
-                      _c("i", { staticClass: "fa-li fa fa-globe inverse" }),
+                      _c("i", { staticClass: "fa-li fa fa-phone" }),
                       _vm._v(" "),
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("www.example.com"),
-                      ]),
+                      _c("span", {}, [_vm._v("+227 9339 68 68 (Mobile)")]),
                     ]),
                   ]),
                   _vm._v(" "),
@@ -29599,12 +29501,21 @@ var staticRenderFns = [
                         attrs: {
                           "data-wow-offset": "80",
                           "data-wow-duration": "2s",
+                          "data-wow-delay": "0.5s",
                         },
                       },
                       [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _c("i", { staticClass: "fa fa-twitter" }),
-                        ]),
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "https://web.facebook.com/aduniversalis?_rdc=10&_rdr",
+                              target: "_blank",
+                              rel: "noopener noreferrer",
+                            },
+                          },
+                          [_c("i", { staticClass: "fa fa-facebook" })]
+                        ),
                       ]
                     ),
                     _vm._v(" "),
@@ -29615,13 +29526,20 @@ var staticRenderFns = [
                         attrs: {
                           "data-wow-offset": "80",
                           "data-wow-duration": "2s",
-                          "data-wow-delay": "0.5s",
                         },
                       },
                       [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _c("i", { staticClass: "fa fa-facebook" }),
-                        ]),
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "https://twitter.com/aduleads?lang=fr",
+                              target: "_blank",
+                              rel: "noopener noreferrer",
+                            },
+                          },
+                          [_c("i", { staticClass: "fa fa-twitter" })]
+                        ),
                       ]
                     ),
                     _vm._v(" "),
@@ -29636,26 +29554,17 @@ var staticRenderFns = [
                         },
                       },
                       [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _c("i", { staticClass: "fa fa-github" }),
-                        ]),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass: "wow fadeIn",
-                        attrs: {
-                          "data-wow-offset": "80",
-                          "data-wow-duration": "2s",
-                          "data-wow-delay": "1.5s",
-                        },
-                      },
-                      [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _c("i", { staticClass: "fa fa-pinterest" }),
-                        ]),
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "https://fr.linkedin.com/school/african-development-university/",
+                              target: "_blank",
+                              rel: "noopener noreferrer",
+                            },
+                          },
+                          [_c("i", { staticClass: "fa fa-linkedin" })]
+                        ),
                       ]
                     ),
                     _vm._v(" "),
@@ -29670,9 +29579,17 @@ var staticRenderFns = [
                         },
                       },
                       [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _c("i", { staticClass: "fa fa-instagram" }),
-                        ]),
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "https://instagram.com/africandevelopmentuniversalis",
+                              target: "_blank",
+                              rel: "noopener noreferrer",
+                            },
+                          },
+                          [_c("i", { staticClass: "fa fa-instagram" })]
+                        ),
                       ]
                     ),
                     _vm._v(" "),
@@ -29683,13 +29600,21 @@ var staticRenderFns = [
                         attrs: {
                           "data-wow-offset": "80",
                           "data-wow-duration": "2s",
-                          "data-wow-delay": "2.5s",
+                          "data-wow-delay": "1.5s",
                         },
                       },
                       [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _c("i", { staticClass: "fa fa-dribbble" }),
-                        ]),
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "https://www.youtube.com/channel/UCitZsNH69Rivpki-WO7W7Iw",
+                              target: "_blank",
+                              rel: "noopener noreferrer",
+                            },
+                          },
+                          [_c("i", { staticClass: "fa fa-youtube" })]
+                        ),
                       ]
                     ),
                   ]),
@@ -29900,31 +29825,25 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("li", [
               _c("a", { staticClass: "scroll", attrs: { href: "#team" } }, [
-                _vm._v("Team"),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { staticClass: "scroll", attrs: { href: "#work" } }, [
-                _vm._v("Work"),
+                _vm._v("Admissions"),
               ]),
             ]),
             _vm._v(" "),
             _c("li", [
               _c("a", { staticClass: "scroll", attrs: { href: "#price" } }, [
-                _vm._v("Pricing"),
+                _vm._v("Scholarship"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { staticClass: "scroll", attrs: { href: "#work" } }, [
+                _vm._v("Ilimi Experience"),
               ]),
             ]),
             _vm._v(" "),
             _c("li", [
               _c("a", { staticClass: "scroll", attrs: { href: "#contact" } }, [
                 _vm._v("Contact"),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { staticClass: "scroll", attrs: { href: "blog.html" } }, [
-                _vm._v("Blog"),
               ]),
             ]),
           ]),
@@ -30022,7 +29941,7 @@ var staticRenderFns = [
                     attrs: { "data-filter": ".identity" },
                   },
                   [
-                    _vm._v("\n            Identity"),
+                    _vm._v("\n            Ilimi"),
                     _c("span", { staticClass: "cbp-filter-counter" }),
                   ]
                 ),
@@ -30034,7 +29953,7 @@ var staticRenderFns = [
                     attrs: { "data-filter": ".web-design" },
                   },
                   [
-                    _vm._v("\n            Web Design"),
+                    _vm._v("\n            Academics"),
                     _c("span", { staticClass: "cbp-filter-counter" }),
                   ]
                 ),
@@ -30046,7 +29965,7 @@ var staticRenderFns = [
                     attrs: { "data-filter": ".graphic" },
                   },
                   [
-                    _vm._v("\n            Graphic"),
+                    _vm._v("\n            Non Academics"),
                     _c("span", { staticClass: "cbp-filter-counter" }),
                   ]
                 ),
@@ -30058,7 +29977,7 @@ var staticRenderFns = [
                     attrs: { "data-filter": ".logo" },
                   },
                   [
-                    _vm._v("\n            Logo"),
+                    _vm._v("\n            Alumni"),
                     _c("span", { staticClass: "cbp-filter-counter" }),
                   ]
                 ),

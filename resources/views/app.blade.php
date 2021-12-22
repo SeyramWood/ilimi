@@ -5,15 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Laravel</title>
+    <title>African Development Universalis</title>
 
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!--FONTS-->
-
-    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700">
 
     <!--CSS-->
     <link rel="stylesheet" href="template/css/bootstrap.min.css" />
@@ -47,7 +44,7 @@
     <!--SCRIPTS-->
     <script src="template/js/jquery.js"></script>
     <script src="template/js/retina.js" defer></script>
-    <script src="template/js/bootstrap.min.js" defer></script>
+    <script src="template/js/bootstrap.min.js"></script>
     <!--PRELOADER SET YOUR STYLES HERE-->
     <script src="template/js/royal_preloader.min.js"></script>
     <script type="text/javascript" defer>
@@ -72,14 +69,14 @@
     <script src="template/js/scripts.js" defer></script>
 
     <script type="text/javascript" src="template/js/jquery.fs.wallpaper.js" defer></script>
-    <script src="template/js/owl.carousel.min.js" defer></script>
+
 
     <script type="text/javascript" defer>
         $(document).ready(function() {
             $(".wallpapered").wallpaper();
         });
     </script>
-
+    <script src="template/js/owl.carousel.min.js"></script>
     <script type="text/javascript" defer>
         $(document).ready(function() {
             $("#clients").owlCarousel({

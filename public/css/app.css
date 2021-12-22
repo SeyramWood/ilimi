@@ -1,1 +1,299 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap);
+/**
+    DESKTOP FIRST APPROACH
+    No media query necessary for xl breakpoint as it has no upper bound on its width
+**/
+/**
+    DESKTOP FIRST APPROACH
+    No media query necessary for xl breakpoint as it has no upper bound on its width
+**/
+@-webkit-keyframes mini-nav-active-animate {
+  0% {
+    transform: translateX(-3px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes mini-nav-active-animate {
+  0% {
+    transform: translateX(-3px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes nav-sticky-off-animate {
+  0% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+    transform: translateY(-4px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}
+@keyframes nav-sticky-off-animate {
+  0% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+    transform: translateY(-4px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+    transform: translateY(-4px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(-6px);
+    opacity: 0;
+  }
+}
+@keyframes fade {
+  0% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+    transform: translateY(-4px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(-6px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes nav-sticky-animate {
+  0% {
+    transform: translateY(-6px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes nav-sticky-animate {
+  0% {
+    transform: translateY(-6px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.banner {
+  width: 100%;
+  min-height: 200vh;
+  position: relative;
+}
+.banner__top {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: url("/../template/img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner__top > .banner_overlay {
+  background: url("/../template/img/overlay2.png") repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.banner__below {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: url("/../template/img/big_image.jpg") repeat-y top center fixed;
+  margin: 0 auto;
+  background-size: cover;
+}
 
+/***********************************
+            BASIC RESET
+***********************************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* 
+  Converting default browser font-size of 16px to 10px in percentage
+  10px / 16px * 100 = 62.5%, thus 1rem = 62.5% = 10px
+  */
+  font-size: 62.5% !important;
+  /**
+      MOBILE FIRST APPROACH
+      Extra small devices (portrait phones, less than 576px)
+      No media query for `xs` since this is the default
+      No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+  **/
+  overflow-y: initial !important;
+}
+@media only screen and (min-width: 62em) {
+  html {
+    font-size: 75% !important;
+  }
+}
+@media only screen and (max-width: 61.999em) {
+  html {
+    font-size: 56.25% !important;
+  }
+}
+@media only screen and (max-width: 47.999em) {
+  html {
+    font-size: 50% !important;
+  }
+}
+html * table > thead > tr > th,
+html * table > tbody > tr > td,
+html * table > tfoot > tr > td,
+html .v-data-footer {
+  font-size: 62.5% !important;
+  /**
+      MOBILE FIRST APPROACH
+      Extra small devices (portrait phones, less than 576px)
+      No media query for `xs` since this is the default
+      No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+  **/
+}
+@media only screen and (min-width: 62em) {
+  html * table > thead > tr > th,
+html * table > tbody > tr > td,
+html * table > tfoot > tr > td,
+html .v-data-footer {
+    font-size: 75% !important;
+  }
+}
+@media only screen and (max-width: 61.999em) {
+  html * table > thead > tr > th,
+html * table > tbody > tr > td,
+html * table > tfoot > tr > td,
+html .v-data-footer {
+    font-size: 56.25% !important;
+  }
+}
+@media only screen and (max-width: 47.999em) {
+  html * table > thead > tr > th,
+html * table > tbody > tr > td,
+html * table > tfoot > tr > td,
+html .v-data-footer {
+    font-size: 50% !important;
+  }
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #686767;
+  font-size: 1.2rem;
+  background: #f8fafc;
+  min-height: 100vh !important;
+}
+
+a,
+a:active {
+  text-decoration: none;
+}
+
+* ul {
+  list-style-type: none;
+}
+
+::-moz-selection {
+  background-color: #99001c;
+  color: #fff;
+}
+
+::selection {
+  background-color: #99001c;
+  color: #fff;
+}
+
+#logo > a > img {
+  max-width: 10rem !important;
+}
+
+#contact {
+  color: #f0f0f0 !important;
+  background: #99001c !important;
+}
+
+.footer {
+  background: #262626 !important;
+}

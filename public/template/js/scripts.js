@@ -135,18 +135,19 @@ var isMobile = {
 	jQuery('#counter-1').appear(function() {
 		$('#counter-1').countTo({
 			from: 0,
-			to: 1440,
+			to: 200,
 			speed: 4000,
 			refreshInterval: 50,
 			onComplete: function(value) { 
 			//console.debug(this); 
+				
 			}
 			});
 		});
 	jQuery('#counter-2').appear(function() {
 		$('#counter-2').countTo({
 			from: 0,
-			to: 90,
+			to: 10,
 			speed: 4000,
 			refreshInterval: 50,
 			onComplete: function(value) { 
@@ -157,7 +158,7 @@ var isMobile = {
 	jQuery('#counter-3').appear(function() {
 		 $('#counter-3').countTo({
 			from: 0,
-			to: 2001,
+			to: 7,
 			speed: 4000,
 			refreshInterval: 50,
 			onComplete: function(value) { 
@@ -175,9 +176,15 @@ var isMobile = {
 
 <!--TICKER - add your text here -->
 
-$(".ticker").airport([ "creating web sites","to stand out from the crowd","drinking cups of tea" ]);
-
-
+	$(".ticker").airport([
+		"We are a student-centered institution",
+		"We offer US-style Higher Education Model",
+		"We are entrepreneurial focused and ethical leaders",
+		"Student development through experiential learning",
+		"Blended Learning in-person and virtual teaching & learning",
+		"Bilingual Education and Campus Environment (English & French) ",
+		"We provide high level career placement support",
+	]);      
 $(document).ready(function(){ 
 delayShow();
 });
