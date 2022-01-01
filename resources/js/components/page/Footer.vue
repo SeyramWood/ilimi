@@ -16,9 +16,10 @@
         data-wow-offset="80"
         data-wow-duration="2s"
       >
-        © 2014 FLAIR DESIGN STUDIO
-        <br />
-        <a href="http://www.spiralpixel.com">Template by Spiral Pixel</a>
+        <span
+          >&copy;{{ new Date().getUTCFullYear() }} A.D.U. - All Rights
+          Reserved</span
+        >
       </div>
     </div>
   </footer>

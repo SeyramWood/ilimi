@@ -41,3 +41,8 @@ $title: 1.4rem;
 $title-big: 1.6rem;
 $title-xbig: 2rem;
 $title-xxbig: 4rem;
+
+$title-sm: 3.2rem;
+$para-sm: calc(#{$title-sm} / 1.8);
+$title-md: 1.6rem;
+$para-md: calc(#{$title-sm} / 2);

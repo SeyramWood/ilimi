@@ -12,13 +12,7 @@
 
         <!--MENU-->
         <ul id="menu">
-          <li><a class="scroll" href="#home">Home</a></li>
-          <li><a class="scroll" href="#about">About</a></li>
-          <li><a class="scroll" href="#team">Admissions</a></li>
-          <li><a class="scroll" href="#price">Scholarship</a></li>
-          <li><a class="scroll" href="#work">Ilimi Experience</a></li>
-          <!-- <li><a class="scroll" href="blog.html">Blog</a></li> -->
-          <li><a class="scroll" href="#contact">Contact</a></li>
+          <slot />
         </ul>
         <!--//MENU-->
         <!--RESPONSIVE TOGGLE-->
@@ -33,7 +27,7 @@
 
 <script>
 export default {
-  name: "Header",
+  name: "Navigation",
 };
 </script>
 

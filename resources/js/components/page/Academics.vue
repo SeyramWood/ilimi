@@ -24,21 +24,16 @@
               The
               <strong class="colour"
                 >Mastercard Foundation Scholars Program</strong
-              >is a global initiative to
+              >
+              is a global initiative to
               <strong class="colour">educate</strong> and train the next
               generation of <strong class="colour">leaders</strong> who will
               contribute to the social and economic progress of the African
-              continent. We are pleased to announce that starting
-              <strong class="colour">January 2022</strong>, African Development
-              Universalis (A.D.U.) will join the Mastercard Foundation Scholars
-              Program as a partner university; the very first of its kind in
-              Francophone West Africa.
-              <a
-                href="http://mastercardfdn.org/all/scholars"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Learn more</a
-              >
+              continent. The program is carried out in
+              <strong class="colour">French-speaking Africa</strong>
+              with the Gaston Berger University in Senegal, 2iE in Burkina Faso,
+              and A.D.U. in Niger. We are pleased to announce that starting
+              <a href="/scholarships" class="p-link">More information</a>.
             </div>
           </div>
         </div>
@@ -57,12 +52,12 @@
                   <div class="price-plan">
                     <div class="price-plan-top">
                       <a class="price-plan-link">
-                        <!-- <h2>The exchange</h2> -->
+                        <h2>Benefits</h2>
                         <div class="price">
-                          <!-- <span class="dollar">$</span> -->
-                          <span class="amt annual">Benefits</span>
-                          <!-- <span class="mo">/mo</span> -->
-                          <!-- <p class="price-breakdown">
+                          <!-- <span class="dollar">$</span>
+                          <span class="amt annual">6</span>
+                          <span class="mo">/mo</span>
+                          <p class="price-breakdown">
                             Pay yearly or $10 per month
                           </p> -->
                         </div>
@@ -70,11 +65,21 @@
                     </div>
                     <div class="info-wrapper">
                       <ul class="list-group">
-                        <li>Tuition fees, Accommodation</li>
-                        <li>School materials, Transport</li>
-                        <li>Monthly allowances</li>
+                        <li>
+                          Full financial support(Tuition, Meals, Housing etc.)
+                        </li>
+                        <li>Counseling and psychological support</li>
+                        <li>Monthly stipend after graduation</li>
+                        <li>Coaching and funds for entrepreneurial fellows</li>
+                        <li>Health insurance and other support items</li>
                       </ul>
-                      <a href="#" class="btn">APPLY</a>
+                      <a
+                        href="https://applications.eduappgh.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn"
+                        >APPLY</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -89,15 +94,15 @@
                   <div class="price-plan">
                     <div class="price-plan-top">
                       <a class="price-plan-link">
-                        <!-- <h2>Criteria</h2> -->
-                        <div class="price">
-                          <!-- <span class="dollar">$</span> -->
-                          <span class="amt annual">Criteria</span>
-                          <!-- <span class="mo">/mo</span> -->
-                          <!-- <p class="price-breakdown">
+                        <h2>Criteria</h2>
+                        <!-- <div class="price">
+                          <span class="dollar">$</span>
+                          <span class="amt annual">2</span>
+                          <span class="mo">/mo</span>
+                          <p class="price-breakdown">
                             Pay yearly or $10 per month
-                          </p> -->
-                        </div>
+                          </p>
+                        </div> -->
                       </a>
                     </div>
                     <div class="info-wrapper">
@@ -105,8 +110,16 @@
                         <li>BAC or equivalent degree</li>
                         <li>Excellent academic background</li>
                         <li>Clear need for financial support</li>
+                        <li>Certificate of Citizenship</li>
+                        <li>Letters of recommendation</li>
                       </ul>
-                      <a href="#" class="btn">APPLY</a>
+                      <a
+                        href="https://applications.eduappgh.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn"
+                        >APPLY</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -121,25 +134,32 @@
                   <div class="price-plan">
                     <div class="price-plan-top">
                       <a class="price-plan-link">
-                        <!-- <h2>Programs</h2> -->
-                        <div class="price">
-                          <!-- <span class="dollar">$</span
-                          > -->
-                          <span class="amt annual">Programs</span>
-                          <!-- <span class="mo">/mo</span> -->
-                          <!-- <p class="price-breakdown">
+                        <h2>Programs</h2>
+                        <!-- <div class="price">
+                          <span class="dollar">$</span>
+                          <span class="amt annual">7</span>
+                          <span class="mo">/mo</span>
+                          <p class="price-breakdown">
                             Pay yearly or $10 per month
-                          </p> -->
-                        </div>
+                          </p>
+                        </div> -->
                       </a>
                     </div>
                     <div class="info-wrapper">
                       <ul class="list-group">
                         <li>Private law</li>
-                        <li>Business Administration</li>
+                        <li>Accounting & Finance</li>
+                        <li>Project Management</li>
+                        <li>Management Information Systems</li>
                         <li>Artificial Intelligence (Computer Science)</li>
                       </ul>
-                      <a href="#" class="btn">APPLY</a>
+                      <a
+                        href="https://applications.eduappgh.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn"
+                        >APPLY</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -183,7 +203,7 @@
               </div>
 
               <!--CLIENTS-->
-              <div
+              <!-- <div
                 class="wow fadeIn col-lg-10 col-lg-offset-1 pad45"
                 data-wow-offset="80"
               >
@@ -208,7 +228,7 @@
                   </div>
                 </div>
                 <div class="pad45"></div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -216,15 +236,35 @@
     </section>
 
     <!--//VIDEO SECTION STARTS-->
-    <div
-      class="wallpapered video-section"
-      data-wallpaper-options='{"hoverPlay":"false",
-	"source":{
-	"webm":"template/video/RooftopClouds.webm",
-	"mp4":"template/video/RooftopClouds.mp4",
-	"ogg":"template/video/RooftopClouds.ogv",
-	"poster":"template/video/RooftopClouds.jpg"}}'
-    >
+    <div class="donate__wrapper">
+      <div class="donate__wrapper__content">
+        <q>
+          I visited A.D.U. in 2019 and was really struck by the enthusiasm of
+          the students, and the high praise that employers that I met had for
+          A.D.U. students. Corporate Niger described A.D.U. students the same
+          way Corporate Ghana describes Ashesi students. But I could also tell
+          that A.D.U. was struggling financially. I left feeling that there was
+          a spark here that needed an opportunity to grow, and I wondered how
+          Ashesi and I could help.</q
+        >
+        <p>
+          Patrick Awuah, <br />Founder and President, Ashesi University, Ghana
+        </p>
+        <h1>Be part of the solution</h1>
+        <p>
+          A.D.U. is reshaping the future for the region by educating <br />
+          its most exceptional young women and men. We need your help.
+        </p>
+        <a
+          href="/donate"
+          class="scroll btn inverse wow bounceIn"
+          data-wow-offset="80"
+          data-wow-duration="2s"
+          >DONATE</a
+        >
+      </div>
+    </div>
+    <!-- <div class="wallpapered video-section donate-bg">
       <div class="video_overlay">
         <div id="video_content">
           <div
@@ -232,14 +272,30 @@
             data-wow-offset="80"
             data-wow-duration="2s"
           >
-            <h2 class="text-center">
-              Good design is obvious.<br />Great design is transparent.
-            </h2>
-            <h4>Joe Sparano</h4>
+            <q>
+              I visited A.D.U. in 2019 and was really struck by the enthusiasm
+              of the students, and the high praise that employers that I met had
+              for A.D.U. students. Corporate Niger described A.D.U. students the
+              same way Corporate Ghana describes Ashesi students. But I could
+              also tell that A.D.U. was struggling financially. I left feeling
+              that there was a spark here that needed an opportunity to grow,
+              and I wondered how Ashesi and I could help.</q
+            >
+            <p>
+              Patrick Awuah, <br />Founder and President, Ashesi University,
+              Ghana
+            </p>
+            <a
+              href="#contact"
+              class="scroll btn wow bounceIn"
+              data-wow-offset="80"
+              data-wow-duration="2s"
+              >DONATE</a
+            >
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--//VIDEO SECTION ENDS-->
   </section>
 </template>

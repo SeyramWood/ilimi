@@ -11,4 +11,13 @@ class PageController extends Controller
     {
         return Inertia::render('Home');
     }
+
+    public function donate()
+    {
+        return Inertia::render('Donate');
+    }
+    public function scholarship()
+    {
+        return Inertia::render('Scholarship');
+    }
 }

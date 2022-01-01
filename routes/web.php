@@ -24,3 +24,5 @@ Route::get('/config', function () {
 });
 
 Route::get('/', 'PageController@index');
+Route::get('/donate', 'PageController@donate');
+Route::get('/scholarships', 'PageController@scholarship');

@@ -21,7 +21,7 @@ Purchase:  http://themeforest.net/user/josweb
 /*	01: GENERAL STYLING
 /*-----------------------------------------------------------------------------------*/	
 body {
-	font-family: 'Lato', sans-serif;
+	/* font-family: 'Lato', sans-serif; */
 	font-size: 16px;
 	line-height: 24px;
 	color: #555!important;
@@ -91,7 +91,7 @@ section { background:#F0F0F0; }
 .btn {
 	padding: 20px 25px;
 	cursor: pointer;
-	font-family: 'Raleway' sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 12px;
 	text-align: center;
 	display: inline-block;
@@ -107,7 +107,7 @@ section { background:#F0F0F0; }
 	cursor: pointer;
 	color: #f0f0f0;
 	-webkit-transition: all 0.3s ease-in-out;
-	drop-shadow:none!important;
+	-webkit-drop-shadow:none!important;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -147,7 +147,13 @@ blockquote.testimonial_blockquote p {
 	top:0; left:0; bottom:0; right:0;
 }
 .dark_overlay {	
-	background: url(../img/overlay2.png) repeat;
+	/* background: url(../img/overlay2.png) repeat; */
+	position: relative; 
+	width: 100%;
+	height: 100%;
+}
+.dark_overlay1 {	
+	background-image: url(../img/overlay2.png) repeat;
 	position: relative; 
 	width: 100%;
 	height: 100%;
@@ -550,7 +556,7 @@ z-index:1;
 	text-align: center;
 	color: #fff;
 	letter-spacing: 6px;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 600;
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.3); 
 }
@@ -782,8 +788,8 @@ z-index:1;
 /*--------------------------------*/
 .like { min-height:180px; font-size:80px!important; line-height:60px; margin:60px 0 20px; color: #222!important; }
 .ticker{  
-	/* font-family: 'Lato', sans-serif; */
-	font-size: 30px; 
+	font-family: 'Lato', sans-serif;
+	font-size: 36px; 
 	font-weight: 400;
 	color: #777;
 	line-height: 0px;
@@ -846,7 +852,11 @@ z-index:1;
 /*	MILESTONES
 /*--------------------------------*/
 #milestones .well{ 
-	background: url(../img/milestones.jpg) 50% 0% fixed no-repeat;
+	background: linear-gradient(
+            to bottom,
+            rgba(153, 0, 28, 0.5),
+            rgba(153, 0, 28, 0.5)
+        ), url(../img/milestones.jpg) 50% 0% fixed no-repeat;
 	background-position: top center;
 	-webkit-background-size: cover!important; 
     -moz-background-size: cover!important;  
@@ -978,14 +988,14 @@ z-index:1;
 }
 
 .video_overlay{	
-	background: url('../img/overlay.png') repeat;
+	background: url(../img/overlay.png) repeat;
 	position: relative; 
 	width: 100%;
 	height: 100%;
 	z-index: 1;
 }
 .dark_video_overlay{	
-	background: url('../img/overlay2.png') repeat;
+	background: url(../img/overlay2.png) repeat;
 	position: relative; 
 	width: 100%;
 	height: 100%;
@@ -996,7 +1006,7 @@ z-index:1;
 /*	06:PRICING TABLES
 /*-----------------------------------------------------------------------------------*/	
 #pricing {margin:0 auto; }
-.price-plan-top { background: #222; padding:45px 35px; }
+.price-plan-top { background: #222; padding:5px 0 10px 0; }
 .price-plan h2 {
 	color: #eee!important;
 	letter-spacing: 4px;
@@ -1013,11 +1023,11 @@ z-index:1;
 	font-weight: 300;
 	position: relative;
 }
-.price .amt {font-size:55px; line-height: 84px; }
+.price .amt {font-size:110px; line-height: 84px; }
 .price .mo { font-size:14px; text-transform:uppercase; letter-spacing:1px; }
 .price > p { font-size:11px; line-height:16px; margin-top:14px; color:#bbb; }
 #pricing .info-wrapper { padding:20px 20px 0; border:1px solid #555; margin-bottom:40px; }
-#pricing .info-wrapper  ul li { font-size: 14px;border-bottom:1px dashed #ddd; padding:10px 0; }
+#pricing .info-wrapper  ul li { font-size: 13.2px;border-bottom:1px dashed #ddd; padding:10px 0; }
 #pricing .list-group { list-style-type:none; color:#555; }
 #pricing .btn { border:20px solid #F0F0F0; margin:0 auto -40px; font-size:12px; text-align:center; }
 
@@ -1101,7 +1111,7 @@ input { outline:none; }
     padding: 0px;
     text-align: left;
 	font-size: 20px;
-	line-height:28px
+	line-height:28px;
 	width:100%;
 	clear:both; 	
 }
@@ -1113,7 +1123,7 @@ input { outline:none; }
 /*--------------------------------*/
 /*	SOCIAL ICONS
 /*--------------------------------*/
-.social-icons { font-size: 36px; list-style-type: none!important; margin: 20px 0px 25px 0px;}
+.social-icons { font-size: 40px; list-style-type: none!important; margin: 20px 0px 25px -38px;}
 .social-icons li { list-style-type: none!important; float: left; margin:20px 15px 25px 0px; }
 .social-icons ul li:last-child { margin-right: 0px; }
 .social-icons li a { color: #f0f0f0!important; }
@@ -1302,7 +1312,7 @@ div.avatar { margin-left:-115px; position:absolute; }
 #ajax-contact-form2 textarea { height:150px!important;}
 #ajax-contact-form2 input, #ajax-contact-form2 textarea{
 	background: #f5f5f5;
-	color: #555;important;
+	color: #555 important;
 	border: 0px none;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -1385,7 +1395,7 @@ div.tabs ul.nav-tabs a:active, div.tabs ul.nav-tabs a:focus { border-bottom: 0!i
 }
 .wow { visibility:visible; }
 #milestones .well{  height:auto!important; }
-}
+
 @media only screen and (device-width: 768px) {
 .mbYTP_wrapper iframe{display:none;}
 }
@@ -1415,7 +1425,7 @@ div.tabs ul.nav-tabs a:active, div.tabs ul.nav-tabs a:focus { border-bottom: 0!i
 #menu{ overflow-y:scroll; max-height:250px; margin-top:30px!important; }
 #menu li:first-child {  margin-top:-30px!important; }
 .like { line-height:40px; min-height:150px; font-size:60px!important; }
-.ticker { font-size:30px!important;   }
+.ticker { font-size:26px!important;   }
 h1  { font-size: 60px!important; line-height:55px; letter-spacing:-1px!important; }
 .lead  { font-size: 28px!important;line-height:38px!important; }
 #single h1 { font-size:40px!important; line-height:40px!important; }

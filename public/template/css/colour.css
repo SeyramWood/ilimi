@@ -9,6 +9,7 @@ a:hover {color:#333;}
 blockquote { border-left:4px solid #99001c!important;  }
 
 .btn { background-color: #99001c!important; }
+.btn.inverse { background-color: #2E3138!important; color: white;}
 .btn-inverse:hover { background-color: #99001c!important;}
 
 #menu li a:hover,  #menu  a:focus { color:#99001c!important; background-color:transparent; }

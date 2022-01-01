@@ -23,10 +23,12 @@
               recognized. Our degree programs are all
               <span class="colour"><strong>accredited</strong></span> by
               Ministry of Higher Education, Research and Innovation, Niger.
-              <a href="http://" target="_blank" rel="noopener noreferrer"
-                ><span class="colour"
-                  ><strong>Apply to Study with us.</strong></span
-                ></a
+              <a
+                href="https://applications.eduappgh.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="p-link"
+                ><span class="colour"><strong>apply now</strong></span></a
               >
             </div>
 
@@ -212,7 +214,7 @@
     </section> -->
     <section id="milestones">
       <div class="well">
-        <div class="dark_overlay">
+        <div class="dark_overlay1">
           <div class="container">
             <h1 class="wow fadeIn" data-wow-offset="80" data-wow-duration="2s">
               Statistics

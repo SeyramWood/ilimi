@@ -1,0 +1,8 @@
+.p-link {
+    text-decoration: underline;
+    text-transform: lowercase;
+    &:hover {
+        text-decoration: underline;
+        color: $primary;
+    }
+}

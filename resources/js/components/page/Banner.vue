@@ -11,7 +11,7 @@
             data-wow-duration="3s"
             data-wow-delay="4s"
           >
-            YOUNG LEADERS!
+            {{ title }}!
           </h1>
           <div
             class="name wow bounceInDown"
@@ -40,6 +40,12 @@
 <script>
 export default {
   name: "Banner",
+  props: {
+    title: {
+      type: String,
+      default: "YOUNG LEADERS",
+    },
+  },
 };
 </script>
 

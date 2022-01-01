@@ -79,3 +79,16 @@ a:active {
 .footer {
     background: $secondary !important;
 }
+.cbp-caption {
+    &-activeWrap {
+        background-color: $primary !important;
+        & .cbp-l-caption-body {
+            & > h6 {
+                color: $white !important;
+            }
+            & > .cbp-l-caption-text {
+                color: $white !important;
+            }
+        }
+    }
+}

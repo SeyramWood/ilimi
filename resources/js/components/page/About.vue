@@ -84,13 +84,14 @@
               data-wow-duration="2s"
               >CONTACT</a
             >
-            <a
+
+            <!-- <a
               href="#work"
               class="scroll btn wow bounceIn"
               data-wow-offset="80"
               data-wow-duration="2s"
-              >PORTFOLIO</a
-            >
+              >OUR WHY</a
+            > -->
             <div class="pad45"></div>
 
             <!--TEAM MEMBERS-->
@@ -98,7 +99,12 @@
               <ul class="cbp-l-grid-team">
                 <!--1-->
                 <li class="cbp-item">
-                  <a href="ajax/team1.html" class="cbp-caption cbp-singlePage">
+                  <a
+                    href="https://michaellejean.ca/welcome"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cbp-caption"
+                  >
                     <div class="cbp-caption-defaultWrap">
                       <img src="template/img/team/1.jpg" alt="" />
                     </div>
@@ -120,7 +126,12 @@
 
                 <!--2-->
                 <li class="cbp-item">
-                  <a href="ajax/team2.html" class="cbp-caption cbp-singlePage">
+                  <a
+                    href="https://www.linkedin.com/in/kaderkaneye"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cbp-caption"
+                  >
                     <div class="cbp-caption-defaultWrap">
                       <img src="template/img/team/2.jpg" alt="" />
                     </div>
@@ -143,7 +154,7 @@
                 </li>
 
                 <!--3-->
-                <li class="cbp-item">
+                <!-- <li class="cbp-item">
                   <a href="ajax/team3.html" class="cbp-caption cbp-singlePage">
                     <div class="cbp-caption-defaultWrap">
                       <img src="template/img/team/3.jpg" alt="" />
@@ -162,10 +173,10 @@
                     >Fati N'zi-Hassane</a
                   >
                   <div class="cbp-l-grid-team-position">Board Member</div>
-                </li>
+                </li> -->
 
                 <!--4-->
-                <li class="cbp-item">
+                <!-- <li class="cbp-item">
                   <a href="ajax/team4.html" class="cbp-caption cbp-singlePage">
                     <div class="cbp-caption-defaultWrap">
                       <img src="template/img/team/4.jpg" alt="" />
@@ -184,7 +195,7 @@
                     >Marq Cole</a
                   >
                   <div class="cbp-l-grid-team-position">Thinker</div>
-                </li>
+                </li> -->
               </ul>
             </div>
             <!--//TEAM MEMBERS-->
