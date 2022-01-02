@@ -12,7 +12,11 @@ return [
      * ],
      */
     'messages' => [
-        'pages'
+        'auth',
+        'pages',
+        'pagination',
+        'passwords',
+        'validdations',
     ],
 
     /*

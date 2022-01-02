@@ -1,8 +1,44 @@
 .p-link {
     text-decoration: underline;
-    text-transform: lowercase;
+    // text-transform: none;
     &:hover {
         text-decoration: underline;
         color: $primary;
+    }
+}
+.navigation {
+    &.lang {
+        & > ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & > li {
+                position: relative;
+                cursor: pointer;
+                &:not(:last-child) {
+                    // margin-right: 1.5rem;
+                }
+                &:first-child::after {
+                    content: "/";
+                    position: absolute;
+                    top: 0;
+                    right: -1rem;
+                    height: 100%;
+                    font-size: 1.2rem !important;
+                    color: #333;
+                }
+                & > a {
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                    // color: $white;
+                }
+                &:hover > a {
+                    color: $primary;
+                }
+                &.active > a {
+                    color: $primary;
+                }
+            }
+        }
     }
 }

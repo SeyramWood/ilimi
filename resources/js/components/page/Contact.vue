@@ -8,17 +8,15 @@
             data-wow-offset="80"
             data-wow-duration="2s"
           >
-            Contact
+            {{ $t("pages.home.contact.title") }}
           </h1>
 
           <div
             class="lead wow fadeInRightBig"
             data-wow-offset="80"
             data-wow-duration="2s"
-          >
-            For additional questions and/or <strong>inquiry</strong> regarding
-            the status of your application.
-          </div>
+            v-html="$t(`pages.home.contact.cta`)"
+          ></div>
 
           <div class="row">
             <div

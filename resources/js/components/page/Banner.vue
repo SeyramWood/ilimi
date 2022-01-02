@@ -3,7 +3,7 @@
     <div class="banner__top">
       <div class="banner_overlay">
         <div id="content">
-          <div class="byline wow slideInLeft pad30" data-wow-delay="7s">
+          <!-- <div class="byline wow slideInLeft pad30" data-wow-delay="7s">
             African Development Universalis
           </div>
           <h1
@@ -12,13 +12,13 @@
             data-wow-delay="4s"
           >
             {{ title }}!
-          </h1>
+          </h1> -->
           <div
             class="name wow bounceInDown"
             data-wow-duration="3s"
             data-wow-delay="2s"
           >
-            LEADERSHIP, EXCELLENCE & INNOVATION
+            {{ $t("pages.home.banner.values") }}
           </div>
           <div class="text-center">
             <a href="#about" class="scroll">
@@ -43,7 +43,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "YOUNG LEADERS",
+      require: true,
     },
   },
 };

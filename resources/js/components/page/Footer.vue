@@ -17,8 +17,8 @@
         data-wow-duration="2s"
       >
         <span
-          >&copy;{{ new Date().getUTCFullYear() }} A.D.U. - All Rights
-          Reserved</span
+          >&copy;{{ new Date().getUTCFullYear() }}
+          {{ $t("pages.home.footer.copyright") }}</span
         >
       </div>
     </div>

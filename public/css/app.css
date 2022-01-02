@@ -145,10 +145,38 @@
 }
 .p-link {
   text-decoration: underline;
-  text-transform: lowercase;
 }
 .p-link:hover {
   text-decoration: underline;
+  color: #99001c;
+}
+
+.navigation.lang > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation.lang > ul > li {
+  position: relative;
+  cursor: pointer;
+}
+.navigation.lang > ul > li:first-child::after {
+  content: "/";
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  height: 100%;
+  font-size: 1.2rem !important;
+  color: #333;
+}
+.navigation.lang > ul > li > a {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.navigation.lang > ul > li:hover > a {
+  color: #99001c;
+}
+.navigation.lang > ul > li.active > a {
   color: #99001c;
 }
 
@@ -233,7 +261,7 @@
 }
 .home__newsletter__wrapper > form > h1 {
   font-family: "Open Sans", sans-serif !important;
-  text-transform: capitalize !important;
+  text-transform: none !important;
   letter-spacing: 0 !important;
   margin-bottom: 1.5rem;
   font-size: 1.8rem !important;

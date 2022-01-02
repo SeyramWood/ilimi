@@ -8,16 +8,14 @@
             data-wow-offset="80"
             data-wow-duration="2s"
           >
-            Ilimi Experience
+            {{ $t("pages.home.ilimi.title") }}
           </h1>
           <div
             class="lead wow fadeInRightBig"
             data-wow-offset="80"
             data-wow-duration="2s"
-          >
-            A confident <a href="#">client will</a> see<br />your confidence as
-            <strong>strength</strong>, not arrogance.
-          </div>
+            v-html="$t(`pages.home.ilimi.cta`)"
+          ></div>
 
           <!--FILTERS-->
           <div id="filters-container" class="cbp-l-filters-button">
@@ -25,16 +23,20 @@
               data-filter="*"
               class="cbp-filter-item-active cbp-filter-item"
             >
-              All<span class="cbp-filter-counter"></span>
+              {{ $t("pages.home.ilimi.filter-btn.all")
+              }}<span class="cbp-filter-counter"></span>
             </button>
             <button data-filter=".academics" class="cbp-filter-item">
-              Academics<span class="cbp-filter-counter"></span>
+              {{ $t("pages.home.ilimi.filter-btn.academics")
+              }}<span class="cbp-filter-counter"></span>
             </button>
             <button data-filter=".non-academics" class="cbp-filter-item">
-              Non Academics<span class="cbp-filter-counter"></span>
+              {{ $t("pages.home.ilimi.filter-btn.non-academics")
+              }}<span class="cbp-filter-counter"></span>
             </button>
             <button data-filter=".alumni" class="cbp-filter-item">
-              Alumni<span class="cbp-filter-counter"></span>
+              {{ $t("pages.home.ilimi.filter-btn.alumni")
+              }}<span class="cbp-filter-counter"></span>
             </button>
           </div>
 
@@ -51,7 +53,7 @@
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <h6>Our Model</h6>
+                          <h6>{{ $t("pages.home.ilimi.filter-title.om") }}</h6>
                           <!-- <a
                             href="ajax/project1.html"
                             class="cbp-singlePage cbp-l-caption-buttonLeft"
@@ -60,7 +62,7 @@
                           <a
                             href="template/img/gallery/ilimi.png"
                             class="cbp-lightbox cbp-l-caption-buttonRight"
-                            data-title="Our Model"
+                            :data-title="$t(`pages.home.ilimi.filter-title.om`)"
                           >
                             <i class="fa fa-eye"></i>
                           </a>
@@ -80,7 +82,7 @@
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <h6>Computing Facilities</h6>
+                          <h6>{{ $t("pages.home.ilimi.filter-title.cf") }}</h6>
                           <!-- <a
                             href="ajax/project1.html"
                             class="cbp-singlePage cbp-l-caption-buttonLeft"
@@ -89,7 +91,7 @@
                           <a
                             href="template/img/gallery/resource.jpg"
                             class="cbp-lightbox cbp-l-caption-buttonRight"
-                            data-title="Computing Facilities"
+                            :data-title="$t(`pages.home.ilimi.filter-title.cf`)"
                           >
                             <i class="fa fa-eye"></i>
                           </a>
@@ -109,7 +111,7 @@
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <h6>Library</h6>
+                          <h6>{{ $t("pages.home.ilimi.filter-title.l") }}</h6>
                           <!-- <a
                             href="ajax/project1.html"
                             class="cbp-singlePage cbp-l-caption-buttonLeft"
@@ -118,7 +120,7 @@
                           <a
                             href="template/img/gallery/library.jpg"
                             class="cbp-lightbox cbp-l-caption-buttonRight"
-                            data-title="Library"
+                            :data-title="$t(`pages.home.ilimi.filter-title.l`)"
                           >
                             <i class="fa fa-eye"></i>
                           </a>
@@ -138,7 +140,7 @@
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <h6>E-Learning</h6>
+                          <h6>{{ $t("pages.home.ilimi.filter-title.el") }}</h6>
                           <!-- <a
                             href="ajax/project1.html"
                             class="cbp-singlePage cbp-l-caption-buttonLeft"
@@ -147,7 +149,7 @@
                           <a
                             href="template/img/gallery/strategy.jpg"
                             class="cbp-lightbox cbp-l-caption-buttonRight"
-                            data-title="E-Learning"
+                            :data-title="$t(`pages.home.ilimi.filter-title.el`)"
                           >
                             <i class="fa fa-eye"></i>
                           </a>
@@ -169,7 +171,7 @@
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <h6>Student Life</h6>
+                          <h6>{{ $t("pages.home.ilimi.filter-title.sl") }}</h6>
                           <!-- <a
                             href="ajax/project1.html"
                             class="cbp-singlePage cbp-l-caption-buttonLeft"
@@ -178,7 +180,7 @@
                           <a
                             href="template/img/gallery/student-life.jpg"
                             class="cbp-lightbox cbp-l-caption-buttonRight"
-                            data-title="Life on campuse"
+                            :data-title="$t(`pages.home.ilimi.filter-title.sl`)"
                           >
                             <i class="fa fa-eye"></i>
                           </a>
@@ -198,7 +200,7 @@
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <h6>Careers</h6>
+                          <h6>{{ $t("pages.home.ilimi.filter-title.c") }}</h6>
                           <!-- <a
                             href="ajax/project1.html"
                             class="cbp-singlePage cbp-l-caption-buttonLeft"
@@ -207,7 +209,7 @@
                           <a
                             href="template/img/gallery/resource.jpg"
                             class="cbp-lightbox cbp-l-caption-buttonRight"
-                            data-title="Resources"
+                            :data-title="$t(`pages.home.ilimi.filter-title.c`)"
                           >
                             <i class="fa fa-eye"></i>
                           </a>
@@ -224,7 +226,9 @@
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <h6>ILAB</h6>
+                          <h6>
+                            {{ $t("pages.home.ilimi.filter-title.iilab") }}
+                          </h6>
                           <!-- <a
                             href="ajax/project1.html"
                             class="cbp-singlePage cbp-l-caption-buttonLeft"
@@ -233,7 +237,7 @@
                           <a
                             href="template/img/gallery/ilab.jpg"
                             class="cbp-lightbox cbp-l-caption-buttonRight"
-                            data-title="Project Title"
+                            data-title="iiLAB"
                           >
                             <i class="fa fa-eye"></i>
                           </a>
@@ -253,7 +257,7 @@
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <h6>Guest Speakers</h6>
+                          <h6>{{ $t("pages.home.ilimi.filter-title.gs") }}</h6>
                           <!-- <a
                             href="ajax/project1.html"
                             class="cbp-singlePage cbp-l-caption-buttonLeft"
@@ -262,7 +266,7 @@
                           <a
                             href="template/img/gallery/strategy.jpg"
                             class="cbp-lightbox cbp-l-caption-buttonRight"
-                            data-title="Digital Strategy"
+                            :data-title="$t(`pages.home.ilimi.filter-title.gs`)"
                           >
                             <i class="fa fa-eye"></i>
                           </a>
@@ -281,7 +285,7 @@
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <h6>Our Alumni</h6>
+                          <h6>{{ $t("pages.home.ilimi.filter-title.oa") }}</h6>
                           <!-- <a
                             href="ajax/project2.html"
                             class="cbp-singlePage cbp-l-caption-buttonLeft"
@@ -310,7 +314,7 @@
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <h6>Business Leaders Recognition</h6>
+                          <h6>{{ $t("pages.home.ilimi.filter-title.blr") }}</h6>
                           <!-- <a
                             href="ajax/project2.html"
                             class="cbp-singlePage cbp-l-caption-buttonLeft"
@@ -319,7 +323,9 @@
                           <a
                             href="template/img/gallery/business.jpg"
                             class="cbp-lightbox cbp-l-caption-buttonRight"
-                            data-title="Project Title"
+                            :data-title="
+                              $t(`pages.home.ilimi.filter-title.blr`)
+                            "
                           >
                             <i class="fa fa-eye"></i>
                           </a>
@@ -368,7 +374,9 @@
               <section class="home__newsletter">
                 <div class="home__newsletter__wrapper">
                   <form @submit.prevent="subscribe()" class="form">
-                    <h1 class="fadeInUp">Subscribe our Newsletter</h1>
+                    <h1 class="fadeInUp">
+                      {{ $t("pages.home.newsletter.title") }}
+                    </h1>
                     <div class="input__wrapper">
                       <input
                         type="email"
@@ -385,7 +393,9 @@
                             srcset=""
                           />
                         </template>
-                        <template v-else> Subscribe </template>
+                        <template v-else>
+                          {{ $t("pages.home.newsletter.btn") }}
+                        </template>
                       </button>
                     </div>
                   </form>

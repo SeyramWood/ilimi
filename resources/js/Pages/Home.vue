@@ -1,15 +1,39 @@
 <template>
   <main>
     <navigation>
-      <li><a class="scroll" href="#home">Home</a></li>
-      <li><a class="scroll" href="#about">About</a></li>
-      <li><a class="scroll" href="#team">Admissions</a></li>
-      <li><a class="scroll" href="#price">Scholarship</a></li>
-      <li><a class="scroll" href="#work">Ilimi Experience</a></li>
-      <li><a class="scroll" href="#contact">Contact</a></li>
+      <li>
+        <a class="scroll" href="#home">{{ $t("pages.home.nav.home") }}</a>
+      </li>
+      <li>
+        <a class="scroll" href="#about">{{ $t("pages.home.nav.about") }}</a>
+      </li>
+      <li>
+        <a class="scroll" href="#team">{{ $t("pages.home.nav.admissions") }}</a>
+      </li>
+      <li>
+        <a class="scroll" href="#price">{{
+          $t("pages.home.nav.scholarship")
+        }}</a>
+      </li>
+      <li>
+        <a class="scroll" href="#work">{{ $t("pages.home.nav.ilimi") }}</a>
+      </li>
+      <li>
+        <a class="scroll" href="#contact">{{ $t("pages.home.nav.contact") }}</a>
+      </li>
+      <li class="navigation lang">
+        <ul>
+          <li :class="[getLocale === 'en' && 'active']" role="button">
+            <a role="button" @click="changeLocale('en')">EN</a>
+          </li>
+          <li :class="[getLocale === 'fr' && 'active']" role="button">
+            <a role="button" @click="changeLocale('fr')">FR</a>
+          </li>
+        </ul>
+      </li>
     </navigation>
 
-    <Banner />
+    <Banner :title="$tc('pages.home.banner.cta', 1)" />
 
     <About />
 

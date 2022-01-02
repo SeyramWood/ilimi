@@ -9,28 +9,15 @@
               data-wow-offset="80"
               data-wow-duration="2s"
             >
-              Admissions
+              {{ $t("pages.home.admissions.title") }}
             </h1>
 
             <div
               class="lead wow fadeInRightBig"
               data-wow-offset="80"
               data-wow-duration="2s"
-            >
-              Our 3-year bachelor programs are both
-              <span class="colour"><strong>nationally</strong></span> and
-              <span class="colour"><strong>internationally</strong></span>
-              recognized. Our degree programs are all
-              <span class="colour"><strong>accredited</strong></span> by
-              Ministry of Higher Education, Research and Innovation, Niger.
-              <a
-                href="https://applications.eduappgh.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="p-link"
-                ><span class="colour"><strong>apply now</strong></span></a
-              >
-            </div>
+              v-html="$t(`pages.home.admissions.cta`)"
+            ></div>
 
             <!--SERVICE 1-->
             <div
@@ -42,11 +29,9 @@
               <div class="service">
                 <i class="fa fa-laptop"></i>
               </div>
-              <h6>Requirements</h6>
+              <h6>{{ $t("pages.home.admissions.service.1.title") }}</h6>
               <p>
-                You must have a Baccalaureate certificate; High School Final
-                Exam Grades, Birth Certificate, Certificate of Citizenship,
-                Language test scores and Letters of Recommendation.
+                {{ $t("pages.home.admissions.service.1.text") }}
               </p>
             </div>
 
@@ -60,11 +45,9 @@
               <div class="service">
                 <i class="fa fa-magic"></i>
               </div>
-              <h6>Tuition & Scholarship</h6>
+              <h6>{{ $t("pages.home.admissions.service.2.title") }}</h6>
               <p>
-                A.D.U. offers Scholarship for talented student who are
-                experiencing economic and social hardship so that they will be
-                able to achieve their goals and impact their community.
+                {{ $t("pages.home.admissions.service.2.text") }}
               </p>
             </div>
 
@@ -78,12 +61,9 @@
               <div class="service">
                 <i class="fa fa-tasks"></i>
               </div>
-              <h6>Apply Online</h6>
+              <h6>{{ $t("pages.home.admissions.service.3.title") }}</h6>
               <p>
-                To apply, visit our online application portal to create an
-                account, fill out the application form, upload all required
-                documents, pay the registration fee, and submit your
-                application.
+                {{ $t("pages.home.admissions.service.3.text") }}
               </p>
             </div>
 
@@ -97,13 +77,8 @@
               <div class="service">
                 <i class="fa fa-users"></i>
               </div>
-              <h6>Contact Admissions</h6>
-              <p>
-                For additional questions and/or inquiry regarding the status of
-                your application, you can reach us
-                through:admissions@ilimi.edu.ne,<br />+227 923 968 68
-                (WhatsApp)<br />+227 9339 68 68 (Mobile)
-              </p>
+              <h6>{{ $t("pages.home.admissions.service.4.title") }}</h6>
+              <p v-html="$t(`pages.home.admissions.service.4.text`)"></p>
             </div>
 
             <!--SERVICE 5-->
@@ -159,7 +134,7 @@
               data-wow-duration="2s"
               style="text-transform: capitalize"
             >
-              Why A.D.U?<br />
+              {{ $t("pages.home.admissions.why") }}<br />
               <span class="ticker"></span>
             </h1>
           </div>
@@ -217,7 +192,7 @@
         <div class="dark_overlay1">
           <div class="container">
             <h1 class="wow fadeIn" data-wow-offset="80" data-wow-duration="2s">
-              Statistics
+              {{ $t("pages.home.admissions.stats.title") }}
             </h1>
             <div class="pad45"></div>
 
@@ -228,7 +203,9 @@
                 data-wow-duration="2s"
               >
                 <div id="counter-1"></div>
-                <p class="light">Enrolled Students</p>
+                <p class="light">
+                  {{ $t("pages.home.admissions.stats.text-1") }}
+                </p>
               </div>
             </div>
 
@@ -239,7 +216,9 @@
                 data-wow-duration="2s"
               >
                 <div id="counter-2"></div>
-                <p class="light">Countries Represented</p>
+                <p class="light">
+                  {{ $t("pages.home.admissions.stats.text-2") }}
+                </p>
               </div>
             </div>
 
@@ -250,7 +229,9 @@
                 data-wow-duration="2s"
               >
                 <div id="counter-3"></div>
-                <p class="light">Programs of Study</p>
+                <p class="light">
+                  {{ $t("pages.home.admissions.stats.text-3") }}
+                </p>
               </div>
             </div>
           </div>
@@ -262,7 +243,7 @@
 
 <script>
 export default {
-  name: "About",
+  name: "Admissions",
 };
 </script>
 
