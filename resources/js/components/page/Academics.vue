@@ -255,34 +255,6 @@
                 </div> -->
                 <!--//end-->
               </div>
-
-              <!--CLIENTS-->
-              <!-- <div
-                class="wow fadeIn col-lg-10 col-lg-offset-1 pad45"
-                data-wow-offset="80"
-              >
-                <div id="clients">
-                  <div class="item">
-                    <img src="template/img/clients/logo1.png" alt="" />
-                  </div>
-                  <div class="item">
-                    <img src="template/img/clients/logo2.png" alt="" />
-                  </div>
-                  <div class="item">
-                    <img src="template/img/clients/logo3.png" alt="" />
-                  </div>
-                  <div class="item">
-                    <img src="template/img/clients/logo4.png" alt="" />
-                  </div>
-                  <div class="item">
-                    <img src="template/img/clients/logo5.png" alt="" />
-                  </div>
-                  <div class="item">
-                    <img src="template/img/clients/logo6.png" alt="" />
-                  </div>
-                </div>
-                <div class="pad45"></div>
-              </div> -->
             </div>
           </div>
         </div>
@@ -292,6 +264,9 @@
     <!--//VIDEO SECTION STARTS-->
     <div class="donate__wrapper">
       <div class="donate__wrapper__content">
+        <div class="testimony-avatar">
+          <img src="/../template/img/patrick_awuah.jpg" alt="" srcset="" />
+        </div>
         <q>{{ $t("pages.home.donation.q") }}</q>
         <p v-html="$t(`pages.home.donation.p-1`)"></p>
         <h1>{{ $t("pages.home.donation.h") }}</h1>

@@ -12,11 +12,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @include respond-down(md) {
+                justify-content: flex-start;
+            }
             & > li {
                 position: relative;
                 cursor: pointer;
                 &:not(:last-child) {
                     // margin-right: 1.5rem;
+                }
+                @include respond-down(md) {
+                    padding: 0 !important;
+                    margin: 0 !important;
+
+                    &:not(:last-child) {
+                        margin-right: 1.5rem !important;
+                    }
                 }
                 &:first-child::after {
                     content: "/";
@@ -26,19 +37,29 @@
                     height: 100%;
                     font-size: 1.2rem !important;
                     color: #333;
+                    @include respond-down(md) {
+                        font-size: 1.8rem !important;
+                    }
                 }
                 & > a {
-                    font-weight: bold;
+                    font-weight: bold !important;
                     font-size: 1.4rem;
                     // color: $white;
                 }
+
                 &:hover > a {
-                    color: $primary;
+                    color: $primary !important;
                 }
                 &.active > a {
-                    color: $primary;
+                    color: $primary !important;
                 }
             }
         }
+    }
+}
+
+#menu li:first-child {
+    @include respond-down(md) {
+        margin-top: 0px !important;
     }
 }

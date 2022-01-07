@@ -39,7 +39,7 @@ Vue.mixin({
           this.locale = locale;
           const now = new Date();
           now.setDate(now.getDate() + 7);
-          document.cookie = `locale=${locale}; expires=${now.toUTCString()}; SameSite=Lax; Secure`;
+          document.cookie = `locale=${locale};expires=${now.toUTCString()};SameSite=Lax;Secure`;
           this.$lang.setLocale(locale);
           location.reload()
         },
@@ -50,11 +50,11 @@ Vue.mixin({
       if (
         document.cookie
           .split(";")
-          .some((item) => item.trim().startsWith("locale="))
+          .some((item) => item.trim().startsWith("locale=")) || item.startsWith(" locale=")
       ) {
         const lang = document.cookie
           .split(";")
-          .find((item) => item.startsWith("locale="))
+          .find((item) => item.startsWith("locale=") || item.startsWith(" locale="))
           .split("=")[1];
         this.$lang.setLocale(lang);
         this.locale = lang;

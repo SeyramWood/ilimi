@@ -7,9 +7,8 @@
             class="wow fadeInRightBig"
             data-wow-offset="80"
             data-wow-duration="2s"
-          >
-            {{ $t("pages.home.ilimi.title") }}
-          </h1>
+            v-html="$t(`pages.home.ilimi.title`)"
+          ></h1>
           <div
             class="lead wow fadeInRightBig"
             data-wow-offset="80"
@@ -140,7 +139,7 @@
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <h6>{{ $t("pages.home.ilimi.filter-title.el") }}</h6>
+                          <h6>{{ $t("pages.home.ilimi.filter-title.e-l") }}</h6>
                           <!-- <a
                             href="ajax/project1.html"
                             class="cbp-singlePage cbp-l-caption-buttonLeft"
@@ -189,7 +188,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="cbp-item non-academics">
+                <!-- <li class="cbp-item non-academics">
                   <div class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">
                       <img
@@ -201,11 +200,7 @@
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
                           <h6>{{ $t("pages.home.ilimi.filter-title.c") }}</h6>
-                          <!-- <a
-                            href="ajax/project1.html"
-                            class="cbp-singlePage cbp-l-caption-buttonLeft"
-                            ><i class="fa fa-link"></i
-                          ></a> -->
+                          
                           <a
                             href="template/img/gallery/resource.jpg"
                             class="cbp-lightbox cbp-l-caption-buttonRight"
@@ -217,7 +212,7 @@
                       </div>
                     </div>
                   </div>
-                </li>
+                </li> -->
                 <li class="cbp-item non-academics">
                   <div class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">
@@ -246,7 +241,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="cbp-item non-academics">
+                <!-- <li class="cbp-item non-academics">
                   <div class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">
                       <img
@@ -258,11 +253,7 @@
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
                           <h6>{{ $t("pages.home.ilimi.filter-title.gs") }}</h6>
-                          <!-- <a
-                            href="ajax/project1.html"
-                            class="cbp-singlePage cbp-l-caption-buttonLeft"
-                            ><i class="fa fa-link"></i
-                          ></a> -->
+                         
                           <a
                             href="template/img/gallery/strategy.jpg"
                             class="cbp-lightbox cbp-l-caption-buttonRight"
@@ -274,7 +265,7 @@
                       </div>
                     </div>
                   </div>
-                </li>
+                </li> -->
 
                 <!--alumni-->
                 <li class="cbp-item alumni">
@@ -357,10 +348,35 @@
         </div>
         <!--//END PORTFOLIO-->
       </div>
+      <!--CLIENTS-->
+      <div class="wow fadeIn col-lg-10 col-lg-offset-1" data-wow-offset="80">
+        <div id="clients">
+          <div class="item">
+            <img src="template/img/clients/logo1.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="template/img/clients/logo2.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="template/img/clients/logo3.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="template/img/clients/logo4.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="template/img/clients/logo5.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="template/img/clients/logo6.jpg" alt="" />
+          </div>
+        </div>
+        <div class="pad45"></div>
+      </div>
     </div>
 
     <!--PARALLAX WORK QUOTE-->
     <div class="well">
+      <!-- style="margin-bottom: 15rem" -->
       <div class="dark_overlay">
         <div class="container">
           <div class="row">

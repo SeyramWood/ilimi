@@ -121,13 +121,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$primary: #651fff;
+@import "../../../sass/mixins";
+$primary: #050505;
 $text: #26262693;
 $active: #000000;
 $white: #ffffff;
 .s__accordians {
   width: 100%;
-
   &__header {
     width: 100%;
     & > ul {

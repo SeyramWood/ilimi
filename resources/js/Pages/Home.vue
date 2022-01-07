@@ -43,7 +43,7 @@
 
     <IlimiExperience />
 
-    <Blog />
+    <!-- <Blog /> -->
 
     <Contact />
 

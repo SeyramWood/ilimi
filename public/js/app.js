@@ -2278,6 +2278,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2427,6 +2437,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_page_Blog__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/page/Blog */ "./resources/js/components/page/Blog.vue");
 /* harmony import */ var _components_page_Contact__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/page/Contact */ "./resources/js/components/page/Contact.vue");
 /* harmony import */ var _components_page_Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/page/Footer */ "./resources/js/components/page/Footer.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3034,6 +3054,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "About"
 });
@@ -3051,31 +3077,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -3654,6 +3655,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Admissions"
 });
@@ -3853,6 +3870,69 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4505,6 +4585,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "IlimiExperience",
   data: function data() {
@@ -4642,7 +4738,7 @@ vue__WEBPACK_IMPORTED_MODULE_4__["default"].mixin({
           _this.locale = locale;
           var now = new Date();
           now.setDate(now.getDate() + 7);
-          document.cookie = "locale=".concat(locale, "; expires=").concat(now.toUTCString(), "; SameSite=Lax; Secure");
+          document.cookie = "locale=".concat(locale, ";expires=").concat(now.toUTCString(), ";SameSite=Lax;Secure");
 
           _this.$lang.setLocale(locale);
 
@@ -4653,9 +4749,9 @@ vue__WEBPACK_IMPORTED_MODULE_4__["default"].mixin({
     setLocale: function setLocale() {
       if (document.cookie.split(";").some(function (item) {
         return item.trim().startsWith("locale=");
-      })) {
+      }) || item.startsWith(" locale=")) {
         var lang = document.cookie.split(";").find(function (item) {
-          return item.startsWith("locale=");
+          return item.startsWith("locale=") || item.startsWith(" locale=");
         }).split("=")[1];
         this.$lang.setLocale(lang);
         this.locale = lang;
@@ -4754,10 +4850,10 @@ module.exports = {
     "home": {
       "about": {
         "btn": "CONTACT",
-        "cta": "The mission of A.D.U. is to prepare the most talented\r\n              <span class=\"colour\"><strong>young people<\/strong><\/span>\r\n              in <span class=\"colour\"><strong>Niger<\/strong><\/span> and\r\n              Francophone Africa to design and drive the\r\n              <span class=\"colour\"><strong>development<\/strong><\/span> of their\r\n              nations as\r\n              <span class=\"colour\"><strong>ethical<\/strong><\/span> and effective\r\n              leaders in the public, private and not-for-profit sectors.",
+        "cta": "The mission of A.D.U. is to prepare the most talented\r\n              <span class=\"colour\"><strong>young people<\/strong><\/span>\r\n              in <span class=\"colour\"><strong>Niger<\/strong><\/span> and\r\n              <span class=\"colour\"><strong>Francophone Africa<\/strong><\/span> to design and drive the\r\n              <span class=\"colour\"><strong>development<\/strong><\/span> of their\r\n              nations as\r\n              <span class=\"colour\"><strong>ethical<\/strong><\/span> and <span class=\"colour\"><strong>effective\r\n              leaders<\/strong><\/span> in the public, private and not-for-profit sectors.",
         "hover-text": "VIEW PROFILE",
         "impact": {
-          "title": "Our Impact",
+          "title": "Impact",
           "70": "Women & Gender Equality",
           "75": "Scholarships & Financial Aid",
           "90": "Internships & Placement"
@@ -4783,7 +4879,7 @@ module.exports = {
             "title": "Apply Online"
           },
           "4": {
-            "text": "For additional questions and\/or inquiry regarding the status of\r\n                your application, you can reach us\r\n                through:admissions@ilimi.edu.ne,<br \/>+227 923 968 68\r\n                (WhatsApp)<br \/>+227 9339 68 68 (Mobile)",
+            "text": "For additional questions and\/or inquiry regarding the status of\r\n                your application, you can reach us\r\n                through: admissions@ilimi.edu.ne,<br \/>+227 923 968 68\r\n                (WhatsApp)<br \/>+227 9339 68 68 (Mobile)",
             "title": "Contact Admissions"
           }
         },
@@ -4791,14 +4887,14 @@ module.exports = {
           "text-1": "Enrolled Students",
           "text-2": "Countries Represented",
           "text-3": "Programs of Study",
-          "title": "Our Statistics"
+          "title": "Statistics"
         },
         "title": "Admissions",
-        "why": "Why A.D.U?"
+        "why": "Why A.D.U.?"
       },
       "banner": {
         "cta": "YOUNG LEADERS|DONATE|SCHOLARSHIPS",
-        "values": "LEADERSHIP, EXCELLENCE & INNOVATION"
+        "values": "LEADERSHIP. EXCELLENCE. INNOVATION."
       },
       "contact": {
         "cta": "For additional questions and\/or <strong>inquiry<\/strong> regarding\r\n            the status of your application.",
@@ -4807,7 +4903,7 @@ module.exports = {
       "donation": {
         "btn": "DONATE",
         "h": "Be part of the solution",
-        "p-1": "<strong>Patrick Awuah, <br \/>Founder and President<\/strong>, Ashesi\r\n          University, Ghana.",
+        "p-1": "<strong>Patrick Awuah, Founder and President<\/strong>, Ashesi\r\n          University, Ghana.",
         "p-2": "A.D.U. is reshaping the future for the Sahel region by educating\r\n          <br \/>\r\n          its most exceptional young women and men. We need your help.",
         "q": "I visited A.D.U. in 2019 and was really struck by the enthusiasm of\r\n          the students, and the high praise that employers that I met had for\r\n          A.D.U. students. Corporate Niger described A.D.U. students the same\r\n          way Corporate Ghana describes Ashesi students. But I could also tell\r\n          that A.D.U. was struggling financially. I left feeling that there was\r\n          a spark here that needed an opportunity to grow, and I wondered how\r\n          Ashesi and I could help."
       },
@@ -4815,7 +4911,7 @@ module.exports = {
         "copyright": "A.D.U. - All Rights Reserved"
       },
       "ilimi": {
-        "cta": " A confident <span class=\"colour\">client will<\/span> see<br \/>your\r\n            confidence as <strong>strength<\/strong>, not arrogance.",
+        "cta": "We offer training in <span class=\"colour\"><strong>liberal arts</strong></span> that aims to develop students' critical thinking, <span class=\"colour\"><strong>problem-solving skills</strong></span>, and ability to serve their communities.\r\n       Our <span class=\"colour\"><strong>unique model \u2013 ILIMI</strong></span>; which means \u201Ceducation, intellectual and knowledge\u201D in Hausa, focuses on developing ethical and impact driven <span class=\"colour\"><strong>young leaders</strong></span>. ",
         "filter-btn": {
           "academics": "Academics",
           "all": "All",
@@ -4834,22 +4930,22 @@ module.exports = {
           "om": "Our Model",
           "sl": "Student Life"
         },
-        "title": "Ilimi Experience"
+        "title": "<span style=\"text-transform: none\">ILIMI<\/span> experience"
       },
       "nav": {
         "about": "About",
         "admissions": "Admissions",
         "contact": "Contact",
         "home": "Home",
-        "ilimi": "Ilimi Experience",
+        "ilimi": "ILIMI Experience",
         "scholarship": "Scholarship"
       },
       "newsletter": {
         "btn": "Subscribe",
-        "title": "Subscribe Our to Newsletter"
+        "title": "Subscribe To Our Newsletter"
       },
       "scholarship": {
-        "cta": "The\r\n              <strong class=\"colour\"\r\n                >Mastercard Foundation Scholars Program<\/strong\r\n              >\r\n              is a global initiative to\r\n              <strong class=\"colour\">educate<\/strong> and train the next\r\n              generation of <strong class=\"colour\">leaders<\/strong> who will\r\n              contribute to the social and economic progress of the African\r\n              continent. The program is carried out in\r\n              <strong class=\"colour\">French-speaking Africa<\/strong>\r\n              with the Gaston Berger University in Senegal, 2iE in Burkina Faso,\r\n              and A.D.U. in Niger.\r\n              <a href=\"\/scholarships\" class=\"p-link\">Read more<\/a>.",
+        "cta": "The\r\n              <strong class=\"colour\"\r\n                >Mastercard Foundation Scholars Program<\/strong\r\n              >\r\n              is a global initiative to\r\n              <strong class=\"colour\">educate<\/strong> and train the next\r\n              generation of <strong class=\"colour\">leaders<\/strong> who will\r\n              contribute to the social and economic progress of the African\r\n              continent. The program is carried out in\r\n              <strong class=\"colour\">French-speaking Africa<\/strong>\r\n              with the Gaston Berger University in Senegal, 2iE in Burkina Faso,\r\n              and A.D.U. in Niger.\r\n              <a href=\"\/scholarships\" class=\"p-link\"><strong>Read more<\/strong><\/a>.",
         "details": {
           "benefits": {
             "list": {
@@ -4888,35 +4984,35 @@ module.exports = {
     },
     "scholarship": {
       "left": {
-        "p-1": "Ce programme offre une bourse d\u2019\xE9tudes compl\xE8te aux \xE9tudiants,\r\n              cette bourse permet \xE0 des jeunes issus de communaut\xE9s\r\n              \xE9conomiquement d\xE9favoris\xE9es, qui ont fait preuve de excellence\r\n              scolaire et de potentiel de leadership, d'acc\xE9der \xE0 une \xE9ducation\r\n              de qualit\xE9 et pertinente. Le Mastercard Foundation Scholars\r\n              Program fournit un soutien financier, social, acad\xE9miques et\r\n              dispose d\u2019un de soutien complet comprenant un \xE9ventail de services\r\n              de mentorat et accompagne leur transition vers des opportunit\xE9s\r\n              d\u2019emploi et entreprenariat.",
-        "p-2": "Ce programme qui n\u2019est par ailleurs impl\xE9ment\xE9 que dans de\r\n              prestigieuses universit\xE9s comme : Stanford, Berkeley et Wellesley\r\n              aux Etats Unis; Universit\xE9 de Toronto et McGill au Canada;\r\n              Sciences Po en France; Universite de Cape Town, Makerere, Ashesi\r\n              et ALU en Afrique, Et est port\xE9 en Afrique francophone avec\r\n              l\u2019universit\xE9 Gaston Berger au S\xE9n\xE9gal, 2iE au Burkina Faso et\r\n              A.D.U. au Niger.",
-        "title": "\xC0 propos"
+        "p-1": "This program offers a full scholarship to students,\r\n              this scholarship allows young people from economically disadvantaged communities, \r\n              who have demonstrated academic excellence and leadership potential to access a quality and relevant\r\n              education. The Mastercard Foundation Scholars\r\n              Program provides financial, social, and academic support and\r\n              support including a range of mentoring services and accompanies their transitions to employment and entrepreneurial opportunities.",
+        "p-2": "This program, which is only implemented in prestigious\r\n              universities such as: Stanford, Berkeley and Wellesley\r\n              in the United States; University of Toronto and McGill in Canada;\r\n              Sciences Po in France; University of Cape Town, Makerere, Ashesi\r\n              and ALU in Africa, and is carried in Francophone Africa with\r\n              Gaston Berger University in Senegal, 2iE in Burkina Faso and\r\n              A.D.U. in Niger.",
+        "title": "About"
       },
       "right": {
         "list-1": {
           "lists": {
-            "1": "Les frais de scolarit\xE9",
-            "2": "L\u2019h\xE9bergement",
-            "3": "Mat\xE9riels scolaires",
+            "1": "Tuition fees",
+            "2": "Accommodation",
+            "3": "School materials",
             "4": "Transport",
-            "5": "Allocations mensuelles"
+            "5": "Monthly allowances"
           },
-          "title": "La bourse"
+          "title": "Benefits"
         },
         "list-2": {
           "lists": {
-            "1": "Poss\xE9der un BAC ou un dipl\xF4me \xE9quivalent avec un excellent\r\n                parcours acad\xE9mique.",
-            "2": "D\xE9montrer un besoin clair de soutien financier"
+            "1": "Possess a BAC or equivalent degree with an excellent\r\n                academic background",
+            "2": "Demonstrate a clear need for financial support"
           },
-          "title": "Les crit\xE8res"
+          "title": "Criteria"
         },
         "list-3": {
           "lists": {
-            "1": "Droit priv\xE9",
-            "2": "Business Administration (Comptabilit\xE9, Gestion, Syst\xE8mes\r\n                d\u2019information, Marketing, Ressources Humaines\u2026)",
-            "3": "Intelligence Artificielle (Informatique)"
+            "1": "Private Law",
+            "2": "Business Administration (Accounting, Management, Information Systems\r\n                Marketing, Human Resources...)",
+            "3": "Artificial Intelligence (Computer Science)"
           },
-          "title": "Programmes"
+          "title": "Programes"
         }
       }
     }
@@ -4940,42 +5036,42 @@ module.exports = {
   "fr.pages": {
     "donate": {
       "content": {
-        "h1": "Be part of the solution",
-        "h3": "ARE YOU READY TO CHANGE THE CONVERSATION ABOUT THE SAHEL?",
-        "p": "A.D.U. is reshaping the future for the Sahel region by educating\r\n            <br \/>\r\n            its most exceptional young women and men. We need your help."
+        "h1": "Faites partie de la solution",
+        "h3": "\xCATES VOUS PR\xCAT \xC0 CHANGER LA CONVERSATION SUR LE SA SA SA D'UN CHANGEMENT D'ATTITUDE ?",
+        "p": "L'A.D.U. redessine l'avenir de la r\xE9gion du Sahel en \xE9duquant les enfants et les jeunes.\r\n            <br />\r\n            ses jeunes femmes et hommes les plus exceptionnels. Nous avons besoin de votre aide."
       },
-      "cta": "When you donate to African Development University (A.D.U), you invest\r\n          in the young people who will become the future leaders of Niger. Your\r\n          support will allow us to put higher education in reach for talented\r\n          students. Niger is one of the poorest countries in the world with an\r\n          annual GDP under $400 per capita. For many promising students, paying\r\n          the annual A.D.U. tuition of $4,000 is an impossible dream. Your\r\n          donation will enable us to select students without regard to their\r\n          financial situation. A.D.U. students are accepted based on exceptional\r\n          intellectual potential, demonstrated work ethic, and commitment to\r\n          leading change in Niger. Act now to empower the next generation of\r\n          leaders, thinkers, and changemakers!",
+      "cta": "Lorsque vous faites un don \xE0 l'Universit\xE9 africaine de d\xE9veloppement (UAD), vous investissez dans les jeunes qui deviendront les futurs dirigeants du Niger. Votre soutien nous permettra de mettre l'enseignement sup\xE9rieur \xE0 la port\xE9e d'\xE9tudiants talentueux. Le Niger est l'un des pays les plus pauvres du monde, avec un PIB annuel inf\xE9rieur \xE0 400 dollars par habitant. Pour de nombreux \xE9tudiants prometteurs, payer les frais de scolarit\xE9 annuels de l'A.D.U., qui s'\xE9l\xE8vent \xE0 4 000 dollars, est un r\xEAve impossible. Votre don nous permettra de s\xE9lectionner des \xE9tudiants sans tenir compte de leur situation financi\xE8re. Les \xE9tudiants de l'A.D.U. sont accept\xE9s sur la base d'un potentiel intellectuel exceptionnel, d'une \xE9thique de travail av\xE9r\xE9e et d'un engagement \xE0 mener le changement au Niger. Agissez maintenant pour donner \xE0 la prochaine g\xE9n\xE9ration de leaders, de penseurs et d'artisans du changement les moyens d'agir!",
       "info": {
-        "h1": "FOR U.S. DONORS:",
+        "h1": "POUR LES DONATEURS AM\xC9RICAINS:",
         "info-card": {
-          "h1-1": "FOR AFRICAN, EUROPEAN AND OTHER INTERNATIONAL DONORS:",
-          "h1-2": "Bank Details"
+          "h1-1": "POUR LES DONATEURS AFRICAINS, EUROP\xC9ENS ET AUTRES DONATEURS INTERNATIONAUX:",
+          "h1-2": "Coordonn\xE9es bancaires"
         },
         "info-main": {
-          "address": "ADU ILIMI US Fund in the memo section <br \/>\r\n                    10 Rockefeller Plaza <br \/>\r\n                    16th Floor New York, NY 10020",
-          "h1-1": "Gifts By Check",
-          "h1-2": "Donate Via Wire Transfer",
-          "p": "Address your check to KBFUS, write:",
-          "p-2": "Gifts by wire transfer or to contribute other types of\r\n                    property: Contact KBFUS via phone\r\n                    <a href=\"tel:+2127137660\">(212) 713-7660<\/a> or\r\n                    <a href=\"mailto:info@kbfus.org\">info@kbfus.org<\/a>"
+          "address": "A.D.U. ILIMI US Fonds dans la section m\xE9mo <br />\r\n                    10 Rockefeller Plaza <br />\r\n                    16th Floor New York, NY 10020",
+          "h1-1": "Cadeaux par ch\xE8que",
+          "h1-2": "Faire un don par virement bancaire",
+          "p": "Adressez votre ch\xE8que \xE0 KBFUS, \xE9crivez:",
+          "p-2": "Dons par virement ou pour apporter d'autres types de biens\r\n                    biens: Contacter KBFUS par t\xE9l\xE9phone\r\n                    <a href=\"tel:+2127137660\">(212) 713-7660</a> or\r\n                    <a href=\"mailto:info@kbfus.org\">info@kbfus.org</a>"
         },
-        "p": "US donors can make tax deductible contributions to the ADU ILIMI\r\n              US Fund through the\r\n              <span>King Baudouin Foundation United States (KBFUS)<\/span>. KBFUS\r\n              is a registered US 501(c)(3) and 509(a)(1) charity; donors may\r\n              claim the maximum tax benefits allowed by U.S. law."
+        "p": "Les donateurs am\xE9ricains peuvent faire des contributions d\xE9ductibles des imp\xF4ts au fonds ADU ILIMI\r\n              US Fund par l'interm\xE9diaire du\r\n              <span>King Baudouin Foundation United States (KBFUS)</span>. KBFUS\r\n              est enregistr\xE9 US 501(c)(3) and 509(a)(1) charit\xE9; les donateurs peuvent\r\n              r\xE9clamer les avantages fiscaux maximums autoris\xE9s par U.S. loi."
       }
     },
     "home": {
       "about": {
         "btn": "CONTACT",
-        "cta": "La mission d'A.D.U. est de pr\xE9parer\r\n              <span class=\"colour\"><strong>les jeunes</strong></span>\r\n              les plus talentueux du <span class=\"colour\"><strong>Niger</strong></span> du Niger et de l'Afrique francophone \xE0 concevoir et \xE0 conduire le \r\n              <span class=\"colour\"><strong>d\xE9veloppement</strong></span> de leurs nations \r\n              <span class=\"colour\"><strong>ethical</strong></span> en tant que leaders \xE9thiques et efficaces dans les secteurs public, priv\xE9 et \xE0 but non lucratif.",
+        "cta": "La mission d'A.D.U. est de pr\xE9parer\r\n              <span class=\"colour\"><strong>les jeunes</strong></span>\r\n              les plus talentueux du <span class=\"colour\"><strong>Niger</strong></span> du Niger et de <span class=\"colour\"><strong>l'Afrique francophone</strong></span> \xE0 concevoir et \xE0 conduire le \r\n              <span class=\"colour\"><strong>d\xE9veloppement</strong></span> de leurs nations \r\n              </span> en tant que <span class=\"colour\"><strong>leaders \xE9thiques</strong></span> et <span class=\"colour\"><strong>efficaces</strong></span> dans les secteurs public, priv\xE9 et \xE0 but non lucratif.",
         "hover-text": "VIEW PROFILE",
         "impact": {
-          "title": "Notre impact",
-          "70": "Women & Gender Equality",
-          "75": "Scholarships & Financial Aid",
-          "90": "Internships & Placement"
+          "title": "impact",
+          "70": "Femmes et \xC9galit\xE9 des Sexes",
+          "75": "Bourses D'\xE9tudes et Aide Financi\xE8re",
+          "90": "Stages et Placements"
         },
         "position": "Chancelier|Fondateur et pr\xE9sident",
         "text-left": "African Development Universalis (A.D.U.) est une institution bilingue (fran\xE7ais et anglais) et la premi\xE8re universit\xE9 \xE0 but non lucratif du Niger \xE0 offrir une \xE9ducation de classe mondiale aux \xE9tudiants de la r\xE9gion du Sahel. Nous offrons une formation dans le cadre des arts lib\xE9raux pour les emplois les plus demand\xE9s aujourd'hui, enseign\xE9e par des professeurs engag\xE9s qui visent \xE0 d\xE9velopper la pens\xE9e critique des \xE9tudiants, leurs comp\xE9tences en mati\xE8re de r\xE9solution de probl\xE8mes et leur capacit\xE9 \xE0 servir leurs communaut\xE9s. Des cours interactifs aux stages et \xE0 la recherche, vous vous transformerez en poursuivant vos passions! Notre mod\xE8le unique - ILIMI, qui signifie \"\xE9ducation, intellectuel et connaissance\" en haoussa, se concentre sur le d\xE9veloppement de jeunes leaders \xE9thiques et influents. A.D.U. s'inspire des plus grands \xE9tablissements d'enseignement sup\xE9rieur du monde, comme l'universit\xE9 d'Ashesi au Ghana et l'universit\xE9 de Harvard aux \xC9tats-Unis.",
         "text-right": "Depuis la cr\xE9ation d'A.D.U. jusqu'\xE0 aujourd'hui, l'universit\xE9 d'Ashesi a jou\xE9 un r\xF4le \xE9norme dans la croissance continue, le d\xE9veloppement et la durabilit\xE9 de notre institution par le biais de diff\xE9rentes plateformes, dont l'initiative de collaboration en mati\xE8re d'\xE9ducation d'Ashesi. La directrice de l'initiative, Rose A. Dodd, tout en r\xE9fl\xE9chissant au partenariat de mentorat entre les deux institutions, affirme que la relation a permis de remplir des r\xF4les fondamentaux tr\xE8s importants au sein de l'\xE9quipe de direction de l'A.D.U. Avec le soutien de l'universit\xE9 d'Ashesi, du minist\xE8re de l'enseignement sup\xE9rieur, de la recherche et de l'innovation du Niger et d'autres partenaires du Sahel, une r\xE9union hybride d'\xE9ducateurs chevronn\xE9s et de parties prenantes cl\xE9s de l'enseignement sup\xE9rieur africain a eu lieu sur le campus de l'A.D.U., o\xF9 nous avons engag\xE9 des discussions pour r\xE9imaginer l'avenir de l'enseignement sup\xE9rieur, dans le contexte actuel de la pand\xE9mie de COVID-I9.",
-        "title": "a propos"
+        "title": "\xE0 propos"
       },
       "admissions": {
         "cta": "Nos programmes de licence en trois ans sont reconnus \r\n              <span class=\"colour\"><strong>au niveau national</strong></span> et \r\n              <span class=\"colour\"><strong>international</strong></span>. Nos programmes sont tous \r\n              <span class=\"colour\"><strong>accr\xE9dit\xE9s </strong></span> par le Minist\xE8re de l'Enseignement Sup\xE9rieur, de la Recherche et de l'Innovation du Niger. Postulez pour \xE9tudier avec nous!\r\n              <a\r\n                href=\"https://applications.eduappgh.com/\"\r\n                targ\x1Bt=\"_blank\"\r\n                rel=\"noopener noreferrer\"\r\n                class=\"p-link\"\r\n                ><span class=\"colour\"><strong>Postulez maintenant</strong></span></a\r\n              >",
@@ -4993,7 +5089,7 @@ module.exports = {
             "title": "Postuler en ligne"
           },
           "4": {
-            "text": "Pour toute question suppl\xE9mentaire et/ou demande concernant l'\xE9tat de votre candidature, vous pouvez nous joindre \xE0 travers:admissions@ilimi.edu.ne,<br />+227 923 968 68\r\n                (WhatsApp)<br />+227 9339 68 68 (Mobile)",
+            "text": "Pour toute question suppl\xE9mentaire et/ou demande concernant l'\xE9tat de votre candidature, vous pouvez nous joindre \xE0 travers: admissions@ilimi.edu.ne,<br />+227 923 968 68\r\n                (WhatsApp)<br />+227 9339 68 68 (Mobile)",
             "title": "Contacter les admissions"
           }
         },
@@ -5001,14 +5097,14 @@ module.exports = {
           "text-1": "\xC9tudiants inscrits",
           "text-2": "Pays repr\xE9sent\xE9s",
           "text-3": "Programmes d'\xE9tudes",
-          "title": "Nos statistiques"
+          "title": "Statistiques"
         },
         "title": "Admissions",
-        "why": "Pourquoi A.D.U?"
+        "why": "Pourquoi A.D.U.?"
       },
       "banner": {
         "cta": "JEUNES DIRIGEANTS|DONNES|BOURSES D'\xC9TUDES",
-        "values": "LEADERSHIP, EXCELLENCE & INNOVATION"
+        "values": "LEADERSHIP. EXCELLENCE. INNOVATION."
       },
       "contact": {
         "cta": "Pour toute question suppl\xE9mentaire et/ou demande concernant l'\xE9tat d'avancement de votre demande.",
@@ -5017,7 +5113,7 @@ module.exports = {
       "donation": {
         "btn": "DONNES",
         "h": "Faites partie de la solution",
-        "p-1": "<strong>Patrick Awuah, <br />Fondateur et pr\xE9sident</strong>, de l'universit\xE9 Ashesi, Ghana.",
+        "p-1": "<strong>Patrick Awuah, Fondateur et pr\xE9sident</strong>, de l'universit\xE9 Ashesi, Ghana.",
         "p-2": "L'A.D.U. redessine l'avenir de la r\xE9gion en \xE9duquant\r\n          <br />\r\n          ses jeunes femmes et hommes les plus exceptionnels ses jeunes femmes et hommes les plus exceptionnels. Nous avons besoin de.",
         "q": "J'ai visit\xE9 l'A.D.U. en 2019 et j'ai \xE9t\xE9 vraiment frapp\xE9 par l'enthousiasme des \xE9tudiants, ainsi que par les \xE9loges que les employeurs que j'ai rencontr\xE9s avaient pour les \xE9tudiants de l'A.D.U.. Corporate Niger a d\xE9crit les \xE9tudiants d'A.D.U. de la m\xEAme mani\xE8re que Corporate Ghana d\xE9crit les \xE9tudiants d'Ashesi. Mais j'ai aussi pu constater que l'A.D.U. avait des difficult\xE9s financi\xE8res. Je suis parti en pensant qu'il y avait une \xE9tincelle ici qui avait besoin d'une opportunit\xE9 pour se d\xE9velopper, et je me suis demand\xE9 comment Ashesi et moi pouvions aider."
       },
@@ -5025,7 +5121,7 @@ module.exports = {
         "copyright": "A.D.U. - Tous droits r\xE9serv\xE9s"
       },
       "ilimi": {
-        "cta": "S'abonner \xE0 notre bulletin d'information (subscribe to our newsletter)",
+        "cta": "Nous proposons une formation en leur <span class=\"colour\"><strong>arts lib\xE9raux</strong></span> qui vise \xE0 d\xE9velopper l'esprit critique des \xE9tudiants, <span class=\"colour\"><strong>aptitude \xE0 r\xE9soudre les probl\xE8mes</strong></span> et leur capacit\xE9 \xE0 servir leur communaut\xE9. Notre <span class=\"colour\"><strong>mod\xE8le unique - ILIMI</strong></span>, qui signifie \"\xE9ducation, intellectuel et connaissance\" en haoussa, se concentre sur le d\xE9veloppement de <span class=\"colour\"><strong>jeunes leaders</strong></span> \xE9thiques et influents.",
         "filter-btn": {
           "academics": "Acad\xE9miques",
           "all": "Tous",
@@ -5044,29 +5140,29 @@ module.exports = {
           "om": "Notre mod\xE8le",
           "sl": "Vie \xE9tudiante"
         },
-        "title": "l'exp\xE9rience ilimi"
+        "title": "l'exp\xE9rience <span style=\"text-transform: none\">ILIMI</span>"
       },
       "nav": {
         "about": "\xC0 propos",
         "admissions": "Admissions",
-        "contact": "Sontacter",
+        "contact": "Contacter",
         "home": "Accueil",
-        "ilimi": "l'exp\xE9rience ilimi",
+        "ilimi": "l'exp\xE9rience ILIMI",
         "scholarship": "Bourse d'\xE9tudes"
       },
       "newsletter": {
         "btn": "S'abonner \xE0",
-        "title": "S'abonner \xE0 la newsletter"
+        "title": "S'abonner \xE0 notre newsletter"
       },
       "scholarship": {
-        "cta": "Le\r\n              <strong class=\"colour\"\r\n                >programme de bourses de la Mastercard Foundation</strong\r\n              >\r\n              est une initiative mondiale visant \xE0 \r\n              <strong class=\"colour\">\xE9duquer</strong> et former la prochaine g\xE9n\xE9ration de <strong class=\"colour\">leaders</strong> qui contribueront au progr\xE8s social et \xE9conomique du continent africain. Le programme est r\xE9alis\xE9 en \r\n              <strong class=\"colour\">Afrique francophone</strong>\r\n              avec l'Universit\xE9 Gaston Berger au S\xE9n\xE9gal, 2iE au Burkina Faso, et A.D.U. au Niger.Nous avons le plaisir d'annoncer qu'\xE0 partir de plus d'informations.\r\n              <a href=\"/scholarships\" class=\"p-link\">Lire la suite</a>.",
+        "cta": "Le\r\n              <strong class=\"colour\"\r\n                >programme de bourses de la Mastercard Foundation</strong\r\n              >\r\n              est une initiative mondiale visant \xE0 \r\n              <strong class=\"colour\">\xE9duquer</strong> et former la prochaine g\xE9n\xE9ration de <strong class=\"colour\">leaders</strong> qui contribueront au progr\xE8s social et \xE9conomique du continent africain. Le programme est r\xE9alis\xE9 en \r\n              <strong class=\"colour\">Afrique francophone</strong>\r\n              avec l'Universit\xE9 Gaston Berger au S\xE9n\xE9gal, 2iE au Burkina Faso, et A.D.U. au Niger.Nous avons le plaisir d'annoncer qu'\xE0 partir de plus d'informations.\r\n              <a href=\"/scholarships\" class=\"p-link\"><strong>Lire la suite</strong></a>.",
         "details": {
           "benefits": {
             "list": {
-              "1": "Soutien financier (frais de scolarit\xE9, repas, logement, etc.)",
+              "1": "Soutien financier (frais de scolarit\xE9, etc.)",
               "2": "Conseil et soutien psychologique",
-              "3": "Allocation mensuelle apr\xE8s l'obtention du dipl\xF4me",
-              "4": "Coaching et fonds pour les boursiers entrepreneurs",
+              "3": "Mensuelle apr\xE8s l'obtention du dipl\xF4me",
+              "4": "Fonds pour les boursiers entrepreneurs",
               "5": "Assurance maladie et autres \xE9l\xE9ments de soutien"
             },
             "title": "AVANTAGES"
@@ -5115,7 +5211,7 @@ module.exports = {
         },
         "list-2": {
           "lists": {
-            "1": "Poss\xE9der un BAC ou un dipl\xF4me \xE9quivalent avec un excellent\r\n                parcours acad\xE9mique.",
+            "1": "Poss\xE9der un BAC ou un dipl\xF4me \xE9quivalent avec un excellent\r\n                parcours acad\xE9mique",
             "2": "D\xE9montrer un besoin clair de soutien financier"
           },
           "title": "Les crit\xE8res"
@@ -6602,7 +6698,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".s__accordians[data-v-79644027] {\n  width: 100%;\n}\n.s__accordians__header[data-v-79644027] {\n  width: 100%;\n}\n.s__accordians__header > ul[data-v-79644027] {\n  width: 100%;\n  padding-left: 0 !important;\n  list-style-type: none;\n}\n.s__accordians__header > ul > li[data-v-79644027] {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  cursor: pointer;\n  font-size: 1.2rem;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  margin: 0.5rem 0;\n  color: #26262693;\n  border-radius: 3px;\n}\n.s__accordians__header > ul > li[data-v-79644027]:not(:last-child) {\n  margin: 0.5 1rem 0.5 0;\n}\n.s__accordians__header > ul > li > .left > span[data-v-79644027] {\n  font-weight: bold;\n  letter-spacing: 0.05rem;\n  transition: color 0.2s ease-in;\n}\n.s__accordians__header > ul > li > .left > span.sub[data-v-79644027] {\n  font-weight: 200;\n}\n.s__accordians__header > ul > li:hover > .left > span[data-v-79644027] {\n  color: #000000;\n}\n.s__accordians__content[data-v-79644027] {\n  width: 100%;\n}\n.isActive > .left > .label[data-v-79644027] {\n  color: #000000;\n}\n.isActive > .left > .icon[data-v-79644027] {\n  display: inline-block;\n  -webkit-animation: icon-rotate-up-data-v-79644027 0.2s ease-in-out forwards;\n          animation: icon-rotate-up-data-v-79644027 0.2s ease-in-out forwards;\n}\n.isActive > .left > .icon > i[data-v-79644027] {\n  color: #000000;\n}\n.isActive > .icon[data-v-79644027] {\n  display: inline-block;\n  -webkit-animation: icon-rotate-up-data-v-79644027 0.2s ease-in-out forwards;\n          animation: icon-rotate-up-data-v-79644027 0.2s ease-in-out forwards;\n}\n.isActive > .icon > i[data-v-79644027] {\n  color: #000000;\n}\n.inActive > .left > .icon[data-v-79644027] {\n  -webkit-animation: icon-rotate-down-data-v-79644027 0.2s ease-in-out forwards;\n          animation: icon-rotate-down-data-v-79644027 0.2s ease-in-out forwards;\n}\n.inActive > .icon[data-v-79644027] {\n  -webkit-animation: icon-rotate-down-data-v-79644027 0.2s ease-in-out forwards;\n          animation: icon-rotate-down-data-v-79644027 0.2s ease-in-out forwards;\n}\n@-webkit-keyframes icon-rotate-up-data-v-79644027 {\n0% {\n    opacity: 0.5;\n    transform: rotate(0deg);\n}\n100% {\n    opacity: 1;\n    transform: rotate(-180deg);\n}\n}\n@keyframes icon-rotate-up-data-v-79644027 {\n0% {\n    opacity: 0.5;\n    transform: rotate(0deg);\n}\n100% {\n    opacity: 1;\n    transform: rotate(-180deg);\n}\n}\n@-webkit-keyframes icon-rotate-down-data-v-79644027 {\n0% {\n    opacity: 0.5;\n    transform: rotate(-180deg);\n}\n100% {\n    opacity: 1;\n    transform: rotate(0deg);\n}\n}\n@keyframes icon-rotate-down-data-v-79644027 {\n0% {\n    opacity: 0.5;\n    transform: rotate(-180deg);\n}\n100% {\n    opacity: 1;\n    transform: rotate(0deg);\n}\n}\n.accordion-enter-active[data-v-79644027],\n.accordion-leave-active[data-v-79644027] {\n  will-change: height, opacity;\n  transition: height 0.3s ease, opacity 0.3s ease;\n  overflow: hidden;\n}\n.accordion-enter[data-v-79644027],\n.accordion-leave-to[data-v-79644027] {\n  height: 0 !important;\n  opacity: 0;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/**\n    DESKTOP FIRST APPROACH\n    No media query necessary for xl breakpoint as it has no upper bound on its width\n**/\n/**\n    DESKTOP FIRST APPROACH\n    No media query necessary for xl breakpoint as it has no upper bound on its width\n**/\n.s__accordians[data-v-79644027] {\n  width: 100%;\n}\n.s__accordians__header[data-v-79644027] {\n  width: 100%;\n}\n.s__accordians__header > ul[data-v-79644027] {\n  width: 100%;\n  padding-left: 0 !important;\n  list-style-type: none;\n}\n.s__accordians__header > ul > li[data-v-79644027] {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  cursor: pointer;\n  font-size: 1.2rem;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  margin: 0.5rem 0;\n  color: #26262693;\n  border-radius: 3px;\n}\n.s__accordians__header > ul > li[data-v-79644027]:not(:last-child) {\n  margin: 0.5 1rem 0.5 0;\n}\n.s__accordians__header > ul > li > .left > span[data-v-79644027] {\n  font-weight: bold;\n  letter-spacing: 0.05rem;\n  transition: color 0.2s ease-in;\n}\n.s__accordians__header > ul > li > .left > span.sub[data-v-79644027] {\n  font-weight: 200;\n}\n.s__accordians__header > ul > li:hover > .left > span[data-v-79644027] {\n  color: #000000;\n}\n.s__accordians__content[data-v-79644027] {\n  width: 100%;\n}\n.isActive > .left > .label[data-v-79644027] {\n  color: #000000;\n}\n.isActive > .left > .icon[data-v-79644027] {\n  display: inline-block;\n  -webkit-animation: icon-rotate-up-data-v-79644027 0.2s ease-in-out forwards;\n          animation: icon-rotate-up-data-v-79644027 0.2s ease-in-out forwards;\n}\n.isActive > .left > .icon > i[data-v-79644027] {\n  color: #000000;\n}\n.isActive > .icon[data-v-79644027] {\n  display: inline-block;\n  -webkit-animation: icon-rotate-up-data-v-79644027 0.2s ease-in-out forwards;\n          animation: icon-rotate-up-data-v-79644027 0.2s ease-in-out forwards;\n}\n.isActive > .icon > i[data-v-79644027] {\n  color: #000000;\n}\n.inActive > .left > .icon[data-v-79644027] {\n  -webkit-animation: icon-rotate-down-data-v-79644027 0.2s ease-in-out forwards;\n          animation: icon-rotate-down-data-v-79644027 0.2s ease-in-out forwards;\n}\n.inActive > .icon[data-v-79644027] {\n  -webkit-animation: icon-rotate-down-data-v-79644027 0.2s ease-in-out forwards;\n          animation: icon-rotate-down-data-v-79644027 0.2s ease-in-out forwards;\n}\n@-webkit-keyframes icon-rotate-up-data-v-79644027 {\n0% {\n    opacity: 0.5;\n    transform: rotate(0deg);\n}\n100% {\n    opacity: 1;\n    transform: rotate(-180deg);\n}\n}\n@keyframes icon-rotate-up-data-v-79644027 {\n0% {\n    opacity: 0.5;\n    transform: rotate(0deg);\n}\n100% {\n    opacity: 1;\n    transform: rotate(-180deg);\n}\n}\n@-webkit-keyframes icon-rotate-down-data-v-79644027 {\n0% {\n    opacity: 0.5;\n    transform: rotate(-180deg);\n}\n100% {\n    opacity: 1;\n    transform: rotate(0deg);\n}\n}\n@keyframes icon-rotate-down-data-v-79644027 {\n0% {\n    opacity: 0.5;\n    transform: rotate(-180deg);\n}\n100% {\n    opacity: 1;\n    transform: rotate(0deg);\n}\n}\n.accordion-enter-active[data-v-79644027],\n.accordion-leave-active[data-v-79644027] {\n  will-change: height, opacity;\n  transition: height 0.3s ease, opacity 0.3s ease;\n  overflow: hidden;\n}\n.accordion-enter[data-v-79644027],\n.accordion-leave-to[data-v-79644027] {\n  height: 0 !important;\n  opacity: 0;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30609,6 +30705,7 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "main",
+    { staticClass: "donate-page" },
     [
       _c("navigation", [
         _c("li", [
@@ -30646,12 +30743,60 @@ var render = function () {
             _vm._v(_vm._s(_vm.$t("pages.home.nav.contact"))),
           ]),
         ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "navigation lang" }, [
+          _c("ul", [
+            _c(
+              "li",
+              {
+                class: [_vm.getLocale === "en" && "active"],
+                attrs: { role: "button" },
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    attrs: { role: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.changeLocale("en")
+                      },
+                    },
+                  },
+                  [_vm._v("EN")]
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              {
+                class: [_vm.getLocale === "fr" && "active"],
+                attrs: { role: "button" },
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    attrs: { role: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.changeLocale("fr")
+                      },
+                    },
+                  },
+                  [_vm._v("FR")]
+                ),
+              ]
+            ),
+          ]),
+        ]),
       ]),
       _vm._v(" "),
       _c("Banner", { attrs: { title: _vm.$tc("pages.home.banner.cta", 2) } }),
       _vm._v(" "),
-      _c("section", { staticClass: "donate" }, [
-        _c("section", { staticClass: "donate__cta" }, [
+      _c("div", { staticClass: "donate" }, [
+        _c("div", { staticClass: "donate__cta" }, [
           _c("p", [
             _vm._v(
               "\n        " + _vm._s(_vm.$t("pages.donate.cta")) + "\n      "
@@ -30960,8 +31105,6 @@ var render = function () {
       _vm._v(" "),
       _c("IlimiExperience"),
       _vm._v(" "),
-      _c("Blog"),
-      _vm._v(" "),
       _c("Contact"),
       _vm._v(" "),
       _c("Footer"),
@@ -31029,6 +31172,54 @@ var render = function () {
         _c("li", [
           _c("a", { staticClass: "scroll", attrs: { href: "/#contact" } }, [
             _vm._v(_vm._s(_vm.$t("pages.home.nav.contact"))),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "navigation lang" }, [
+          _c("ul", [
+            _c(
+              "li",
+              {
+                class: [_vm.getLocale === "en" && "active"],
+                attrs: { role: "button" },
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    attrs: { role: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.changeLocale("en")
+                      },
+                    },
+                  },
+                  [_vm._v("EN")]
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              {
+                class: [_vm.getLocale === "fr" && "active"],
+                attrs: { role: "button" },
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    attrs: { role: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.changeLocale("fr")
+                      },
+                    },
+                  },
+                  [_vm._v("FR")]
+                ),
+              ]
+            ),
           ]),
         ]),
       ]),
@@ -31798,9 +31989,20 @@ var render = function () {
               [
                 _vm._m(2),
                 _vm._v(" "),
-                _c("p", { staticClass: "center" }, [
-                  _vm._v(_vm._s(_vm.$t("pages.home.about.impact.70"))),
-                ]),
+                _c(
+                  "p",
+                  {
+                    staticClass: "center",
+                    staticStyle: { "text-transform": "none" },
+                  },
+                  [
+                    _vm._v(
+                      "\n              " +
+                        _vm._s(_vm.$t("pages.home.about.impact.70")) +
+                        "\n            "
+                    ),
+                  ]
+                ),
               ]
             ),
             _vm._v(" "),
@@ -31814,9 +32016,20 @@ var render = function () {
               [
                 _vm._m(3),
                 _vm._v(" "),
-                _c("p", { staticClass: "center" }, [
-                  _vm._v(_vm._s(_vm.$t("pages.home.about.impact.75"))),
-                ]),
+                _c(
+                  "p",
+                  {
+                    staticClass: "center",
+                    staticStyle: { "text-transform": "none" },
+                  },
+                  [
+                    _vm._v(
+                      "\n              " +
+                        _vm._s(_vm.$t("pages.home.about.impact.75")) +
+                        "\n            "
+                    ),
+                  ]
+                ),
               ]
             ),
             _vm._v(" "),
@@ -31830,9 +32043,20 @@ var render = function () {
               [
                 _vm._m(4),
                 _vm._v(" "),
-                _c("p", { staticClass: "center" }, [
-                  _vm._v(_vm._s(_vm.$t("pages.home.about.impact.90"))),
-                ]),
+                _c(
+                  "p",
+                  {
+                    staticClass: "center",
+                    staticStyle: { "text-transform": "none" },
+                  },
+                  [
+                    _vm._v(
+                      "\n              " +
+                        _vm._s(_vm.$t("pages.home.about.impact.90")) +
+                        "\n            "
+                    ),
+                  ]
+                ),
               ]
             ),
           ]),
@@ -32300,6 +32524,8 @@ var render = function () {
     _vm._v(" "),
     _c("div", { staticClass: "donate__wrapper" }, [
       _c("div", { staticClass: "donate__wrapper__content" }, [
+        _vm._m(0),
+        _vm._v(" "),
         _c("q", [_vm._v(_vm._s(_vm.$t("pages.home.donation.q")))]),
         _vm._v(" "),
         _c("p", {
@@ -32328,7 +32554,22 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "testimony-avatar" }, [
+      _c("img", {
+        attrs: {
+          src: "/../template/img/patrick_awuah.jpg",
+          alt: "",
+          srcset: "",
+        },
+      }),
+    ])
+  },
+]
 render._withStripped = true
 
 
@@ -32393,9 +32634,11 @@ var render = function () {
                 _vm._m(0),
                 _vm._v(" "),
                 _c("h6", [
-                  _vm._v(
-                    _vm._s(_vm.$t("pages.home.admissions.service.1.title"))
-                  ),
+                  _c("strong", [
+                    _vm._v(
+                      _vm._s(_vm.$t("pages.home.admissions.service.1.title"))
+                    ),
+                  ]),
                 ]),
                 _vm._v(" "),
                 _c("p", [
@@ -32422,9 +32665,11 @@ var render = function () {
                 _vm._m(1),
                 _vm._v(" "),
                 _c("h6", [
-                  _vm._v(
-                    _vm._s(_vm.$t("pages.home.admissions.service.2.title"))
-                  ),
+                  _c("strong", [
+                    _vm._v(
+                      _vm._s(_vm.$t("pages.home.admissions.service.2.title"))
+                    ),
+                  ]),
                 ]),
                 _vm._v(" "),
                 _c("p", [
@@ -32451,9 +32696,11 @@ var render = function () {
                 _vm._m(2),
                 _vm._v(" "),
                 _c("h6", [
-                  _vm._v(
-                    _vm._s(_vm.$t("pages.home.admissions.service.3.title"))
-                  ),
+                  _c("strong", [
+                    _vm._v(
+                      _vm._s(_vm.$t("pages.home.admissions.service.3.title"))
+                    ),
+                  ]),
                 ]),
                 _vm._v(" "),
                 _c("p", [
@@ -32480,9 +32727,11 @@ var render = function () {
                 _vm._m(3),
                 _vm._v(" "),
                 _c("h6", [
-                  _vm._v(
-                    _vm._s(_vm.$t("pages.home.admissions.service.4.title"))
-                  ),
+                  _c("strong", [
+                    _vm._v(
+                      _vm._s(_vm.$t("pages.home.admissions.service.4.title"))
+                    ),
+                  ]),
                 ]),
                 _vm._v(" "),
                 _c("p", {
@@ -33082,13 +33331,55 @@ var render = function () {
             ]
           ),
           _vm._v(" "),
-          _c("div", {
-            staticClass: "lead wow fadeInRightBig",
-            attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
-            domProps: { innerHTML: _vm._s(_vm.$t("pages.home.contact.cta")) },
-          }),
-          _vm._v(" "),
-          _vm._m(0),
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass: "col-sm-12 col-lg-6 wow fadeInUp",
+                attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
+              },
+              [
+                _vm._m(0),
+                _vm._v(" "),
+                _vm._m(1),
+                _vm._v(" "),
+                _c(
+                  "ul",
+                  { staticClass: "social-icons" },
+                  [
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _vm._m(3),
+                    _vm._v(" "),
+                    _vm._m(4),
+                    _vm._v(" "),
+                    _vm._m(5),
+                    _vm._v(" "),
+                    _vm._m(6),
+                    _vm._v(" "),
+                    _vm._l(6, function (i) {
+                      return _c(
+                        "li",
+                        {
+                          key: i,
+                          staticClass: "wow fadeIn",
+                          attrs: {
+                            "data-wow-offset": "80",
+                            "data-wow-duration": "2s",
+                            "data-wow-delay": "1.5s",
+                          },
+                        },
+                        [_vm._m(7, true)]
+                      )
+                    }),
+                  ],
+                  2
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _vm._m(8),
+          ]),
         ]),
       ]),
     ]),
@@ -33101,246 +33392,377 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        {
-          staticClass: "col-sm-6 col-lg-6 wow fadeInUp",
-          attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
-        },
-        [
-          _c("p", [
-            _vm._v("\n              ILIMI | A.D.U.,"),
-            _c("br"),
-            _vm._v("\n              Village de la Francophonie,"),
-            _c("br"),
-            _vm._v("\n              BP 11160,"),
-            _c("br"),
-            _vm._v("\n              Niamey, Niger\n            "),
-          ]),
-          _vm._v(" "),
-          _c("ul", { staticClass: "fa-ul" }, [
-            _c("li", [
-              _c("i", { staticClass: "fa-li fa fa-envelope" }),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticStyle: { color: "white" },
-                  attrs: { href: "mailto:infos@ilimi.edu.ne" },
-                },
-                [_vm._v("infos@ilimi.edu.ne")]
-              ),
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("i", { staticClass: "fa-li fa fa-phone" }),
-              _vm._v(" "),
-              _c("span", {}, [_vm._v("+227 923 968 68 (WhatsApp)")]),
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("i", { staticClass: "fa-li fa fa-phone" }),
-              _vm._v(" "),
-              _c("span", {}, [_vm._v("+227 9339 68 68 (Mobile)")]),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("ul", { staticClass: "social-icons" }, [
-            _c(
-              "li",
-              {
-                staticClass: "wow fadeIn",
-                attrs: {
-                  "data-wow-offset": "80",
-                  "data-wow-duration": "2s",
-                  "data-wow-delay": "0.5s",
-                },
-              },
-              [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "https://web.facebook.com/aduniversalis?_rdc=10&_rdr",
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    },
-                  },
-                  [_c("i", { staticClass: "fa fa-facebook" })]
-                ),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "li",
-              {
-                staticClass: "wow fadeIn",
-                attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
-              },
-              [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "https://twitter.com/aduleads?lang=fr",
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    },
-                  },
-                  [_c("i", { staticClass: "fa fa-twitter" })]
-                ),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "li",
-              {
-                staticClass: "wow fadeIn",
-                attrs: {
-                  "data-wow-offset": "80",
-                  "data-wow-duration": "2s",
-                  "data-wow-delay": "1s",
-                },
-              },
-              [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "https://fr.linkedin.com/school/african-development-university/",
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    },
-                  },
-                  [_c("i", { staticClass: "fa fa-linkedin" })]
-                ),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "li",
-              {
-                staticClass: "wow fadeIn",
-                attrs: {
-                  "data-wow-offset": "80",
-                  "data-wow-duration": "2s",
-                  "data-wow-delay": "2s",
-                },
-              },
-              [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "https://instagram.com/africandevelopmentuniversalis",
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    },
-                  },
-                  [_c("i", { staticClass: "fa fa-instagram" })]
-                ),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "li",
-              {
-                staticClass: "wow fadeIn",
-                attrs: {
-                  "data-wow-offset": "80",
-                  "data-wow-duration": "2s",
-                  "data-wow-delay": "1.5s",
-                },
-              },
-              [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "https://www.youtube.com/channel/UCitZsNH69Rivpki-WO7W7Iw",
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    },
-                  },
-                  [_c("i", { staticClass: "fa fa-youtube" })]
-                ),
-              ]
-            ),
-          ]),
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "col-sm-6 col-lg-6 wow fadeInUp",
-          attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
-        },
-        [
-          _c("div", { staticClass: "contact_form" }, [
-            _c("div", { attrs: { id: "note" } }),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "fields" } }, [
-              _c("form", { attrs: { id: "ajax-contact-form" } }, [
-                _c("input", {
-                  staticClass: "col-xs-12 col-md-12",
-                  attrs: {
-                    type: "text",
-                    name: "name",
-                    value: "",
-                    placeholder: "Name",
-                  },
-                }),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "col-xs-12 col-md-12",
-                  attrs: {
-                    type: "text",
-                    name: "email",
-                    value: "",
-                    placeholder: "Email",
-                  },
-                }),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "col-xs-12 col-md-12",
-                  attrs: {
-                    type: "text",
-                    name: "subject",
-                    value: "",
-                    placeholder: "Subject",
-                  },
-                }),
-                _vm._v(" "),
-                _c("textarea", {
-                  staticClass: "col-xs-12 col-md-12",
-                  attrs: {
-                    name: "message",
-                    id: "message",
-                    placeholder: "Message",
-                  },
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "clear" }),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "btn marg-right10",
-                  attrs: { type: "submit", value: "submit" },
-                }),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "btn",
-                  attrs: { type: "reset", value: "reset" },
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "clear" }),
-              ]),
-            ]),
-          ]),
-        ]
-      ),
+    return _c("address", [
+      _vm._v("\n              ILIMI | A.D.U."),
+      _c("br"),
+      _vm._v("\n              Boulevard Tanimoune"),
+      _c("br"),
+      _vm._v("\n              Village de la Francophonie"),
+      _c("br"),
+      _vm._v("\n              BP 11160"),
+      _c("br"),
+      _vm._v("\n              Niamey"),
+      _c("br"),
+      _vm._v("\n              Niger\n            "),
     ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { staticClass: "fa-ul" }, [
+      _c("li", [
+        _c("i", { staticClass: "fa-li fa fa-globe" }),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { color: "white" },
+            attrs: { href: "https://www.ilimi.edu.ne" },
+          },
+          [_vm._v("www.ilimi.edu.ne | Official Website")]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("i", { staticClass: "fa-li fa fa-envelope" }),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { color: "white" },
+            attrs: { href: "mailto:infos@ilimi.edu.ne" },
+          },
+          [_vm._v("infos@ilimi.edu.ne | Information Desk")]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("i", { staticClass: "fa-li fa fa-envelope" }),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { color: "white" },
+            attrs: { href: "mailto:oga@ilimi.edu.ne" },
+          },
+          [_vm._v("oga@ilimi.edu.ne | Office of Global Advancement")]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("i", { staticClass: "fa-li fa fa-envelope" }),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { color: "white" },
+            attrs: { href: "mailto:admissions@ilimi.edu.ne" },
+          },
+          [_vm._v("admissions@ilimi.edu.ne | Admissions & Recruitment")]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("i", { staticClass: "fa-li fa fa-envelope" }),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { color: "white" },
+            attrs: { href: "mailto:talent@ilimi.edu.ne" },
+          },
+          [_vm._v("talent@ilimi.edu.ne | Human Resource")]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("i", { staticClass: "fa-li fa fa-envelope" }),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { color: "white" },
+            attrs: { href: "mailto:talent@ilimi.edu.ne" },
+          },
+          [_vm._v("english@ilimi.edu.ne | English Program")]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticStyle: { "margin-bottom": "2rem" } }, [
+        _c("i", { staticClass: "fa-li fa fa-envelope" }),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { color: "white" },
+            attrs: { href: "mailto:talent@ilimi.edu.ne" },
+          },
+          [_vm._v("academics@ilimi.edu.ne | Academic Programs")]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("i", { staticClass: "fa-li fa fa-phone" }),
+        _vm._v(" "),
+        _c("span", {}, [
+          _c(
+            "a",
+            {
+              staticStyle: { color: "white" },
+              attrs: { href: "tel:+22792396868" },
+            },
+            [_vm._v("(+227) 92 39 68 68")]
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("i", { staticClass: "fa-li fa fa-phone" }),
+        _vm._v(" "),
+        _c("span", {}, [
+          _c(
+            "a",
+            {
+              staticStyle: { color: "white" },
+              attrs: { href: "tel:+22793396868" },
+            },
+            [_vm._v("(+227) 93 39 68 68")]
+          ),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass: "wow fadeIn",
+        attrs: {
+          "data-wow-offset": "80",
+          "data-wow-duration": "2s",
+          "data-wow-delay": "0.5s",
+        },
+      },
+      [
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://web.facebook.com/aduniversalis?_rdc=10&_rdr",
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
+          },
+          [_c("i", { staticClass: "fa fa-facebook" })]
+        ),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass: "wow fadeIn",
+        attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
+      },
+      [
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://twitter.com/aduleads?lang=fr",
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
+          },
+          [_c("i", { staticClass: "fa fa-twitter" })]
+        ),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass: "wow fadeIn",
+        attrs: {
+          "data-wow-offset": "80",
+          "data-wow-duration": "2s",
+          "data-wow-delay": "1s",
+        },
+      },
+      [
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://fr.linkedin.com/school/african-development-university/",
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
+          },
+          [_c("i", { staticClass: "fa fa-linkedin" })]
+        ),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass: "wow fadeIn",
+        attrs: {
+          "data-wow-offset": "80",
+          "data-wow-duration": "2s",
+          "data-wow-delay": "2s",
+        },
+      },
+      [
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://instagram.com/africandevelopmentuniversalis",
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
+          },
+          [_c("i", { staticClass: "fa fa-instagram" })]
+        ),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass: "wow fadeIn",
+        attrs: {
+          "data-wow-offset": "80",
+          "data-wow-duration": "2s",
+          "data-wow-delay": "1.5s",
+        },
+      },
+      [
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://www.youtube.com/channel/UCitZsNH69Rivpki-WO7W7Iw",
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
+          },
+          [_c("i", { staticClass: "fa fa-youtube" })]
+        ),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        attrs: {
+          href: "https://www.youtube.com/channel/UCitZsNH69Rivpki-WO7W7Iw",
+          target: "_blank",
+          rel: "noopener noreferrer",
+        },
+      },
+      [_c("i", { staticClass: "fa fa-youtube" })]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "col-sm-12 col-lg-6 wow fadeInUp",
+        attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
+      },
+      [
+        _c("div", { staticClass: "contact_form" }, [
+          _c("div", { attrs: { id: "note" } }),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "fields" } }, [
+            _c("form", { attrs: { id: "ajax-contact-form" } }, [
+              _c("input", {
+                staticClass: "col-xs-12 col-md-12",
+                attrs: {
+                  type: "text",
+                  name: "name",
+                  value: "",
+                  placeholder: "Name",
+                },
+              }),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "col-xs-12 col-md-12",
+                attrs: {
+                  type: "text",
+                  name: "email",
+                  value: "",
+                  placeholder: "Email",
+                },
+              }),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "col-xs-12 col-md-12",
+                attrs: {
+                  type: "text",
+                  name: "subject",
+                  value: "",
+                  placeholder: "Subject",
+                },
+              }),
+              _vm._v(" "),
+              _c("textarea", {
+                staticClass: "col-xs-12 col-md-12",
+                attrs: {
+                  name: "message",
+                  id: "message",
+                  placeholder: "Message",
+                },
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "clear" }),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "btn marg-right10",
+                attrs: { type: "submit", value: "submit" },
+              }),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "btn",
+                attrs: { type: "reset", value: "reset" },
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "clear" }),
+            ]),
+          ]),
+        ]),
+      ]
+    )
   },
 ]
 render._withStripped = true
@@ -33444,20 +33866,11 @@ var render = function () {
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
-          _c(
-            "h1",
-            {
-              staticClass: "wow fadeInRightBig",
-              attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
-            },
-            [
-              _vm._v(
-                "\n          " +
-                  _vm._s(_vm.$t("pages.home.ilimi.title")) +
-                  "\n        "
-              ),
-            ]
-          ),
+          _c("h1", {
+            staticClass: "wow fadeInRightBig",
+            attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
+            domProps: { innerHTML: _vm._s(_vm.$t("pages.home.ilimi.title")) },
+          }),
           _vm._v(" "),
           _c("div", {
             staticClass: "lead wow fadeInRightBig",
@@ -33675,7 +34088,7 @@ var render = function () {
                               _c("h6", [
                                 _vm._v(
                                   _vm._s(
-                                    _vm.$t("pages.home.ilimi.filter-title.el")
+                                    _vm.$t("pages.home.ilimi.filter-title.e-l")
                                   )
                                 ),
                               ]),
@@ -33752,45 +34165,6 @@ var render = function () {
                             _c("div", { staticClass: "cbp-l-caption-body" }, [
                               _c("h6", [
                                 _vm._v(
-                                  _vm._s(
-                                    _vm.$t("pages.home.ilimi.filter-title.c")
-                                  )
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "a",
-                                {
-                                  staticClass:
-                                    "cbp-lightbox cbp-l-caption-buttonRight",
-                                  attrs: {
-                                    href: "template/img/gallery/resource.jpg",
-                                    "data-title": _vm.$t(
-                                      "pages.home.ilimi.filter-title.c"
-                                    ),
-                                  },
-                                },
-                                [_c("i", { staticClass: "fa fa-eye" })]
-                              ),
-                            ]),
-                          ]
-                        ),
-                      ]),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "cbp-item non-academics" }, [
-                    _c("div", { staticClass: "cbp-caption" }, [
-                      _vm._m(6),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "cbp-caption-activeWrap" }, [
-                        _c(
-                          "div",
-                          { staticClass: "cbp-l-caption-alignCenter" },
-                          [
-                            _c("div", { staticClass: "cbp-l-caption-body" }, [
-                              _c("h6", [
-                                _vm._v(
                                   "\n                          " +
                                     _vm._s(
                                       _vm.$t(
@@ -33801,46 +34175,7 @@ var render = function () {
                                 ),
                               ]),
                               _vm._v(" "),
-                              _vm._m(7),
-                            ]),
-                          ]
-                        ),
-                      ]),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "cbp-item non-academics" }, [
-                    _c("div", { staticClass: "cbp-caption" }, [
-                      _vm._m(8),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "cbp-caption-activeWrap" }, [
-                        _c(
-                          "div",
-                          { staticClass: "cbp-l-caption-alignCenter" },
-                          [
-                            _c("div", { staticClass: "cbp-l-caption-body" }, [
-                              _c("h6", [
-                                _vm._v(
-                                  _vm._s(
-                                    _vm.$t("pages.home.ilimi.filter-title.gs")
-                                  )
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "a",
-                                {
-                                  staticClass:
-                                    "cbp-lightbox cbp-l-caption-buttonRight",
-                                  attrs: {
-                                    href: "template/img/gallery/strategy.jpg",
-                                    "data-title": _vm.$t(
-                                      "pages.home.ilimi.filter-title.gs"
-                                    ),
-                                  },
-                                },
-                                [_c("i", { staticClass: "fa fa-eye" })]
-                              ),
+                              _vm._m(6),
                             ]),
                           ]
                         ),
@@ -33850,7 +34185,7 @@ var render = function () {
                   _vm._v(" "),
                   _c("li", { staticClass: "cbp-item alumni" }, [
                     _c("div", { staticClass: "cbp-caption" }, [
-                      _vm._m(9),
+                      _vm._m(7),
                       _vm._v(" "),
                       _c("div", { staticClass: "cbp-caption-activeWrap" }, [
                         _c(
@@ -33866,7 +34201,7 @@ var render = function () {
                                 ),
                               ]),
                               _vm._v(" "),
-                              _vm._m(10),
+                              _vm._m(8),
                             ]),
                           ]
                         ),
@@ -33876,7 +34211,7 @@ var render = function () {
                   _vm._v(" "),
                   _c("li", { staticClass: "cbp-item alumni" }, [
                     _c("div", { staticClass: "cbp-caption" }, [
-                      _vm._m(11),
+                      _vm._m(9),
                       _vm._v(" "),
                       _c("div", { staticClass: "cbp-caption-activeWrap" }, [
                         _c(
@@ -33920,6 +34255,8 @@ var render = function () {
           _c("div", { staticClass: "pad45" }),
         ]),
       ]),
+      _vm._v(" "),
+      _vm._m(10),
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "well" }, [
@@ -34080,16 +34417,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
       _c("img", {
-        attrs: { src: "template/img/gallery/thumb/resource.jpg", alt: "" },
-      }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
-      _c("img", {
         attrs: { src: "template/img/gallery/thumb/ilab.jpg", alt: "" },
       }),
     ])
@@ -34106,16 +34433,6 @@ var staticRenderFns = [
       },
       [_c("i", { staticClass: "fa fa-eye" })]
     )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
-      _c("img", {
-        attrs: { src: "template/img/gallery/thumb/strategy.jpg", alt: "" },
-      }),
-    ])
   },
   function () {
     var _vm = this
@@ -34152,6 +34469,59 @@ var staticRenderFns = [
         attrs: { src: "template/img/gallery/thumb/business.jpg", alt: "" },
       }),
     ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "wow fadeIn col-lg-10 col-lg-offset-1",
+        attrs: { "data-wow-offset": "80" },
+      },
+      [
+        _c("div", { attrs: { id: "clients" } }, [
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo1.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo2.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo3.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo4.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo5.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo6.jpg", alt: "" },
+            }),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "pad45" }),
+      ]
+    )
   },
 ]
 render._withStripped = true

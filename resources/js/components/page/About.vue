@@ -191,7 +191,9 @@
               <span class="chart1">
                 <span class="percent">70%</span>
               </span>
-              <p class="center">{{ $t("pages.home.about.impact.70") }}</p>
+              <p class="center" style="text-transform: none">
+                {{ $t("pages.home.about.impact.70") }}
+              </p>
             </div>
             <!--2-->
             <div
@@ -201,7 +203,9 @@
               <span class="chart2">
                 <span class="percent">75%</span>
               </span>
-              <p class="center">{{ $t("pages.home.about.impact.75") }}</p>
+              <p class="center" style="text-transform: none">
+                {{ $t("pages.home.about.impact.75") }}
+              </p>
             </div>
             <!--3-->
             <div
@@ -211,7 +215,9 @@
               <span class="chart3">
                 <span class="percent">90%</span>
               </span>
-              <p class="center">{{ $t("pages.home.about.impact.90") }}</p>
+              <p class="center" style="text-transform: none">
+                {{ $t("pages.home.about.impact.90") }}
+              </p>
             </div>
           </div>
           <div class="pad30"></div>

@@ -8,23 +8,23 @@ return [
       'about' => 'About',
       'admissions' => 'Admissions',
       'scholarship' => 'Scholarship',
-      'ilimi' => 'Ilimi Experience',
+      'ilimi' => 'ILIMI Experience',
       'contact' => 'Contact',
     ],
     "banner" => [
       "cta" => "YOUNG LEADERS|DONATE|SCHOLARSHIPS",
-      "values" => "LEADERSHIP, EXCELLENCE & INNOVATION"
+      "values" => "LEADERSHIP. EXCELLENCE. INNOVATION."
     ],
     "about" => [
       "title" => "About",
       "cta" => "The mission of A.D.U. is to prepare the most talented
               <span class=\"colour\"><strong>young people</strong></span>
               in <span class=\"colour\"><strong>Niger</strong></span> and
-              Francophone Africa to design and drive the
+              <span class=\"colour\"><strong>Francophone Africa</strong></span> to design and drive the
               <span class=\"colour\"><strong>development</strong></span> of their
               nations as
-              <span class=\"colour\"><strong>ethical</strong></span> and effective
-              leaders in the public, private and not-for-profit sectors.",
+              <span class=\"colour\"><strong>ethical</strong></span> and <span class=\"colour\"><strong>effective
+              leaders</strong></span> in the public, private and not-for-profit sectors.",
 
       "text-left" => "African Development Universalis (A.D.U.) is a bilingual
               institution (French and English) and the first not-for-profit
@@ -63,7 +63,7 @@ return [
       "position" => "Chancellor|Founder & President",
 
       "impact" => [
-        "title" => "Our Impact",
+        "title" => "Impact",
         "70" => "Women & Gender Equality",
         "75" => "Scholarships & Financial Aid",
         "90" => "Internships & Placement",
@@ -110,16 +110,16 @@ return [
           "title" => "Contact Admissions",
           "text" => "For additional questions and/or inquiry regarding the status of
                 your application, you can reach us
-                through:admissions@ilimi.edu.ne,<br />+227 923 968 68
+                through: admissions@ilimi.edu.ne,<br />+227 923 968 68
                 (WhatsApp)<br />+227 9339 68 68 (Mobile)",
         ],
       ],
 
-      "why" => "Why A.D.U?",
+      "why" => "Why A.D.U.?",
       //left with our why text
 
       "stats" => [
-        "title" => "Our Statistics",
+        "title" => "Statistics",
         "text-1" => "Enrolled Students",
         "text-2" => "Countries Represented",
         "text-3" => "Programs of Study",
@@ -140,7 +140,7 @@ return [
               <strong class=\"colour\">French-speaking Africa</strong>
               with the Gaston Berger University in Senegal, 2iE in Burkina Faso,
               and A.D.U. in Niger.
-              <a href=\"/scholarships\" class=\"p-link\">Read more</a>.",
+              <a href=\"/scholarships\" class=\"p-link\"><strong>Read more</strong></a>.",
       "details" => [
         "benefits" => [
           "title" => "Benefits",
@@ -186,7 +186,7 @@ return [
           that A.D.U. was struggling financially. I left feeling that there was
           a spark here that needed an opportunity to grow, and I wondered how
           Ashesi and I could help.",
-      "p-1" => "<strong>Patrick Awuah, <br />Founder and President</strong>, Ashesi
+      "p-1" => "<strong>Patrick Awuah, Founder and President</strong>, Ashesi
           University, Ghana.",
       "h" => "Be part of the solution",
       "p-2" => "A.D.U. is reshaping the future for the Sahel region by educating
@@ -195,9 +195,9 @@ return [
       "btn" => "DONATE",
     ],
     "ilimi" => [
-      "title" => "Ilimi Experience",
-      "cta" => " A confident <span class=\"colour\">client will</span> see<br />your
-            confidence as <strong>strength</strong>, not arrogance.",
+      "title" => "<span style=\"text-transform: none\">ILIMI</span> experience",
+      "cta" => "We offer training in <span class=\"colour\"><strong>liberal arts</strong></span> that aims to develop students' critical thinking, <span class=\"colour\"><strong>problem-solving skills</strong></span>, and ability to serve their communities.
+       Our <span class=\"colour\"><strong>unique model – ILIMI</strong></span>; which means “education, intellectual and knowledge” in Hausa, focuses on developing ethical and impact driven <span class=\"colour\"><strong>young leaders</strong></span>. ",
       "filter-btn" => [
         "all" => "All",
         "academics" => "Academics",
@@ -218,7 +218,7 @@ return [
       ]
     ],
     "newsletter" => [
-      "title" => "Subscribe Our to Newsletter",
+      "title" => "Subscribe To Our Newsletter",
       "btn" => "Subscribe",
     ],
     "contact" => [
@@ -233,50 +233,47 @@ return [
 
   "scholarship" => [
     "left" => [
-      "title" => "À propos",
-      "p-1" => "Ce programme offre une bourse d’études complète aux étudiants,
-              cette bourse permet à des jeunes issus de communautés
-              économiquement défavorisées, qui ont fait preuve de excellence
-              scolaire et de potentiel de leadership, d'accéder à une éducation
-              de qualité et pertinente. Le Mastercard Foundation Scholars
-              Program fournit un soutien financier, social, académiques et
-              dispose d’un de soutien complet comprenant un éventail de services
-              de mentorat et accompagne leur transition vers des opportunités
-              d’emploi et entreprenariat.",
-      "p-2" => "Ce programme qui n’est par ailleurs implémenté que dans de
-              prestigieuses universités comme : Stanford, Berkeley et Wellesley
-              aux Etats Unis; Université de Toronto et McGill au Canada;
-              Sciences Po en France; Universite de Cape Town, Makerere, Ashesi
-              et ALU en Afrique, Et est porté en Afrique francophone avec
-              l’université Gaston Berger au Sénégal, 2iE au Burkina Faso et
-              A.D.U. au Niger.",
+      "title" => "About",
+      "p-1" => "This program offers a full scholarship to students,
+              this scholarship allows young people from economically disadvantaged communities, 
+              who have demonstrated academic excellence and leadership potential to access a quality and relevant
+              education. The Mastercard Foundation Scholars
+              Program provides financial, social, and academic support and
+              support including a range of mentoring services and accompanies their transitions to employment and entrepreneurial opportunities.",
+      "p-2" => "This program, which is only implemented in prestigious
+              universities such as: Stanford, Berkeley and Wellesley
+              in the United States; University of Toronto and McGill in Canada;
+              Sciences Po in France; University of Cape Town, Makerere, Ashesi
+              and ALU in Africa, and is carried in Francophone Africa with
+              Gaston Berger University in Senegal, 2iE in Burkina Faso and
+              A.D.U. in Niger.",
     ],
     "right" => [
       "list-1" => [
-        "title" => "La bourse",
+        "title" => "Benefits",
         "lists" => [
-          "1" => "Les frais de scolarité",
-          "2" => "L’hébergement",
-          "3" => "Matériels scolaires",
+          "1" => "Tuition fees",
+          "2" => "Accommodation",
+          "3" => "School materials",
           "4" => "Transport",
-          "5" => "Allocations mensuelles",
+          "5" => "Monthly allowances",
         ]
       ],
       "list-2" => [
-        "title" => "Les critères",
+        "title" => "Criteria",
         "lists" => [
-          "1" => "Posséder un BAC ou un diplôme équivalent avec un excellent
-                parcours académique.",
-          "2" => "Démontrer un besoin clair de soutien financier",
+          "1" => "Possess a BAC or equivalent degree with an excellent
+                academic background",
+          "2" => "Demonstrate a clear need for financial support",
         ]
       ],
       "list-3" => [
-        "title" => "Programmes",
+        "title" => "Programes",
         "lists" => [
-          "1" => "Droit privé",
-          "2" => "Business Administration (Comptabilité, Gestion, Systèmes
-                d’information, Marketing, Ressources Humaines…)",
-          "3" => "Intelligence Artificielle (Informatique)",
+          "1" => "Private Law",
+          "2" => "Business Administration (Accounting, Management, Information Systems
+                Marketing, Human Resources...)",
+          "3" => "Artificial Intelligence (Computer Science)",
         ]
       ],
 

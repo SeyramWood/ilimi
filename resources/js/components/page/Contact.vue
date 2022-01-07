@@ -11,42 +11,88 @@
             {{ $t("pages.home.contact.title") }}
           </h1>
 
-          <div
+          <!-- <div
             class="lead wow fadeInRightBig"
             data-wow-offset="80"
             data-wow-duration="2s"
             v-html="$t(`pages.home.contact.cta`)"
-          ></div>
+          ></div> -->
 
           <div class="row">
             <div
-              class="col-sm-6 col-lg-6 wow fadeInUp"
+              class="col-sm-12 col-lg-6 wow fadeInUp"
               data-wow-offset="80"
               data-wow-duration="2s"
             >
               <!-- <h2>Do you need a website,<br />have a question or comment?</h2> -->
-
-              <p>
-                ILIMI | A.D.U.,<br />
-                Village de la Francophonie,<br />
-                BP 11160,<br />
-                Niamey, Niger
-              </p>
+              <address>
+                ILIMI | A.D.U.<br />
+                Boulevard Tanimoune<br />
+                Village de la Francophonie<br />
+                BP 11160<br />
+                Niamey<br />
+                Niger
+              </address>
 
               <ul class="fa-ul">
                 <li>
+                  <i class="fa-li fa fa-globe"></i>
+                  <a href="https://www.ilimi.edu.ne" style="color: white"
+                    >www.ilimi.edu.ne | Official Website</a
+                  >
+                </li>
+                <li>
                   <i class="fa-li fa fa-envelope"></i>
                   <a href="mailto:infos@ilimi.edu.ne" style="color: white"
-                    >infos@ilimi.edu.ne</a
+                    >infos@ilimi.edu.ne | Information Desk</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-li fa fa-envelope"></i>
+                  <a href="mailto:oga@ilimi.edu.ne" style="color: white"
+                    >oga@ilimi.edu.ne | Office of Global Advancement</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-li fa fa-envelope"></i>
+                  <a href="mailto:admissions@ilimi.edu.ne" style="color: white"
+                    >admissions@ilimi.edu.ne | Admissions & Recruitment</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-li fa fa-envelope"></i>
+                  <a href="mailto:talent@ilimi.edu.ne" style="color: white"
+                    >talent@ilimi.edu.ne | Human Resource</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-li fa fa-envelope"></i>
+                  <a href="mailto:talent@ilimi.edu.ne" style="color: white"
+                    >english@ilimi.edu.ne | English Program</a
+                  >
+                </li>
+                <li style="margin-bottom: 2rem">
+                  <i class="fa-li fa fa-envelope"></i>
+                  <a href="mailto:talent@ilimi.edu.ne" style="color: white"
+                    >academics@ilimi.edu.ne | Academic Programs</a
+                  >
+                </li>
+
+                <li>
+                  <i class="fa-li fa fa-phone"></i>
+                  <span class=""
+                    ><a href="tel:+22792396868" style="color: white"
+                      >(+227) 92 39 68 68</a
+                    ></span
                   >
                 </li>
                 <li>
                   <i class="fa-li fa fa-phone"></i>
-                  <span class="">+227 923 968 68 (WhatsApp)</span>
-                </li>
-                <li>
-                  <i class="fa-li fa fa-phone"></i>
-                  <span class="">+227 9339 68 68 (Mobile)</span>
+                  <span class=""
+                    ><a href="tel:+22793396868" style="color: white"
+                      >(+227) 93 39 68 68</a
+                    ></span
+                  >
                 </li>
               </ul>
 
@@ -64,7 +110,6 @@
                     ><i class="fa fa-facebook"></i
                   ></a>
                 </li>
-
                 <li
                   class="wow fadeIn"
                   data-wow-offset="80"
@@ -77,7 +122,6 @@
                     ><i class="fa fa-twitter"></i
                   ></a>
                 </li>
-
                 <li
                   class="wow fadeIn"
                   data-wow-offset="80"
@@ -117,11 +161,28 @@
                     ><i class="fa fa-youtube"></i
                   ></a>
                 </li>
+
+                <li
+                  class="wow fadeIn"
+                  data-wow-offset="80"
+                  data-wow-duration="2s"
+                  data-wow-delay="1.5s"
+                  v-for="i in 6"
+                  :key="i"
+                >
+                  <a
+                    href="https://www.youtube.com/channel/UCitZsNH69Rivpki-WO7W7Iw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa fa-youtube"></i>
+                  </a>
+                </li>
               </ul>
             </div>
 
             <div
-              class="col-sm-6 col-lg-6 wow fadeInUp"
+              class="col-sm-12 col-lg-6 wow fadeInUp"
               data-wow-offset="80"
               data-wow-duration="2s"
             >
@@ -157,12 +218,14 @@
                       placeholder="Message"
                     ></textarea>
                     <div class="clear"></div>
+
                     <input
                       type="submit"
                       class="btn marg-right10"
                       value="submit"
                     />
                     <input type="reset" class="btn" value="reset" />
+
                     <div class="clear"></div>
                   </form>
                 </div>

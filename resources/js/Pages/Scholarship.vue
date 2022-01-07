@@ -25,6 +25,16 @@
           $t("pages.home.nav.contact")
         }}</a>
       </li>
+      <li class="navigation lang">
+        <ul>
+          <li :class="[getLocale === 'en' && 'active']" role="button">
+            <a role="button" @click="changeLocale('en')">EN</a>
+          </li>
+          <li :class="[getLocale === 'fr' && 'active']" role="button">
+            <a role="button" @click="changeLocale('fr')">FR</a>
+          </li>
+        </ul>
+      </li>
     </navigation>
 
     <Banner :title="$tc('pages.home.banner.cta', 3)" />

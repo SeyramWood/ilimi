@@ -29,7 +29,11 @@
               <div class="service">
                 <i class="fa fa-laptop"></i>
               </div>
-              <h6>{{ $t("pages.home.admissions.service.1.title") }}</h6>
+              <h6>
+                <strong>{{
+                  $t("pages.home.admissions.service.1.title")
+                }}</strong>
+              </h6>
               <p>
                 {{ $t("pages.home.admissions.service.1.text") }}
               </p>
@@ -45,7 +49,11 @@
               <div class="service">
                 <i class="fa fa-magic"></i>
               </div>
-              <h6>{{ $t("pages.home.admissions.service.2.title") }}</h6>
+              <h6>
+                <strong>{{
+                  $t("pages.home.admissions.service.2.title")
+                }}</strong>
+              </h6>
               <p>
                 {{ $t("pages.home.admissions.service.2.text") }}
               </p>
@@ -61,7 +69,11 @@
               <div class="service">
                 <i class="fa fa-tasks"></i>
               </div>
-              <h6>{{ $t("pages.home.admissions.service.3.title") }}</h6>
+              <h6>
+                <strong>{{
+                  $t("pages.home.admissions.service.3.title")
+                }}</strong>
+              </h6>
               <p>
                 {{ $t("pages.home.admissions.service.3.text") }}
               </p>
@@ -77,7 +89,11 @@
               <div class="service">
                 <i class="fa fa-users"></i>
               </div>
-              <h6>{{ $t("pages.home.admissions.service.4.title") }}</h6>
+              <h6>
+                <strong>{{
+                  $t("pages.home.admissions.service.4.title")
+                }}</strong>
+              </h6>
               <p v-html="$t(`pages.home.admissions.service.4.text`)"></p>
             </div>
 

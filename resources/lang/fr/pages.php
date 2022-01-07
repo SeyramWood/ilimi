@@ -8,20 +8,20 @@ return [
       'about' => 'À propos',
       'admissions' => 'Admissions',
       'scholarship' => "Bourse d'études",
-      'ilimi' => "l'expérience ilimi",
-      'contact' => 'Sontacter',
+      'ilimi' => "l'expérience ILIMI",
+      'contact' => 'Contacter',
     ],
     "banner" => [
       "cta" => "JEUNES DIRIGEANTS|DONNES|BOURSES D'ÉTUDES",
-      "values" => "LEADERSHIP, EXCELLENCE & INNOVATION"
+      "values" => "LEADERSHIP. EXCELLENCE. INNOVATION."
     ],
     "about" => [
-      "title" => "a propos",
+      "title" => "à propos",
       "cta" => "La mission d'A.D.U. est de préparer
               <span class=\"colour\"><strong>les jeunes</strong></span>
-              les plus talentueux du <span class=\"colour\"><strong>Niger</strong></span> du Niger et de l'Afrique francophone à concevoir et à conduire le 
+              les plus talentueux du <span class=\"colour\"><strong>Niger</strong></span> du Niger et de <span class=\"colour\"><strong>l'Afrique francophone</strong></span> à concevoir et à conduire le 
               <span class=\"colour\"><strong>développement</strong></span> de leurs nations 
-              <span class=\"colour\"><strong>ethical</strong></span> en tant que leaders éthiques et efficaces dans les secteurs public, privé et à but non lucratif.",
+              </span> en tant que <span class=\"colour\"><strong>leaders éthiques</strong></span> et <span class=\"colour\"><strong>efficaces</strong></span> dans les secteurs public, privé et à but non lucratif.",
 
       "text-left" => "African Development Universalis (A.D.U.) est une institution bilingue (français et anglais) et la première université à but non lucratif du Niger à offrir une éducation de classe mondiale aux étudiants de la région du Sahel. Nous offrons une formation dans le cadre des arts libéraux pour les emplois les plus demandés aujourd'hui, enseignée par des professeurs engagés qui visent à développer la pensée critique des étudiants, leurs compétences en matière de résolution de problèmes et leur capacité à servir leurs communautés. Des cours interactifs aux stages et à la recherche, vous vous transformerez en poursuivant vos passions! Notre modèle unique - ILIMI, qui signifie \"éducation, intellectuel et connaissance\" en haoussa, se concentre sur le développement de jeunes leaders éthiques et influents. A.D.U. s'inspire des plus grands établissements d'enseignement supérieur du monde, comme l'université d'Ashesi au Ghana et l'université de Harvard aux États-Unis.",
 
@@ -34,10 +34,10 @@ return [
       "position" => "Chancelier|Fondateur et président",
 
       "impact" => [
-        "title" => "Notre impact",
-        "70" => "Women & Gender Equality",
-        "75" => "Scholarships & Financial Aid",
-        "90" => "Internships & Placement",
+        "title" => "impact",
+        "70" => "Femmes et Égalité des Sexes",
+        "75" => "Bourses D'études et Aide Financière",
+        "90" => "Stages et Placements",
       ]
     ],
     "admissions" => [
@@ -69,16 +69,16 @@ return [
         ],
         "4" => [
           "title" => "Contacter les admissions",
-          "text" => "Pour toute question supplémentaire et/ou demande concernant l'état de votre candidature, vous pouvez nous joindre à travers:admissions@ilimi.edu.ne,<br />+227 923 968 68
+          "text" => "Pour toute question supplémentaire et/ou demande concernant l'état de votre candidature, vous pouvez nous joindre à travers: admissions@ilimi.edu.ne,<br />+227 923 968 68
                 (WhatsApp)<br />+227 9339 68 68 (Mobile)",
         ],
       ],
 
-      "why" => "Pourquoi A.D.U?",
+      "why" => "Pourquoi A.D.U.?",
       //left with our why text
 
       "stats" => [
-        "title" => "Nos statistiques",
+        "title" => "Statistiques",
         "text-1" => "Étudiants inscrits",
         "text-2" => "Pays représentés",
         "text-3" => "Programmes d'études",
@@ -95,15 +95,15 @@ return [
               <strong class=\"colour\">éduquer</strong> et former la prochaine génération de <strong class=\"colour\">leaders</strong> qui contribueront au progrès social et économique du continent africain. Le programme est réalisé en 
               <strong class=\"colour\">Afrique francophone</strong>
               avec l'Université Gaston Berger au Sénégal, 2iE au Burkina Faso, et A.D.U. au Niger.Nous avons le plaisir d'annoncer qu'à partir de plus d'informations.
-              <a href=\"/scholarships\" class=\"p-link\">Lire la suite</a>.",
+              <a href=\"/scholarships\" class=\"p-link\"><strong>Lire la suite</strong></a>.",
       "details" => [
         "benefits" => [
           "title" => "AVANTAGES",
           "list" => [
-            "1" => "Soutien financier (frais de scolarité, repas, logement, etc.)",
+            "1" => "Soutien financier (frais de scolarité, etc.)",
             "2" => "Conseil et soutien psychologique",
-            "3" => "Allocation mensuelle après l'obtention du diplôme",
-            "4" => "Coaching et fonds pour les boursiers entrepreneurs",
+            "3" => "Mensuelle après l'obtention du diplôme",
+            "4" => "Fonds pour les boursiers entrepreneurs",
             "5" => "Assurance maladie et autres éléments de soutien",
           ]
         ],
@@ -135,7 +135,7 @@ return [
     ],
     "donation" => [
       "q" => "J'ai visité l'A.D.U. en 2019 et j'ai été vraiment frappé par l'enthousiasme des étudiants, ainsi que par les éloges que les employeurs que j'ai rencontrés avaient pour les étudiants de l'A.D.U.. Corporate Niger a décrit les étudiants d'A.D.U. de la même manière que Corporate Ghana décrit les étudiants d'Ashesi. Mais j'ai aussi pu constater que l'A.D.U. avait des difficultés financières. Je suis parti en pensant qu'il y avait une étincelle ici qui avait besoin d'une opportunité pour se développer, et je me suis demandé comment Ashesi et moi pouvions aider.",
-      "p-1" => "<strong>Patrick Awuah, <br />Fondateur et président</strong>, de l'université Ashesi, Ghana.",
+      "p-1" => "<strong>Patrick Awuah, Fondateur et président</strong>, de l'université Ashesi, Ghana.",
       "h" => "Faites partie de la solution",
       "p-2" => "L'A.D.U. redessine l'avenir de la région en éduquant
           <br />
@@ -143,8 +143,8 @@ return [
       "btn" => "DONNES",
     ],
     "ilimi" => [
-      "title" => "l'expérience ilimi",
-      "cta" => "S'abonner à notre bulletin d'information (subscribe to our newsletter)",
+      "title" => "l'expérience <span style=\"text-transform: none\">ILIMI</span>",
+      "cta" => "Nous proposons une formation en leur <span class=\"colour\"><strong>arts libéraux</strong></span> qui vise à développer l'esprit critique des étudiants, <span class=\"colour\"><strong>aptitude à résoudre les problèmes</strong></span> et leur capacité à servir leur communauté. Notre <span class=\"colour\"><strong>modèle unique - ILIMI</strong></span>, qui signifie \"éducation, intellectuel et connaissance\" en haoussa, se concentre sur le développement de <span class=\"colour\"><strong>jeunes leaders</strong></span> éthiques et influents.",
       "filter-btn" => [
         "all" => "Tous",
         "academics" => "Académiques",
@@ -165,7 +165,7 @@ return [
       ]
     ],
     "newsletter" => [
-      "title" => "S'abonner à la newsletter",
+      "title" => "S'abonner à notre newsletter",
       "btn" => "S'abonner à",
     ],
     "contact" => [
@@ -212,7 +212,7 @@ return [
         "title" => "Les critères",
         "lists" => [
           "1" => "Posséder un BAC ou un diplôme équivalent avec un excellent
-                parcours académique.",
+                parcours académique",
           "2" => "Démontrer un besoin clair de soutien financier",
         ]
       ],
@@ -230,49 +230,39 @@ return [
   ],
 
   "donate" => [
-    "cta" => "When you donate to African Development University (A.D.U), you invest
-          in the young people who will become the future leaders of Niger. Your
-          support will allow us to put higher education in reach for talented
-          students. Niger is one of the poorest countries in the world with an
-          annual GDP under $400 per capita. For many promising students, paying
-          the annual A.D.U. tuition of $4,000 is an impossible dream. Your
-          donation will enable us to select students without regard to their
-          financial situation. A.D.U. students are accepted based on exceptional
-          intellectual potential, demonstrated work ethic, and commitment to
-          leading change in Niger. Act now to empower the next generation of
-          leaders, thinkers, and changemakers!",
+    "cta" => "Lorsque vous faites un don à l'Université africaine de développement (UAD), vous investissez dans les jeunes qui deviendront les futurs dirigeants du Niger. Votre soutien nous permettra de mettre l'enseignement supérieur à la portée d'étudiants talentueux. Le Niger est l'un des pays les plus pauvres du monde, avec un PIB annuel inférieur à 400 dollars par habitant. Pour de nombreux étudiants prometteurs, payer les frais de scolarité annuels de l'A.D.U., qui s'élèvent à 4 000 dollars, est un rêve impossible. Votre don nous permettra de sélectionner des étudiants sans tenir compte de leur situation financière. Les étudiants de l'A.D.U. sont acceptés sur la base d'un potentiel intellectuel exceptionnel, d'une éthique de travail avérée et d'un engagement à mener le changement au Niger. Agissez maintenant pour donner à la prochaine génération de leaders, de penseurs et d'artisans du changement les moyens d'agir!",
 
     "content" => [
-      "h3" => "ARE YOU READY TO CHANGE THE CONVERSATION ABOUT THE SAHEL?",
-      "h1" => "Be part of the solution",
-      "p" => "A.D.U. is reshaping the future for the Sahel region by educating
+      "h3" => "ÊTES VOUS PRÊT À CHANGER LA CONVERSATION SUR LE SA SA SA D'UN CHANGEMENT D'ATTITUDE ?",
+      "h1" => "Faites partie de la solution",
+      "p" => "L'A.D.U. redessine l'avenir de la région du Sahel en éduquant les enfants et les jeunes.
             <br />
-            its most exceptional young women and men. We need your help.",
+            ses jeunes femmes et hommes les plus exceptionnels. Nous avons besoin de votre aide.",
     ],
 
     "info" => [
-      "h1" => "FOR U.S. DONORS:",
-      "p" => "US donors can make tax deductible contributions to the ADU ILIMI
-              US Fund through the
+      "h1" => "POUR LES DONATEURS AMÉRICAINS:",
+      "p" => "Les donateurs américains peuvent faire des contributions déductibles des impôts au fonds ADU ILIMI
+              US Fund par l'intermédiaire du
               <span>King Baudouin Foundation United States (KBFUS)</span>. KBFUS
-              is a registered US 501(c)(3) and 509(a)(1) charity; donors may
-              claim the maximum tax benefits allowed by U.S. law.",
+              est enregistré US 501(c)(3) and 509(a)(1) charité; les donateurs peuvent
+              réclamer les avantages fiscaux maximums autorisés par U.S. loi.",
       "info-main" => [
-        "h1-1" => "Gifts By Check",
-        "p" => "Address your check to KBFUS, write:",
-        "address" => "ADU ILIMI US Fund in the memo section <br />
+        "h1-1" => "Cadeaux par chèque",
+        "p" => "Adressez votre chèque à KBFUS, écrivez:",
+        "address" => "A.D.U. ILIMI US Fonds dans la section mémo <br />
                     10 Rockefeller Plaza <br />
                     16th Floor New York, NY 10020",
-        "h1-2" => "Donate Via Wire Transfer",
-        "p-2" => "Gifts by wire transfer or to contribute other types of
-                    property: Contact KBFUS via phone
+        "h1-2" => "Faire un don par virement bancaire",
+        "p-2" => "Dons par virement ou pour apporter d'autres types de biens
+                    biens: Contacter KBFUS par téléphone
                     <a href=\"tel:+2127137660\">(212) 713-7660</a> or
                     <a href=\"mailto:info@kbfus.org\">info@kbfus.org</a>",
 
       ],
       "info-card" => [
-        "h1-1" => "FOR AFRICAN, EUROPEAN AND OTHER INTERNATIONAL DONORS:",
-        "h1-2" => "Bank Details",
+        "h1-1" => "POUR LES DONATEURS AFRICAINS, EUROPÉENS ET AUTRES DONATEURS INTERNATIONAUX:",
+        "h1-2" => "Coordonnées bancaires",
       ]
     ],
 

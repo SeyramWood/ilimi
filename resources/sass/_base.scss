@@ -92,3 +92,48 @@ a:active {
         }
     }
 }
+.social-icons {
+    & > li {
+        &:nth-child(n + 6) {
+            display: none;
+        }
+        @include respond-down(md) {
+            &:nth-child(n + 6) {
+                display: block;
+                visibility: hidden !important;
+            }
+        }
+        @include respond-only(xs) {
+            &:nth-child(n + 8) {
+                display: none;
+            }
+        }
+    }
+}
+.cbp-l-grid-projects .cbp-caption {
+    @include respond-down(md) {
+        height: 80% !important;
+        margin-bottom: 2rem !important;
+    }
+}
+.percent {
+    position: absolute;
+    display: inline-block;
+    margin: 0px auto;
+    z-index: 2;
+    color: #f0f0f0;
+    left: 30%;
+    top: 30%;
+    font-weight: 700;
+    font-size: 3rem !important;
+
+    @include respond-only(xs) {
+        left: 40%;
+        top: 40%;
+    }
+}
+.pie p {
+    @include respond-only(xs) {
+        font-size: 18px;
+    }
+}

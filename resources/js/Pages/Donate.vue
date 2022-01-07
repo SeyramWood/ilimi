@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="donate-page">
     <navigation>
       <li>
         <a class="scroll" href="/#home">{{ $t("pages.home.nav.home") }}</a>
@@ -25,21 +25,31 @@
           $t("pages.home.nav.contact")
         }}</a>
       </li>
+      <li class="navigation lang">
+        <ul>
+          <li :class="[getLocale === 'en' && 'active']" role="button">
+            <a role="button" @click="changeLocale('en')">EN</a>
+          </li>
+          <li :class="[getLocale === 'fr' && 'active']" role="button">
+            <a role="button" @click="changeLocale('fr')">FR</a>
+          </li>
+        </ul>
+      </li>
     </navigation>
 
     <Banner :title="$tc('pages.home.banner.cta', 2)" />
-    <section class="donate">
-      <section class="donate__cta">
+
+    <div class="donate">
+      <div class="donate__cta">
         <p>
           {{ $t("pages.donate.cta") }}
         </p>
-      </section>
+      </div>
       <div class="donate__wrapper">
         <div class="donate__wrapper__content">
           <h3>{{ $t("pages.donate.content.h3") }}</h3>
           <h1>{{ $t("pages.donate.content.h1") }}</h1>
           <p v-html="$t(`pages.donate.content.p`)"></p>
-          <!-- <Link as="button" href="/donate">Donate Now</Link> -->
         </div>
       </div>
       <div class="donate__info">
@@ -90,7 +100,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <Contact />
 
     <Footer />

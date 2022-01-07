@@ -1,6 +1,8 @@
 .donate {
     width: 100%;
-
+    &-page {
+        width: 100%;
+    }
     &__cta {
         padding: 8rem $container-padding;
         @include respond-down(md) {
@@ -25,6 +27,17 @@
             align-items: center;
             text-align: center;
             color: $white !important;
+            & > .testimony-avatar {
+                width: 15rem;
+                height: 15rem;
+                border: solid $white 1px;
+                border-radius: 5px;
+                overflow: hidden;
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
             & > h3 {
                 color: $white !important;
             }
@@ -45,7 +58,11 @@
                 }
             }
             & > p {
-                margin-bottom: 2.5rem;
+                margin-bottom: 2rem !important;
+            }
+            & > q {
+                font-style: italic;
+                margin: 1rem 0 !important;
             }
             & > button {
                 padding: 1rem 2.5rem;
@@ -64,7 +81,7 @@
     &__info {
         padding: 8rem $container-padding;
         @include respond-down(md) {
-            padding: 8rem 2rem;
+            padding: 8rem 2rem !important;
         }
         @include grid-row;
         & > .donate__info__card {
@@ -72,17 +89,27 @@
             box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
                 0px 2px 2px 0px rgb(0 0 0 / 14%),
                 0px 1px 5px 0px rgb(0 0 0 / 12%);
+            padding: 1rem;
+            border: 1px solid $text;
+            text-align: center;
             @include grid-column($width: 100%, $height: 100%, $gutter: 2rem);
+            @include respond-down(md) {
+                @include grid-column(
+                    $width: 100%,
+                    $height: 100%,
+                    $gutter: 0rem
+                );
+                margin-bottom: 5rem;
+                padding: 3rem 2rem;
+            }
             @include respond-only(xs) {
                 @include grid-column(
                     $width: 100%,
                     $height: 100%,
-                    $gutter: 1rem
+                    $gutter: 0rem
                 );
+                margin-bottom: 5rem;
             }
-            padding: 1rem;
-            border: 1px solid $text;
-            text-align: center;
         }
         &__header {
             &.mt {
@@ -96,6 +123,15 @@
                 letter-spacing: normal !important;
                 margin: 0 !important;
                 text-transform: none !important;
+                @include respond-down(md) {
+                    color: $secondary !important;
+                    font-weight: bold;
+                    font-size: 1.8rem !important;
+                    line-height: inherit;
+                    letter-spacing: normal !important;
+                    margin: 0 !important;
+                    text-transform: none !important;
+                }
             }
             & > p {
                 & > span {
