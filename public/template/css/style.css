@@ -1071,7 +1071,7 @@ focus::-webkit-input-placeholder{ color:transparent; opacity:1.0;}
 #ajax-contact-form input:focus, #ajax-contact-form  textarea:focus { color:#f0f0f0; outline:none; }
 input { outline:none; }
 
-#ajax-contact-form input.btn{
+#ajax-contact-form input.btn, #ajax-contact-form button.btn{
 	padding: 15px 25px;
 	background-color: #2E3138!important;
 	color: #f0f0f0;
@@ -1088,7 +1088,7 @@ input { outline:none; }
 	margin-bottom: 15px;
 	border: 0px none;
 }
-#ajax-contact-form input.btn:hover {
+#ajax-contact-form input.btn:hover, #ajax-contact-form button.btn:hover {
 	background-color: #f0f0f0!important;
 	cursor: pointer;
 	color: #222!important;

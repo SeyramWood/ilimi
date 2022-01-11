@@ -189,42 +189,58 @@
               <div class="contact_form">
                 <div id="note"></div>
                 <div id="fields">
-                  <form id="ajax-contact-form">
+                  <form
+                    id="ajax-contact-form"
+                    @submit.prevent="submitContact()"
+                  >
                     <input
                       class="col-xs-12 col-md-12"
                       type="text"
-                      name="name"
-                      value=""
                       placeholder="Name"
+                      v-model="contact.name"
                     />
                     <input
                       class="col-xs-12 col-md-12"
-                      type="text"
-                      name="email"
-                      value=""
+                      type="email"
                       placeholder="Email"
+                      v-model="contact.email"
                     />
                     <input
                       class="col-xs-12 col-md-12"
                       type="text"
-                      name="subject"
-                      value=""
                       placeholder="Subject"
+                      v-model="contact.subject"
                     />
                     <textarea
-                      name="message"
                       id="message"
                       class="col-xs-12 col-md-12"
                       placeholder="Message"
+                      v-model="contact.message"
                     ></textarea>
                     <div class="clear"></div>
-
-                    <input
+                    <button
                       type="submit"
                       class="btn marg-right10"
-                      value="submit"
-                    />
-                    <input type="reset" class="btn" value="reset" />
+                      :disabled="isSubmitting"
+                    >
+                      <template v-if="isSubmitting">
+                        <img
+                          src="/../template/img/loader-36.svg"
+                          alt="loader"
+                          srcset=""
+                        />
+                      </template>
+                      <template v-else>
+                        {{ $t("pages.home.newsletter.btn") }}
+                      </template>
+                    </button>
+                    <button
+                      type="reset"
+                      class="btn"
+                      @click.prevent="resetContact()"
+                    >
+                      Reset
+                    </button>
 
                     <div class="clear"></div>
                   </form>
@@ -237,12 +253,57 @@
       </div>
     </div>
     <div class="pad60"></div>
+    <s-toast v-model="toast" :html="toastMsg"></s-toast>
   </section>
 </template>
 
 <script>
+import SToast from "../SToast";
 export default {
   name: "Contact",
+  components: {
+    SToast,
+  },
+  data: () => ({
+    isSubmitting: false,
+    contact: {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    },
+  }),
+
+  methods: {
+    submitContact() {
+      this.isSubmitting = true;
+      this.$inertia.post(`/send-message`, this.contact, {
+        errorBag: "contact",
+        preserveScroll: true,
+        onSuccess: (page) => {
+          this.isSubmitting = false;
+          this.showToast("Thank you for contacting us!");
+        },
+        onError: (err) => {
+          this.isSubmitting = false;
+          this.showToast(
+            `<p>${err.name || ""}</p><p>${err.email || ""}</p><p>${
+              err.subject || ""
+            }</p><p>${err.message || ""}</p>`
+          );
+        },
+      });
+    },
+
+    resetContact() {
+      this.contact = {
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      };
+    },
+  },
 };
 </script>
 

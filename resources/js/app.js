@@ -27,7 +27,9 @@ Vue.mixin({
 
   data() {
     return {
-      locale:''
+      locale: '',
+      toast: false,
+      toastMsg: '',
     }
   },
 
@@ -63,6 +65,11 @@ Vue.mixin({
         this.locale = navigator.language.split("-")[0];
       }
     },
+
+    showToast(msg) {
+      this.toastMsg = msg
+      this.$nextTick(() => this.toast = true)
+    }
   }
 })
 

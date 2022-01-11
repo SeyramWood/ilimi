@@ -305,15 +305,16 @@
   border-radius: 0.2rem;
   display: block;
   transition: all 0.2s;
+  color: #686767;
 }
 .home__newsletter__wrapper > form .input__wrapper > input:-moz-placeholder-shown {
-  color: #686767 !important;
+  color: #686767;
 }
 .home__newsletter__wrapper > form .input__wrapper > input:-ms-input-placeholder {
-  color: #686767 !important;
+  color: #686767;
 }
 .home__newsletter__wrapper > form .input__wrapper > input:placeholder-shown {
-  color: #686767 !important;
+  color: #686767;
 }
 .home__newsletter__wrapper > form .input__wrapper > button.append {
   height: 52px;
@@ -345,6 +346,7 @@
   align-items: center;
   text-transform: uppercase;
   transition: all 0.3s ease-in;
+  padding: 0 1rem;
   background: #262626;
   letter-spacing: 1.1px;
   border-radius: 0;
@@ -785,6 +787,7 @@ body {
   line-height: 1.7;
   color: #686767;
   font-size: 1.2rem;
+  text-align: justify !important;
   background: #f8fafc;
   min-height: 100vh !important;
 }

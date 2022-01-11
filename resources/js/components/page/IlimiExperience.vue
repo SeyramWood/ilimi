@@ -401,10 +401,14 @@
                         aria-label="yourmail@gmail.com"
                         v-model="subscriber"
                       />
-                      <button class="append" :disabled="isSubmitting">
+                      <button
+                        type="submit"
+                        class="append"
+                        :disabled="isSubmitting"
+                      >
                         <template v-if="isSubmitting">
                           <img
-                            src="/storage/loader-36.svg"
+                            src="/../template/img/loader-36.svg"
                             alt="loader"
                             srcset=""
                           />
@@ -423,12 +427,18 @@
       </div>
     </div>
     <!--//PARALLAX WORK QUOTE ENDS-->
+    <s-toast v-model="toast"> {{ toastMsg }} </s-toast>
   </section>
 </template>
 
 <script>
+import SToast from "../SToast";
+
 export default {
   name: "IlimiExperience",
+  components: {
+    SToast,
+  },
   data: () => ({
     isSubmitting: false,
     subscriber: "",
@@ -438,22 +448,19 @@ export default {
   methods: {
     subscribe() {
       this.isSubmitting = true;
-      this.subscriberError = "";
       this.$inertia.post(
-        `/dashboard/subscribe-to-newsletter`,
-        this.subscriber,
+        `/subscribe-to-newsletter`,
+        { email: this.subscriber },
         {
           errorBag: "subscribe",
           preserveScroll: true,
           onSuccess: (page) => {
             this.isSubmitting = false;
-            this.subscriberError = "";
-            this.snackbar("Thank you for subscribing to our newsletter!");
+            this.showToast("Thank you for subscribing to our newsletter!");
           },
           onError: (err) => {
             this.isSubmitting = false;
-            this.snackbar(email);
-            this.subscriberError = err.email;
+            this.showToast(err.email);
           },
         }
       );

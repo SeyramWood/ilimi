@@ -2624,6 +2624,58 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SToast.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SToast.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "SToast",
+  props: {
+    value: {
+      type: Boolean,
+      "default": false
+    },
+    html: {
+      "default": ""
+    }
+  },
+  watch: {
+    value: function value(v) {
+      var _this = this;
+
+      if (v) {
+        setTimeout(function () {
+          _this.close();
+        }, 4000);
+      }
+    }
+  },
+  methods: {
+    close: function close() {
+      this.$emit("input", !this.value);
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/accordion/SAccordion.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/accordion/SAccordion.vue?vue&type=script&lang=js& ***!
@@ -3870,6 +3922,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _SToast__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../SToast */ "./resources/js/components/SToast.vue");
 //
 //
 //
@@ -4112,8 +4165,69 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Contact"
+  name: "Contact",
+  components: {
+    SToast: _SToast__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      isSubmitting: false,
+      contact: {
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      }
+    };
+  },
+  methods: {
+    submitContact: function submitContact() {
+      var _this = this;
+
+      this.isSubmitting = true;
+      this.$inertia.post("/send-message", this.contact, {
+        errorBag: "contact",
+        preserveScroll: true,
+        onSuccess: function onSuccess(page) {
+          _this.isSubmitting = false;
+
+          _this.showToast("Thank you for contacting us!");
+        },
+        onError: function onError(err) {
+          _this.isSubmitting = false;
+
+          _this.showToast("<p>".concat(err.name || "", "</p><p>").concat(err.email || "", "</p><p>").concat(err.subject || "", "</p><p>").concat(err.message || "", "</p>"));
+        }
+      });
+    },
+    resetContact: function resetContact() {
+      this.contact = {
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      };
+    }
+  }
 });
 
 /***/ }),
@@ -4173,6 +4287,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _SToast__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../SToast */ "./resources/js/components/SToast.vue");
 //
 //
 //
@@ -4601,8 +4716,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "IlimiExperience",
+  components: {
+    SToast: _SToast__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
   data: function data() {
     return {
       isSubmitting: false,
@@ -4615,22 +4739,20 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.isSubmitting = true;
-      this.subscriberError = "";
-      this.$inertia.post("/dashboard/subscribe-to-newsletter", this.subscriber, {
+      this.$inertia.post("/subscribe-to-newsletter", {
+        email: this.subscriber
+      }, {
         errorBag: "subscribe",
         preserveScroll: true,
         onSuccess: function onSuccess(page) {
           _this.isSubmitting = false;
-          _this.subscriberError = "";
 
-          _this.snackbar("Thank you for subscribing to our newsletter!");
+          _this.showToast("Thank you for subscribing to our newsletter!");
         },
         onError: function onError(err) {
           _this.isSubmitting = false;
 
-          _this.snackbar(email);
-
-          _this.subscriberError = err.email;
+          _this.showToast(err.email);
         }
       });
     }
@@ -4725,7 +4847,9 @@ vue__WEBPACK_IMPORTED_MODULE_4__["default"].mixin({
   mounted: function mounted() {},
   data: function data() {
     return {
-      locale: ''
+      locale: '',
+      toast: false,
+      toastMsg: ''
     };
   },
   methods: {
@@ -4759,6 +4883,14 @@ vue__WEBPACK_IMPORTED_MODULE_4__["default"].mixin({
         this.$lang.setLocale(navigator.language.split("-")[0]);
         this.locale = navigator.language.split("-")[0];
       }
+    },
+    showToast: function showToast(msg) {
+      var _this2 = this;
+
+      this.toastMsg = msg;
+      this.$nextTick(function () {
+        return _this2.toast = true;
+      });
     }
   }
 });
@@ -6677,6 +6809,30 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Lang;
 
 }));
+
+
+/***/ }),
+
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SToast.vue?vue&type=style&index=0&id=82ce6cc2&lang=scss&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SToast.vue?vue&type=style&index=0&id=82ce6cc2&lang=scss&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "#snackbar[data-v-82ce6cc2] {\n  visibility: hidden;\n  /* Hidden by default. Visible on click */\n  min-width: 250px;\n  /* Set a default minimum width */\n  min-height: 50px;\n  /* Set a default minimum width */\n  margin-left: -125px;\n  /* Divide value of min-width by 2 */\n  background-color: #333;\n  /* Black background color */\n  color: #fff;\n  /* White text color */\n  border-radius: 2px;\n  /* Rounded borders */\n  padding: 16px;\n  /* Padding */\n  position: fixed;\n  /* Sit on top of the screen */\n  z-index: 1;\n  /* Add a z-index if needed */\n  left: 50%;\n  /* Center the snackbar */\n  bottom: 30px;\n  /* 30px from the bottom */\n}\n\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#snackbar.show[data-v-82ce6cc2] {\n  visibility: visible;\n  /* Show the snackbar */\n  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n  -webkit-animation: fadein-data-v-82ce6cc2 0.5s backwards;\n  animation: fadein-data-v-82ce6cc2 0.5s backwards;\n}\n#snackbar.hide[data-v-82ce6cc2] {\n  visibility: hidden;\n  /* Show the snackbar */\n  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n  -webkit-animation: fadeout-data-v-82ce6cc2 0.5s 2.5s backwards;\n  animation: fadeout-data-v-82ce6cc2 0.5s 2.5s backwards;\n}\n\n/* Animations to fade the snackbar in and out */\n@-webkit-keyframes fadein-data-v-82ce6cc2 {\nfrom {\n    bottom: 0;\n    opacity: 0;\n}\nto {\n    bottom: 30px;\n    opacity: 1;\n}\n}\n@keyframes fadein-data-v-82ce6cc2 {\nfrom {\n    bottom: 0;\n    opacity: 0;\n}\nto {\n    bottom: 30px;\n    opacity: 1;\n}\n}\n@-webkit-keyframes fadeout-data-v-82ce6cc2 {\nfrom {\n    bottom: 30px;\n    opacity: 1;\n}\nto {\n    bottom: 0;\n    opacity: 0;\n}\n}\n@keyframes fadeout-data-v-82ce6cc2 {\nfrom {\n    bottom: 30px;\n    opacity: 1;\n}\nto {\n    bottom: 0;\n    opacity: 0;\n}\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
@@ -29355,6 +29511,36 @@ module.exports = function getSideChannel() {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SToast.vue?vue&type=style&index=0&id=82ce6cc2&lang=scss&scoped=true&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SToast.vue?vue&type=style&index=0&id=82ce6cc2&lang=scss&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_SToast_vue_vue_type_style_index_0_id_82ce6cc2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./SToast.vue?vue&type=style&index=0&id=82ce6cc2&lang=scss&scoped=true& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SToast.vue?vue&type=style&index=0&id=82ce6cc2&lang=scss&scoped=true&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_SToast_vue_vue_type_style_index_0_id_82ce6cc2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_SToast_vue_vue_type_style_index_0_id_82ce6cc2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/accordion/SAccordion.vue?vue&type=style&index=0&id=79644027&lang=scss&scoped=true&":
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/accordion/SAccordion.vue?vue&type=style&index=0&id=79644027&lang=scss&scoped=true& ***!
@@ -29777,6 +29963,47 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 /* hot reload */
 if (false) { var api; }
 component.options.__file = "resources/js/Pages/Scholarship.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/SToast.vue":
+/*!********************************************!*\
+  !*** ./resources/js/components/SToast.vue ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _SToast_vue_vue_type_template_id_82ce6cc2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SToast.vue?vue&type=template&id=82ce6cc2&scoped=true& */ "./resources/js/components/SToast.vue?vue&type=template&id=82ce6cc2&scoped=true&");
+/* harmony import */ var _SToast_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SToast.vue?vue&type=script&lang=js& */ "./resources/js/components/SToast.vue?vue&type=script&lang=js&");
+/* harmony import */ var _SToast_vue_vue_type_style_index_0_id_82ce6cc2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SToast.vue?vue&type=style&index=0&id=82ce6cc2&lang=scss&scoped=true& */ "./resources/js/components/SToast.vue?vue&type=style&index=0&id=82ce6cc2&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+;
+
+
+/* normalize component */
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _SToast_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _SToast_vue_vue_type_template_id_82ce6cc2_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _SToast_vue_vue_type_template_id_82ce6cc2_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "82ce6cc2",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/SToast.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -30260,6 +30487,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/SToast.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/SToast.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SToast_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./SToast.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SToast.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SToast_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/accordion/SAccordion.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************!*\
   !*** ./resources/js/components/accordion/SAccordion.vue?vue&type=script&lang=js& ***!
@@ -30436,6 +30679,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/SToast.vue?vue&type=style&index=0&id=82ce6cc2&lang=scss&scoped=true&":
+/*!******************************************************************************************************!*\
+  !*** ./resources/js/components/SToast.vue?vue&type=style&index=0&id=82ce6cc2&lang=scss&scoped=true& ***!
+  \******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_SToast_vue_vue_type_style_index_0_id_82ce6cc2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./SToast.vue?vue&type=style&index=0&id=82ce6cc2&lang=scss&scoped=true& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SToast.vue?vue&type=style&index=0&id=82ce6cc2&lang=scss&scoped=true&");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/accordion/SAccordion.vue?vue&type=style&index=0&id=79644027&lang=scss&scoped=true&":
 /*!********************************************************************************************************************!*\
   !*** ./resources/js/components/accordion/SAccordion.vue?vue&type=style&index=0&id=79644027&lang=scss&scoped=true& ***!
@@ -30496,6 +30752,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Scholarship_vue_vue_type_template_id_f7da13ee_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Scholarship_vue_vue_type_template_id_f7da13ee_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Scholarship.vue?vue&type=template&id=f7da13ee&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Scholarship.vue?vue&type=template&id=f7da13ee&scoped=true&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/SToast.vue?vue&type=template&id=82ce6cc2&scoped=true&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/SToast.vue?vue&type=template&id=82ce6cc2&scoped=true& ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SToast_vue_vue_type_template_id_82ce6cc2_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SToast_vue_vue_type_template_id_82ce6cc2_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SToast_vue_vue_type_template_id_82ce6cc2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./SToast.vue?vue&type=template&id=82ce6cc2&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SToast.vue?vue&type=template&id=82ce6cc2&scoped=true&");
 
 
 /***/ }),
@@ -31546,6 +31819,42 @@ var staticRenderFns = [
     ])
   },
 ]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SToast.vue?vue&type=template&id=82ce6cc2&scoped=true&":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SToast.vue?vue&type=template&id=82ce6cc2&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.html
+    ? _c("div", {
+        class: [_vm.value ? "show" : "hide"],
+        attrs: { id: "snackbar" },
+        domProps: { innerHTML: _vm._s(_vm.html) },
+      })
+    : _c(
+        "div",
+        { class: [_vm.value ? "show" : "hide"], attrs: { id: "snackbar" } },
+        [_vm._t("default")],
+        2
+      )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -33312,80 +33621,283 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { attrs: { id: "contact" } }, [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
-          _c(
-            "h1",
-            {
-              staticClass: "wow fadeInRightBig",
-              attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
-            },
-            [
-              _vm._v(
-                "\n          " +
-                  _vm._s(_vm.$t("pages.home.contact.title")) +
-                  "\n        "
-              ),
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
+  return _c(
+    "section",
+    { attrs: { id: "contact" } },
+    [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
             _c(
-              "div",
+              "h1",
               {
-                staticClass: "col-sm-12 col-lg-6 wow fadeInUp",
+                staticClass: "wow fadeInRightBig",
                 attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
               },
               [
-                _vm._m(0),
-                _vm._v(" "),
-                _vm._m(1),
-                _vm._v(" "),
-                _c(
-                  "ul",
-                  { staticClass: "social-icons" },
-                  [
-                    _vm._m(2),
-                    _vm._v(" "),
-                    _vm._m(3),
-                    _vm._v(" "),
-                    _vm._m(4),
-                    _vm._v(" "),
-                    _vm._m(5),
-                    _vm._v(" "),
-                    _vm._m(6),
-                    _vm._v(" "),
-                    _vm._l(6, function (i) {
-                      return _c(
-                        "li",
-                        {
-                          key: i,
-                          staticClass: "wow fadeIn",
-                          attrs: {
-                            "data-wow-offset": "80",
-                            "data-wow-duration": "2s",
-                            "data-wow-delay": "1.5s",
-                          },
-                        },
-                        [_vm._m(7, true)]
-                      )
-                    }),
-                  ],
-                  2
+                _vm._v(
+                  "\n          " +
+                    _vm._s(_vm.$t("pages.home.contact.title")) +
+                    "\n        "
                 ),
               ]
             ),
             _vm._v(" "),
-            _vm._m(8),
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "col-sm-12 col-lg-6 wow fadeInUp",
+                  attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
+                },
+                [
+                  _vm._m(0),
+                  _vm._v(" "),
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c(
+                    "ul",
+                    { staticClass: "social-icons" },
+                    [
+                      _vm._m(2),
+                      _vm._v(" "),
+                      _vm._m(3),
+                      _vm._v(" "),
+                      _vm._m(4),
+                      _vm._v(" "),
+                      _vm._m(5),
+                      _vm._v(" "),
+                      _vm._m(6),
+                      _vm._v(" "),
+                      _vm._l(6, function (i) {
+                        return _c(
+                          "li",
+                          {
+                            key: i,
+                            staticClass: "wow fadeIn",
+                            attrs: {
+                              "data-wow-offset": "80",
+                              "data-wow-duration": "2s",
+                              "data-wow-delay": "1.5s",
+                            },
+                          },
+                          [_vm._m(7, true)]
+                        )
+                      }),
+                    ],
+                    2
+                  ),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "col-sm-12 col-lg-6 wow fadeInUp",
+                  attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
+                },
+                [
+                  _c("div", { staticClass: "contact_form" }, [
+                    _c("div", { attrs: { id: "note" } }),
+                    _vm._v(" "),
+                    _c("div", { attrs: { id: "fields" } }, [
+                      _c(
+                        "form",
+                        {
+                          attrs: { id: "ajax-contact-form" },
+                          on: {
+                            submit: function ($event) {
+                              $event.preventDefault()
+                              return _vm.submitContact()
+                            },
+                          },
+                        },
+                        [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.contact.name,
+                                expression: "contact.name",
+                              },
+                            ],
+                            staticClass: "col-xs-12 col-md-12",
+                            attrs: { type: "text", placeholder: "Name" },
+                            domProps: { value: _vm.contact.name },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.contact,
+                                  "name",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.contact.email,
+                                expression: "contact.email",
+                              },
+                            ],
+                            staticClass: "col-xs-12 col-md-12",
+                            attrs: { type: "email", placeholder: "Email" },
+                            domProps: { value: _vm.contact.email },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.contact,
+                                  "email",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.contact.subject,
+                                expression: "contact.subject",
+                              },
+                            ],
+                            staticClass: "col-xs-12 col-md-12",
+                            attrs: { type: "text", placeholder: "Subject" },
+                            domProps: { value: _vm.contact.subject },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.contact,
+                                  "subject",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("textarea", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.contact.message,
+                                expression: "contact.message",
+                              },
+                            ],
+                            staticClass: "col-xs-12 col-md-12",
+                            attrs: { id: "message", placeholder: "Message" },
+                            domProps: { value: _vm.contact.message },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.contact,
+                                  "message",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "clear" }),
+                          _vm._v(" "),
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn marg-right10",
+                              attrs: {
+                                type: "submit",
+                                disabled: _vm.isSubmitting,
+                              },
+                            },
+                            [
+                              _vm.isSubmitting
+                                ? [
+                                    _c("img", {
+                                      attrs: {
+                                        src: "/../template/img/loader-36.svg",
+                                        alt: "loader",
+                                        srcset: "",
+                                      },
+                                    }),
+                                  ]
+                                : [
+                                    _vm._v(
+                                      "\n                      " +
+                                        _vm._s(
+                                          _vm.$t("pages.home.newsletter.btn")
+                                        ) +
+                                        "\n                    "
+                                    ),
+                                  ],
+                            ],
+                            2
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn",
+                              attrs: { type: "reset" },
+                              on: {
+                                click: function ($event) {
+                                  $event.preventDefault()
+                                  return _vm.resetContact()
+                                },
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\n                    Reset\n                  "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "clear" }),
+                        ]
+                      ),
+                    ]),
+                  ]),
+                ]
+              ),
+            ]),
           ]),
         ]),
       ]),
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "pad60" }),
-  ])
+      _vm._v(" "),
+      _c("div", { staticClass: "pad60" }),
+      _vm._v(" "),
+      _c("s-toast", {
+        attrs: { html: _vm.toastMsg },
+        model: {
+          value: _vm.toast,
+          callback: function ($$v) {
+            _vm.toast = $$v
+          },
+          expression: "toast",
+        },
+      }),
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function () {
@@ -33690,80 +34202,6 @@ var staticRenderFns = [
       [_c("i", { staticClass: "fa fa-youtube" })]
     )
   },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "col-sm-12 col-lg-6 wow fadeInUp",
-        attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
-      },
-      [
-        _c("div", { staticClass: "contact_form" }, [
-          _c("div", { attrs: { id: "note" } }),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "fields" } }, [
-            _c("form", { attrs: { id: "ajax-contact-form" } }, [
-              _c("input", {
-                staticClass: "col-xs-12 col-md-12",
-                attrs: {
-                  type: "text",
-                  name: "name",
-                  value: "",
-                  placeholder: "Name",
-                },
-              }),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "col-xs-12 col-md-12",
-                attrs: {
-                  type: "text",
-                  name: "email",
-                  value: "",
-                  placeholder: "Email",
-                },
-              }),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "col-xs-12 col-md-12",
-                attrs: {
-                  type: "text",
-                  name: "subject",
-                  value: "",
-                  placeholder: "Subject",
-                },
-              }),
-              _vm._v(" "),
-              _c("textarea", {
-                staticClass: "col-xs-12 col-md-12",
-                attrs: {
-                  name: "message",
-                  id: "message",
-                  placeholder: "Message",
-                },
-              }),
-              _vm._v(" "),
-              _c("div", { staticClass: "clear" }),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "btn marg-right10",
-                attrs: { type: "submit", value: "submit" },
-              }),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "btn",
-                attrs: { type: "reset", value: "reset" },
-              }),
-              _vm._v(" "),
-              _c("div", { staticClass: "clear" }),
-            ]),
-          ]),
-        ]),
-      ]
-    )
-  },
 ]
 render._withStripped = true
 
@@ -33862,503 +34300,530 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { attrs: { id: "work" } }, [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
-          _c("h1", {
-            staticClass: "wow fadeInRightBig",
-            attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
-            domProps: { innerHTML: _vm._s(_vm.$t("pages.home.ilimi.title")) },
-          }),
-          _vm._v(" "),
-          _c("div", {
-            staticClass: "lead wow fadeInRightBig",
-            attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
-            domProps: { innerHTML: _vm._s(_vm.$t("pages.home.ilimi.cta")) },
-          }),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "cbp-l-filters-button",
-              attrs: { id: "filters-container" },
-            },
-            [
-              _c(
-                "button",
-                {
-                  staticClass: "cbp-filter-item-active cbp-filter-item",
-                  attrs: { "data-filter": "*" },
-                },
-                [
-                  _vm._v(
-                    "\n            " +
-                      _vm._s(_vm.$t("pages.home.ilimi.filter-btn.all"))
-                  ),
-                  _c("span", { staticClass: "cbp-filter-counter" }),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "cbp-filter-item",
-                  attrs: { "data-filter": ".academics" },
-                },
-                [
-                  _vm._v(
-                    "\n            " +
-                      _vm._s(_vm.$t("pages.home.ilimi.filter-btn.academics"))
-                  ),
-                  _c("span", { staticClass: "cbp-filter-counter" }),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "cbp-filter-item",
-                  attrs: { "data-filter": ".non-academics" },
-                },
-                [
-                  _vm._v(
-                    "\n            " +
-                      _vm._s(
-                        _vm.$t("pages.home.ilimi.filter-btn.non-academics")
-                      )
-                  ),
-                  _c("span", { staticClass: "cbp-filter-counter" }),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "cbp-filter-item",
-                  attrs: { "data-filter": ".alumni" },
-                },
-                [
-                  _vm._v(
-                    "\n            " +
-                      _vm._s(_vm.$t("pages.home.ilimi.filter-btn.alumni"))
-                  ),
-                  _c("span", { staticClass: "cbp-filter-counter" }),
-                ]
-              ),
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "cbp-l-grid-project" }, [
+  return _c(
+    "section",
+    { attrs: { id: "work" } },
+    [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
+            _c("h1", {
+              staticClass: "wow fadeInRightBig",
+              attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
+              domProps: { innerHTML: _vm._s(_vm.$t("pages.home.ilimi.title")) },
+            }),
+            _vm._v(" "),
+            _c("div", {
+              staticClass: "lead wow fadeInRightBig",
+              attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
+              domProps: { innerHTML: _vm._s(_vm.$t("pages.home.ilimi.cta")) },
+            }),
+            _vm._v(" "),
             _c(
               "div",
               {
-                staticClass: "cbp-l-grid-projects",
-                attrs: { id: "grid-container3" },
+                staticClass: "cbp-l-filters-button",
+                attrs: { id: "filters-container" },
               },
               [
-                _c("ul", [
-                  _c("li", { staticClass: "cbp-item academics" }, [
-                    _c("div", { staticClass: "cbp-caption" }, [
-                      _vm._m(0),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "cbp-caption-activeWrap" }, [
-                        _c(
-                          "div",
-                          { staticClass: "cbp-l-caption-alignCenter" },
-                          [
-                            _c("div", { staticClass: "cbp-l-caption-body" }, [
-                              _c("h6", [
-                                _vm._v(
-                                  _vm._s(
-                                    _vm.$t("pages.home.ilimi.filter-title.om")
-                                  )
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "a",
-                                {
-                                  staticClass:
-                                    "cbp-lightbox cbp-l-caption-buttonRight",
-                                  attrs: {
-                                    href: "template/img/gallery/ilimi.png",
-                                    "data-title": _vm.$t(
-                                      "pages.home.ilimi.filter-title.om"
-                                    ),
-                                  },
-                                },
-                                [_c("i", { staticClass: "fa fa-eye" })]
-                              ),
-                            ]),
-                          ]
-                        ),
-                      ]),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "cbp-item academics" }, [
-                    _c("div", { staticClass: "cbp-caption" }, [
-                      _vm._m(1),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "cbp-caption-activeWrap" }, [
-                        _c(
-                          "div",
-                          { staticClass: "cbp-l-caption-alignCenter" },
-                          [
-                            _c("div", { staticClass: "cbp-l-caption-body" }, [
-                              _c("h6", [
-                                _vm._v(
-                                  _vm._s(
-                                    _vm.$t("pages.home.ilimi.filter-title.cf")
-                                  )
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "a",
-                                {
-                                  staticClass:
-                                    "cbp-lightbox cbp-l-caption-buttonRight",
-                                  attrs: {
-                                    href: "template/img/gallery/resource.jpg",
-                                    "data-title": _vm.$t(
-                                      "pages.home.ilimi.filter-title.cf"
-                                    ),
-                                  },
-                                },
-                                [_c("i", { staticClass: "fa fa-eye" })]
-                              ),
-                            ]),
-                          ]
-                        ),
-                      ]),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "cbp-item academics" }, [
-                    _c("div", { staticClass: "cbp-caption" }, [
-                      _vm._m(2),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "cbp-caption-activeWrap" }, [
-                        _c(
-                          "div",
-                          { staticClass: "cbp-l-caption-alignCenter" },
-                          [
-                            _c("div", { staticClass: "cbp-l-caption-body" }, [
-                              _c("h6", [
-                                _vm._v(
-                                  _vm._s(
-                                    _vm.$t("pages.home.ilimi.filter-title.l")
-                                  )
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "a",
-                                {
-                                  staticClass:
-                                    "cbp-lightbox cbp-l-caption-buttonRight",
-                                  attrs: {
-                                    href: "template/img/gallery/library.jpg",
-                                    "data-title": _vm.$t(
-                                      "pages.home.ilimi.filter-title.l"
-                                    ),
-                                  },
-                                },
-                                [_c("i", { staticClass: "fa fa-eye" })]
-                              ),
-                            ]),
-                          ]
-                        ),
-                      ]),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "cbp-item academics" }, [
-                    _c("div", { staticClass: "cbp-caption" }, [
-                      _vm._m(3),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "cbp-caption-activeWrap" }, [
-                        _c(
-                          "div",
-                          { staticClass: "cbp-l-caption-alignCenter" },
-                          [
-                            _c("div", { staticClass: "cbp-l-caption-body" }, [
-                              _c("h6", [
-                                _vm._v(
-                                  _vm._s(
-                                    _vm.$t("pages.home.ilimi.filter-title.e-l")
-                                  )
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "a",
-                                {
-                                  staticClass:
-                                    "cbp-lightbox cbp-l-caption-buttonRight",
-                                  attrs: {
-                                    href: "template/img/gallery/strategy.jpg",
-                                    "data-title": _vm.$t(
-                                      "pages.home.ilimi.filter-title.el"
-                                    ),
-                                  },
-                                },
-                                [_c("i", { staticClass: "fa fa-eye" })]
-                              ),
-                            ]),
-                          ]
-                        ),
-                      ]),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "cbp-item non-academics" }, [
-                    _c("div", { staticClass: "cbp-caption" }, [
-                      _vm._m(4),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "cbp-caption-activeWrap" }, [
-                        _c(
-                          "div",
-                          { staticClass: "cbp-l-caption-alignCenter" },
-                          [
-                            _c("div", { staticClass: "cbp-l-caption-body" }, [
-                              _c("h6", [
-                                _vm._v(
-                                  _vm._s(
-                                    _vm.$t("pages.home.ilimi.filter-title.sl")
-                                  )
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "a",
-                                {
-                                  staticClass:
-                                    "cbp-lightbox cbp-l-caption-buttonRight",
-                                  attrs: {
-                                    href: "template/img/gallery/student-life.jpg",
-                                    "data-title": _vm.$t(
-                                      "pages.home.ilimi.filter-title.sl"
-                                    ),
-                                  },
-                                },
-                                [_c("i", { staticClass: "fa fa-eye" })]
-                              ),
-                            ]),
-                          ]
-                        ),
-                      ]),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "cbp-item non-academics" }, [
-                    _c("div", { staticClass: "cbp-caption" }, [
-                      _vm._m(5),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "cbp-caption-activeWrap" }, [
-                        _c(
-                          "div",
-                          { staticClass: "cbp-l-caption-alignCenter" },
-                          [
-                            _c("div", { staticClass: "cbp-l-caption-body" }, [
-                              _c("h6", [
-                                _vm._v(
-                                  "\n                          " +
-                                    _vm._s(
-                                      _vm.$t(
-                                        "pages.home.ilimi.filter-title.iilab"
-                                      )
-                                    ) +
-                                    "\n                        "
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _vm._m(6),
-                            ]),
-                          ]
-                        ),
-                      ]),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "cbp-item alumni" }, [
-                    _c("div", { staticClass: "cbp-caption" }, [
-                      _vm._m(7),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "cbp-caption-activeWrap" }, [
-                        _c(
-                          "div",
-                          { staticClass: "cbp-l-caption-alignCenter" },
-                          [
-                            _c("div", { staticClass: "cbp-l-caption-body" }, [
-                              _c("h6", [
-                                _vm._v(
-                                  _vm._s(
-                                    _vm.$t("pages.home.ilimi.filter-title.oa")
-                                  )
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _vm._m(8),
-                            ]),
-                          ]
-                        ),
-                      ]),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "cbp-item alumni" }, [
-                    _c("div", { staticClass: "cbp-caption" }, [
-                      _vm._m(9),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "cbp-caption-activeWrap" }, [
-                        _c(
-                          "div",
-                          { staticClass: "cbp-l-caption-alignCenter" },
-                          [
-                            _c("div", { staticClass: "cbp-l-caption-body" }, [
-                              _c("h6", [
-                                _vm._v(
-                                  _vm._s(
-                                    _vm.$t("pages.home.ilimi.filter-title.blr")
-                                  )
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "a",
-                                {
-                                  staticClass:
-                                    "cbp-lightbox cbp-l-caption-buttonRight",
-                                  attrs: {
-                                    href: "template/img/gallery/business.jpg",
-                                    "data-title": _vm.$t(
-                                      "pages.home.ilimi.filter-title.blr"
-                                    ),
-                                  },
-                                },
-                                [_c("i", { staticClass: "fa fa-eye" })]
-                              ),
-                            ]),
-                          ]
-                        ),
-                      ]),
-                    ]),
-                  ]),
-                ]),
+                _c(
+                  "button",
+                  {
+                    staticClass: "cbp-filter-item-active cbp-filter-item",
+                    attrs: { "data-filter": "*" },
+                  },
+                  [
+                    _vm._v(
+                      "\n            " +
+                        _vm._s(_vm.$t("pages.home.ilimi.filter-btn.all"))
+                    ),
+                    _c("span", { staticClass: "cbp-filter-counter" }),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "cbp-filter-item",
+                    attrs: { "data-filter": ".academics" },
+                  },
+                  [
+                    _vm._v(
+                      "\n            " +
+                        _vm._s(_vm.$t("pages.home.ilimi.filter-btn.academics"))
+                    ),
+                    _c("span", { staticClass: "cbp-filter-counter" }),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "cbp-filter-item",
+                    attrs: { "data-filter": ".non-academics" },
+                  },
+                  [
+                    _vm._v(
+                      "\n            " +
+                        _vm._s(
+                          _vm.$t("pages.home.ilimi.filter-btn.non-academics")
+                        )
+                    ),
+                    _c("span", { staticClass: "cbp-filter-counter" }),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "cbp-filter-item",
+                    attrs: { "data-filter": ".alumni" },
+                  },
+                  [
+                    _vm._v(
+                      "\n            " +
+                        _vm._s(_vm.$t("pages.home.ilimi.filter-btn.alumni"))
+                    ),
+                    _c("span", { staticClass: "cbp-filter-counter" }),
+                  ]
+                ),
               ]
             ),
+            _vm._v(" "),
+            _c("div", { staticClass: "cbp-l-grid-project" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "cbp-l-grid-projects",
+                  attrs: { id: "grid-container3" },
+                },
+                [
+                  _c("ul", [
+                    _c("li", { staticClass: "cbp-item academics" }, [
+                      _c("div", { staticClass: "cbp-caption" }, [
+                        _vm._m(0),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                          _c(
+                            "div",
+                            { staticClass: "cbp-l-caption-alignCenter" },
+                            [
+                              _c("div", { staticClass: "cbp-l-caption-body" }, [
+                                _c("h6", [
+                                  _vm._v(
+                                    _vm._s(
+                                      _vm.$t("pages.home.ilimi.filter-title.om")
+                                    )
+                                  ),
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass:
+                                      "cbp-lightbox cbp-l-caption-buttonRight",
+                                    attrs: {
+                                      href: "template/img/gallery/ilimi.png",
+                                      "data-title": _vm.$t(
+                                        "pages.home.ilimi.filter-title.om"
+                                      ),
+                                    },
+                                  },
+                                  [_c("i", { staticClass: "fa fa-eye" })]
+                                ),
+                              ]),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "cbp-item academics" }, [
+                      _c("div", { staticClass: "cbp-caption" }, [
+                        _vm._m(1),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                          _c(
+                            "div",
+                            { staticClass: "cbp-l-caption-alignCenter" },
+                            [
+                              _c("div", { staticClass: "cbp-l-caption-body" }, [
+                                _c("h6", [
+                                  _vm._v(
+                                    _vm._s(
+                                      _vm.$t("pages.home.ilimi.filter-title.cf")
+                                    )
+                                  ),
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass:
+                                      "cbp-lightbox cbp-l-caption-buttonRight",
+                                    attrs: {
+                                      href: "template/img/gallery/resource.jpg",
+                                      "data-title": _vm.$t(
+                                        "pages.home.ilimi.filter-title.cf"
+                                      ),
+                                    },
+                                  },
+                                  [_c("i", { staticClass: "fa fa-eye" })]
+                                ),
+                              ]),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "cbp-item academics" }, [
+                      _c("div", { staticClass: "cbp-caption" }, [
+                        _vm._m(2),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                          _c(
+                            "div",
+                            { staticClass: "cbp-l-caption-alignCenter" },
+                            [
+                              _c("div", { staticClass: "cbp-l-caption-body" }, [
+                                _c("h6", [
+                                  _vm._v(
+                                    _vm._s(
+                                      _vm.$t("pages.home.ilimi.filter-title.l")
+                                    )
+                                  ),
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass:
+                                      "cbp-lightbox cbp-l-caption-buttonRight",
+                                    attrs: {
+                                      href: "template/img/gallery/library.jpg",
+                                      "data-title": _vm.$t(
+                                        "pages.home.ilimi.filter-title.l"
+                                      ),
+                                    },
+                                  },
+                                  [_c("i", { staticClass: "fa fa-eye" })]
+                                ),
+                              ]),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "cbp-item academics" }, [
+                      _c("div", { staticClass: "cbp-caption" }, [
+                        _vm._m(3),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                          _c(
+                            "div",
+                            { staticClass: "cbp-l-caption-alignCenter" },
+                            [
+                              _c("div", { staticClass: "cbp-l-caption-body" }, [
+                                _c("h6", [
+                                  _vm._v(
+                                    _vm._s(
+                                      _vm.$t(
+                                        "pages.home.ilimi.filter-title.e-l"
+                                      )
+                                    )
+                                  ),
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass:
+                                      "cbp-lightbox cbp-l-caption-buttonRight",
+                                    attrs: {
+                                      href: "template/img/gallery/strategy.jpg",
+                                      "data-title": _vm.$t(
+                                        "pages.home.ilimi.filter-title.el"
+                                      ),
+                                    },
+                                  },
+                                  [_c("i", { staticClass: "fa fa-eye" })]
+                                ),
+                              ]),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "cbp-item non-academics" }, [
+                      _c("div", { staticClass: "cbp-caption" }, [
+                        _vm._m(4),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                          _c(
+                            "div",
+                            { staticClass: "cbp-l-caption-alignCenter" },
+                            [
+                              _c("div", { staticClass: "cbp-l-caption-body" }, [
+                                _c("h6", [
+                                  _vm._v(
+                                    _vm._s(
+                                      _vm.$t("pages.home.ilimi.filter-title.sl")
+                                    )
+                                  ),
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass:
+                                      "cbp-lightbox cbp-l-caption-buttonRight",
+                                    attrs: {
+                                      href: "template/img/gallery/student-life.jpg",
+                                      "data-title": _vm.$t(
+                                        "pages.home.ilimi.filter-title.sl"
+                                      ),
+                                    },
+                                  },
+                                  [_c("i", { staticClass: "fa fa-eye" })]
+                                ),
+                              ]),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "cbp-item non-academics" }, [
+                      _c("div", { staticClass: "cbp-caption" }, [
+                        _vm._m(5),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                          _c(
+                            "div",
+                            { staticClass: "cbp-l-caption-alignCenter" },
+                            [
+                              _c("div", { staticClass: "cbp-l-caption-body" }, [
+                                _c("h6", [
+                                  _vm._v(
+                                    "\n                          " +
+                                      _vm._s(
+                                        _vm.$t(
+                                          "pages.home.ilimi.filter-title.iilab"
+                                        )
+                                      ) +
+                                      "\n                        "
+                                  ),
+                                ]),
+                                _vm._v(" "),
+                                _vm._m(6),
+                              ]),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "cbp-item alumni" }, [
+                      _c("div", { staticClass: "cbp-caption" }, [
+                        _vm._m(7),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                          _c(
+                            "div",
+                            { staticClass: "cbp-l-caption-alignCenter" },
+                            [
+                              _c("div", { staticClass: "cbp-l-caption-body" }, [
+                                _c("h6", [
+                                  _vm._v(
+                                    _vm._s(
+                                      _vm.$t("pages.home.ilimi.filter-title.oa")
+                                    )
+                                  ),
+                                ]),
+                                _vm._v(" "),
+                                _vm._m(8),
+                              ]),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "cbp-item alumni" }, [
+                      _c("div", { staticClass: "cbp-caption" }, [
+                        _vm._m(9),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                          _c(
+                            "div",
+                            { staticClass: "cbp-l-caption-alignCenter" },
+                            [
+                              _c("div", { staticClass: "cbp-l-caption-body" }, [
+                                _c("h6", [
+                                  _vm._v(
+                                    _vm._s(
+                                      _vm.$t(
+                                        "pages.home.ilimi.filter-title.blr"
+                                      )
+                                    )
+                                  ),
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass:
+                                      "cbp-lightbox cbp-l-caption-buttonRight",
+                                    attrs: {
+                                      href: "template/img/gallery/business.jpg",
+                                      "data-title": _vm.$t(
+                                        "pages.home.ilimi.filter-title.blr"
+                                      ),
+                                    },
+                                  },
+                                  [_c("i", { staticClass: "fa fa-eye" })]
+                                ),
+                              ]),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                  ]),
+                ]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "pad45" }),
           ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "pad45" }),
+        ]),
+        _vm._v(" "),
+        _vm._m(10),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "well" }, [
+        _c("div", { staticClass: "dark_overlay" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "col-sm-12 col-lg-10 col-lg-offset-1 text-center",
+                },
+                [
+                  _c("section", { staticClass: "home__newsletter" }, [
+                    _c("div", { staticClass: "home__newsletter__wrapper" }, [
+                      _c(
+                        "form",
+                        {
+                          staticClass: "form",
+                          on: {
+                            submit: function ($event) {
+                              $event.preventDefault()
+                              return _vm.subscribe()
+                            },
+                          },
+                        },
+                        [
+                          _c("h1", { staticClass: "fadeInUp" }, [
+                            _vm._v(
+                              "\n                    " +
+                                _vm._s(_vm.$t("pages.home.newsletter.title")) +
+                                "\n                  "
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "input__wrapper" }, [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.subscriber,
+                                  expression: "subscriber",
+                                },
+                              ],
+                              attrs: {
+                                type: "email",
+                                id: "yourmail@gmail.com",
+                                placeholder: "yourmail@gmail.com",
+                                "aria-label": "yourmail@gmail.com",
+                              },
+                              domProps: { value: _vm.subscriber },
+                              on: {
+                                input: function ($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.subscriber = $event.target.value
+                                },
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "button",
+                              {
+                                staticClass: "append",
+                                attrs: {
+                                  type: "submit",
+                                  disabled: _vm.isSubmitting,
+                                },
+                              },
+                              [
+                                _vm.isSubmitting
+                                  ? [
+                                      _c("img", {
+                                        attrs: {
+                                          src: "/../template/img/loader-36.svg",
+                                          alt: "loader",
+                                          srcset: "",
+                                        },
+                                      }),
+                                    ]
+                                  : [
+                                      _vm._v(
+                                        "\n                        " +
+                                          _vm._s(
+                                            _vm.$t("pages.home.newsletter.btn")
+                                          ) +
+                                          "\n                      "
+                                      ),
+                                    ],
+                              ],
+                              2
+                            ),
+                          ]),
+                        ]
+                      ),
+                    ]),
+                  ]),
+                ]
+              ),
+            ]),
+          ]),
         ]),
       ]),
       _vm._v(" "),
-      _vm._m(10),
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "well" }, [
-      _c("div", { staticClass: "dark_overlay" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              {
-                staticClass: "col-sm-12 col-lg-10 col-lg-offset-1 text-center",
-              },
-              [
-                _c("section", { staticClass: "home__newsletter" }, [
-                  _c("div", { staticClass: "home__newsletter__wrapper" }, [
-                    _c(
-                      "form",
-                      {
-                        staticClass: "form",
-                        on: {
-                          submit: function ($event) {
-                            $event.preventDefault()
-                            return _vm.subscribe()
-                          },
-                        },
-                      },
-                      [
-                        _c("h1", { staticClass: "fadeInUp" }, [
-                          _vm._v(
-                            "\n                    " +
-                              _vm._s(_vm.$t("pages.home.newsletter.title")) +
-                              "\n                  "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "input__wrapper" }, [
-                          _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.subscriber,
-                                expression: "subscriber",
-                              },
-                            ],
-                            attrs: {
-                              type: "email",
-                              id: "yourmail@gmail.com",
-                              placeholder: "yourmail@gmail.com",
-                              "aria-label": "yourmail@gmail.com",
-                            },
-                            domProps: { value: _vm.subscriber },
-                            on: {
-                              input: function ($event) {
-                                if ($event.target.composing) {
-                                  return
-                                }
-                                _vm.subscriber = $event.target.value
-                              },
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c(
-                            "button",
-                            {
-                              staticClass: "append",
-                              attrs: { disabled: _vm.isSubmitting },
-                            },
-                            [
-                              _vm.isSubmitting
-                                ? [
-                                    _c("img", {
-                                      attrs: {
-                                        src: "/storage/loader-36.svg",
-                                        alt: "loader",
-                                        srcset: "",
-                                      },
-                                    }),
-                                  ]
-                                : [
-                                    _vm._v(
-                                      "\n                        " +
-                                        _vm._s(
-                                          _vm.$t("pages.home.newsletter.btn")
-                                        ) +
-                                        "\n                      "
-                                    ),
-                                  ],
-                            ],
-                            2
-                          ),
-                        ]),
-                      ]
-                    ),
-                  ]),
-                ]),
-              ]
-            ),
-          ]),
-        ]),
-      ]),
-    ]),
-  ])
+      _c(
+        "s-toast",
+        {
+          model: {
+            value: _vm.toast,
+            callback: function ($$v) {
+              _vm.toast = $$v
+            },
+            expression: "toast",
+          },
+        },
+        [_vm._v(" " + _vm._s(_vm.toastMsg) + " ")]
+      ),
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function () {

@@ -1,5 +1,6 @@
 <?php
 
+use App\Notifications\SendMessage;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 
@@ -29,6 +30,18 @@ Route::get('/locale/{locale}', function ($locale) {
   return redirect()->back();
 })->name('locale');
 
+Route::get('/notification', function () {
+  // AccountCreated::dispatch();
+
+  //   $user->notify(new NewAccountCreated($user, $password, ['first_name' => 'Woodson', 'last_name' => 'Prikah']));
+  // })->afterResponse();
+
+  return (new SendMessage(['name' => 'Woodson', 'subject' => 'subject', 'email' => 'wood@mail.com', 'message' => 'message']))
+    ->toMail((object)['name' => 'Woodson', 'email' => 'wood@mail.com']);
+});
+
 Route::get('/', 'PageController@index');
 Route::get('/donate', 'PageController@donate');
 Route::get('/scholarships', 'PageController@scholarship');
+Route::post('/subscribe-to-newsletter', 'PageController@subscribe');
+Route::post('/send-message', 'PageController@sendMessage');
