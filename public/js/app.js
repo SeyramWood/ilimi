@@ -4739,21 +4739,18 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.isSubmitting = true;
-      this.$inertia.post("/subscribe-to-newsletter", {
+      this.$axios.post("http://dashboard.eduappgh.com/dashboard/subscribe-to-newsletter", {
         email: this.subscriber
-      }, {
-        errorBag: "subscribe",
-        preserveScroll: true,
-        onSuccess: function onSuccess(page) {
+      }).then(function (res) {
+        if (res.data.ok) {
           _this.isSubmitting = false;
 
           _this.showToast("Thank you for subscribing to our newsletter!");
-        },
-        onError: function onError(err) {
-          _this.isSubmitting = false;
-
-          _this.showToast(err.email);
         }
+      })["catch"](function (err) {
+        _this.isSubmitting = false;
+
+        _this.showToast(err.response.data.errors.email[0] || "");
       });
     }
   }
@@ -4813,13 +4810,15 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var _inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue */ "./node_modules/@inertiajs/inertia-vue/dist/index.js");
 /* harmony import */ var _eli5_vue_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @eli5/vue-lang-js */ "./node_modules/@eli5/vue-lang-js/dist/vue-lang-js.common.js");
 /* harmony import */ var _eli5_vue_lang_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_eli5_vue_lang_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _lang_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lang.js */ "./resources/js/lang.js");
 /* harmony import */ var _lang_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_lang_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
@@ -4827,7 +4826,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_4__["default"].use((_eli5_vue_lang_js__WEBPACK_IMPORTED_MODULE_1___default()), {
+
+vue__WEBPACK_IMPORTED_MODULE_5__["default"].use((_eli5_vue_lang_js__WEBPACK_IMPORTED_MODULE_1___default()), {
   messages: (_lang_js__WEBPACK_IMPORTED_MODULE_2___default()),
   // Provide locale file
   locale: "en",
@@ -4835,7 +4835,10 @@ vue__WEBPACK_IMPORTED_MODULE_4__["default"].use((_eli5_vue_lang_js__WEBPACK_IMPO
   fallback: "en" // Set fallback lacale
 
 });
-vue__WEBPACK_IMPORTED_MODULE_4__["default"].mixin({
+Object.defineProperty(vue__WEBPACK_IMPORTED_MODULE_5__["default"].prototype, "$axios", {
+  value: (axios__WEBPACK_IMPORTED_MODULE_3___default())
+});
+vue__WEBPACK_IMPORTED_MODULE_5__["default"].mixin({
   computed: {
     getLocale: function getLocale() {
       return this.locale;
@@ -4847,16 +4850,16 @@ vue__WEBPACK_IMPORTED_MODULE_4__["default"].mixin({
   mounted: function mounted() {},
   data: function data() {
     return {
-      locale: '',
+      locale: "",
       toast: false,
-      toastMsg: ''
+      toastMsg: ""
     };
   },
   methods: {
     changeLocale: function changeLocale(locale) {
       var _this = this;
 
-      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_3__.Inertia.visit("/locale/".concat(locale), {
+      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_4__.Inertia.visit("/locale/".concat(locale), {
         preserveScroll: true,
         onSuccess: function onSuccess(page) {
           _this.locale = locale;
@@ -4872,8 +4875,8 @@ vue__WEBPACK_IMPORTED_MODULE_4__["default"].mixin({
     },
     setLocale: function setLocale() {
       if (document.cookie.split(";").some(function (item) {
-        return item.trim().startsWith("locale=");
-      }) || item.startsWith(" locale=")) {
+        return item.trim().startsWith("locale=") || item.startsWith(" locale=");
+      })) {
         var lang = document.cookie.split(";").find(function (item) {
           return item.startsWith("locale=") || item.startsWith(" locale=");
         }).split("=")[1];
@@ -4902,7 +4905,7 @@ vue__WEBPACK_IMPORTED_MODULE_4__["default"].mixin({
     var el = _ref.el,
         App = _ref.App,
         props = _ref.props;
-    new vue__WEBPACK_IMPORTED_MODULE_4__["default"]({
+    new vue__WEBPACK_IMPORTED_MODULE_5__["default"]({
       render: function render(h) {
         return h(App, props);
       }

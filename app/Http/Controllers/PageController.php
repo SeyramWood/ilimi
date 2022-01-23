@@ -31,7 +31,7 @@ class PageController extends Controller
             'email' => 'required|email:filter|unique:subscribers,email'
         ]);
         Subscriber::create($request->all());
-        return Inertia::render('Home');
+        return response()->json(['ok' => true]);
     }
     public function sendMessage(Request $request)
     {

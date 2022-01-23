@@ -448,22 +448,21 @@ export default {
   methods: {
     subscribe() {
       this.isSubmitting = true;
-      this.$inertia.post(
-        `/subscribe-to-newsletter`,
-        { email: this.subscriber },
-        {
-          errorBag: "subscribe",
-          preserveScroll: true,
-          onSuccess: (page) => {
+      this.$axios
+        .post(
+          "http://dashboard.eduappgh.com/dashboard/subscribe-to-newsletter",
+          { email: this.subscriber }
+        )
+        .then((res) => {
+          if (res.data.ok) {
             this.isSubmitting = false;
             this.showToast("Thank you for subscribing to our newsletter!");
-          },
-          onError: (err) => {
-            this.isSubmitting = false;
-            this.showToast(err.email);
-          },
-        }
-      );
+          }
+        })
+        .catch((err) => {
+          this.isSubmitting = false;
+          this.showToast(err.response.data.errors.email[0] || "");
+        });
     },
   },
 };

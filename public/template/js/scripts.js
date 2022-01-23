@@ -318,29 +318,36 @@ $(document).ready(function () {
 
 // TICKER - add your text here
 const enTicker = [
-            "We are a student-centered institution",
-            "We offer US-style Higher Education Model",
-            "We are entrepreneurial focused and ethical leaders",
-            "Student development through experiential learning",
-            "Blended Learning in-person and virtual teaching and learning",
-            "Bilingual Education and Campus Environment - English and French ",
-            "We provide high level career placement support",
-]
+    "We are a student-centered institution",
+    "We offer US-style Higher Education Model",
+    "We are entrepreneurial focused and ethical leaders",
+    "Student development through experiential learning",
+    "Blended Learning in-person and virtual teaching and learning",
+    "Bilingual Education and Campus Environment - English and French ",
+    "We provide high level career placement support",
+];
 const frTicker = [
-            "Nous sommes une institution centree sur letudiant",
-            "Nous proposons un modele denseignement superieur a lamericaine",
-            "Nous sommes des leaders axes sur lesprit dentreprise et lethique",
-            "Developpement des etudiants par lapprentissage par lexperience",
-            "Apprentissage mixte enseignement et apprentissage en personne et virtuels",
-            "Education bilingue et environnement du campus - anglais et français",
-            "Nous offrons un soutien de haut niveau en matiere de placement professionnel",
-        ]
+    "Nous sommes une institution centree sur letudiant",
+    "Nous proposons un modele denseignement superieur a lamericaine",
+    "Nous sommes des leaders axes sur lesprit dentreprise et lethique",
+    "Developpement des etudiants par lapprentissage par lexperience",
+    "Apprentissage mixte enseignement et apprentissage en personne et virtuels",
+    "Education bilingue et environnement du campus - anglais et français",
+    "Nous offrons un soutien de haut niveau en matiere de placement professionnel",
+];
 if (
-    document.cookie.split(";").some((item) => item.trim().startsWith("locale=")) || item.startsWith(" locale=")
+    document.cookie
+        .split(";")
+        .some(
+            (item) =>
+                item.trim().startsWith("locale=") || item.startsWith(" locale=")
+        )
 ) {
     const lang = document.cookie
         .split(";")
-        .find((item) => item.startsWith("locale=") || item.startsWith(" locale="))
+        .find(
+            (item) => item.startsWith("locale=") || item.startsWith(" locale=")
+        )
         .split("=")[1];
     if (lang === "en") {
         $(".ticker").airport(enTicker);
@@ -348,8 +355,8 @@ if (
         $(".ticker").airport(frTicker);
     }
 } else {
-	const lang = navigator.language.split("-")[0];
-	 if (lang === "en") {
+    const lang = navigator.language.split("-")[0];
+    if (lang === "en") {
         $(".ticker").airport(enTicker);
     } else {
         $(".ticker").airport(frTicker);
