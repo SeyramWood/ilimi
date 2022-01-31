@@ -102,6 +102,9 @@ section { background:#F0F0F0; }
 	letter-spacing: 2px;
 	font-weight: 700;
 }
+.d-btn {
+	font-size: 20px;
+}
 .btn:hover {
 	background-color: #2E3138!important; 
 	cursor: pointer;

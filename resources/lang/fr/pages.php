@@ -48,7 +48,7 @@ return [
               <span class=\"colour\"><strong>accrédités </strong></span> par le Ministère de l'Enseignement Supérieur, de la Recherche et de l'Innovation du Niger. Postulez pour étudier avec nous!
               <a
                 href=\"https://applications.eduappgh.com/\"
-                targ\et=\"_blank\"
+                target=\"_blank\"
                 rel=\"noopener noreferrer\"
                 class=\"p-link\"
                 ><span class=\"colour\"><strong>Postulez maintenant</strong></span></a

@@ -80,7 +80,7 @@ return [
               Ministry of Higher Education, Research and Innovation, Niger.
               <a
                 href=\"https://applications.eduappgh.com/\"
-                targ\et=\"_blank\"
+                target=\"_blank\"
                 rel=\"noopener noreferrer\"
                 class=\"p-link\"
                 ><span class=\"colour\"><strong>Apply now</strong></span></a

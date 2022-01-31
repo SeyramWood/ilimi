@@ -55,14 +55,14 @@ $(document).ready(function () {
     /*****************************************************************************
 	HEADER & SCROLL
 ******************************************************************************/
-
+    $("#header").addClass("show-header");
     $(window).scroll(function () {
-        var scaleBg = -$(window).scrollTop() / 4;
-        if ($(window).scrollTop() > 1) {
-            $("#header").addClass("show-header");
-        } else {
-            $("#header").removeClass("show-header");
-        }
+        // var scaleBg = -$(window).scrollTop() / 4;
+        // if ($(window).scrollTop() > 1) {
+        //     $("#header").addClass("show-header");
+        // } else {
+        //     $("#header").removeClass("show-header");
+        // }
     });
 
     $(".scroll").smoothScroll({
@@ -159,6 +159,7 @@ $(document).ready(function () {
             refreshInterval: 50,
             onComplete: function (value) {
                 //console.debug(this);
+                this.append("+");
             },
         });
     });

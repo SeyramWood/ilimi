@@ -13,13 +13,13 @@
           >
             {{ title }}!
           </h1> -->
-          <div
+          <!-- <div
             class="name wow bounceInDown"
             data-wow-duration="3s"
             data-wow-delay="2s"
           >
             {{ $t("pages.home.banner.values") }}
-          </div>
+          </div> -->
           <div class="text-center">
             <a href="#about" class="scroll">
               <i

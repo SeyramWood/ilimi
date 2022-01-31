@@ -11,7 +11,12 @@
             >
               {{ $t("pages.home.scholarship.title") }}
             </h1>
-
+            <img
+              src="/../template/img/mastercard.jpg"
+              alt=""
+              srcset=""
+              height="5rem"
+            />
             <div
               class="lead wow fadeInRightBig"
               data-wow-offset="80"
@@ -273,7 +278,7 @@
         <p v-html="$t(`pages.home.donation.p-2`)"></p>
         <a
           href="/donate"
-          class="scroll btn inverse wow bounceIn"
+          class="scroll btn d-btn inverse wow bounceIn"
           data-wow-offset="80"
           data-wow-duration="2s"
           >{{ $t("pages.home.donation.btn") }}</a

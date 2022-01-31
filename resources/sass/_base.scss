@@ -95,10 +95,16 @@ a:active {
 }
 .social-icons {
     & > li {
+        &:first-child {
+            margin-left: 3rem;
+        }
         &:nth-child(n + 6) {
             display: none;
         }
         @include respond-down(md) {
+            &:first-child {
+                margin-left: 5rem;
+            }
             &:nth-child(n + 6) {
                 display: block;
                 visibility: hidden !important;
@@ -137,4 +143,9 @@ a:active {
     @include respond-only(xs) {
         font-size: 18px;
     }
+}
+
+.ticker {
+    font-family: inherit;
+    text-transform: none;
 }
