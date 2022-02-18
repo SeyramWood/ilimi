@@ -336,20 +336,8 @@ const frTicker = [
     "Education bilingue et environnement du campus - anglais et français",
     "Nous offrons un soutien de haut niveau en matiere de placement professionnel",
 ];
-if (
-    document.cookie
-        .split(";")
-        .some(
-            (item) =>
-                item.trim().startsWith("locale=") || item.startsWith(" locale=")
-        )
-) {
-    const lang = document.cookie
-        .split(";")
-        .find(
-            (item) => item.startsWith("locale=") || item.startsWith(" locale=")
-        )
-        .split("=")[1];
+if (sessionStorage.getItem("locale")) {
+    const lang = sessionStorage.getItem("locale");
     if (lang === "en") {
         $(".ticker").airport(enTicker);
     } else {

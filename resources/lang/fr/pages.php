@@ -56,7 +56,7 @@ return [
 
       "service" => [
         "1" => [
-          "title" => "Exigencies",
+          "title" => "Exigences",
           "text" => "Vous devez être en possession d'un certificat de baccalauréat, des notes de l'examen final du lycée, d'un certificat de naissance, d'un certificat de citoyenneté, des résultats d'un test de langue et de lettres de recommandation.",
         ],
         "2" => [
@@ -128,7 +128,7 @@ return [
           ]
         ],
 
-        "btn" => "APPLY"
+        "btn" => "Appliquer"
 
       ],
 
@@ -171,9 +171,25 @@ return [
     "contact" => [
       "title" => "contacter",
       "cta" => "Pour toute question supplémentaire et/ou demande concernant l'état d'avancement de votre demande.",
+      "offices" => [
+        "1" => "Site officiel",
+        "2" => "Information Desk",
+        "3" => "Bureau de la promotion mondiale",
+        "4" => "Admissions et recrutement",
+        "5" => "Ressources humaines",
+        "6" => "Programme d'anglais",
+        "7" => "Programmes académiques",
+      ],
+      "form" => [
+        "1" => "Nom",
+        "2" => "Email",
+        "3" => "Sujet",
+        "4" => "Message",
+      ]
     ],
     "footer" => [
       "copyright" => "A.D.U. - Tous droits réservés"
+
     ],
   ],
 

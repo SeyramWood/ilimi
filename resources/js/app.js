@@ -39,9 +39,7 @@ Vue.mixin({
                 preserveScroll: true,
                 onSuccess: (page) => {
                     this.locale = locale;
-                    const now = new Date();
-                    now.setDate(now.getDate() + 7);
-                    document.cookie = `locale=${locale};expires=${now.toUTCString()};SameSite=Lax;Secure`;
+                    sessionStorage.setItem("locale", locale);
                     this.$lang.setLocale(locale);
                     location.reload();
                 },
@@ -49,23 +47,8 @@ Vue.mixin({
         },
 
         setLocale() {
-            if (
-                document.cookie
-                    .split(";")
-                    .some(
-                        (item) =>
-                            item.trim().startsWith("locale=") ||
-                            item.startsWith(" locale=")
-                    )
-            ) {
-                const lang = document.cookie
-                    .split(";")
-                    .find(
-                        (item) =>
-                            item.startsWith("locale=") ||
-                            item.startsWith(" locale=")
-                    )
-                    .split("=")[1];
+            if (sessionStorage.getItem("locale")) {
+                const lang = sessionStorage.getItem("locale");
                 this.$lang.setLocale(lang);
                 this.locale = lang;
             } else {

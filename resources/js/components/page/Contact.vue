@@ -38,43 +38,50 @@
                 <li>
                   <i class="fa-li fa fa-globe"></i>
                   <a href="https://www.ilimi.edu.ne" style="color: white"
-                    >www.ilimi.edu.ne | Official Website</a
+                    >www.ilimi.edu.ne |
+                    {{ $t("pages.home.contact.offices.1") }}</a
                   >
                 </li>
                 <li>
                   <i class="fa-li fa fa-envelope"></i>
                   <a href="mailto:infos@ilimi.edu.ne" style="color: white"
-                    >infos@ilimi.edu.ne | Information Desk</a
+                    >infos@ilimi.edu.ne |
+                    {{ $t("pages.home.contact.offices.2") }}</a
                   >
                 </li>
                 <li>
                   <i class="fa-li fa fa-envelope"></i>
                   <a href="mailto:oga@ilimi.edu.ne" style="color: white"
-                    >oga@ilimi.edu.ne | Office of Global Advancement</a
+                    >oga@ilimi.edu.ne |
+                    {{ $t("pages.home.contact.offices.3") }}</a
                   >
                 </li>
                 <li>
                   <i class="fa-li fa fa-envelope"></i>
                   <a href="mailto:admissions@ilimi.edu.ne" style="color: white"
-                    >admissions@ilimi.edu.ne | Admissions & Recruitment</a
+                    >admissions@ilimi.edu.ne |
+                    {{ $t("pages.home.contact.offices.4") }}</a
                   >
                 </li>
                 <li>
                   <i class="fa-li fa fa-envelope"></i>
                   <a href="mailto:talent@ilimi.edu.ne" style="color: white"
-                    >talent@ilimi.edu.ne | Human Resource</a
+                    >talent@ilimi.edu.ne |
+                    {{ $t("pages.home.contact.offices.5") }}</a
                   >
                 </li>
                 <li>
                   <i class="fa-li fa fa-envelope"></i>
                   <a href="mailto:talent@ilimi.edu.ne" style="color: white"
-                    >english@ilimi.edu.ne | English Program</a
+                    >english@ilimi.edu.ne |
+                    {{ $t("pages.home.contact.offices.6") }}</a
                   >
                 </li>
                 <li style="margin-bottom: 2rem">
                   <i class="fa-li fa fa-envelope"></i>
                   <a href="mailto:talent@ilimi.edu.ne" style="color: white"
-                    >academics@ilimi.edu.ne | Academic Programs</a
+                    >academics@ilimi.edu.ne |
+                    {{ $t("pages.home.contact.offices.7") }}</a
                   >
                 </li>
 
@@ -196,25 +203,25 @@
                     <input
                       class="col-xs-12 col-md-12"
                       type="text"
-                      placeholder="Name"
+                      :placeholder="$t('pages.home.contact.form.1')"
                       v-model="contact.name"
                     />
                     <input
                       class="col-xs-12 col-md-12"
                       type="email"
-                      placeholder="Email"
+                      :placeholder="$t('pages.home.contact.form.2')"
                       v-model="contact.email"
                     />
                     <input
                       class="col-xs-12 col-md-12"
                       type="text"
-                      placeholder="Subject"
+                      :placeholder="$t('pages.home.contact.form.3')"
                       v-model="contact.subject"
                     />
                     <textarea
                       id="message"
                       class="col-xs-12 col-md-12"
-                      placeholder="Message"
+                      :placeholder="$t('pages.home.contact.form.4')"
                       v-model="contact.message"
                     ></textarea>
                     <div class="clear"></div>

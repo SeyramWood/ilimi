@@ -225,6 +225,22 @@ return [
       "title" => "Contact",
       "cta" => "For additional questions and/or <strong>inquiry</strong> regarding
             the status of your application.",
+
+      "offices" => [
+        "1" => "Official Website",
+        "2" => "Information Desk",
+        "3" => "Office of Global Advancement",
+        "4" => "Admissions & Recruitment",
+        "5" => "Human Resource",
+        "6" => "English Program",
+        "7" => "Academic Programs",
+      ],
+      "form" => [
+        "1" => "Name",
+        "2" => "Email",
+        "3" => "Subject",
+        "4" => "Message",
+      ]
     ],
     "footer" => [
       "copyright" => "A.D.U. - All Rights Reserved"
