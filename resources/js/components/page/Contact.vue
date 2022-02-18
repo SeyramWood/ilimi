@@ -246,7 +246,7 @@
                       class="btn"
                       @click.prevent="resetContact()"
                     >
-                      Reset
+                      {{ $t("pages.home.contact.form.5") }}
                     </button>
 
                     <div class="clear"></div>

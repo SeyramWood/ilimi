@@ -240,6 +240,7 @@ return [
         "2" => "Email",
         "3" => "Subject",
         "4" => "Message",
+        "5" => "Reset",
       ]
     ],
     "footer" => [

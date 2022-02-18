@@ -140,7 +140,7 @@ return [
       "p-2" => "L'A.D.U. redessine l'avenir de la région en éduquant
           <br />
           ses jeunes femmes et hommes les plus exceptionnels ses jeunes femmes et hommes les plus exceptionnels. Nous avons besoin de.",
-      "btn" => "DONNES",
+      "btn" => "FAITES UN DON",
     ],
     "ilimi" => [
       "title" => "l'expérience <span style=\"text-transform: none\">ILIMI</span>",
@@ -185,6 +185,7 @@ return [
         "2" => "Email",
         "3" => "Sujet",
         "4" => "Message",
+        "5" => "Réinitialiser",
       ]
     ],
     "footer" => [
