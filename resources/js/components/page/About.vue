@@ -80,19 +80,19 @@
                     </div>
                   </a>
                   <a
-                    href="ajax/team1.html"
-                    class="cbp-singlePage cbp-l-grid-team-name"
+                    href=""
+                    class="cbp-singlePage cbp-l-grid-team-name disabled"
                     >Michaëlle Jean</a
                   >
                   <div class="cbp-l-grid-team-position">
-                    {{ $tc("pages.home.about.position", 1) }}
+                    {{ $t("pages.home.about.position.1") }}
                   </div>
                 </li>
 
                 <!--2-->
                 <li class="cbp-item">
                   <a
-                    href="https://www.linkedin.com/in/kaderkaneye"
+                    href="https://linkedin.com/in/kaderkaneye"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="cbp-caption"
@@ -111,58 +111,76 @@
                     </div>
                   </a>
                   <a
-                    href="ajax/team2.html"
-                    class="cbp-singlePage cbp-l-grid-team-name"
+                    href=""
+                    class="cbp-singlePage cbp-l-grid-team-name disabled"
                     >Kader Kaneye</a
                   >
                   <div class="cbp-l-grid-team-position">
-                    {{ $tc("pages.home.about.position", 2) }}
+                    {{ $t("pages.home.about.position.2") }}
                   </div>
                 </li>
 
                 <!--3-->
-                <!-- <li class="cbp-item">
-                  <a href="ajax/team3.html" class="cbp-caption cbp-singlePage">
+                <li class="cbp-item">
+                  <a
+                    href="https://linkedin.com/in/diallo-khadijah-56290160/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cbp-caption"
+                  >
                     <div class="cbp-caption-defaultWrap">
                       <img src="template/img/team/3.jpg" alt="" />
                     </div>
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                          <div class="cbp-l-caption-text">
+                            {{ $t("pages.home.about.hover-text") }}
+                          </div>
                         </div>
                       </div>
                     </div>
                   </a>
                   <a
-                    href="ajax/team3.html"
-                    class="cbp-singlePage cbp-l-grid-team-name"
-                    >Fati N'zi-Hassane</a
+                    href=""
+                    class="cbp-singlePage cbp-l-grid-team-name disabled"
+                    >Khadijah Diallo</a
                   >
-                  <div class="cbp-l-grid-team-position">Board Member</div>
-                </li> -->
+                  <div class="cbp-l-grid-team-position">
+                    {{ $t("pages.home.about.position.3") }}
+                  </div>
+                </li>
 
                 <!--4-->
-                <!-- <li class="cbp-item">
-                  <a href="ajax/team4.html" class="cbp-caption cbp-singlePage">
+                <li class="cbp-item">
+                  <a
+                    href="https://linkedin.com/in/carlmanlan/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cbp-caption"
+                  >
                     <div class="cbp-caption-defaultWrap">
                       <img src="template/img/team/4.jpg" alt="" />
                     </div>
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
                         <div class="cbp-l-caption-body">
-                          <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                          <div class="cbp-l-caption-text">
+                            {{ $t("pages.home.about.hover-text") }}
+                          </div>
                         </div>
                       </div>
                     </div>
                   </a>
                   <a
-                    href="ajax/team4.html"
-                    class="cbp-singlePage cbp-l-grid-team-name"
-                    >Marq Cole</a
+                    href=""
+                    class="cbp-singlePage cbp-l-grid-team-name disabled"
+                    >Carl Manlan</a
                   >
-                  <div class="cbp-l-grid-team-position">Thinker</div>
-                </li> -->
+                  <div class="cbp-l-grid-team-position">
+                    {{ $t("pages.home.about.position.4") }}
+                  </div>
+                </li>
               </ul>
             </div>
             <!--//TEAM MEMBERS-->

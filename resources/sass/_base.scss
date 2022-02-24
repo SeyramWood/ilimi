@@ -149,3 +149,8 @@ a:active {
     font-family: inherit;
     text-transform: none;
 }
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}

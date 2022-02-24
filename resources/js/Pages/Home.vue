@@ -2,21 +2,27 @@
   <main>
     <navigation>
       <li>
-        <a class="scroll" href="#home">{{ $t("pages.home.nav.home") }}</a>
+        <a class="scroll" href="#about">{{ $t("pages.home.nav.about") }}</a>
       </li>
       <li>
-        <a class="scroll" href="#about">{{ $t("pages.home.nav.about") }}</a>
+        <a class="scroll" href="#donate">{{ $t("pages.home.nav.donate") }}</a>
       </li>
       <li>
         <a class="scroll" href="#team">{{ $t("pages.home.nav.admissions") }}</a>
       </li>
       <li>
-        <a class="scroll" href="#price">{{
-          $t("pages.home.nav.scholarship")
+        <a class="scroll" href="#price">{{ $t("pages.home.nav.academics") }}</a>
+      </li>
+      <li>
+        <a class="scroll" href="#student-life">{{
+          $t("pages.home.nav.student")
         }}</a>
       </li>
       <li>
         <a class="scroll" href="#work">{{ $t("pages.home.nav.ilimi") }}</a>
+      </li>
+      <li>
+        <a class="scroll" href="#iilab">{{ $t("pages.home.nav.iilab") }}</a>
       </li>
       <li>
         <a class="scroll" href="#contact">{{ $t("pages.home.nav.contact") }}</a>
@@ -37,13 +43,19 @@
 
     <About />
 
+    <Donate />
+
     <Admissions />
 
     <Academics />
 
+    <StudentLife />
+
     <IlimiExperience />
 
-    <!-- <Blog /> -->
+    <IIlab />
+
+    <Newsletter />
 
     <Contact />
 
@@ -55,10 +67,13 @@
 import Navigation from "../components/page/Navigation";
 import Banner from "../components/page/Banner";
 import About from "../components/page/About";
+import Donate from "../components/page/Donate";
 import Admissions from "../components/page/Admissions";
-import IlimiExperience from "../components/page/IlimiExperience";
 import Academics from "../components/page/Academics";
-import Blog from "../components/page/Blog";
+import StudentLife from "../components/page/StudentLife";
+import IlimiExperience from "../components/page/IlimiExperience";
+import IIlab from "../components/page/IIlab";
+import Newsletter from "../components/page/Newsletter";
 import Contact from "../components/page/Contact";
 import Footer from "../components/page/Footer";
 export default {
@@ -66,11 +81,14 @@ export default {
   components: {
     Navigation,
     Banner,
-    Admissions,
     About,
-    IlimiExperience,
+    Donate,
+    Admissions,
     Academics,
-    Blog,
+    StudentLife,
+    IlimiExperience,
+    IIlab,
+    Newsletter,
     Contact,
     Footer,
   },

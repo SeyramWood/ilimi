@@ -35,21 +35,21 @@
               </address>
 
               <ul class="fa-ul">
-                <li>
+                <!-- <li>
                   <i class="fa-li fa fa-globe"></i>
                   <a href="https://www.ilimi.edu.ne" style="color: white"
                     >www.ilimi.edu.ne |
                     {{ $t("pages.home.contact.offices.1") }}</a
                   >
-                </li>
-                <li>
+                </li> -->
+                <li style="margin-bottom: 2rem">
                   <i class="fa-li fa fa-envelope"></i>
                   <a href="mailto:infos@ilimi.edu.ne" style="color: white"
                     >infos@ilimi.edu.ne |
                     {{ $t("pages.home.contact.offices.2") }}</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <i class="fa-li fa fa-envelope"></i>
                   <a href="mailto:oga@ilimi.edu.ne" style="color: white"
                     >oga@ilimi.edu.ne |
@@ -83,9 +83,9 @@
                     >academics@ilimi.edu.ne |
                     {{ $t("pages.home.contact.offices.7") }}</a
                   >
-                </li>
+                </li> -->
 
-                <li>
+                <!-- <li>
                   <i class="fa-li fa fa-phone"></i>
                   <span class=""
                     ><a href="tel:+22792396868" style="color: white"
@@ -100,7 +100,7 @@
                       >(+227) 93 39 68 68</a
                     ></span
                   >
-                </li>
+                </li> -->
               </ul>
 
               <ul class="social-icons">

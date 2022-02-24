@@ -9,7 +9,7 @@
               data-wow-offset="80"
               data-wow-duration="2s"
             >
-              {{ $t("pages.home.scholarship.title") }}
+              {{ $t("pages.home.academics.title") }}
             </h1>
             <img
               src="/../template/img/mastercard.jpg"
@@ -21,7 +21,7 @@
               class="lead wow fadeInRightBig"
               data-wow-offset="80"
               data-wow-duration="2s"
-              v-html="$t(`pages.home.scholarship.cta`)"
+              v-html="$t(`pages.home.academics.cta`)"
             ></div>
           </div>
         </div>
@@ -42,7 +42,7 @@
                       <a class="price-plan-link">
                         <h2>
                           {{
-                            $t("pages.home.scholarship.details.benefits.title")
+                            $t("pages.home.academics.details.benefits.title")
                           }}
                         </h2>
                         <div class="price">
@@ -59,27 +59,27 @@
                       <ul class="list-group">
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.benefits.list.1")
+                            $t("pages.home.academics.details.benefits.list.1")
                           }}
                         </li>
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.benefits.list.2")
+                            $t("pages.home.academics.details.benefits.list.2")
                           }}
                         </li>
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.benefits.list.3")
+                            $t("pages.home.academics.details.benefits.list.3")
                           }}
                         </li>
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.benefits.list.4")
+                            $t("pages.home.academics.details.benefits.list.4")
                           }}
                         </li>
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.benefits.list.5")
+                            $t("pages.home.academics.details.benefits.list.5")
                           }}
                         </li>
                       </ul>
@@ -88,7 +88,7 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         class="btn"
-                        >{{ $t("pages.home.scholarship.details.btn") }}</a
+                        >{{ $t("pages.home.academics.details.btn") }}</a
                       >
                     </div>
                   </div>
@@ -106,7 +106,7 @@
                       <a class="price-plan-link">
                         <h2>
                           {{
-                            $t("pages.home.scholarship.details.criteria.title")
+                            $t("pages.home.academics.details.criteria.title")
                           }}
                         </h2>
                         <!-- <div class="price">
@@ -123,27 +123,27 @@
                       <ul class="list-group">
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.criteria.list.1")
+                            $t("pages.home.academics.details.criteria.list.1")
                           }}
                         </li>
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.criteria.list.2")
+                            $t("pages.home.academics.details.criteria.list.2")
                           }}
                         </li>
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.criteria.list.3")
+                            $t("pages.home.academics.details.criteria.list.3")
                           }}
                         </li>
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.criteria.list.4")
+                            $t("pages.home.academics.details.criteria.list.4")
                           }}
                         </li>
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.criteria.list.5")
+                            $t("pages.home.academics.details.criteria.list.5")
                           }}
                         </li>
                       </ul>
@@ -152,7 +152,7 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         class="btn"
-                        >{{ $t("pages.home.scholarship.details.btn") }}</a
+                        >{{ $t("pages.home.academics.details.btn") }}</a
                       >
                     </div>
                   </div>
@@ -170,7 +170,7 @@
                       <a class="price-plan-link">
                         <h2>
                           {{
-                            $t("pages.home.scholarship.details.programs.title")
+                            $t("pages.home.academics.details.programs.title")
                           }}
                         </h2>
                         <!-- <div class="price">
@@ -187,27 +187,27 @@
                       <ul class="list-group">
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.programs.list.1")
+                            $t("pages.home.academics.details.programs.list.1")
                           }}
                         </li>
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.programs.list.2")
+                            $t("pages.home.academics.details.programs.list.2")
                           }}
                         </li>
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.programs.list.3")
+                            $t("pages.home.academics.details.programs.list.3")
                           }}
                         </li>
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.programs.list.4")
+                            $t("pages.home.academics.details.programs.list.4")
                           }}
                         </li>
                         <li>
                           {{
-                            $t("pages.home.scholarship.details.programs.list.5")
+                            $t("pages.home.academics.details.programs.list.5")
                           }}
                         </li>
                       </ul>
@@ -217,7 +217,7 @@
                         rel="noopener noreferrer"
                         class="btn"
                       >
-                        {{ $t("pages.home.scholarship.details.btn") }}</a
+                        {{ $t("pages.home.academics.details.btn") }}</a
                       >
                     </div>
                   </div>
@@ -267,24 +267,6 @@
     </section>
 
     <!--//VIDEO SECTION STARTS-->
-    <div class="donate__wrapper">
-      <div class="donate__wrapper__content">
-        <div class="testimony-avatar">
-          <img src="/../template/img/patrick_awuah.jpg" alt="" srcset="" />
-        </div>
-        <q>{{ $t("pages.home.donation.q") }}</q>
-        <p v-html="$t(`pages.home.donation.p-1`)"></p>
-        <h1>{{ $t("pages.home.donation.h") }}</h1>
-        <p v-html="$t(`pages.home.donation.p-2`)"></p>
-        <a
-          href="/donate"
-          class="scroll btn d-btn inverse wow bounceIn"
-          data-wow-offset="80"
-          data-wow-duration="2s"
-          >{{ $t("pages.home.donation.btn") }}</a
-        >
-      </div>
-    </div>
     <!-- <div class="wallpapered video-section donate-bg">
       <div class="video_overlay">
         <div id="video_content">

@@ -114,7 +114,6 @@ import About from "../components/page/About";
 import Admissions from "../components/page/Admissions";
 import IlimiExperience from "../components/page/IlimiExperience";
 import Academics from "../components/page/Academics";
-import Blog from "../components/page/Blog";
 import Contact from "../components/page/Contact";
 import Footer from "../components/page/Footer";
 import SAccordions from "../components/accordion/SAccordions";
@@ -124,11 +123,10 @@ export default {
   components: {
     Navigation,
     Banner,
-    Admissions,
     About,
-    IlimiExperience,
+    Admissions,
     Academics,
-    Blog,
+    IlimiExperience,
     Contact,
     Footer,
     SAccordions,

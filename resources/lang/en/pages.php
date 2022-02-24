@@ -4,11 +4,13 @@ return [
 
   "home" => [
     "nav" => [
-      'home' => 'Home',
-      'about' => 'About',
+      'about' => 'About Us',
+      'donate' => 'Donate',
       'admissions' => 'Admissions',
-      'scholarship' => 'Scholarship',
-      'ilimi' => 'ILIMI Experience',
+      'academics' => 'Academics',
+      'student' => 'Student life',
+      'ilimi' => 'ILIMI XP',
+      'iilab' => 'iiLAB',
       'contact' => 'Contact',
     ],
     "banner" => [
@@ -16,7 +18,7 @@ return [
       "values" => "LEADERSHIP. EXCELLENCE. INNOVATION."
     ],
     "about" => [
-      "title" => "About",
+      "title" => "About Us",
       "cta" => "The mission of A.D.U. is to prepare the most talented
               <span class=\"colour\"><strong>young people</strong></span>
               in <span class=\"colour\"><strong>Niger</strong></span> and
@@ -60,12 +62,17 @@ return [
 
       "hover-text" => "VIEW PROFILE",
 
-      "position" => "Chancellor|Founder & President",
+      "position" => [
+        "1" => "Chancellor",
+        "2" => "Founder & President",
+        "3" => "Board Chair",
+        "4" => "Board Chair",
+      ],
 
       "impact" => [
         "title" => "Impact",
-        "70" => "Women & Gender Equality",
-        "75" => "Scholarships & Financial Aid",
+        "70" => "Female Student Population",
+        "75" => "Student on Scholarship",
         "90" => "Internships & Placement",
       ]
 
@@ -126,8 +133,8 @@ return [
       ],
 
     ],
-    "scholarship" => [
-      "title" => "Scholarship",
+    "academics" => [
+      "title" => "Academics",
       "cta" => "The
               <strong class=\"colour\"
                 >Mastercard Foundation Scholars Program</strong
@@ -216,6 +223,35 @@ return [
         "oa" => "Our Alumni",
         "blr" => "Business Leaders Recognition",
       ]
+    ],
+    "student" => [
+
+      "title" => "Student Life",
+
+      "cta" => "A.D.U. campus was designed as an inspiring base for students from Niger and the Sahel to <span class=\"colour\"><strong>learn</strong></span>, <span class=\"colour\"><strong>collaborate</strong></span>, <span class=\"colour\"><strong>engage</strong></span> and form <span class=\"colour\"><strong>relationships</strong></span> that would help them dare great things together. 
+                Our campus culture is driven by student initiatives, and run by the mantra, Student First! The student leadership, known as the ILIMI Student Government (ISG), collaborates deeply with the Office of Student and Community Affairs to <span class=\"colour\"><strong>enhance</strong></span> the student experience and support student-led initiatives.",
+
+      "btn" => "CONTACT",
+
+      "hover-text" => "VIEW MORE",
+
+      "benefit" => [
+        "1" => "Clubs and Activities",
+        "2" => "Career Services",
+        "3" => "Health and Wellness",
+        "4" => "Housing Services and Dining",
+      ],
+
+    ],
+    "iilab" => [
+      "title" => "<span style=\"text-transform: none\">iiLAB</span>",
+      "cta" => "The <span class=\"colour\"><strong>iiLAB</strong></span> (ilimi Innovation Lab) is A.D.U’s <span class=\"colour\"><strong>innovation</strong></span> and <span class=\"colour\"><strong>entrepreneurship</strong></span> hub committed to empower University <span class=\"colour\"><strong>Young Leaders</strong></span> by providing and connecting them with tools, resources, networks and support to scale up their innovative and entrepreneurial ideas. The iiLab is an active member of the <span class=\"colour\"><strong>RESAEN</strong></span> (the national network of Nigerien incubators) and runs two programmes. Business Innovation and Social Innovation and Change Initiative Programme.",
+      "benefit" => [
+        "1" => "Clubs and Activities",
+        "2" => "Career Services",
+        "3" => "Health and Wellness",
+        "4" => "Housing Services and Dining",
+      ],
     ],
     "newsletter" => [
       "title" => "Subscribe To Our Newsletter",

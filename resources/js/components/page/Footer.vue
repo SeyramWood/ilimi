@@ -17,7 +17,7 @@
         data-wow-duration="2s"
       >
         <span
-          >&copy;{{ new Date().getUTCFullYear() }}
+          >&copy;2017 - {{ new Date().getUTCFullYear() }}
           {{ $t("pages.home.footer.copyright") }}</span
         >
       </div>

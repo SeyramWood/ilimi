@@ -4,11 +4,13 @@ return [
 
   "home" => [
     "nav" => [
-      'home' => 'Accueil',
       'about' => 'À propos',
+      'donate' => 'Donnes',
       'admissions' => 'Admissions',
-      'scholarship' => "Bourse d'études",
-      'ilimi' => "l'expérience ILIMI",
+      'academics' => 'Académique',
+      'student' => 'Vie étudiante',
+      'ilimi' => 'ILIMI XP',
+      'iilab' => 'iiLAB',
       'contact' => 'Contacter',
     ],
     "banner" => [
@@ -29,14 +31,19 @@ return [
 
       "btn" => "CONTACT",
 
-      "hover-text" => "VIEW PROFILE",
+      "hover-text" => "VOIR PROFIL",
 
-      "position" => "Chancelier|Fondateur et président",
+      "position" => [
+        "1" => "Chancelier",
+        "2" => "Fondateur et président",
+        "3" => "Président du Conseil",
+        "4" => "Président du Conseil",
+      ],
 
       "impact" => [
         "title" => "impact",
-        "70" => "Femmes et Égalité des Sexes",
-        "75" => "Bourses D'études et Aide Financière",
+        "70" => "Population étudiante féminine",
+        "75" => "Étudiant boursier",
         "90" => "Stages et Placements",
       ]
     ],
@@ -85,7 +92,7 @@ return [
       ],
 
     ],
-    "scholarship" => [
+    "academics" => [
       "title" => "Bourse d'études",
       "cta" => "Le
               <strong class=\"colour\"
