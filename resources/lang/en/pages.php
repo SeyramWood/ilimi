@@ -126,7 +126,7 @@ return [
       //left with our why text
 
       "stats" => [
-        "title" => "Statistics",
+        "title" => "A.D.U in numbers",
         "text-1" => "Enrolled Students",
         "text-2" => "Countries Represented",
         "text-3" => "Programs of Study",
@@ -135,48 +135,37 @@ return [
     ],
     "academics" => [
       "title" => "Academics",
-      "cta" => "The
-              <strong class=\"colour\"
-                >Mastercard Foundation Scholars Program</strong
-              >
-              is a global initiative to
-              <strong class=\"colour\">educate</strong> and train the next
-              generation of <strong class=\"colour\">leaders</strong> who will
-              contribute to the social and economic progress of the African
-              continent. The program is carried out in
-              <strong class=\"colour\">French-speaking Africa</strong>
-              with the Gaston Berger University in Senegal, 2iE in Burkina Faso,
-              and A.D.U. in Niger.
-              <a href=\"/scholarships\" class=\"p-link\"><strong>Read more</strong></a>.",
+      "cta" => "
+              The Academic Affairs Department at African Development University (A.D.U.) strives to be recognized by students and employers in the <strong class=\"colour\">region</strong> and throughout the <strong class=\"colour\">continent</strong> as the preeminent undergrA.D.U.ate business program in Niger. It seeks to serve as a beacon for women who are looking for opportunities to learn and contribute to society. A.D.U. women will study along-side their male counterparts who will come to recognize them as equal in <strong class=\"colour\">ability</strong> and <strong class=\"colour\">creativity</strong>. A.D.U. is the only university of its kind in the Sahel, but we hope to be a <strong class=\"colour\">model</strong> that other schools will follow.
+              ",
       "details" => [
-        "benefits" => [
-          "title" => "Benefits",
+        "us" => [
+          "title" => "Undergraduate Study",
           "list" => [
-            "1" => "Financial support(Tuition, Meals, Housing etc.)",
-            "2" => "Counseling and psychological support",
-            "3" => "Monthly stipend after graduation",
-            "4" => "Coaching and funds for entrepreneurial fellows",
-            "5" => "Health insurance and other support items",
+            "1" => "Bachelor of Private Law",
+            "2" => "Bachelor of Management",
+            "3" => "Bachelor of Accounting",
+            "4" => "Bachelor of Management Information Systems",
+            "5" => "Bachelor of Science Artificial Intelligence",
           ]
         ],
-        "criteria" => [
-          "title" => "Criteria",
+        "ps" => [
+          "title" => "Postgraduate Study",
           "list" => [
-            "1" => "BAC or equivalent degree",
-            "2" => "Excellent academic background",
-            "3" => "Clear need for financial support",
-            "4" => "Certificate of Citizenship",
-            "5" => "Letters of recommendation",
+            "1" => "Master of Business Law & Tax",
+            "2" => "-	Business Tax Law",
+            "3" => "-	Bankruptcy Law",
+            "4" => "-	International Trade Law",
+            "5" => "-	Financial Market Law",
           ]
         ],
-        "programs" => [
-          "title" => "Programs",
+        "ep" => [
+          "title" => "Executive Programs",
           "list" => [
-            "1" => "Private law",
-            "2" => "Accounting & Finance",
-            "3" => "Project Management",
-            "4" => "Management Information Systems",
-            "5" => "Artificial Intelligence (Computer Science)",
+            "1" => "English Program",
+            "2" => "-	Beginner",
+            "3" => "-	Intermediate",
+            "4" => "-	Advanced",
           ]
         ],
 
@@ -246,11 +235,12 @@ return [
     "iilab" => [
       "title" => "<span style=\"text-transform: none\">iiLAB</span>",
       "cta" => "The <span class=\"colour\"><strong>iiLAB</strong></span> (ilimi Innovation Lab) is A.D.U’s <span class=\"colour\"><strong>innovation</strong></span> and <span class=\"colour\"><strong>entrepreneurship</strong></span> hub committed to empower University <span class=\"colour\"><strong>Young Leaders</strong></span> by providing and connecting them with tools, resources, networks and support to scale up their innovative and entrepreneurial ideas. The iiLab is an active member of the <span class=\"colour\"><strong>RESAEN</strong></span> (the national network of Nigerien incubators) and runs two programmes. Business Innovation and Social Innovation and Change Initiative Programme.",
-      "benefit" => [
-        "1" => "Clubs and Activities",
-        "2" => "Career Services",
-        "3" => "Health and Wellness",
-        "4" => "Housing Services and Dining",
+      "hover-text" => "VIEW MORE",
+      "thumb" => [
+        "1" => "Programs & Activities ",
+        "2" => "Events",
+        "3" => "Our Entrepreneurs",
+        "4" => "Testimonials",
       ],
     ],
     "newsletter" => [

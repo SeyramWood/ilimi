@@ -7,6 +7,7 @@
       <li>
         <a class="scroll" href="#donate">{{ $t("pages.home.nav.donate") }}</a>
       </li>
+
       <li>
         <a class="scroll" href="#team">{{ $t("pages.home.nav.admissions") }}</a>
       </li>

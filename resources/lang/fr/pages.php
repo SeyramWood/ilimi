@@ -85,7 +85,7 @@ return [
       //left with our why text
 
       "stats" => [
-        "title" => "Statistiques",
+        "title" => "L'A.D.U. en chiffres",
         "text-1" => "Étudiants inscrits",
         "text-2" => "Pays représentés",
         "text-3" => "Programmes d'études",
@@ -93,49 +93,42 @@ return [
 
     ],
     "academics" => [
-      "title" => "Bourse d'études",
-      "cta" => "Le
-              <strong class=\"colour\"
-                >programme de bourses de la Mastercard Foundation</strong
-              >
-              est une initiative mondiale visant à 
-              <strong class=\"colour\">éduquer</strong> et former la prochaine génération de <strong class=\"colour\">leaders</strong> qui contribueront au progrès social et économique du continent africain. Le programme est réalisé en 
-              <strong class=\"colour\">Afrique francophone</strong>
-              avec l'Université Gaston Berger au Sénégal, 2iE au Burkina Faso, et A.D.U. au Niger.Nous avons le plaisir d'annoncer qu'à partir de plus d'informations.
-              <a href=\"/scholarships\" class=\"p-link\"><strong>Lire la suite</strong></a>.",
+      "title" => "Académique",
+      "cta" => "
+              The Academic Affairs Department at African Development University (A.D.U.) strives to be recognized by students and employers in the <strong class=\"colour\">region</strong> and throughout the <strong class=\"colour\">continent</strong> as the preeminent undergrA.D.U.ate business program in Niger. It seeks to serve as a beacon for women who are looking for opportunities to learn and contribute to society. A.D.U. women will study along-side their male counterparts who will come to recognize them as equal in <strong class=\"colour\">ability</strong> and <strong class=\"colour\">creativity</strong>. A.D.U. is the only university of its kind in the Sahel, but we hope to be a <strong class=\"colour\">model</strong> that other schools will follow.
+              ",
       "details" => [
-        "benefits" => [
-          "title" => "AVANTAGES",
+        "us" => [
+          "title" => "Undergraduate Study",
           "list" => [
-            "1" => "Soutien financier (frais de scolarité, etc.)",
-            "2" => "Conseil et soutien psychologique",
-            "3" => "Mensuelle après l'obtention du diplôme",
-            "4" => "Fonds pour les boursiers entrepreneurs",
-            "5" => "Assurance maladie et autres éléments de soutien",
+            "1" => "Bachelor of Private Law",
+            "2" => "Bachelor of Management",
+            "3" => "Bachelor of Accounting",
+            "4" => "Bachelor of Management Information Systems",
+            "5" => "Bachelor of Science Artificial Intelligence",
           ]
         ],
-        "criteria" => [
-          "title" => "CRITERES",
+        "ps" => [
+          "title" => "Postgraduate Study",
           "list" => [
-            "1" => "BAC ou diplôme équivalent",
-            "2" => "Excellente formation académique",
-            "3" => "Besoin manifeste d'un soutien financier",
-            "4" => "Certificat de citoyenneté",
-            "5" => "Lettres de recommendation",
+            "1" => "Master of Business Law & Tax",
+            "2" => "-	Business Tax Law",
+            "3" => "-	Bankruptcy Law",
+            "4" => "-	International Trade Law",
+            "5" => "-	Financial Market Law",
           ]
         ],
-        "programs" => [
-          "title" => "PROGRAMMES",
+        "ep" => [
+          "title" => "Executive Programs",
           "list" => [
-            "1" => "Droit privé",
-            "2" => "Comptabilité et finances",
-            "3" => "Gestion de projet",
-            "4" => "Systèmes d'information de gestion",
-            "5" => "Intelligence artificielle (informatique)",
+            "1" => "English Program",
+            "2" => "-	Beginner",
+            "3" => "-	Intermediate",
+            "4" => "-	Advanced",
           ]
         ],
 
-        "btn" => "Appliquer"
+        "btn" => "APPLY"
 
       ],
 
@@ -171,6 +164,40 @@ return [
         "blr" => "Reconnaissance des chefs d'entreprise",
       ]
     ],
+
+    "student" => [
+
+      "title" => "Student Life",
+
+      "cta" => "A.D.U. campus was designed as an inspiring base for students from Niger and the Sahel to <span class=\"colour\"><strong>learn</strong></span>, <span class=\"colour\"><strong>collaborate</strong></span>, <span class=\"colour\"><strong>engage</strong></span> and form <span class=\"colour\"><strong>relationships</strong></span> that would help them dare great things together. 
+                Our campus culture is driven by student initiatives, and run by the mantra, Student First! The student leadership, known as the ILIMI Student Government (ISG), collaborates deeply with the Office of Student and Community Affairs to <span class=\"colour\"><strong>enhance</strong></span> the student experience and support student-led initiatives.",
+
+      "btn" => "CONTACT",
+
+      "hover-text" => "VIEW MORE",
+
+      "benefit" => [
+        "1" => "Clubs and Activities",
+        "2" => "Career Services",
+        "3" => "Health and Wellness",
+        "4" => "Housing Services and Dining",
+      ],
+
+    ],
+    "iilab" => [
+      "title" => "<span style=\"text-transform: none\">iiLAB</span>",
+      "cta" => "
+      Le <span class=\"colour\"><strong>iiLAB</strong></span> (ilimi Innovation Lab) est le laboratoir <span class=\"colour\"><strong>d'innovation</strong></span> et <span class=\"colour\"><strong>d'entreprenariat</strong></span> d’A.D.U. qui s'engage à mettre à disposition des <span class=\"colour\"><strong>Youngs leaders</strong></span> les outils, les ressources et un réseau rélationnel pour développer leurs innovantes idées. Le iiLab est un membre actif du <span class=\"colour\"><strong>RESAEN</strong></span> (le réseau des structures d’accompagnement à l’entrepreneuriat) et gère deux programmes. Le programme de   Business Innovation et le Social Innovation and Change Initiative (SICI).
+      ",
+      "hover-text" => "VIEW MORE",
+      "thumb" => [
+        "1" => "Le programme  de Business Innovation",
+        "2" => "Événements",
+        "3" => "Our Entrepreneurs",
+        "4" => "Des Témoignages",
+      ],
+    ],
+
     "newsletter" => [
       "title" => "S'abonner à notre newsletter",
       "btn" => "S'abonner à",

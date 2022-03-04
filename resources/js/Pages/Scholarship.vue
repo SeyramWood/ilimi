@@ -2,11 +2,12 @@
   <main>
     <navigation>
       <li>
-        <a class="scroll" href="/#home">{{ $t("pages.home.nav.home") }}</a>
-      </li>
-      <li>
         <a class="scroll" href="/#about">{{ $t("pages.home.nav.about") }}</a>
       </li>
+      <li>
+        <a class="scroll" href="/#donate">{{ $t("pages.home.nav.donate") }}</a>
+      </li>
+
       <li>
         <a class="scroll" href="/#team">{{
           $t("pages.home.nav.admissions")
@@ -14,16 +15,22 @@
       </li>
       <li>
         <a class="scroll" href="/#price">{{
-          $t("pages.home.nav.scholarship")
+          $t("pages.home.nav.academics")
+        }}</a>
+      </li>
+      <li>
+        <a class="scroll" href="/#student-life">{{
+          $t("pages.home.nav.student")
         }}</a>
       </li>
       <li>
         <a class="scroll" href="/#work">{{ $t("pages.home.nav.ilimi") }}</a>
       </li>
       <li>
-        <a class="scroll" href="/#contact">{{
-          $t("pages.home.nav.contact")
-        }}</a>
+        <a class="scroll" href="/#iilab">{{ $t("pages.home.nav.iilab") }}</a>
+      </li>
+      <li>
+        <a class="scroll" href="#contact">{{ $t("pages.home.nav.contact") }}</a>
       </li>
       <li class="navigation lang">
         <ul>

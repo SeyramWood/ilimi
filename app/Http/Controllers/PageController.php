@@ -7,8 +7,7 @@ use App\Models\Subscriber;
 use Illuminate\Http\Request;
 use App\Notifications\SendMessage;
 use Illuminate\Support\Facades\Notification;
-
-
+use Illuminate\Support\Facades\Storage;
 
 class PageController extends Controller
 {

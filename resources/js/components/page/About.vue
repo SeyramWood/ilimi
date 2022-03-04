@@ -123,37 +123,6 @@
                 <!--3-->
                 <li class="cbp-item">
                   <a
-                    href="https://linkedin.com/in/diallo-khadijah-56290160/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="cbp-caption"
-                  >
-                    <div class="cbp-caption-defaultWrap">
-                      <img src="template/img/team/3.jpg" alt="" />
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                      <div class="cbp-l-caption-alignCenter">
-                        <div class="cbp-l-caption-body">
-                          <div class="cbp-l-caption-text">
-                            {{ $t("pages.home.about.hover-text") }}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    href=""
-                    class="cbp-singlePage cbp-l-grid-team-name disabled"
-                    >Khadijah Diallo</a
-                  >
-                  <div class="cbp-l-grid-team-position">
-                    {{ $t("pages.home.about.position.3") }}
-                  </div>
-                </li>
-
-                <!--4-->
-                <li class="cbp-item">
-                  <a
                     href="https://linkedin.com/in/carlmanlan/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -179,6 +148,36 @@
                   >
                   <div class="cbp-l-grid-team-position">
                     {{ $t("pages.home.about.position.4") }}
+                  </div>
+                </li>
+                <!--4-->
+                <li class="cbp-item">
+                  <a
+                    href="https://linkedin.com/in/diallo-khadijah-56290160/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cbp-caption"
+                  >
+                    <div class="cbp-caption-defaultWrap">
+                      <img src="template/img/team/3.jpg" alt="" />
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                      <div class="cbp-l-caption-alignCenter">
+                        <div class="cbp-l-caption-body">
+                          <div class="cbp-l-caption-text">
+                            {{ $t("pages.home.about.hover-text") }}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href=""
+                    class="cbp-singlePage cbp-l-grid-team-name disabled"
+                    >Khadijah Diallo</a
+                  >
+                  <div class="cbp-l-grid-team-position">
+                    {{ $t("pages.home.about.position.3") }}
                   </div>
                 </li>
               </ul>

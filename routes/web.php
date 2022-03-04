@@ -30,6 +30,8 @@ Route::get('/locale/{locale}', function ($locale) {
   return redirect()->back();
 })->name('locale');
 
+
+
 Route::get('/notification', function () {
   // AccountCreated::dispatch();
 

@@ -896,6 +896,13 @@ a.disabled {
   cursor: default;
 }
 
+.view-more-title {
+  font-size: 6rem !important;
+  text-transform: none;
+  letter-spacing: 1.2px;
+  color: #99001c !important;
+}
+
 .donate {
   width: 100%;
 }

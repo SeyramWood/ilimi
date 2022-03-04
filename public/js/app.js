@@ -2287,6 +2287,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2403,6 +2410,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -2454,6 +2462,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_page_Academics__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/page/Academics */ "./resources/js/components/page/Academics.vue");
 /* harmony import */ var _components_page_Contact__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/page/Contact */ "./resources/js/components/page/Contact.vue");
 /* harmony import */ var _components_page_Footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/page/Footer */ "./resources/js/components/page/Footer.vue");
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3144,7 +3159,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "About"
 });
@@ -3162,6 +3176,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue */ "./node_modules/@inertiajs/inertia-vue/dist/index.js");
 //
 //
 //
@@ -3435,40 +3450,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Academics"
+  name: "Academics",
+  components: {
+    Link: _inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__.Link
+  }
 });
 
 /***/ }),
@@ -4364,6 +4351,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "IIlab"
 });
@@ -4381,30 +4398,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -5275,38 +5268,37 @@ module.exports = {
         "title": "About Us"
       },
       "academics": {
-        "cta": "The\r\n              <strong class=\"colour\"\r\n                >Mastercard Foundation Scholars Program<\/strong\r\n              >\r\n              is a global initiative to\r\n              <strong class=\"colour\">educate<\/strong> and train the next\r\n              generation of <strong class=\"colour\">leaders<\/strong> who will\r\n              contribute to the social and economic progress of the African\r\n              continent. The program is carried out in\r\n              <strong class=\"colour\">French-speaking Africa<\/strong>\r\n              with the Gaston Berger University in Senegal, 2iE in Burkina Faso,\r\n              and A.D.U. in Niger.\r\n              <a href=\"\/scholarships\" class=\"p-link\"><strong>Read more<\/strong><\/a>.",
+        "cta": "\r\n              The Academic Affairs Department at African Development University (A.D.U.) strives to be recognized by students and employers in the <strong class=\"colour\">region<\/strong> and throughout the <strong class=\"colour\">continent<\/strong> as the preeminent undergrA.D.U.ate business program in Niger. It seeks to serve as a beacon for women who are looking for opportunities to learn and contribute to society. A.D.U. women will study along-side their male counterparts who will come to recognize them as equal in <strong class=\"colour\">ability<\/strong> and <strong class=\"colour\">creativity<\/strong>. A.D.U. is the only university of its kind in the Sahel, but we hope to be a <strong class=\"colour\">model<\/strong> that other schools will follow.\r\n              ",
         "details": {
-          "benefits": {
-            "list": {
-              "1": "Financial support(Tuition, Meals, Housing etc.)",
-              "2": "Counseling and psychological support",
-              "3": "Monthly stipend after graduation",
-              "4": "Coaching and funds for entrepreneurial fellows",
-              "5": "Health insurance and other support items"
-            },
-            "title": "Benefits"
-          },
           "btn": "APPLY",
-          "criteria": {
+          "ep": {
             "list": {
-              "1": "BAC or equivalent degree",
-              "2": "Excellent academic background",
-              "3": "Clear need for financial support",
-              "4": "Certificate of Citizenship",
-              "5": "Letters of recommendation"
+              "1": "English Program",
+              "2": "-\tBeginner",
+              "3": "-\tIntermediate",
+              "4": "-\tAdvanced"
             },
-            "title": "Criteria"
+            "title": "Executive Programs"
           },
-          "programs": {
+          "ps": {
             "list": {
-              "1": "Private law",
-              "2": "Accounting & Finance",
-              "3": "Project Management",
-              "4": "Management Information Systems",
-              "5": "Artificial Intelligence (Computer Science)"
+              "1": "Master of Business Law & Tax",
+              "2": "-\tBusiness Tax Law",
+              "3": "-\tBankruptcy Law",
+              "4": "-\tInternational Trade Law",
+              "5": "-\tFinancial Market Law"
             },
-            "title": "Programs"
+            "title": "Postgraduate Study"
+          },
+          "us": {
+            "list": {
+              "1": "Bachelor of Private Law",
+              "2": "Bachelor of Management",
+              "3": "Bachelor of Accounting",
+              "4": "Bachelor of Management Information Systems",
+              "5": "Bachelor of Science Artificial Intelligence"
+            },
+            "title": "Undergraduate Study"
           }
         },
         "title": "Academics"
@@ -5335,7 +5327,7 @@ module.exports = {
           "text-1": "Enrolled Students",
           "text-2": "Countries Represented",
           "text-3": "Programs of Study",
-          "title": "Statistics"
+          "title": "A.D.U in numbers"
         },
         "title": "Admissions",
         "why": "Why A.D.U.?"
@@ -5375,13 +5367,14 @@ module.exports = {
         "copyright": "A.D.U. - All Rights Reserved"
       },
       "iilab": {
-        "benefit": {
-          "1": "Clubs and Activities",
-          "2": "Career Services",
-          "3": "Health and Wellness",
-          "4": "Housing Services and Dining"
-        },
         "cta": "The <span class=\"colour\"><strong>iiLAB</strong></span> (ilimi Innovation Lab) is A.D.U\u2019s <span class=\"colour\"><strong>innovation</strong></span> and <span class=\"colour\"><strong>entrepreneurship</strong></span> hub committed to empower University <span class=\"colour\"><strong>Young Leaders</strong></span> by providing and connecting them with tools, resources, networks and support to scale up their innovative and entrepreneurial ideas. The iiLab is an active member of the <span class=\"colour\"><strong>RESAEN</strong></span> (the national network of Nigerien incubators) and runs two programmes. Business Innovation and Social Innovation and Change Initiative Programme.",
+        "hover-text": "VIEW MORE",
+        "thumb": {
+          "1": "Programs & Activities ",
+          "2": "Events",
+          "3": "Our Entrepreneurs",
+          "4": "testimonials"
+        },
         "title": "<span style=\"text-transform: none\">iiLAB<\/span>"
       },
       "ilimi": {
@@ -5530,41 +5523,40 @@ module.exports = {
         "title": "\xE0 propos"
       },
       "academics": {
-        "cta": "Le\r\n              <strong class=\"colour\"\r\n                >programme de bourses de la Mastercard Foundation</strong\r\n              >\r\n              est une initiative mondiale visant \xE0 \r\n              <strong class=\"colour\">\xE9duquer</strong> et former la prochaine g\xE9n\xE9ration de <strong class=\"colour\">leaders</strong> qui contribueront au progr\xE8s social et \xE9conomique du continent africain. Le programme est r\xE9alis\xE9 en \r\n              <strong class=\"colour\">Afrique francophone</strong>\r\n              avec l'Universit\xE9 Gaston Berger au S\xE9n\xE9gal, 2iE au Burkina Faso, et A.D.U. au Niger.Nous avons le plaisir d'annoncer qu'\xE0 partir de plus d'informations.\r\n              <a href=\"/scholarships\" class=\"p-link\"><strong>Lire la suite</strong></a>.",
+        "cta": "\r\n              The Academic Affairs Department at African Development University (A.D.U.) strives to be recognized by students and employers in the <strong class=\"colour\">region<\/strong> and throughout the <strong class=\"colour\">continent<\/strong> as the preeminent undergrA.D.U.ate business program in Niger. It seeks to serve as a beacon for women who are looking for opportunities to learn and contribute to society. A.D.U. women will study along-side their male counterparts who will come to recognize them as equal in <strong class=\"colour\">ability<\/strong> and <strong class=\"colour\">creativity<\/strong>. A.D.U. is the only university of its kind in the Sahel, but we hope to be a <strong class=\"colour\">model<\/strong> that other schools will follow.\r\n              ",
         "details": {
-          "benefits": {
+          "btn": "APPLY",
+          "ep": {
             "list": {
-              "1": "Soutien financier (frais de scolarit\xE9, etc.)",
-              "2": "Conseil et soutien psychologique",
-              "3": "Mensuelle apr\xE8s l'obtention du dipl\xF4me",
-              "4": "Fonds pour les boursiers entrepreneurs",
-              "5": "Assurance maladie et autres \xE9l\xE9ments de soutien"
+              "1": "English Program",
+              "2": "-\tBeginner",
+              "3": "-\tIntermediate",
+              "4": "-\tAdvanced"
             },
-            "title": "AVANTAGES"
+            "title": "Executive Programs"
           },
-          "btn": "Appliquer",
-          "criteria": {
+          "ps": {
             "list": {
-              "1": "BAC ou dipl\xF4me \xE9quivalent",
-              "2": "Excellente formation acad\xE9mique",
-              "3": "Besoin manifeste d'un soutien financier",
-              "4": "Certificat de citoyennet\xE9",
-              "5": "Lettres de recommendation"
+              "1": "Master of Business Law & Tax",
+              "2": "-\tBusiness Tax Law",
+              "3": "-\tBankruptcy Law",
+              "4": "-\tInternational Trade Law",
+              "5": "-\tFinancial Market Law"
             },
-            "title": "CRITERES"
+            "title": "Postgraduate Study"
           },
-          "programs": {
+          "us": {
             "list": {
-              "1": "Droit priv\xE9",
-              "2": "Comptabilit\xE9 et finances",
-              "3": "Gestion de projet",
-              "4": "Syst\xE8mes d'information de gestion",
-              "5": "Intelligence artificielle (informatique)"
+              "1": "Bachelor of Private Law",
+              "2": "Bachelor of Management",
+              "3": "Bachelor of Accounting",
+              "4": "Bachelor of Management Information Systems",
+              "5": "Bachelor of Science Artificial Intelligence"
             },
-            "title": "PROGRAMMES"
+            "title": "Undergraduate Study"
           }
         },
-        "title": "Bourse d'\xE9tudes"
+        "title": "Acad\xE9mique"
       },
       "admissions": {
         "cta": "Nos programmes de licence en trois ans sont reconnus \r\n              <span class=\"colour\"><strong>au niveau national</strong></span> et \r\n              <span class=\"colour\"><strong>international</strong></span>. Nos programmes sont tous \r\n              <span class=\"colour\"><strong>accr\xE9dit\xE9s </strong></span> par le Minist\xE8re de l'Enseignement Sup\xE9rieur, de la Recherche et de l'Innovation du Niger. Postulez pour \xE9tudier avec nous!\r\n              <a\r\n                href=\"https://applications.eduappgh.com/\"\r\n                target=\"_blank\"\r\n                rel=\"noopener noreferrer\"\r\n                class=\"p-link\"\r\n                ><span class=\"colour\"><strong>Postulez maintenant</strong></span></a\r\n              >",
@@ -5590,7 +5582,7 @@ module.exports = {
           "text-1": "\xC9tudiants inscrits",
           "text-2": "Pays repr\xE9sent\xE9s",
           "text-3": "Programmes d'\xE9tudes",
-          "title": "Statistiques"
+          "title": "L'A.D.U. en chiffres"
         },
         "title": "Admissions",
         "why": "Pourquoi A.D.U.?"
@@ -5629,6 +5621,17 @@ module.exports = {
       "footer": {
         "copyright": "A.D.U. - Tous droits r\xE9serv\xE9s"
       },
+      "iilab": {
+        "cta": "\r\n      Le <span class=\"colour\"><strong>iiLAB</strong></span> (ilimi Innovation Lab) est le laboratoir <span class=\"colour\"><strong>d'innovation</strong></span> et <span class=\"colour\"><strong>d'entreprenariat</strong></span> d\u2019A.D.U. qui s'engage \xE0 mettre \xE0 disposition des <span class=\"colour\"><strong>Youngs leaders</strong></span> les outils, les ressources et un r\xE9seau r\xE9lationnel pour d\xE9velopper leurs innovantes id\xE9es. Le iiLab est un membre actif du <span class=\"colour\"><strong>RESAEN</strong></span> (le r\xE9seau des structures d\u2019accompagnement \xE0 l\u2019entrepreneuriat) et g\xE8re deux programmes. Le programme de   Business Innovation et le Social Innovation and Change Initiative (SICI).\r\n      ",
+        "hover-text": "VIEW MORE",
+        "thumb": {
+          "1": "Le programme  de Business Innovation",
+          "2": "\xC9v\xE9nements",
+          "3": "Our Entrepreneurs",
+          "4": "Des T\xE9moignages"
+        },
+        "title": "<span style=\"text-transform: none\">iiLAB<\/span>"
+      },
       "ilimi": {
         "cta": "Nous proposons une formation en leur <span class=\"colour\"><strong>arts lib\xE9raux</strong></span> qui vise \xE0 d\xE9velopper l'esprit critique des \xE9tudiants, <span class=\"colour\"><strong>aptitude \xE0 r\xE9soudre les probl\xE8mes</strong></span> et leur capacit\xE9 \xE0 servir leur communaut\xE9. Notre <span class=\"colour\"><strong>mod\xE8le unique - ILIMI</strong></span>, qui signifie \"\xE9ducation, intellectuel et connaissance\" en haoussa, se concentre sur le d\xE9veloppement de <span class=\"colour\"><strong>jeunes leaders</strong></span> \xE9thiques et influents.",
         "filter-btn": {
@@ -5664,6 +5667,18 @@ module.exports = {
       "newsletter": {
         "btn": "S'abonner \xE0",
         "title": "S'abonner \xE0 notre newsletter"
+      },
+      "student": {
+        "benefit": {
+          "1": "Clubs and Activities",
+          "2": "Career Services",
+          "3": "Health and Wellness",
+          "4": "Housing Services and Dining"
+        },
+        "btn": "CONTACT",
+        "cta": "A.D.U. campus was designed as an inspiring base for students from Niger and the Sahel to <span class=\"colour\"><strong>learn<\/strong><\/span>, <span class=\"colour\"><strong>collaborate<\/strong><\/span>, <span class=\"colour\"><strong>engage<\/strong><\/span> and form <span class=\"colour\"><strong>relationships<\/strong><\/span> that would help them dare great things together. \r\n                Our campus culture is driven by student initiatives, and run by the mantra, Student First! The student leadership, known as the ILIMI Student Government (ISG), collaborates deeply with the Office of Student and Community Affairs to <span class=\"colour\"><strong>enhance<\/strong><\/span> the student experience and support student-led initiatives.",
+        "hover-text": "VIEW MORE",
+        "title": "Student Life"
       }
     },
     "scholarship": {
@@ -31540,14 +31555,14 @@ var render = function () {
     [
       _c("navigation", [
         _c("li", [
-          _c("a", { staticClass: "scroll", attrs: { href: "/#home" } }, [
-            _vm._v(_vm._s(_vm.$t("pages.home.nav.home"))),
+          _c("a", { staticClass: "scroll", attrs: { href: "/#about" } }, [
+            _vm._v(_vm._s(_vm.$t("pages.home.nav.about"))),
           ]),
         ]),
         _vm._v(" "),
         _c("li", [
-          _c("a", { staticClass: "scroll", attrs: { href: "/#about" } }, [
-            _vm._v(_vm._s(_vm.$t("pages.home.nav.about"))),
+          _c("a", { staticClass: "scroll", attrs: { href: "/#donate" } }, [
+            _vm._v(_vm._s(_vm.$t("pages.home.nav.donate"))),
           ]),
         ]),
         _vm._v(" "),
@@ -31559,8 +31574,16 @@ var render = function () {
         _vm._v(" "),
         _c("li", [
           _c("a", { staticClass: "scroll", attrs: { href: "/#price" } }, [
-            _vm._v(_vm._s(_vm.$t("pages.home.nav.scholarship"))),
+            _vm._v(_vm._s(_vm.$t("pages.home.nav.academics"))),
           ]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c(
+            "a",
+            { staticClass: "scroll", attrs: { href: "/#student-life" } },
+            [_vm._v(_vm._s(_vm.$t("pages.home.nav.student")))]
+          ),
         ]),
         _vm._v(" "),
         _c("li", [
@@ -31570,7 +31593,13 @@ var render = function () {
         ]),
         _vm._v(" "),
         _c("li", [
-          _c("a", { staticClass: "scroll", attrs: { href: "/#contact" } }, [
+          _c("a", { staticClass: "scroll", attrs: { href: "/#iilab" } }, [
+            _vm._v(_vm._s(_vm.$t("pages.home.nav.iilab"))),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "scroll", attrs: { href: "#contact" } }, [
             _vm._v(_vm._s(_vm.$t("pages.home.nav.contact"))),
           ]),
         ]),
@@ -31991,14 +32020,14 @@ var render = function () {
     [
       _c("navigation", [
         _c("li", [
-          _c("a", { staticClass: "scroll", attrs: { href: "/#home" } }, [
-            _vm._v(_vm._s(_vm.$t("pages.home.nav.home"))),
+          _c("a", { staticClass: "scroll", attrs: { href: "/#about" } }, [
+            _vm._v(_vm._s(_vm.$t("pages.home.nav.about"))),
           ]),
         ]),
         _vm._v(" "),
         _c("li", [
-          _c("a", { staticClass: "scroll", attrs: { href: "/#about" } }, [
-            _vm._v(_vm._s(_vm.$t("pages.home.nav.about"))),
+          _c("a", { staticClass: "scroll", attrs: { href: "/#donate" } }, [
+            _vm._v(_vm._s(_vm.$t("pages.home.nav.donate"))),
           ]),
         ]),
         _vm._v(" "),
@@ -32010,8 +32039,16 @@ var render = function () {
         _vm._v(" "),
         _c("li", [
           _c("a", { staticClass: "scroll", attrs: { href: "/#price" } }, [
-            _vm._v(_vm._s(_vm.$t("pages.home.nav.scholarship"))),
+            _vm._v(_vm._s(_vm.$t("pages.home.nav.academics"))),
           ]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c(
+            "a",
+            { staticClass: "scroll", attrs: { href: "/#student-life" } },
+            [_vm._v(_vm._s(_vm.$t("pages.home.nav.student")))]
+          ),
         ]),
         _vm._v(" "),
         _c("li", [
@@ -32021,7 +32058,13 @@ var render = function () {
         ]),
         _vm._v(" "),
         _c("li", [
-          _c("a", { staticClass: "scroll", attrs: { href: "/#contact" } }, [
+          _c("a", { staticClass: "scroll", attrs: { href: "/#iilab" } }, [
+            _vm._v(_vm._s(_vm.$t("pages.home.nav.iilab"))),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "scroll", attrs: { href: "#contact" } }, [
             _vm._v(_vm._s(_vm.$t("pages.home.nav.contact"))),
           ]),
         ]),
@@ -32847,72 +32890,13 @@ var render = function () {
                       {
                         staticClass: "cbp-caption",
                         attrs: {
-                          href: "https://linkedin.com/in/diallo-khadijah-56290160/",
-                          target: "_blank",
-                          rel: "noopener noreferrer",
-                        },
-                      },
-                      [
-                        _vm._m(2),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "cbp-caption-activeWrap" }, [
-                          _c(
-                            "div",
-                            { staticClass: "cbp-l-caption-alignCenter" },
-                            [
-                              _c("div", { staticClass: "cbp-l-caption-body" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "cbp-l-caption-text" },
-                                  [
-                                    _vm._v(
-                                      "\n                          " +
-                                        _vm._s(
-                                          _vm.$t("pages.home.about.hover-text")
-                                        ) +
-                                        "\n                        "
-                                    ),
-                                  ]
-                                ),
-                              ]),
-                            ]
-                          ),
-                        ]),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass:
-                          "cbp-singlePage cbp-l-grid-team-name disabled",
-                        attrs: { href: "" },
-                      },
-                      [_vm._v("Khadijah Diallo")]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "cbp-l-grid-team-position" }, [
-                      _vm._v(
-                        "\n                  " +
-                          _vm._s(_vm.$t("pages.home.about.position.3")) +
-                          "\n                "
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "cbp-item" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "cbp-caption",
-                        attrs: {
                           href: "https://linkedin.com/in/carlmanlan/",
                           target: "_blank",
                           rel: "noopener noreferrer",
                         },
                       },
                       [
-                        _vm._m(3),
+                        _vm._m(2),
                         _vm._v(" "),
                         _c("div", { staticClass: "cbp-caption-activeWrap" }, [
                           _c(
@@ -32954,6 +32938,65 @@ var render = function () {
                       _vm._v(
                         "\n                  " +
                           _vm._s(_vm.$t("pages.home.about.position.4")) +
+                          "\n                "
+                      ),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "cbp-item" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "cbp-caption",
+                        attrs: {
+                          href: "https://linkedin.com/in/diallo-khadijah-56290160/",
+                          target: "_blank",
+                          rel: "noopener noreferrer",
+                        },
+                      },
+                      [
+                        _vm._m(3),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                          _c(
+                            "div",
+                            { staticClass: "cbp-l-caption-alignCenter" },
+                            [
+                              _c("div", { staticClass: "cbp-l-caption-body" }, [
+                                _c(
+                                  "div",
+                                  { staticClass: "cbp-l-caption-text" },
+                                  [
+                                    _vm._v(
+                                      "\n                          " +
+                                        _vm._s(
+                                          _vm.$t("pages.home.about.hover-text")
+                                        ) +
+                                        "\n                        "
+                                    ),
+                                  ]
+                                ),
+                              ]),
+                            ]
+                          ),
+                        ]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass:
+                          "cbp-singlePage cbp-l-grid-team-name disabled",
+                        attrs: { href: "" },
+                      },
+                      [_vm._v("Khadijah Diallo")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "cbp-l-grid-team-position" }, [
+                      _vm._v(
+                        "\n                  " +
+                          _vm._s(_vm.$t("pages.home.about.position.3")) +
                           "\n                "
                       ),
                     ]),
@@ -33096,7 +33139,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
-      _c("img", { attrs: { src: "template/img/team/3.jpg", alt: "" } }),
+      _c("img", { attrs: { src: "template/img/team/4.jpg", alt: "" } }),
     ])
   },
   function () {
@@ -33104,7 +33147,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
-      _c("img", { attrs: { src: "template/img/team/4.jpg", alt: "" } }),
+      _c("img", { attrs: { src: "template/img/team/3.jpg", alt: "" } }),
     ])
   },
   function () {
@@ -33174,15 +33217,6 @@ var render = function () {
               ]
             ),
             _vm._v(" "),
-            _c("img", {
-              attrs: {
-                src: "/../template/img/mastercard.jpg",
-                alt: "",
-                srcset: "",
-                height: "5rem",
-              },
-            }),
-            _vm._v(" "),
             _c("div", {
               staticClass: "lead wow fadeInRightBig",
               attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
@@ -33223,7 +33257,7 @@ var render = function () {
                                 "\n                        " +
                                   _vm._s(
                                     _vm.$t(
-                                      "pages.home.academics.details.benefits.title"
+                                      "pages.home.academics.details.us.title"
                                     )
                                   ) +
                                   "\n                      "
@@ -33236,85 +33270,149 @@ var render = function () {
                         _vm._v(" "),
                         _c("div", { staticClass: "info-wrapper" }, [
                           _c("ul", { staticClass: "list-group" }, [
-                            _c("li", [
-                              _vm._v(
-                                "\n                        " +
-                                  _vm._s(
-                                    _vm.$t(
-                                      "pages.home.academics.details.benefits.list.1"
-                                    )
-                                  ) +
-                                  "\n                      "
-                              ),
-                            ]),
+                            _c(
+                              "li",
+                              { attrs: { title: "download pdf" } },
+                              [
+                                _c(
+                                  "Link",
+                                  {
+                                    attrs: {
+                                      href: "/storage/programs/bachelor-of-private-law.pdf",
+                                      "preserve-scroll": "",
+                                      download: "",
+                                    },
+                                  },
+                                  [
+                                    _vm._v(
+                                      _vm._s(
+                                        _vm.$t(
+                                          "pages.home.academics.details.us.list.1"
+                                        )
+                                      )
+                                    ),
+                                  ]
+                                ),
+                              ],
+                              1
+                            ),
                             _vm._v(" "),
-                            _c("li", [
-                              _vm._v(
-                                "\n                        " +
-                                  _vm._s(
-                                    _vm.$t(
-                                      "pages.home.academics.details.benefits.list.2"
-                                    )
-                                  ) +
-                                  "\n                      "
-                              ),
-                            ]),
+                            _c(
+                              "li",
+                              { attrs: { title: "download pdf" } },
+                              [
+                                _c(
+                                  "Link",
+                                  {
+                                    attrs: {
+                                      href: "/storage/programs/bachelor-of-management.pdf",
+                                      "preserve-scroll": "",
+                                      download: "",
+                                    },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                          " +
+                                        _vm._s(
+                                          _vm.$t(
+                                            "pages.home.academics.details.us.list.2"
+                                          )
+                                        ) +
+                                        "\n                        "
+                                    ),
+                                  ]
+                                ),
+                              ],
+                              1
+                            ),
                             _vm._v(" "),
-                            _c("li", [
-                              _vm._v(
-                                "\n                        " +
-                                  _vm._s(
-                                    _vm.$t(
-                                      "pages.home.academics.details.benefits.list.3"
-                                    )
-                                  ) +
-                                  "\n                      "
-                              ),
-                            ]),
+                            _c(
+                              "li",
+                              { attrs: { title: "download pdf" } },
+                              [
+                                _c(
+                                  "Link",
+                                  {
+                                    attrs: {
+                                      href: "/storage/programs/bachelor-of-accounting.pdf",
+                                      "preserve-scroll": "",
+                                      download: "",
+                                    },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                          " +
+                                        _vm._s(
+                                          _vm.$t(
+                                            "pages.home.academics.details.us.list.3"
+                                          )
+                                        ) +
+                                        "\n                        "
+                                    ),
+                                  ]
+                                ),
+                              ],
+                              1
+                            ),
                             _vm._v(" "),
-                            _c("li", [
-                              _vm._v(
-                                "\n                        " +
-                                  _vm._s(
-                                    _vm.$t(
-                                      "pages.home.academics.details.benefits.list.4"
-                                    )
-                                  ) +
-                                  "\n                      "
-                              ),
-                            ]),
+                            _c(
+                              "li",
+                              { attrs: { title: "download pdf" } },
+                              [
+                                _c(
+                                  "Link",
+                                  {
+                                    attrs: {
+                                      href: "/storage/programs/bachelor-of-mis.pdf",
+                                      "preserve-scroll": "",
+                                      download: "",
+                                    },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                          " +
+                                        _vm._s(
+                                          _vm.$t(
+                                            "pages.home.academics.details.us.list.4"
+                                          )
+                                        ) +
+                                        "\n                        "
+                                    ),
+                                  ]
+                                ),
+                              ],
+                              1
+                            ),
                             _vm._v(" "),
-                            _c("li", [
-                              _vm._v(
-                                "\n                        " +
-                                  _vm._s(
-                                    _vm.$t(
-                                      "pages.home.academics.details.benefits.list.5"
-                                    )
-                                  ) +
-                                  "\n                      "
-                              ),
-                            ]),
+                            _c(
+                              "li",
+                              { attrs: { title: "download pdf" } },
+                              [
+                                _c(
+                                  "Link",
+                                  {
+                                    attrs: {
+                                      href: "/storage/programs/bachelor-of-ai.pdf",
+                                      "preserve-scroll": "",
+                                      download: "",
+                                    },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                          " +
+                                        _vm._s(
+                                          _vm.$t(
+                                            "pages.home.academics.details.us.list.5"
+                                          )
+                                        ) +
+                                        "\n                        "
+                                    ),
+                                  ]
+                                ),
+                              ],
+                              1
+                            ),
                           ]),
-                          _vm._v(" "),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "btn",
-                              attrs: {
-                                href: "https://applications.eduappgh.com/",
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                              },
-                            },
-                            [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.$t("pages.home.academics.details.btn")
-                                )
-                              ),
-                            ]
-                          ),
                         ]),
                       ]),
                     ]
@@ -33338,7 +33436,7 @@ var render = function () {
                                 "\n                        " +
                                   _vm._s(
                                     _vm.$t(
-                                      "pages.home.academics.details.criteria.title"
+                                      "pages.home.academics.details.ps.title"
                                     )
                                   ) +
                                   "\n                      "
@@ -33349,12 +33447,40 @@ var render = function () {
                         _vm._v(" "),
                         _c("div", { staticClass: "info-wrapper" }, [
                           _c("ul", { staticClass: "list-group" }, [
+                            _c(
+                              "li",
+                              [
+                                _c(
+                                  "Link",
+                                  {
+                                    attrs: {
+                                      href: "/storage/programs/master-of-law.pdf",
+                                      "preserve-scroll": "",
+                                      download: "",
+                                    },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                          " +
+                                        _vm._s(
+                                          _vm.$t(
+                                            "pages.home.academics.details.ps.list.1"
+                                          )
+                                        ) +
+                                        "\n                        "
+                                    ),
+                                  ]
+                                ),
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
                             _c("li", [
                               _vm._v(
                                 "\n                        " +
                                   _vm._s(
                                     _vm.$t(
-                                      "pages.home.academics.details.criteria.list.1"
+                                      "pages.home.academics.details.ps.list.2"
                                     )
                                   ) +
                                   "\n                      "
@@ -33366,7 +33492,7 @@ var render = function () {
                                 "\n                        " +
                                   _vm._s(
                                     _vm.$t(
-                                      "pages.home.academics.details.criteria.list.2"
+                                      "pages.home.academics.details.ps.list.3"
                                     )
                                   ) +
                                   "\n                      "
@@ -33378,7 +33504,7 @@ var render = function () {
                                 "\n                        " +
                                   _vm._s(
                                     _vm.$t(
-                                      "pages.home.academics.details.criteria.list.3"
+                                      "pages.home.academics.details.ps.list.4"
                                     )
                                   ) +
                                   "\n                      "
@@ -33390,44 +33516,13 @@ var render = function () {
                                 "\n                        " +
                                   _vm._s(
                                     _vm.$t(
-                                      "pages.home.academics.details.criteria.list.4"
-                                    )
-                                  ) +
-                                  "\n                      "
-                              ),
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _vm._v(
-                                "\n                        " +
-                                  _vm._s(
-                                    _vm.$t(
-                                      "pages.home.academics.details.criteria.list.5"
+                                      "pages.home.academics.details.ps.list.5"
                                     )
                                   ) +
                                   "\n                      "
                               ),
                             ]),
                           ]),
-                          _vm._v(" "),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "btn",
-                              attrs: {
-                                href: "https://applications.eduappgh.com/",
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                              },
-                            },
-                            [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.$t("pages.home.academics.details.btn")
-                                )
-                              ),
-                            ]
-                          ),
                         ]),
                       ]),
                     ]
@@ -33451,7 +33546,7 @@ var render = function () {
                                 "\n                        " +
                                   _vm._s(
                                     _vm.$t(
-                                      "pages.home.academics.details.programs.title"
+                                      "pages.home.academics.details.ep.title"
                                     )
                                   ) +
                                   "\n                      "
@@ -33462,12 +33557,40 @@ var render = function () {
                         _vm._v(" "),
                         _c("div", { staticClass: "info-wrapper" }, [
                           _c("ul", { staticClass: "list-group" }, [
+                            _c(
+                              "li",
+                              [
+                                _c(
+                                  "Link",
+                                  {
+                                    attrs: {
+                                      href: "/storage/programs/english-program.pdf",
+                                      "preserve-scroll": "",
+                                      download: "",
+                                    },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                          " +
+                                        _vm._s(
+                                          _vm.$t(
+                                            "pages.home.academics.details.ep.list.1"
+                                          )
+                                        ) +
+                                        "\n                        "
+                                    ),
+                                  ]
+                                ),
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
                             _c("li", [
                               _vm._v(
                                 "\n                        " +
                                   _vm._s(
                                     _vm.$t(
-                                      "pages.home.academics.details.programs.list.1"
+                                      "pages.home.academics.details.ep.list.2"
                                     )
                                   ) +
                                   "\n                      "
@@ -33479,7 +33602,7 @@ var render = function () {
                                 "\n                        " +
                                   _vm._s(
                                     _vm.$t(
-                                      "pages.home.academics.details.programs.list.2"
+                                      "pages.home.academics.details.ep.list.3"
                                     )
                                   ) +
                                   "\n                      "
@@ -33491,57 +33614,13 @@ var render = function () {
                                 "\n                        " +
                                   _vm._s(
                                     _vm.$t(
-                                      "pages.home.academics.details.programs.list.3"
-                                    )
-                                  ) +
-                                  "\n                      "
-                              ),
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _vm._v(
-                                "\n                        " +
-                                  _vm._s(
-                                    _vm.$t(
-                                      "pages.home.academics.details.programs.list.4"
-                                    )
-                                  ) +
-                                  "\n                      "
-                              ),
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _vm._v(
-                                "\n                        " +
-                                  _vm._s(
-                                    _vm.$t(
-                                      "pages.home.academics.details.programs.list.5"
+                                      "pages.home.academics.details.ep.list.4"
                                     )
                                   ) +
                                   "\n                      "
                               ),
                             ]),
                           ]),
-                          _vm._v(" "),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "btn",
-                              attrs: {
-                                href: "https://applications.eduappgh.com/",
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                              },
-                            },
-                            [
-                              _vm._v(
-                                "\n                      " +
-                                  _vm._s(
-                                    _vm.$t("pages.home.academics.details.btn")
-                                  )
-                              ),
-                            ]
-                          ),
                         ]),
                       ]),
                     ]
@@ -34611,182 +34690,351 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { attrs: { id: "iilab" } }, [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
-          _c("h1", {
-            staticClass: "wow fadeInRightBig",
-            attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
-            domProps: { innerHTML: _vm._s(_vm.$t("pages.home.iilab.title")) },
-          }),
-          _vm._v(" "),
-          _c("div", {
-            staticClass: "lead wow fadeInRightBig",
-            attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
-            domProps: { innerHTML: _vm._s(_vm.$t("pages.home.iilab.cta")) },
-          }),
-          _vm._v(" "),
+  return _c(
+    "section",
+    { staticStyle: { "padding-top": "0" }, attrs: { id: "iilab" } },
+    [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
+            _c("h1", {
+              staticClass: "wow fadeInRightBig",
+              attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
+              domProps: { innerHTML: _vm._s(_vm.$t("pages.home.iilab.title")) },
+            }),
+            _vm._v(" "),
+            _c("div", {
+              staticClass: "lead wow fadeInRightBig",
+              attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
+              domProps: { innerHTML: _vm._s(_vm.$t("pages.home.iilab.cta")) },
+            }),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
           _c(
             "div",
             {
-              staticClass: "col-sm-3 col-lg-3 text-center wow fadeIn",
-              attrs: {
-                "data-wow-offset": "80",
-                "data-wow-duration": "2s",
-                "data-wow-delay": "1s",
-              },
+              staticClass: "col-sm-12 col-lg-12 pad30 wow fadeIn",
+              attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
             },
             [
-              _vm._m(0),
-              _vm._v(" "),
-              _c("h6", [
-                _c("strong", [
-                  _vm._v(
-                    _vm._s(_vm.$t("pages.home.admissions.service.1.title"))
-                  ),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n            " +
-                    _vm._s(_vm.$t("pages.home.admissions.service.1.text")) +
-                    "\n          "
-                ),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "col-sm-3 col-lg-3 text-center wow fadeIn",
-              attrs: {
-                "data-wow-offset": "80",
-                "data-wow-duration": "2s",
-                "data-wow-delay": "1.5s",
-              },
-            },
-            [
-              _vm._m(1),
-              _vm._v(" "),
-              _c("h6", [
-                _c("strong", [
-                  _vm._v(
-                    _vm._s(_vm.$t("pages.home.admissions.service.2.title"))
-                  ),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n            " +
-                    _vm._s(_vm.$t("pages.home.admissions.service.2.text")) +
-                    "\n          "
-                ),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "col-sm-3 col-lg-3 text-center wow fadeIn",
-              attrs: {
-                "data-wow-offset": "80",
-                "data-wow-duration": "2s",
-                "data-wow-delay": "2s",
-              },
-            },
-            [
-              _vm._m(2),
-              _vm._v(" "),
-              _c("h6", [
-                _c("strong", [
-                  _vm._v(
-                    _vm._s(_vm.$t("pages.home.admissions.service.3.title"))
-                  ),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n            " +
-                    _vm._s(_vm.$t("pages.home.admissions.service.3.text")) +
-                    "\n          "
-                ),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "col-sm-3 col-lg-3 text-center wow fadeIn",
-              attrs: {
-                "data-wow-offset": "80",
-                "data-wow-duration": "2s",
-                "data-wow-delay": "1s",
-              },
-            },
-            [
-              _vm._m(3),
-              _vm._v(" "),
-              _c("h6", [
-                _c("strong", [
-                  _vm._v(
-                    _vm._s(_vm.$t("pages.home.admissions.service.4.title"))
-                  ),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("p", {
-                domProps: {
-                  innerHTML: _vm._s(
-                    _vm.$t("pages.home.admissions.service.4.text")
-                  ),
+              _c(
+                "div",
+                {
+                  staticClass: "cbp-l-grid-team",
+                  attrs: { id: "grid-container4" },
                 },
-              }),
+                [
+                  _c("ul", { staticClass: "cbp-l-grid-team" }, [
+                    _c("li", { staticClass: "cbp-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "cbp-caption cbp-singlePage",
+                          attrs: { href: "iilab/programs-and-activities.html" },
+                        },
+                        [
+                          _vm._m(0),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                            _c(
+                              "div",
+                              { staticClass: "cbp-l-caption-alignCenter" },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "cbp-l-caption-body" },
+                                  [
+                                    _c(
+                                      "div",
+                                      { staticClass: "cbp-l-caption-text" },
+                                      [
+                                        _vm._v(
+                                          "\n                        " +
+                                            _vm._s(
+                                              _vm.$t(
+                                                "pages.home.student.hover-text"
+                                              )
+                                            ) +
+                                            "\n                      "
+                                        ),
+                                      ]
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            ),
+                          ]),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass: "cbp-l-grid-blog-title cbp-singlePage",
+                          attrs: { href: "iilab/programs-and-activities.html" },
+                        },
+                        [_vm._v(_vm._s(_vm.$t("pages.home.iilab.thumb.1")))]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "cbp-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "cbp-caption cbp-singlePage",
+                          attrs: { href: "iilab/events.html" },
+                        },
+                        [
+                          _vm._m(1),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                            _c(
+                              "div",
+                              { staticClass: "cbp-l-caption-alignCenter" },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "cbp-l-caption-body" },
+                                  [
+                                    _c(
+                                      "div",
+                                      { staticClass: "cbp-l-caption-text" },
+                                      [
+                                        _vm._v(
+                                          "\n                        " +
+                                            _vm._s(
+                                              _vm.$t(
+                                                "pages.home.iilab.hover-text"
+                                              )
+                                            ) +
+                                            "\n                      "
+                                        ),
+                                      ]
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            ),
+                          ]),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass: "cbp-l-grid-blog-title cbp-singlePage",
+                          attrs: { href: "iilab/events.html" },
+                        },
+                        [_vm._v(_vm._s(_vm.$t("pages.home.iilab.thumb.2")))]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "cbp-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "cbp-caption cbp-singlePage",
+                          attrs: { href: "iilab/our-entrepreneurs.html" },
+                        },
+                        [
+                          _vm._m(2),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                            _c(
+                              "div",
+                              { staticClass: "cbp-l-caption-alignCenter" },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "cbp-l-caption-body" },
+                                  [
+                                    _c(
+                                      "div",
+                                      { staticClass: "cbp-l-caption-text" },
+                                      [
+                                        _vm._v(
+                                          "\n                        " +
+                                            _vm._s(
+                                              _vm.$t(
+                                                "pages.home.iilab.hover-text"
+                                              )
+                                            ) +
+                                            "\n                      "
+                                        ),
+                                      ]
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            ),
+                          ]),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass: "cbp-l-grid-blog-title cbp-singlePage",
+                          attrs: { href: "iilab/our-entrepreneurs.html" },
+                        },
+                        [_vm._v(_vm._s(_vm.$t("pages.home.iilab.thumb.3")))]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "cbp-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "cbp-caption cbp-singlePage",
+                          attrs: { href: "iilab/testimonials.html" },
+                        },
+                        [
+                          _vm._m(3),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "cbp-caption-activeWrap" }, [
+                            _c(
+                              "div",
+                              { staticClass: "cbp-l-caption-alignCenter" },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "cbp-l-caption-body" },
+                                  [
+                                    _c(
+                                      "div",
+                                      { staticClass: "cbp-l-caption-text" },
+                                      [
+                                        _vm._v(
+                                          "\n                        " +
+                                            _vm._s(
+                                              _vm.$t(
+                                                "pages.home.iilab.hover-text"
+                                              )
+                                            ) +
+                                            "\n                      "
+                                        ),
+                                      ]
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            ),
+                          ]),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass: "cbp-l-grid-blog-title cbp-singlePage",
+                          attrs: { href: "iilab/testimonials.html" },
+                        },
+                        [_vm._v(_vm._s(_vm.$t("pages.home.iilab.thumb.4")))]
+                      ),
+                    ]),
+                  ]),
+                ]
+              ),
             ]
           ),
         ]),
+        _vm._v(" "),
+        _vm._m(4),
       ]),
-    ]),
-  ])
+    ]
+  )
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "service" }, [
-      _c("i", { staticClass: "fa fa-laptop" }),
+    return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
+      _c("img", { attrs: { src: "template/img/blog/a3.jpg", alt: "" } }),
     ])
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "service" }, [
-      _c("i", { staticClass: "fa fa-magic" }),
+    return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
+      _c("img", { attrs: { src: "template/img/blog/a4.jpg", alt: "" } }),
     ])
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "service" }, [
-      _c("i", { staticClass: "fa fa-tasks" }),
+    return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
+      _c("img", { attrs: { src: "template/img/blog/a4.jpg", alt: "" } }),
     ])
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "service" }, [
-      _c("i", { staticClass: "fa fa-users" }),
+    return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
+      _c("img", { attrs: { src: "template/img/blog/a4.jpg", alt: "" } }),
     ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "wow fadeIn col-lg-10 col-lg-offset-1",
+        attrs: { "data-wow-offset": "60" },
+      },
+      [
+        _c("div", { staticClass: "pad45" }),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "clients" } }, [
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo1.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo2.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo3.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo4.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo5.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo6.jpg", alt: "" },
+            }),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "pad45" }),
+      ]
+    )
   },
 ]
 render._withStripped = true
@@ -35204,8 +35452,6 @@ var render = function () {
           _c("div", { staticClass: "pad45" }),
         ]),
       ]),
-      _vm._v(" "),
-      _vm._m(10),
     ]),
   ])
 }
@@ -35318,59 +35564,6 @@ var staticRenderFns = [
         attrs: { src: "template/img/gallery/thumb/business.jpg", alt: "" },
       }),
     ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "wow fadeIn col-lg-10 col-lg-offset-1",
-        attrs: { "data-wow-offset": "80" },
-      },
-      [
-        _c("div", { attrs: { id: "clients" } }, [
-          _c("div", { staticClass: "item" }, [
-            _c("img", {
-              attrs: { src: "template/img/clients/logo1.jpg", alt: "" },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "item" }, [
-            _c("img", {
-              attrs: { src: "template/img/clients/logo2.jpg", alt: "" },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "item" }, [
-            _c("img", {
-              attrs: { src: "template/img/clients/logo3.jpg", alt: "" },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "item" }, [
-            _c("img", {
-              attrs: { src: "template/img/clients/logo4.jpg", alt: "" },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "item" }, [
-            _c("img", {
-              attrs: { src: "template/img/clients/logo5.jpg", alt: "" },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "item" }, [
-            _c("img", {
-              attrs: { src: "template/img/clients/logo6.jpg", alt: "" },
-            }),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "pad45" }),
-      ]
-    )
   },
 ]
 render._withStripped = true

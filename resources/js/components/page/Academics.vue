@@ -11,12 +11,12 @@
             >
               {{ $t("pages.home.academics.title") }}
             </h1>
-            <img
+            <!-- <img
               src="/../template/img/mastercard.jpg"
               alt=""
               srcset=""
               height="5rem"
-            />
+            /> -->
             <div
               class="lead wow fadeInRightBig"
               data-wow-offset="80"
@@ -41,9 +41,7 @@
                     <div class="price-plan-top">
                       <a class="price-plan-link">
                         <h2>
-                          {{
-                            $t("pages.home.academics.details.benefits.title")
-                          }}
+                          {{ $t("pages.home.academics.details.us.title") }}
                         </h2>
                         <div class="price">
                           <!-- <span class="dollar">$</span>
@@ -57,39 +55,60 @@
                     </div>
                     <div class="info-wrapper">
                       <ul class="list-group">
-                        <li>
-                          {{
-                            $t("pages.home.academics.details.benefits.list.1")
-                          }}
+                        <li title="download pdf">
+                          <Link
+                            href="/storage/programs/bachelor-of-private-law.pdf"
+                            preserve-scroll
+                            download
+                            >{{
+                              $t("pages.home.academics.details.us.list.1")
+                            }}</Link
+                          >
                         </li>
-                        <li>
-                          {{
-                            $t("pages.home.academics.details.benefits.list.2")
-                          }}
+                        <li title="download pdf">
+                          <Link
+                            href="/storage/programs/bachelor-of-management.pdf"
+                            preserve-scroll
+                            download
+                          >
+                            {{ $t("pages.home.academics.details.us.list.2") }}
+                          </Link>
                         </li>
-                        <li>
-                          {{
-                            $t("pages.home.academics.details.benefits.list.3")
-                          }}
+                        <li title="download pdf">
+                          <Link
+                            href="/storage/programs/bachelor-of-accounting.pdf"
+                            preserve-scroll
+                            download
+                          >
+                            {{ $t("pages.home.academics.details.us.list.3") }}
+                          </Link>
                         </li>
-                        <li>
-                          {{
-                            $t("pages.home.academics.details.benefits.list.4")
-                          }}
+                        <li title="download pdf">
+                          <Link
+                            href="/storage/programs/bachelor-of-mis.pdf"
+                            preserve-scroll
+                            download
+                          >
+                            {{ $t("pages.home.academics.details.us.list.4") }}
+                          </Link>
                         </li>
-                        <li>
-                          {{
-                            $t("pages.home.academics.details.benefits.list.5")
-                          }}
+                        <li title="download pdf">
+                          <Link
+                            href="/storage/programs/bachelor-of-ai.pdf"
+                            preserve-scroll
+                            download
+                          >
+                            {{ $t("pages.home.academics.details.us.list.5") }}
+                          </Link>
                         </li>
                       </ul>
-                      <a
+                      <!-- <a
                         href="https://applications.eduappgh.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="btn"
                         >{{ $t("pages.home.academics.details.btn") }}</a
-                      >
+                      > -->
                     </div>
                   </div>
                 </div>
@@ -105,9 +124,7 @@
                     <div class="price-plan-top">
                       <a class="price-plan-link">
                         <h2>
-                          {{
-                            $t("pages.home.academics.details.criteria.title")
-                          }}
+                          {{ $t("pages.home.academics.details.ps.title") }}
                         </h2>
                         <!-- <div class="price">
                           <span class="dollar">$</span>
@@ -122,38 +139,34 @@
                     <div class="info-wrapper">
                       <ul class="list-group">
                         <li>
-                          {{
-                            $t("pages.home.academics.details.criteria.list.1")
-                          }}
+                          <Link
+                            href="/storage/programs/master-of-law.pdf"
+                            preserve-scroll
+                            download
+                          >
+                            {{ $t("pages.home.academics.details.ps.list.1") }}
+                          </Link>
                         </li>
                         <li>
-                          {{
-                            $t("pages.home.academics.details.criteria.list.2")
-                          }}
+                          {{ $t("pages.home.academics.details.ps.list.2") }}
                         </li>
                         <li>
-                          {{
-                            $t("pages.home.academics.details.criteria.list.3")
-                          }}
+                          {{ $t("pages.home.academics.details.ps.list.3") }}
                         </li>
                         <li>
-                          {{
-                            $t("pages.home.academics.details.criteria.list.4")
-                          }}
+                          {{ $t("pages.home.academics.details.ps.list.4") }}
                         </li>
                         <li>
-                          {{
-                            $t("pages.home.academics.details.criteria.list.5")
-                          }}
+                          {{ $t("pages.home.academics.details.ps.list.5") }}
                         </li>
                       </ul>
-                      <a
+                      <!-- <a
                         href="https://applications.eduappgh.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="btn"
-                        >{{ $t("pages.home.academics.details.btn") }}</a
-                      >
+                        >{{ $t("pages.home.academics.ps.btn") }}</a
+                      > -->
                     </div>
                   </div>
                 </div>
@@ -169,9 +182,7 @@
                     <div class="price-plan-top">
                       <a class="price-plan-link">
                         <h2>
-                          {{
-                            $t("pages.home.academics.details.programs.title")
-                          }}
+                          {{ $t("pages.home.academics.details.ep.title") }}
                         </h2>
                         <!-- <div class="price">
                           <span class="dollar">$</span>
@@ -186,78 +197,35 @@
                     <div class="info-wrapper">
                       <ul class="list-group">
                         <li>
-                          {{
-                            $t("pages.home.academics.details.programs.list.1")
-                          }}
+                          <Link
+                            href="/storage/programs/english-program.pdf"
+                            preserve-scroll
+                            download
+                          >
+                            {{ $t("pages.home.academics.details.ep.list.1") }}
+                          </Link>
                         </li>
                         <li>
-                          {{
-                            $t("pages.home.academics.details.programs.list.2")
-                          }}
+                          {{ $t("pages.home.academics.details.ep.list.2") }}
                         </li>
                         <li>
-                          {{
-                            $t("pages.home.academics.details.programs.list.3")
-                          }}
+                          {{ $t("pages.home.academics.details.ep.list.3") }}
                         </li>
                         <li>
-                          {{
-                            $t("pages.home.academics.details.programs.list.4")
-                          }}
-                        </li>
-                        <li>
-                          {{
-                            $t("pages.home.academics.details.programs.list.5")
-                          }}
+                          {{ $t("pages.home.academics.details.ep.list.4") }}
                         </li>
                       </ul>
-                      <a
+                      <!-- <a
                         href="https://applications.eduappgh.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="btn"
                       >
-                        {{ $t("pages.home.academics.details.btn") }}</a
-                      >
+                        {{ $t("pages.home.academics.ep.btn") }}</a
+                      > -->
                     </div>
                   </div>
                 </div>
-                <!--//end-->
-
-                <!--4-->
-                <!-- <div
-                  class="col-sm-6 col-lg-3 wow bounceIn"
-                  data-wow-offset="80"
-                  data-wow-duration="2s"
-                >
-                  <div class="price-plan">
-                    <div class="price-plan-top">
-                      <a class="price-plan-link">
-                        <h2>Premium</h2>
-                        <div class="price">
-                          <span class="dollar">$</span
-                          ><span class="amt annual">50</span>
-                          <span class="mo">/mo</span>
-                          <p class="price-breakdown">
-                            Pay yearly or $10 per month
-                          </p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="info-wrapper">
-                      <ul class="list-group">
-                        <li><strong>80GB</strong> Disk Space</li>
-                        <li><strong>1000GB</strong> Monthly Bandwidth</li>
-                        <li>
-                          <i class="fa fa-star-o"></i>
-                          <strong>Unlimited</strong> Email Accounts
-                        </li>
-                        <li><strong>Unlimited</strong> Subdomains</li>
-                      </ul>
-                      <a href="#" class="btn">APPLY</a>
-                    </div>
-                  </div>
-                </div> -->
                 <!--//end-->
               </div>
             </div>
@@ -304,8 +272,10 @@
 </template>
 
 <script>
+import { Link } from "@inertiajs/inertia-vue";
 export default {
   name: "Academics",
+  components: { Link },
 };
 </script>
 

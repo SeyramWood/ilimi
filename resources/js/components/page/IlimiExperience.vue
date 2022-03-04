@@ -348,30 +348,6 @@
         </div>
         <!--//END PORTFOLIO-->
       </div>
-      <!--CLIENTS-->
-      <div class="wow fadeIn col-lg-10 col-lg-offset-1" data-wow-offset="80">
-        <div id="clients">
-          <div class="item">
-            <img src="template/img/clients/logo1.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img src="template/img/clients/logo2.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img src="template/img/clients/logo3.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img src="template/img/clients/logo4.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img src="template/img/clients/logo5.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img src="template/img/clients/logo6.jpg" alt="" />
-          </div>
-        </div>
-        <div class="pad45"></div>
-      </div>
     </div>
   </section>
 </template>

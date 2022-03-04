@@ -154,3 +154,10 @@ a.disabled {
     pointer-events: none;
     cursor: default;
 }
+
+.view-more-title {
+    font-size: 6rem !important;
+    text-transform: none;
+    letter-spacing: 1.2px;
+    color: $primary !important;
+}
