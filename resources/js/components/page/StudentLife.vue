@@ -10,7 +10,14 @@
           >
             {{ $t("pages.home.student.title") }}
           </h1>
-
+          <div class="section-image">
+            <img
+              src="/../template/img/studentLife.jpg"
+              alt=""
+              srcset=""
+              height="5rem"
+            />
+          </div>
           <div
             class="lead wow fadeInRightBig"
             data-wow-offset="80"
@@ -37,7 +44,7 @@
                   class="cbp-caption cbp-singlePage"
                 >
                   <div class="cbp-caption-defaultWrap">
-                    <img src="template/img/blog/a3.jpg" alt="" />
+                    <img src="template/img/thumbs/clubs.jpg" alt="" />
                   </div>
                   <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-alignCenter">
@@ -63,7 +70,7 @@
                   class="cbp-caption cbp-singlePage"
                 >
                   <div class="cbp-caption-defaultWrap">
-                    <img src="template/img/blog/a4.jpg" alt="" />
+                    <img src="template/img/thumbs/careers.jpg" alt="" />
                   </div>
                   <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-alignCenter">
@@ -88,7 +95,7 @@
                   class="cbp-caption cbp-singlePage"
                 >
                   <div class="cbp-caption-defaultWrap">
-                    <img src="template/img/blog/a4.jpg" alt="" />
+                    <img src="template/img/thumbs/wellness.jpg" alt="" />
                   </div>
                   <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-alignCenter">
@@ -113,7 +120,7 @@
                   class="cbp-caption cbp-singlePage"
                 >
                   <div class="cbp-caption-defaultWrap">
-                    <img src="template/img/blog/a4.jpg" alt="" />
+                    <img src="template/img/thumbs/housing.jpg" alt="" />
                   </div>
                   <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-alignCenter">
@@ -136,7 +143,6 @@
         </div>
       </div>
     </div>
-    <div class="pad30"></div>
   </section>
 </template>
 

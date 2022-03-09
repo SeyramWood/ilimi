@@ -3450,6 +3450,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Academics",
@@ -3471,6 +3473,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4381,6 +4391,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "IIlab"
 });
@@ -5066,6 +5079,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "StudentLife"
 });
@@ -5373,7 +5392,7 @@ module.exports = {
           "1": "Programs & Activities ",
           "2": "Events",
           "3": "Our Entrepreneurs",
-          "4": "testimonials"
+          "4": "Testimonials"
         },
         "title": "<span style=\"text-transform: none\">iiLAB<\/span>"
       },
@@ -33217,6 +33236,8 @@ var render = function () {
               ]
             ),
             _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
             _c("div", {
               staticClass: "lead wow fadeInRightBig",
               attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
@@ -33634,7 +33655,23 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "section-image" }, [
+      _c("img", {
+        attrs: {
+          src: "/../template/img/academics.jpg",
+          alt: "",
+          srcset: "",
+          height: "5rem",
+        },
+      }),
+    ])
+  },
+]
 render._withStripped = true
 
 
@@ -33677,6 +33714,8 @@ var render = function () {
               ]
             ),
             _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
             _c("div", {
               staticClass: "lead wow fadeInRightBig",
               attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
@@ -33696,7 +33735,7 @@ var render = function () {
                 },
               },
               [
-                _vm._m(0),
+                _vm._m(1),
                 _vm._v(" "),
                 _c("h6", [
                   _c("strong", [
@@ -33727,7 +33766,7 @@ var render = function () {
                 },
               },
               [
-                _vm._m(1),
+                _vm._m(2),
                 _vm._v(" "),
                 _c("h6", [
                   _c("strong", [
@@ -33758,7 +33797,7 @@ var render = function () {
                 },
               },
               [
-                _vm._m(2),
+                _vm._m(3),
                 _vm._v(" "),
                 _c("h6", [
                   _c("strong", [
@@ -33789,7 +33828,7 @@ var render = function () {
                 },
               },
               [
-                _vm._m(3),
+                _vm._m(4),
                 _vm._v(" "),
                 _c("h6", [
                   _c("strong", [
@@ -33928,6 +33967,21 @@ var render = function () {
   ])
 }
 var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "section-image" }, [
+      _c("img", {
+        attrs: {
+          src: "/../template/img/admissions.jpg",
+          alt: "",
+          srcset: "",
+          height: "5rem",
+        },
+      }),
+    ])
+  },
   function () {
     var _vm = this
     var _h = _vm.$createElement
@@ -34954,7 +35008,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
-      _c("img", { attrs: { src: "template/img/blog/a3.jpg", alt: "" } }),
+      _c("img", { attrs: { src: "template/img/thumbs/ilab.jpg", alt: "" } }),
     ])
   },
   function () {
@@ -34962,7 +35016,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
-      _c("img", { attrs: { src: "template/img/blog/a4.jpg", alt: "" } }),
+      _c("img", { attrs: { src: "template/img/thumbs/events.jpg", alt: "" } }),
     ])
   },
   function () {
@@ -34970,7 +35024,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
-      _c("img", { attrs: { src: "template/img/blog/a4.jpg", alt: "" } }),
+      _c("img", {
+        attrs: { src: "template/img/thumbs/iiLABEntrepreneurs.jpg", alt: "" },
+      }),
     ])
   },
   function () {
@@ -34978,7 +35034,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
-      _c("img", { attrs: { src: "template/img/blog/a4.jpg", alt: "" } }),
+      _c("img", {
+        attrs: { src: "template/img/thumbs/testimonials.jpg", alt: "" },
+      }),
     ])
   },
   function () {
@@ -35809,6 +35867,8 @@ var render = function () {
             ]
           ),
           _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
           _c("div", {
             staticClass: "lead wow fadeInRightBig",
             attrs: { "data-wow-offset": "80", "data-wow-duration": "2s" },
@@ -35845,7 +35905,7 @@ var render = function () {
                         },
                       },
                       [
-                        _vm._m(0),
+                        _vm._m(1),
                         _vm._v(" "),
                         _c("div", { staticClass: "cbp-caption-activeWrap" }, [
                           _c(
@@ -35895,7 +35955,7 @@ var render = function () {
                         attrs: { href: "student-life/career-services.html" },
                       },
                       [
-                        _vm._m(1),
+                        _vm._m(2),
                         _vm._v(" "),
                         _c("div", { staticClass: "cbp-caption-activeWrap" }, [
                           _c(
@@ -35945,7 +36005,7 @@ var render = function () {
                         },
                       },
                       [
-                        _vm._m(2),
+                        _vm._m(3),
                         _vm._v(" "),
                         _c("div", { staticClass: "cbp-caption-activeWrap" }, [
                           _c(
@@ -35997,7 +36057,7 @@ var render = function () {
                         },
                       },
                       [
-                        _vm._m(3),
+                        _vm._m(4),
                         _vm._v(" "),
                         _c("div", { staticClass: "cbp-caption-activeWrap" }, [
                           _c(
@@ -36045,8 +36105,6 @@ var render = function () {
         ),
       ]),
     ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "pad30" }),
   ])
 }
 var staticRenderFns = [
@@ -36054,8 +36112,15 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
-      _c("img", { attrs: { src: "template/img/blog/a3.jpg", alt: "" } }),
+    return _c("div", { staticClass: "section-image" }, [
+      _c("img", {
+        attrs: {
+          src: "/../template/img/studentLife.jpg",
+          alt: "",
+          srcset: "",
+          height: "5rem",
+        },
+      }),
     ])
   },
   function () {
@@ -36063,7 +36128,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
-      _c("img", { attrs: { src: "template/img/blog/a4.jpg", alt: "" } }),
+      _c("img", { attrs: { src: "template/img/thumbs/clubs.jpg", alt: "" } }),
     ])
   },
   function () {
@@ -36071,7 +36136,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
-      _c("img", { attrs: { src: "template/img/blog/a4.jpg", alt: "" } }),
+      _c("img", { attrs: { src: "template/img/thumbs/careers.jpg", alt: "" } }),
     ])
   },
   function () {
@@ -36079,7 +36144,17 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
-      _c("img", { attrs: { src: "template/img/blog/a4.jpg", alt: "" } }),
+      _c("img", {
+        attrs: { src: "template/img/thumbs/wellness.jpg", alt: "" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "cbp-caption-defaultWrap" }, [
+      _c("img", { attrs: { src: "template/img/thumbs/housing.jpg", alt: "" } }),
     ])
   },
 ]

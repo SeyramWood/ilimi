@@ -11,7 +11,14 @@
             >
               {{ $t("pages.home.admissions.title") }}
             </h1>
-
+            <div class="section-image">
+              <img
+                src="/../template/img/admissions.jpg"
+                alt=""
+                srcset=""
+                height="5rem"
+              />
+            </div>
             <div
               class="lead wow fadeInRightBig"
               data-wow-offset="80"
@@ -210,6 +217,7 @@
             <h1 class="wow fadeIn" data-wow-offset="80" data-wow-duration="2s">
               {{ $t("pages.home.admissions.stats.title") }}
             </h1>
+
             <div class="pad45"></div>
 
             <div class="col-sm-4 col-lg-4 text-center">

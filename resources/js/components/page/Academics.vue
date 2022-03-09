@@ -11,12 +11,14 @@
             >
               {{ $t("pages.home.academics.title") }}
             </h1>
-            <!-- <img
-              src="/../template/img/mastercard.jpg"
-              alt=""
-              srcset=""
-              height="5rem"
-            /> -->
+            <div class="section-image">
+              <img
+                src="/../template/img/academics.jpg"
+                alt=""
+                srcset=""
+                height="5rem"
+              />
+            </div>
             <div
               class="lead wow fadeInRightBig"
               data-wow-offset="80"

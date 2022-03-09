@@ -35,7 +35,7 @@
                   class="cbp-caption cbp-singlePage"
                 >
                   <div class="cbp-caption-defaultWrap">
-                    <img src="template/img/blog/a3.jpg" alt="" />
+                    <img src="template/img/thumbs/ilab.jpg" alt="" />
                   </div>
                   <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-alignCenter">
@@ -58,7 +58,7 @@
               <li class="cbp-item">
                 <a href="iilab/events.html" class="cbp-caption cbp-singlePage">
                   <div class="cbp-caption-defaultWrap">
-                    <img src="template/img/blog/a4.jpg" alt="" />
+                    <img src="template/img/thumbs/events.jpg" alt="" />
                   </div>
                   <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-alignCenter">
@@ -83,7 +83,10 @@
                   class="cbp-caption cbp-singlePage"
                 >
                   <div class="cbp-caption-defaultWrap">
-                    <img src="template/img/blog/a4.jpg" alt="" />
+                    <img
+                      src="template/img/thumbs/iiLABEntrepreneurs.jpg"
+                      alt=""
+                    />
                   </div>
                   <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-alignCenter">
@@ -108,7 +111,7 @@
                   class="cbp-caption cbp-singlePage"
                 >
                   <div class="cbp-caption-defaultWrap">
-                    <img src="template/img/blog/a4.jpg" alt="" />
+                    <img src="template/img/thumbs/testimonials.jpg" alt="" />
                   </div>
                   <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-alignCenter">
