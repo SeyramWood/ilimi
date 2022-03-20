@@ -43,41 +43,30 @@ return [
       "impact" => [
         "title" => "impact",
         "70" => "Population étudiante féminine",
-        "75" => "Étudiant boursier",
+        "75" => "Étudiants boursiers",
         "90" => "Stages et Placements",
       ]
     ],
     "admissions" => [
       "title" => "Admissions",
-      "cta" => "Nos programmes de licence en trois ans sont reconnus 
-              <span class=\"colour\"><strong>au niveau national</strong></span> et 
-              <span class=\"colour\"><strong>international</strong></span>. Nos programmes sont tous 
-              <span class=\"colour\"><strong>accrédités </strong></span> par le Ministère de l'Enseignement Supérieur, de la Recherche et de l'Innovation du Niger. Postulez pour étudier avec nous!
-              <a
-                href=\"https://applications.eduappgh.com/\"
-                target=\"_blank\"
-                rel=\"noopener noreferrer\"
-                class=\"p-link\"
-                ><span class=\"colour\"><strong>Postulez maintenant</strong></span></a
-              >",
+      "cta" => "Nos programmes sont reconnus au niveau national et international. Nos programmes diplômants sont tous accrédités par le ministère de l'Enseignement supérieur, de la Recherche et de l'Innovation, Niger. Arrêté N° 167 et 168 MESR/I/SG/DGE/DL/DESPRI du 25/11/2019 relatif à l'autorisation de création et d'ouverture d'African Development Universalis (A.D.U.).",
 
       "service" => [
         "1" => [
-          "title" => "Exigences",
-          "text" => "Vous devez être en possession d'un certificat de baccalauréat, des notes de l'examen final du lycée, d'un certificat de naissance, d'un certificat de citoyenneté, des résultats d'un test de langue et de lettres de recommandation.",
+          "title" => "Devenir étudiant",
+          "text" => "Chaque année, nous accueillons de nouveaux membres dans la communauté ILIMI et nous travaillons étroitement avec eux pour en faire des leaders éthiques conducteurs de changement dans leurs communautés. 1 Young leader de A.D.U. vaut à lui seul 1000 personnes. Il apprend à travers une expérience éducative hors du commun et s’épanouit en étant au service de sa communauté. Être étudiant à A.D.U. est une expérience unique et invraisemblable que chaque jeune devrait vivre.",
         ],
         "2" => [
-          "title" => "Bourses d'études",
-          "text" => "A.D.U. offre des bourses d'études aux étudiants talentueux qui connaissent des difficultés économiques et sociales afin qu'ils puissent atteindre leurs objectifs et avoir un impact sur leur communauté.",
+          "title" => "Pourquoi étudier à A.D.U.",
+          "text" => "A.D.U. est fondée sur la base que quasi tous les obstacles au développement du Niger peuvent être associés à une insuffisance de leadership. C’est pourquoi nos étudiants se préparent à un leadership mondial à travers un apprentissage et un enseignement académique bilingues. Notre programme pluridisciplinaire calqué sur ce qu’on apprend de mieux à Harvard combine les arts libéraux avec le Management ; le Droit et la Technologie ",
         ],
         "3" => [
-          "title" => "Postuler en ligne",
-          "text" => "Pour postuler, visitez notre portail de candidature en ligne pour créer un compte, remplir le formulaire de candidature, télécharger tous les documents requis, payer les frais d'inscription et soumettre votre candidature.",
+          "title" => "Bourses d'études",
+          "text" => "A.D.U. offre des bourses d'études aux étudiants talentueux qui connaissent des difficultés économiques et sociales afin qu'ils puissent atteindre leurs objectifs et avoir un impact sur leur communauté. Les bourses disponibles sont : le MasterCard Foundation Scholars Program, le Corporate Scholarship Program, le Presidential Scholarship Program et le A.D.U Financial Aid Program.",
         ],
         "4" => [
-          "title" => "Contacter les admissions",
-          "text" => "Pour toute question supplémentaire et/ou demande concernant l'état de votre candidature, vous pouvez nous joindre à travers: admissions@ilimi.edu.ne,<br />+227 923 968 68
-                (WhatsApp)<br />+227 9339 68 68 (Mobile)",
+          "title" => "Postuler en ligne",
+          "text" => "PPour postuler, visitez notre portail de candidature en ligne pour créer un compte, remplir le formulaire de candidature, télécharger tous les documents requis, payer les frais d'inscription et soumettre votre candidature. Pour toute question supplémentaire et/ou demande de renseignements concernant l'état d'avancement de votre candidature, vous pouvez nous joindre à l'adresse suivante : <a href='mailto:admissions@ilimi.edu.ne'>admissions@ilimi.edu.ne</a>",
         ],
       ],
 
@@ -95,36 +84,37 @@ return [
     "academics" => [
       "title" => "Académique",
       "cta" => "
-              The Academic Affairs Department at African Development University (A.D.U.) strives to be recognized by students and employers in the <strong class=\"colour\">region</strong> and throughout the <strong class=\"colour\">continent</strong> as the preeminent undergrA.D.U.ate business program in Niger. It seeks to serve as a beacon for women who are looking for opportunities to learn and contribute to society. A.D.U. women will study along-side their male counterparts who will come to recognize them as equal in <strong class=\"colour\">ability</strong> and <strong class=\"colour\">creativity</strong>. A.D.U. is the only university of its kind in the Sahel, but we hope to be a <strong class=\"colour\">model</strong> that other schools will follow.
+      l’African Development University (A.D.U.) d'élever ses programmes de <strong class=\"colour\">premier et de second cycle</strong> au plus <strong class=\"colour\">haut niveau</strong> au <strong class=\"colour\">Niger</strong> et dans la sous-région. Nos cours sont dispensés par des professeurs et des professionnels divers, qui apportent à l'A.D.U. un <strong class=\"colour\">riche bagage intellectuel</strong> tant au niveau local qu'international. En outre, nos programmes sont <strong class=\"colour\">bilingues</strong> et accordent une grande importance au développement d'un fort esprit <strong class=\"colour\">d'entreprise</strong> chez chaque étudiant. 
               ",
       "details" => [
         "us" => [
-          "title" => "Undergraduate Study",
+          "title" => "Études de premier cycle",
           "list" => [
-            "1" => "Bachelor of Private Law",
-            "2" => "Bachelor of Management",
-            "3" => "Bachelor of Accounting",
-            "4" => "Bachelor of Management Information Systems",
-            "5" => "Bachelor of Science Artificial Intelligence",
+            "1" => "Licence en droit privé",
+            "2" => "Baccalauréat en gestion",
+            "3" => "Baccalauréat en comptabilité",
+            "4" => "Licence en systèmes d'information de gestion",
+            "5" => "Bachelor of Science Intelligence artificielle",
           ]
         ],
         "ps" => [
-          "title" => "Postgraduate Study",
+          "title" => "Études de troisième cycle",
           "list" => [
-            "1" => "Master of Business Law & Tax",
-            "2" => "-	Business Tax Law",
-            "3" => "-	Bankruptcy Law",
-            "4" => "-	International Trade Law",
-            "5" => "-	Financial Market Law",
+            "1" => "Master en droit des affaires et fiscalité",
+            "2" => "-	Droit fiscal des affaires",
+            "3" => "-	Droit de la faillite",
+            "4" => "-	Droit du commerce international",
+            "5" => "-	Droit des marchés financiers",
           ]
         ],
         "ep" => [
-          "title" => "Executive Programs",
+          "title" => "Programmes exécutifs",
           "list" => [
-            "1" => "English Program",
-            "2" => "-	Beginner",
-            "3" => "-	Intermediate",
-            "4" => "-	Advanced",
+            "1" => "Programme d'anglais",
+            "2" => "-	Débutant",
+            "3" => "-	Intermédiaire",
+            "4" => "-	Avancé",
+            "5" => "-	Intensif",
           ]
         ],
 
@@ -167,20 +157,20 @@ return [
 
     "student" => [
 
-      "title" => "Student Life",
+      "title" => "Vie étudiante",
 
-      "cta" => "A.D.U. campus was designed as an inspiring base for students from Niger and the Sahel to <span class=\"colour\"><strong>learn</strong></span>, <span class=\"colour\"><strong>collaborate</strong></span>, <span class=\"colour\"><strong>engage</strong></span> and form <span class=\"colour\"><strong>relationships</strong></span> that would help them dare great things together. 
-                Our campus culture is driven by student initiatives, and run by the mantra, Student First! The student leadership, known as the ILIMI Student Government (ISG), collaborates deeply with the Office of Student and Community Affairs to <span class=\"colour\"><strong>enhance</strong></span> the student experience and support student-led initiatives.",
+      "cta" => "
+      Notre campus est conçu pour inciter les étudiants du Niger et du Sahel <span class=\"colour\"><strong>à apprendre</strong></span>, <span class=\"colour\"><strong>à collaborer</strong></span>, <span class=\"colour\"><strong>à s'engager</strong></span> et à nouer des <span class=\"colour\"><strong>relations</strong></span> qui les aideront à réaliser de grandes choses ensemble. Le Bureau des affaires estudiantines et communautaires collabore avec le gouvernement étudiant de l'ILIMI (ISG) pour <span class=\"colour\"><strong>améliorer</strong></span> l'expérience des étudiants et soutenir leurs initiatives.",
 
       "btn" => "CONTACT",
 
       "hover-text" => "VIEW MORE",
 
       "benefit" => [
-        "1" => "Clubs and Activities",
-        "2" => "Career Services",
-        "3" => "Health and Wellness",
-        "4" => "Housing Services and Dining",
+        "1" => "Clubs et Activités",
+        "2" => "Services d'orientation Professionnelle",
+        "3" => "Santé et Bien-être",
+        "4" => "Services de Logement et de Restauration",
       ],
 
     ],

@@ -216,6 +216,9 @@
                         <li>
                           {{ $t("pages.home.academics.details.ep.list.4") }}
                         </li>
+                        <li>
+                          {{ $t("pages.home.academics.details.ep.list.5") }}
+                        </li>
                       </ul>
                       <!-- <a
                         href="https://applications.eduappgh.com/"

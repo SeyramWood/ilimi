@@ -72,53 +72,33 @@ return [
       "impact" => [
         "title" => "Impact",
         "70" => "Female Student Population",
-        "75" => "Student on Scholarship",
+        "75" => "Students on Scholarship",
         "90" => "Internships & Placement",
       ]
 
     ],
     "admissions" => [
       "title" => "Admissions",
-      "cta" => "Our 3-year bachelor programs are both
-              <span class=\"colour\"><strong>nationally</strong></span> and
-              <span class=\"colour\"><strong>internationally</strong></span>
-              recognized. Our degree programs are all
-              <span class=\"colour\"><strong>accredited</strong></span> by
-              Ministry of Higher Education, Research and Innovation, Niger.
-              <a
-                href=\"https://applications.eduappgh.com/\"
-                target=\"_blank\"
-                rel=\"noopener noreferrer\"
-                class=\"p-link\"
-                ><span class=\"colour\"><strong>Apply now</strong></span></a
-              >",
+      "cta" => "
+      Our programs are both nationally and internationally recognized. Our degree programs are all accredited by the Ministry of Higher Education, Research and Innovation, Niger. Order N° 167 and 168 MESR/I/SG/DGE/DL/DESPRI of 25/11/2019 relating to the authorization of creation and opening of African Development Universalis (A.D.U.).
+              ",
 
       "service" => [
         "1" => [
-          "title" => "Requirements",
-          "text" => "You must have a Baccalaureate certificate; High School Final
-                Exam Grades, Birth Certificate, Certificate of Citizenship,
-                Language test scores and Letters of Recommendation.",
+          "title" => "Become a Student",
+          "text" => "Each year we welcome new members in the ILIMI community, and we work closely with them; to transform them into ethical leaders and change-makers in their communities. 1 young leader is worth 1000 individuals. Learn and grow through an extraordinary educational experience and service to their community. Being a student at A.D.U.  is a unique and incredible experience that any young person should experience",
         ],
         "2" => [
-          "title" => "Tuition & Scholarship",
-          "text" => "A.D.U. offers Scholarship for talented student who are
-                experiencing economic and social hardship so that they will be
-                able to achieve their goals and impact their community.",
+          "title" => "A.D.U. Advantage",
+          "text" => "A.D.U. is based on the premise that almost all the obstacles to Niger’s development can be associated with a lack of leadership. That’s why our students prepare for global leadership through bilingual learning and academic instruction. Our unique model of skills integration ensures that our students are ready to meet the challenges of the new millennium. Our multidisciplinary program: modeled on the best learning materials at Harvard, combines the liberal arts with Management, Law and Technology.",
         ],
         "3" => [
-          "title" => "Apply Online",
-          "text" => "To apply, visit our online application portal to create an
-                account, fill out the application form, upload all required
-                documents, pay the registration fee, and submit your
-                application.",
+          "title" => "Tuition and Scholarship",
+          "text" => "A.D.U. offers Scholarship for talented student who are experiencing economic and social hardship so that they will be able to achieve their goals and impact their community. The Scholarships available are: the MasterCard Foundation Scholars Program; Corporate Scholarship Program; Presidential Scholarship Program and the A.D.U Financial Aid Program.",
         ],
         "4" => [
-          "title" => "Contact Admissions",
-          "text" => "For additional questions and/or inquiry regarding the status of
-                your application, you can reach us
-                through: admissions@ilimi.edu.ne,<br />+227 923 968 68
-                (WhatsApp)<br />+227 9339 68 68 (Mobile)",
+          "title" => "Apply Online",
+          "text" => "FTo apply, visit our online application portal to create an account, fill out the application form, upload all required documents, pay the registration fee, and submit your application. For additional questions and/or inquiry regarding the status of your application, you can reach us through: <a href='mailto:admissions@ilimi.edu.ne'>admissions@ilimi.edu.ne</a>",
         ],
       ],
 
@@ -136,7 +116,7 @@ return [
     "academics" => [
       "title" => "Academics",
       "cta" => "
-              The Academic Affairs Department at African Development University (A.D.U.) strives to be recognized by students and employers in the <strong class=\"colour\">region</strong> and throughout the <strong class=\"colour\">continent</strong> as the preeminent undergrA.D.U.ate business program in Niger. It seeks to serve as a beacon for women who are looking for opportunities to learn and contribute to society. A.D.U. women will study along-side their male counterparts who will come to recognize them as equal in <strong class=\"colour\">ability</strong> and <strong class=\"colour\">creativity</strong>. A.D.U. is the only university of its kind in the Sahel, but we hope to be a <strong class=\"colour\">model</strong> that other schools will follow.
+      The African Development University (A.D.U.) works to elevate its <strong class=\"colour\">undergraduate</strong>, <strong class=\"colour\">graduate</strong> and <strong class=\"colour\">executive</strong> programs to the <strong class=\"colour\">highest level</strong> in <strong class=\"colour\">Niger</strong> and the sub-region. Our courses are taught by diverse faculty and professionals, bringing with them a <strong class=\"colour\">rich intellectual</strong> background both locally and internationally to A.D.U. Additionally, our programs are <strong class=\"colour\">bilingual</strong> and place great importance on developing a strong <strong class=\"colour\">entrepreneurial</strong> spirit in each student.
               ",
       "details" => [
         "us" => [
@@ -166,6 +146,7 @@ return [
             "2" => "-	Beginner",
             "3" => "-	Intermediate",
             "4" => "-	Advanced",
+            "5" => "-	Intensive",
           ]
         ],
 

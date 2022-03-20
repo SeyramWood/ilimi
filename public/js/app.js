@@ -3452,6 +3452,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Academics",
@@ -4229,6 +4232,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -5273,7 +5285,7 @@ module.exports = {
         "impact": {
           "title": "Impact",
           "70": "Female Student Population",
-          "75": "Student on Scholarship",
+          "75": "Students on Scholarship",
           "90": "Internships & Placement"
         },
         "position": {
@@ -5287,7 +5299,7 @@ module.exports = {
         "title": "About Us"
       },
       "academics": {
-        "cta": "\r\n              The Academic Affairs Department at African Development University (A.D.U.) strives to be recognized by students and employers in the <strong class=\"colour\">region<\/strong> and throughout the <strong class=\"colour\">continent<\/strong> as the preeminent undergrA.D.U.ate business program in Niger. It seeks to serve as a beacon for women who are looking for opportunities to learn and contribute to society. A.D.U. women will study along-side their male counterparts who will come to recognize them as equal in <strong class=\"colour\">ability<\/strong> and <strong class=\"colour\">creativity<\/strong>. A.D.U. is the only university of its kind in the Sahel, but we hope to be a <strong class=\"colour\">model<\/strong> that other schools will follow.\r\n              ",
+        "cta": "\r\n      The African Development University (A.D.U.) works to elevate its <strong class=\"colour\">undergraduate<\/strong>, <strong class=\"colour\">graduate<\/strong> and <strong class=\"colour\">executive<\/strong> programs to the <strong class=\"colour\">highest level<\/strong> in <strong class=\"colour\">Niger<\/strong> and the sub-region. Our courses are taught by diverse faculty and professionals, bringing with them a <strong class=\"colour\">rich intellectual<\/strong> background both locally and internationally to A.D.U. Additionally, our programs are <strong class=\"colour\">bilingual<\/strong> and place great importance on developing a strong <strong class=\"colour\">entrepreneurial<\/strong> spirit in each student.\r\n              ",
         "details": {
           "btn": "APPLY",
           "ep": {
@@ -5295,7 +5307,8 @@ module.exports = {
               "1": "English Program",
               "2": "-\tBeginner",
               "3": "-\tIntermediate",
-              "4": "-\tAdvanced"
+              "4": "-\tAdvanced",
+              "5": "-\tIntensive"
             },
             "title": "Executive Programs"
           },
@@ -5323,23 +5336,23 @@ module.exports = {
         "title": "Academics"
       },
       "admissions": {
-        "cta": "Our 3-year bachelor programs are both\r\n              <span class=\"colour\"><strong>nationally<\/strong><\/span> and\r\n              <span class=\"colour\"><strong>internationally<\/strong><\/span>\r\n              recognized. Our degree programs are all\r\n              <span class=\"colour\"><strong>accredited<\/strong><\/span> by\r\n              Ministry of Higher Education, Research and Innovation, Niger.\r\n              <a\r\n                href=\"https:\/\/applications.eduappgh.com\/\"\r\n                target=\"_blank\"\r\n                rel=\"noopener noreferrer\"\r\n                class=\"p-link\"\r\n                ><span class=\"colour\"><strong>Apply now<\/strong><\/span><\/a\r\n              >",
+        "cta": "\r\n      Our programs are both nationally and internationally recognized. Our degree programs are all accredited by the Ministry of Higher Education, Research and Innovation, Niger. Order N\xB0 167 and 168 MESR/I/SG/DGE/DL/DESPRI of 25/11/2019 relating to the authorization of creation and opening of African Development Universalis (A.D.U.).\r\n              ",
         "service": {
           "1": {
-            "text": "You must have a Baccalaureate certificate; High School Final\r\n                Exam Grades, Birth Certificate, Certificate of Citizenship,\r\n                Language test scores and Letters of Recommendation.",
-            "title": "Requirements"
+            "text": "Each year we welcome new members in the ILIMI community, and we work closely with them; to transform them into ethical leaders and change-makers in their communities. 1 young leader is worth 1000 individuals. Learn and grow through an extraordinary educational experience and service to their community. Being a student at A.D.U.  is a unique and incredible experience that any young person should experience",
+            "title": "Become a Student"
           },
           "2": {
-            "text": "A.D.U. offers Scholarship for talented student who are\r\n                experiencing economic and social hardship so that they will be\r\n                able to achieve their goals and impact their community.",
-            "title": "Tuition & Scholarship"
+            "text": "A.D.U. is based on the premise that almost all the obstacles to Niger\u2019s development can be associated with a lack of leadership. That\u2019s why our students prepare for global leadership through bilingual learning and academic instruction. Our unique model of skills integration ensures that our students are ready to meet the challenges of the new millennium. Our multidisciplinary program: modeled on the best learning materials at Harvard, combines the liberal arts with Management, Law and Technology.",
+            "title": "A.D.U. Advantage"
           },
           "3": {
-            "text": "To apply, visit our online application portal to create an\r\n                account, fill out the application form, upload all required\r\n                documents, pay the registration fee, and submit your\r\n                application.",
-            "title": "Apply Online"
+            "text": "A.D.U. offers Scholarship for talented student who are experiencing economic and social hardship so that they will be able to achieve their goals and impact their community. The Scholarships available are: the MasterCard Foundation Scholars Program; Corporate Scholarship Program; Presidential Scholarship Program and the A.D.U Financial Aid Program.",
+            "title": "Tuition and Scholarship"
           },
           "4": {
-            "text": "For additional questions and\/or inquiry regarding the status of\r\n                your application, you can reach us\r\n                through: admissions@ilimi.edu.ne,<br \/>+227 923 968 68\r\n                (WhatsApp)<br \/>+227 9339 68 68 (Mobile)",
-            "title": "Contact Admissions"
+            "text": "FTo apply, visit our online application portal to create an account, fill out the application form, upload all required documents, pay the registration fee, and submit your application. For additional questions and\/or inquiry regarding the status of your application, you can reach us through: <a href='mailto:admissions@ilimi.edu.ne'>admissions@ilimi.edu.ne<\/a>",
+            "title": "Apply Online"
           }
         },
         "stats": {
@@ -5528,7 +5541,7 @@ module.exports = {
         "impact": {
           "title": "impact",
           "70": "Population \xE9tudiante f\xE9minine",
-          "75": "\xC9tudiant boursier",
+          "75": "\xC9tudiants boursiers",
           "90": "Stages et Placements"
         },
         "position": {
@@ -5542,59 +5555,60 @@ module.exports = {
         "title": "\xE0 propos"
       },
       "academics": {
-        "cta": "\r\n              The Academic Affairs Department at African Development University (A.D.U.) strives to be recognized by students and employers in the <strong class=\"colour\">region<\/strong> and throughout the <strong class=\"colour\">continent<\/strong> as the preeminent undergrA.D.U.ate business program in Niger. It seeks to serve as a beacon for women who are looking for opportunities to learn and contribute to society. A.D.U. women will study along-side their male counterparts who will come to recognize them as equal in <strong class=\"colour\">ability<\/strong> and <strong class=\"colour\">creativity<\/strong>. A.D.U. is the only university of its kind in the Sahel, but we hope to be a <strong class=\"colour\">model<\/strong> that other schools will follow.\r\n              ",
+        "cta": "\r\n      l\u2019African Development University (A.D.U.) d'\xE9lever ses programmes de <strong class=\"colour\">premier et de second cycle</strong> au plus <strong class=\"colour\">haut niveau</strong> au <strong class=\"colour\">Niger</strong> et dans la sous-r\xE9gion. Nos cours sont dispens\xE9s par des professeurs et des professionnels divers, qui apportent \xE0 l'A.D.U. un <strong class=\"colour\">riche bagage intellectuel</strong> tant au niveau local qu'international. En outre, nos programmes sont <strong class=\"colour\">bilingues</strong> et accordent une grande importance au d\xE9veloppement d'un fort esprit <strong class=\"colour\">d'entreprise</strong> chez chaque \xE9tudiant. \r\n              ",
         "details": {
           "btn": "APPLY",
           "ep": {
             "list": {
-              "1": "English Program",
-              "2": "-\tBeginner",
-              "3": "-\tIntermediate",
-              "4": "-\tAdvanced"
+              "1": "Programme d'anglais",
+              "2": "-\tD\xE9butant",
+              "3": "-\tInterm\xE9diaire",
+              "4": "-\tAvanc\xE9",
+              "5": "-\tIntensif"
             },
-            "title": "Executive Programs"
+            "title": "Programmes ex\xE9cutifs"
           },
           "ps": {
             "list": {
-              "1": "Master of Business Law & Tax",
-              "2": "-\tBusiness Tax Law",
-              "3": "-\tBankruptcy Law",
-              "4": "-\tInternational Trade Law",
-              "5": "-\tFinancial Market Law"
+              "1": "Master en droit des affaires et fiscalit\xE9",
+              "2": "-\tDroit fiscal des affaires",
+              "3": "-\tDroit de la faillite",
+              "4": "-\tDroit du commerce international",
+              "5": "-\tDroit des march\xE9s financiers"
             },
-            "title": "Postgraduate Study"
+            "title": "\xC9tudes de troisi\xE8me cycle"
           },
           "us": {
             "list": {
-              "1": "Bachelor of Private Law",
-              "2": "Bachelor of Management",
-              "3": "Bachelor of Accounting",
-              "4": "Bachelor of Management Information Systems",
-              "5": "Bachelor of Science Artificial Intelligence"
+              "1": "Licence en droit priv\xE9",
+              "2": "Baccalaur\xE9at en gestion",
+              "3": "Baccalaur\xE9at en comptabilit\xE9",
+              "4": "Licence en syst\xE8mes d'information de gestion",
+              "5": "Bachelor of Science Intelligence artificielle"
             },
-            "title": "Undergraduate Study"
+            "title": "\xC9tudes de premier cycle"
           }
         },
         "title": "Acad\xE9mique"
       },
       "admissions": {
-        "cta": "Nos programmes de licence en trois ans sont reconnus \r\n              <span class=\"colour\"><strong>au niveau national</strong></span> et \r\n              <span class=\"colour\"><strong>international</strong></span>. Nos programmes sont tous \r\n              <span class=\"colour\"><strong>accr\xE9dit\xE9s </strong></span> par le Minist\xE8re de l'Enseignement Sup\xE9rieur, de la Recherche et de l'Innovation du Niger. Postulez pour \xE9tudier avec nous!\r\n              <a\r\n                href=\"https://applications.eduappgh.com/\"\r\n                target=\"_blank\"\r\n                rel=\"noopener noreferrer\"\r\n                class=\"p-link\"\r\n                ><span class=\"colour\"><strong>Postulez maintenant</strong></span></a\r\n              >",
+        "cta": "Nos programmes sont reconnus au niveau national et international. Nos programmes dipl\xF4mants sont tous accr\xE9dit\xE9s par le minist\xE8re de l'Enseignement sup\xE9rieur, de la Recherche et de l'Innovation, Niger. Arr\xEAt\xE9 N\xB0 167 et 168 MESR/I/SG/DGE/DL/DESPRI du 25/11/2019 relatif \xE0 l'autorisation de cr\xE9ation et d'ouverture d'African Development Universalis (A.D.U.).",
         "service": {
           "1": {
-            "text": "Vous devez \xEAtre en possession d'un certificat de baccalaur\xE9at, des notes de l'examen final du lyc\xE9e, d'un certificat de naissance, d'un certificat de citoyennet\xE9, des r\xE9sultats d'un test de langue et de lettres de recommandation.",
-            "title": "Exigences"
+            "text": "Chaque ann\xE9e, nous accueillons de nouveaux membres dans la communaut\xE9 ILIMI et nous travaillons \xE9troitement avec eux pour en faire des leaders \xE9thiques conducteurs de changement dans leurs communaut\xE9s. 1 Young leader de A.D.U. vaut \xE0 lui seul 1000 personnes. Il apprend \xE0 travers une exp\xE9rience \xE9ducative hors du commun et s\u2019\xE9panouit en \xE9tant au service de sa communaut\xE9. \xCAtre \xE9tudiant \xE0 A.D.U. est une exp\xE9rience unique et invraisemblable que chaque jeune devrait vivre.",
+            "title": "Devenir \xE9tudiant"
           },
           "2": {
-            "text": "A.D.U. offre des bourses d'\xE9tudes aux \xE9tudiants talentueux qui connaissent des difficult\xE9s \xE9conomiques et sociales afin qu'ils puissent atteindre leurs objectifs et avoir un impact sur leur communaut\xE9.",
-            "title": "Bourses d'\xE9tudes"
+            "text": "A.D.U. est fond\xE9e sur la base que quasi tous les obstacles au d\xE9veloppement du Niger peuvent \xEAtre associ\xE9s \xE0 une insuffisance de leadership. C\u2019est pourquoi nos \xE9tudiants se pr\xE9parent \xE0 un leadership mondial \xE0 travers un apprentissage et un enseignement acad\xE9mique bilingues. Notre programme pluridisciplinaire calqu\xE9 sur ce qu\u2019on apprend de mieux \xE0 Harvard combine les arts lib\xE9raux avec le Management ; le Droit et la Technologie ",
+            "title": "Pourquoi \xE9tudier \xE0 A.D.U."
           },
           "3": {
-            "text": "Pour postuler, visitez notre portail de candidature en ligne pour cr\xE9er un compte, remplir le formulaire de candidature, t\xE9l\xE9charger tous les documents requis, payer les frais d'inscription et soumettre votre candidature.",
-            "title": "Postuler en ligne"
+            "text": "A.D.U. offre des bourses d'\xE9tudes aux \xE9tudiants talentueux qui connaissent des difficult\xE9s \xE9conomiques et sociales afin qu'ils puissent atteindre leurs objectifs et avoir un impact sur leur communaut\xE9. Les bourses disponibles sont : le MasterCard Foundation Scholars Program, le Corporate Scholarship Program, le Presidential Scholarship Program et le A.D.U Financial Aid Program.",
+            "title": "Bourses d'\xE9tudes"
           },
           "4": {
-            "text": "Pour toute question suppl\xE9mentaire et/ou demande concernant l'\xE9tat de votre candidature, vous pouvez nous joindre \xE0 travers: admissions@ilimi.edu.ne,<br />+227 923 968 68\r\n                (WhatsApp)<br />+227 9339 68 68 (Mobile)",
-            "title": "Contacter les admissions"
+            "text": "PPour postuler, visitez notre portail de candidature en ligne pour cr\xE9er un compte, remplir le formulaire de candidature, t\xE9l\xE9charger tous les documents requis, payer les frais d'inscription et soumettre votre candidature. Pour toute question suppl\xE9mentaire et/ou demande de renseignements concernant l'\xE9tat d'avancement de votre candidature, vous pouvez nous joindre \xE0 l'adresse suivante : <a href='mailto:admissions@ilimi.edu.ne'>admissions@ilimi.edu.ne</a>",
+            "title": "Postuler en ligne"
           }
         },
         "stats": {
@@ -5689,15 +5703,15 @@ module.exports = {
       },
       "student": {
         "benefit": {
-          "1": "Clubs and Activities",
-          "2": "Career Services",
-          "3": "Health and Wellness",
-          "4": "Housing Services and Dining"
+          "1": "Clubs et Activit\xE9s",
+          "2": "Services d'orientation Professionnelle",
+          "3": "Sant\xE9 et Bien-\xEAtre",
+          "4": "Services de Logement et de Restauration"
         },
         "btn": "CONTACT",
-        "cta": "A.D.U. campus was designed as an inspiring base for students from Niger and the Sahel to <span class=\"colour\"><strong>learn<\/strong><\/span>, <span class=\"colour\"><strong>collaborate<\/strong><\/span>, <span class=\"colour\"><strong>engage<\/strong><\/span> and form <span class=\"colour\"><strong>relationships<\/strong><\/span> that would help them dare great things together. \r\n                Our campus culture is driven by student initiatives, and run by the mantra, Student First! The student leadership, known as the ILIMI Student Government (ISG), collaborates deeply with the Office of Student and Community Affairs to <span class=\"colour\"><strong>enhance<\/strong><\/span> the student experience and support student-led initiatives.",
+        "cta": "\r\n      Notre campus est con\xE7u pour inciter les \xE9tudiants du Niger et du Sahel <span class=\"colour\"><strong>\xE0 apprendre</strong></span>, <span class=\"colour\"><strong>\xE0 collaborer</strong></span>, <span class=\"colour\"><strong>\xE0 s'engager</strong></span> et \xE0 nouer des <span class=\"colour\"><strong>relations</strong></span> qui les aideront \xE0 r\xE9aliser de grandes choses ensemble. Le Bureau des affaires estudiantines et communautaires collabore avec le gouvernement \xE9tudiant de l'ILIMI (ISG) pour <span class=\"colour\"><strong>am\xE9liorer</strong></span> l'exp\xE9rience des \xE9tudiants et soutenir leurs initiatives.",
         "hover-text": "VIEW MORE",
-        "title": "Student Life"
+        "title": "Vie \xE9tudiante"
       }
     },
     "scholarship": {
@@ -32832,7 +32846,7 @@ var render = function () {
                           "cbp-singlePage cbp-l-grid-team-name disabled",
                         attrs: { href: "" },
                       },
-                      [_vm._v("Michaëlle Jean")]
+                      [_vm._v("Right Honourable Michaëlle Jean")]
                     ),
                     _vm._v(" "),
                     _c("div", { staticClass: "cbp-l-grid-team-position" }, [
@@ -33641,6 +33655,18 @@ var render = function () {
                                   "\n                      "
                               ),
                             ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _vm._v(
+                                "\n                        " +
+                                  _vm._s(
+                                    _vm.$t(
+                                      "pages.home.academics.details.ep.list.5"
+                                    )
+                                  ) +
+                                  "\n                      "
+                              ),
+                            ]),
                           ]),
                         ]),
                       ]),
@@ -33987,7 +34013,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "service" }, [
-      _c("i", { staticClass: "fa fa-laptop" }),
+      _c("i", { staticClass: "fa fa-users" }),
     ])
   },
   function () {
@@ -34011,7 +34037,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "service" }, [
-      _c("i", { staticClass: "fa fa-users" }),
+      _c("i", { staticClass: "fa fa-laptop" }),
     ])
   },
 ]
@@ -35086,6 +35112,24 @@ var staticRenderFns = [
           _c("div", { staticClass: "item" }, [
             _c("img", {
               attrs: { src: "template/img/clients/logo6.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo7.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo8.jpg", alt: "" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item" }, [
+            _c("img", {
+              attrs: { src: "template/img/clients/logo9.jpg", alt: "" },
             }),
           ]),
         ]),

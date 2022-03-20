@@ -82,7 +82,7 @@
                   <a
                     href=""
                     class="cbp-singlePage cbp-l-grid-team-name disabled"
-                    >Michaëlle Jean</a
+                    >Right Honourable Michaëlle Jean</a
                   >
                   <div class="cbp-l-grid-team-position">
                     {{ $t("pages.home.about.position.1") }}

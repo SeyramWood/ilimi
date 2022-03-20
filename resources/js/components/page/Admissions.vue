@@ -34,7 +34,7 @@
               data-wow-delay="1s"
             >
               <div class="service">
-                <i class="fa fa-laptop"></i>
+                <i class="fa fa-users"></i>
               </div>
               <h6>
                 <strong>{{
@@ -94,7 +94,7 @@
               data-wow-delay="1s"
             >
               <div class="service">
-                <i class="fa fa-users"></i>
+                <i class="fa fa-laptop"></i>
               </div>
               <h6>
                 <strong>{{
