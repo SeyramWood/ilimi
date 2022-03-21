@@ -159,12 +159,12 @@
           <div class="item">
             <img src="template/img/clients/logo7.jpg" alt="" />
           </div>
-          <div class="item">
+          <!-- <div class="item">
             <img src="template/img/clients/logo8.jpg" alt="" />
           </div>
           <div class="item">
             <img src="template/img/clients/logo9.jpg" alt="" />
-          </div>
+          </div> -->
         </div>
         <div class="pad45"></div>
       </div>
