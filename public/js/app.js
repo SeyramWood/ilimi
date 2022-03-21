@@ -35120,18 +35120,6 @@ var staticRenderFns = [
               attrs: { src: "template/img/clients/logo7.jpg", alt: "" },
             }),
           ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "item" }, [
-            _c("img", {
-              attrs: { src: "template/img/clients/logo8.jpg", alt: "" },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "item" }, [
-            _c("img", {
-              attrs: { src: "template/img/clients/logo9.jpg", alt: "" },
-            }),
-          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "pad45" }),
