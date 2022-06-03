@@ -25,6 +25,13 @@
               data-wow-duration="2s"
               v-html="$t(`pages.home.admissions.cta`)"
             ></div>
+              <div
+              class="lead wow fadeInRightBig"
+              data-wow-offset="80"
+              data-wow-duration="2s"
+            >
+                  <a href="https://bit.ly/3yW5SCL" target="_blank">{{ $t(`pages.home.admissions.link`) }}</a>
+              </div>
 
             <!--SERVICE 1-->
             <div
@@ -175,7 +182,7 @@
               Our Skills
             </h1>
 
-       
+
             <div
               class="col-sm-4 col-lg-4 text-center pie wow bounceIn"
               data-wow-delay="1s"
@@ -185,7 +192,7 @@
               </span>
               <p class="center">Women & Gender Equality</p>
             </div>
-            
+
             <div
               class="col-sm-4 col-lg-4 text-center bouncein pie wow bounceIn"
               data-wow-delay="1.5s"
@@ -195,7 +202,7 @@
               </span>
               <p class="center">Scholarships & Financial Aid</p>
             </div>
-            
+
             <div
               class="col-sm-4 col-lg-4 text-center bouncein pie wow bounceIn"
               data-wow-delay="1.8s"

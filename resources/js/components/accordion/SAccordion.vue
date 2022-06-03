@@ -144,7 +144,7 @@ $white: #ffffff;
         user-select: none;
         margin: 0.5rem 0;
         &:not(:last-child) {
-          margin: 0.5 1rem 0.5 0;
+          margin: 0.5rem 1rem 0.5rem 0;
         }
         color: $text;
         border-radius: 3px;

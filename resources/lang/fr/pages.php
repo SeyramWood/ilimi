@@ -21,13 +21,13 @@ return [
       "title" => "à propos",
       "cta" => "La mission d'A.D.U. est de préparer
               <span class=\"colour\"><strong>les jeunes</strong></span>
-              les plus talentueux du <span class=\"colour\"><strong>Niger</strong></span> du Niger et de <span class=\"colour\"><strong>l'Afrique francophone</strong></span> à concevoir et à conduire le 
-              <span class=\"colour\"><strong>développement</strong></span> de leurs nations 
+              les plus talentueux du <span class=\"colour\"><strong>Niger</strong></span> et de <span class=\"colour\"><strong>l'Afrique francophone</strong></span> à concevoir et à conduire le
+              <span class=\"colour\"><strong>développement</strong></span> de leurs nations
               </span> en tant que <span class=\"colour\"><strong>leaders éthiques</strong></span> et <span class=\"colour\"><strong>efficaces</strong></span> dans les secteurs public, privé et à but non lucratif.",
 
-      "text-left" => "African Development Universalis (A.D.U.) est une institution bilingue (français et anglais) et la première université à but non lucratif du Niger à offrir une éducation de classe mondiale aux étudiants de la région du Sahel. Nous offrons une formation dans le cadre des arts libéraux pour les emplois les plus demandés aujourd'hui, enseignée par des professeurs engagés qui visent à développer la pensée critique des étudiants, leurs compétences en matière de résolution de problèmes et leur capacité à servir leurs communautés. Des cours interactifs aux stages et à la recherche, vous vous transformerez en poursuivant vos passions! Notre modèle unique - ILIMI, qui signifie \"éducation, intellectuel et connaissance\" en haoussa, se concentre sur le développement de jeunes leaders éthiques et influents. A.D.U. s'inspire des plus grands établissements d'enseignement supérieur du monde, comme l'université d'Ashesi au Ghana et l'université de Harvard aux États-Unis.",
+      "text-left" => "African Development Universalis (A.D.U.) est une institution bilingue (français et anglais) et la première université à but non lucratif du Niger à offrir une éducation de classe mondiale aux étudiants de la région du Sahel. Nous offrons une formation dans le cadre des arts libéraux pour les emplois les plus demandés aujourd'hui, enseignée par des professeurs engagés qui visent à développer la pensée critique des étudiants, leurs compétences en matière de résolution de problèmes et leur capacité à servir leurs communautés. Des cours interactifs aux stages et à la recherche, vous vous transformerez en poursuivant vos passions! Notre modèle unique - ILIMI, qui signifie \"éducation, intelligence et connaissance\" en haoussa, se concentre sur le développement de jeunes leaders éthiques et influents. A.D.U. s'inspire des plus grands établissements d'enseignement supérieur du monde, comme l'université d'Ashesi au Ghana et l'université de Harvard aux États-Unis.",
 
-      "text-right" => "Depuis la création d'A.D.U. jusqu'à aujourd'hui, l'université d'Ashesi a joué un rôle énorme dans la croissance continue, le développement et la durabilité de notre institution par le biais de différentes plateformes, dont l'initiative de collaboration en matière d'éducation d'Ashesi. La directrice de l'initiative, Rose A. Dodd, tout en réfléchissant au partenariat de mentorat entre les deux institutions, affirme que la relation a permis de remplir des rôles fondamentaux très importants au sein de l'équipe de direction de l'A.D.U. Avec le soutien de l'université d'Ashesi, du ministère de l'enseignement supérieur, de la recherche et de l'innovation du Niger et d'autres partenaires du Sahel, une réunion hybride d'éducateurs chevronnés et de parties prenantes clés de l'enseignement supérieur africain a eu lieu sur le campus de l'A.D.U., où nous avons engagé des discussions pour réimaginer l'avenir de l'enseignement supérieur, dans le contexte actuel de la pandémie de COVID-I9.",
+      "text-right" => "Depuis la création d'A.D.U. jusqu'à aujourd'hui, l'université d'Ashesi a joué un rôle énorme dans la croissance continue, le développement et la durabilité de notre institution par le biais de différentes plateformes, dont l'initiative de collaboration en matière d'éducation d'Ashesi. La directrice de l'initiative, Rose A. Dodd, tout en réfléchissant au partenariat de mentorat entre les deux institutions, affirme que la relation a permis de remplir des rôles fondamentaux très importants au sein de l'équipe de direction de A.D.U. Avec le soutien de l'université d'Ashesi, du ministère de l'enseignement supérieur, de la recherche et de l'innovation du Niger et d'autres partenaires du Sahel, une réunion hybride d'éducateurs chevronnés et de parties prenantes clés de l'enseignement supérieur africain a eu lieu sur le campus de A.D.U., où nous avons engagé des discussions pour réimaginer l'avenir de l'enseignement supérieur, dans le contexte actuel de la pandémie de COVID-I9.",
 
       "btn" => "CONTACT",
 
@@ -50,7 +50,7 @@ return [
     "admissions" => [
       "title" => "Admissions",
       "cta" => "Nos programmes sont reconnus au niveau national et international. Nos programmes diplômants sont tous accrédités par le ministère de l'Enseignement supérieur, de la Recherche et de l'Innovation, Niger. Arrêté N° 167 et 168 MESR/I/SG/DGE/DL/DESPRI du 25/11/2019 relatif à l'autorisation de création et d'ouverture d'African Development Universalis (A.D.U.).",
-
+        "link" => "CANDIDATURES OUVERTES - – ANNEE ACADEMIQUE 2022/2023",
       "service" => [
         "1" => [
           "title" => "Devenir étudiant",
@@ -74,7 +74,7 @@ return [
       //left with our why text
 
       "stats" => [
-        "title" => "L'A.D.U. en chiffres",
+        "title" => "A.D.U. en chiffres",
         "text-1" => "Étudiants inscrits",
         "text-2" => "Pays représentés",
         "text-3" => "Programmes d'études",
@@ -84,7 +84,7 @@ return [
     "academics" => [
       "title" => "Académique",
       "cta" => "
-      l’African Development University (A.D.U.) d'élever ses programmes de <strong class=\"colour\">premier et de second cycle</strong> au plus <strong class=\"colour\">haut niveau</strong> au <strong class=\"colour\">Niger</strong> et dans la sous-région. Nos cours sont dispensés par des professeurs et des professionnels divers, qui apportent à l'A.D.U. un <strong class=\"colour\">riche bagage intellectuel</strong> tant au niveau local qu'international. En outre, nos programmes sont <strong class=\"colour\">bilingues</strong> et accordent une grande importance au développement d'un fort esprit <strong class=\"colour\">d'entreprise</strong> chez chaque étudiant. 
+      African Development University (A.D.U.) travaille à élever ses programmes de <strong class=\"colour\">premier et de second cycle</strong> au plus <strong class=\"colour\">haut niveau</strong> tant au <strong class=\"colour\">Niger</strong> que dans la sous-région. Nos cours sont dispensés par des professeurs et des professionnels divers, qui apportent à A.D.U. un <strong class=\"colour\">riche bagage intellectuel</strong> tant au niveau local qu'international. En outre, nos programmes sont <strong class=\"colour\">bilingues</strong> et accordent une grande importance au développement d'un fort esprit <strong class=\"colour\">d'entreprise</strong> chez chaque étudiant.
               ",
       "details" => [
         "us" => [
@@ -124,17 +124,17 @@ return [
 
     ],
     "donation" => [
-      "q" => "J'ai visité l'A.D.U. en 2019 et j'ai été vraiment frappé par l'enthousiasme des étudiants, ainsi que par les éloges que les employeurs que j'ai rencontrés avaient pour les étudiants de l'A.D.U.. Corporate Niger a décrit les étudiants d'A.D.U. de la même manière que Corporate Ghana décrit les étudiants d'Ashesi. Mais j'ai aussi pu constater que l'A.D.U. avait des difficultés financières. Je suis parti en pensant qu'il y avait une étincelle ici qui avait besoin d'une opportunité pour se développer, et je me suis demandé comment Ashesi et moi pouvions aider.",
+      "q" => "J'ai visité A.D.U. en 2019 et j'ai été vraiment frappé par l'enthousiasme des étudiants, ainsi que par les éloges que les employeurs que j'ai rencontrés avaient pour les étudiants de A.D.U.. Corporate Niger a décrit les étudiants d'A.D.U. de la même manière que Corporate Ghana décrit les étudiants d'Ashesi. Mais j'ai aussi pu constater que A.D.U. avait des difficultés financières. Je suis parti en pensant qu'il y avait une étincelle ici qui avait besoin d'une opportunité pour se développer, et je me suis demandé comment Ashesi et moi pouvions aider.",
       "p-1" => "<strong>Patrick Awuah, Fondateur et président</strong>, de l'université Ashesi, Ghana.",
       "h" => "Faites partie de la solution",
-      "p-2" => "L'A.D.U. redessine l'avenir de la région en éduquant
+      "p-2" => "A.D.U. redessine l'avenir de la région en éduquant
           <br />
           ses jeunes femmes et hommes les plus exceptionnels ses jeunes femmes et hommes les plus exceptionnels. Nous avons besoin de.",
       "btn" => "FAITES UN DON",
     ],
     "ilimi" => [
       "title" => "l'expérience <span style=\"text-transform: none\">ILIMI</span>",
-      "cta" => "Nous proposons une formation en leur <span class=\"colour\"><strong>arts libéraux</strong></span> qui vise à développer l'esprit critique des étudiants, <span class=\"colour\"><strong>aptitude à résoudre les problèmes</strong></span> et leur capacité à servir leur communauté. Notre <span class=\"colour\"><strong>modèle unique - ILIMI</strong></span>, qui signifie \"éducation, intellectuel et connaissance\" en haoussa, se concentre sur le développement de <span class=\"colour\"><strong>jeunes leaders</strong></span> éthiques et influents.",
+      "cta" => "Nous proposons une formation en <span class=\"colour\"><strong>Arts Libéraux</strong></span> qui vise à développer l'esprit critique des étudiants, <span class=\"colour\"><strong>aptitude à résoudre les problèmes</strong></span> et leur capacité à servir leur communauté. Notre <span class=\"colour\"><strong>modèle unique - ILIMI</strong></span>, qui signifie \"éducation, intellectuel et connaissance\" en haoussa, se concentre sur le développement de <span class=\"colour\"><strong>jeunes leaders</strong></span> éthiques et influents.",
       "filter-btn" => [
         "all" => "Tous",
         "academics" => "Académiques",
@@ -177,7 +177,7 @@ return [
     "iilab" => [
       "title" => "<span style=\"text-transform: none\">iiLAB</span>",
       "cta" => "
-      Le <span class=\"colour\"><strong>iiLAB</strong></span> (ilimi Innovation Lab) est le laboratoir <span class=\"colour\"><strong>d'innovation</strong></span> et <span class=\"colour\"><strong>d'entreprenariat</strong></span> d’A.D.U. qui s'engage à mettre à disposition des <span class=\"colour\"><strong>Youngs leaders</strong></span> les outils, les ressources et un réseau rélationnel pour développer leurs innovantes idées. Le iiLab est un membre actif du <span class=\"colour\"><strong>RESAEN</strong></span> (le réseau des structures d’accompagnement à l’entrepreneuriat) et gère deux programmes. Le programme de   Business Innovation et le Social Innovation and Change Initiative (SICI).
+      Le <span class=\"colour\"><strong>iiLAB</strong></span> (ilimi Innovation Lab) est le laboratoire <span class=\"colour\"><strong>d'innovation</strong></span> et <span class=\"colour\"><strong>d'entreprenariat</strong></span> d’A.D.U. qui s'engage à mettre à disposition des <span class=\"colour\"><strong>Youngs leaders</strong></span> les outils, les ressources et un réseau relationnel pour développer leurs innovantes idées. Le iiLab est un membre actif du <span class=\"colour\"><strong>RESAEN</strong></span> (le réseau des structures d’accompagnement à l’entrepreneuriat) et gère deux programmes. Le programme de   Business Innovation et le Social Innovation and Change Initiative (SICI).
       ",
       "hover-text" => "VIEW MORE",
       "thumb" => [
@@ -193,7 +193,7 @@ return [
       "btn" => "S'abonner à",
     ],
     "contact" => [
-      "title" => "contacter",
+      "title" => "contacts",
       "cta" => "Pour toute question supplémentaire et/ou demande concernant l'état d'avancement de votre demande.",
       "offices" => [
         "1" => "Site officiel",
@@ -271,12 +271,12 @@ return [
   ],
 
   "donate" => [
-    "cta" => "Lorsque vous faites un don à l'Université africaine de développement (UAD), vous investissez dans les jeunes qui deviendront les futurs dirigeants du Niger. Votre soutien nous permettra de mettre l'enseignement supérieur à la portée d'étudiants talentueux. Le Niger est l'un des pays les plus pauvres du monde, avec un PIB annuel inférieur à 400 dollars par habitant. Pour de nombreux étudiants prometteurs, payer les frais de scolarité annuels de l'A.D.U., qui s'élèvent à 4 000 dollars, est un rêve impossible. Votre don nous permettra de sélectionner des étudiants sans tenir compte de leur situation financière. Les étudiants de l'A.D.U. sont acceptés sur la base d'un potentiel intellectuel exceptionnel, d'une éthique de travail avérée et d'un engagement à mener le changement au Niger. Agissez maintenant pour donner à la prochaine génération de leaders, de penseurs et d'artisans du changement les moyens d'agir!",
+    "cta" => "Lorsque vous faites un don à l'Université africaine de développement (UAD), vous investissez dans les jeunes qui deviendront les futurs dirigeants du Niger. Votre soutien nous permettra de mettre l'enseignement supérieur à la portée d'étudiants talentueux. Le Niger est l'un des pays les plus pauvres du monde, avec un PIB annuel inférieur à 400 dollars par habitant. Pour de nombreux étudiants prometteurs, payer les frais de scolarité annuels de A.D.U., qui s'élèvent à 4 000 dollars, est un rêve impossible. Votre don nous permettra de sélectionner des étudiants sans tenir compte de leur situation financière. Les étudiants de A.D.U. sont acceptés sur la base d'un potentiel intellectuel exceptionnel, d'une éthique de travail avérée et d'un engagement à mener le changement au Niger. Agissez maintenant pour donner à la prochaine génération de leaders, de penseurs et d'artisans du changement les moyens d'agir!",
 
     "content" => [
       "h3" => "ÊTES VOUS PRÊT À CHANGER LA CONVERSATION SUR LE SA SA SA D'UN CHANGEMENT D'ATTITUDE ?",
       "h1" => "Faites partie de la solution",
-      "p" => "L'A.D.U. redessine l'avenir de la région du Sahel en éduquant les enfants et les jeunes.
+      "p" => "A.D.U. redessine l'avenir de la région du Sahel en éduquant les enfants et les jeunes.
             <br />
             ses jeunes femmes et hommes les plus exceptionnels. Nous avons besoin de votre aide.",
     ],

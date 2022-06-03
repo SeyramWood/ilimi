@@ -82,6 +82,7 @@ return [
       "cta" => "
       Our programs are both nationally and internationally recognized. Our degree programs are all accredited by the Ministry of Higher Education, Research and Innovation, Niger. Order N° 167 and 168 MESR/I/SG/DGE/DL/DESPRI of 25/11/2019 relating to the authorization of creation and opening of African Development Universalis (A.D.U.).
               ",
+        "link" => "APPLICATIONS OPEN FOR 2022/2023 ACADEMIC YEAR",
 
       "service" => [
         "1" => [
@@ -198,7 +199,7 @@ return [
 
       "title" => "Student Life",
 
-      "cta" => "A.D.U. campus was designed as an inspiring base for students from Niger and the Sahel to <span class=\"colour\"><strong>learn</strong></span>, <span class=\"colour\"><strong>collaborate</strong></span>, <span class=\"colour\"><strong>engage</strong></span> and form <span class=\"colour\"><strong>relationships</strong></span> that would help them dare great things together. 
+      "cta" => "A.D.U. campus was designed as an inspiring base for students from Niger and the Sahel to <span class=\"colour\"><strong>learn</strong></span>, <span class=\"colour\"><strong>collaborate</strong></span>, <span class=\"colour\"><strong>engage</strong></span> and form <span class=\"colour\"><strong>relationships</strong></span> that would help them dare great things together.
                 Our campus culture is driven by student initiatives, and run by the mantra, Student First! The student leadership, known as the ILIMI Student Government (ISG), collaborates deeply with the Office of Student and Community Affairs to <span class=\"colour\"><strong>enhance</strong></span> the student experience and support student-led initiatives.",
 
       "btn" => "CONTACT",
@@ -259,7 +260,7 @@ return [
     "left" => [
       "title" => "About",
       "p-1" => "This program offers a full scholarship to students,
-              this scholarship allows young people from economically disadvantaged communities, 
+              this scholarship allows young people from economically disadvantaged communities,
               who have demonstrated academic excellence and leadership potential to access a quality and relevant
               education. The Mastercard Foundation Scholars
               Program provides financial, social, and academic support and
