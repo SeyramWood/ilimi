@@ -25,13 +25,21 @@
               data-wow-duration="2s"
               v-html="$t(`pages.home.admissions.cta`)"
             ></div>
-              <div
+            <div
               class="lead wow fadeInRightBig"
               data-wow-offset="80"
               data-wow-duration="2s"
             >
-                  <a href="https://bit.ly/3yW5SCL" target="_blank">{{ $t(`pages.home.admissions.link`) }}</a>
-              </div>
+              <a
+                :href="
+                  locale === 'en'
+                    ? 'https://forms.office.com/r/gPqfs1BE2q'
+                    : 'https://bit.ly/3yW5SCL'
+                "
+                target="_blank"
+                >{{ $t(`pages.home.admissions.link`) }}</a
+              >
+            </div>
 
             <!--SERVICE 1-->
             <div
